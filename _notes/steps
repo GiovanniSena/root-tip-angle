@@ -1,16 +1,18 @@
-peline/ Sketch of steps
+Pipeline/ Sketch of steps
 
 0) Convert the image from rgb to gray scale (matlab: rgb2gray) (3-tensor to matrix)
 
 intensify the matrix —> distinguish roots for user
 highlight window —> help user where approximately roots are 
+
 1) The user will select a region of interest on the image so only roots appear. This window can be used over the whole experiment (as camera doesn’t move) ///TODO: or better to define window for each root?
 
-2) The user then clicks on some points over the roots (I'd say at least 7, preferably 10). Using the mean value and standard deviation of the pixel intensity of these points a thresholding range is found. Say [mu-2sigma,mu+2sigma]. 
-Initially trying to use the same threshold for all the images in the experiment, maybe this will do the job already…
+2) The user then clicks on some points over the roots (I'd say at least 7, preferably 10). Using the mean value and standard deviation of the pixel intensity of these points a thresholding range is found. Say [mu-2sigma,mu+2sigma]. Initially trying to use the same threshold for all the images in the experiment, maybe this will do the job already…
 
-3) After segmenting the images, the binary images need to postprocessed so we get rid of the bright spots and noise, eg by removing any object that has fewer than 1000 pixels (matlab: bwareaopen enough?). Then any holes that might appear in the roots need to be filled (matlab: imfill) 
+3) After segmenting the images, the binary images need to postprocessed so we get rid of the bright spots and noise, eg by removing any object that has fewer than 1000 pixels (matlab: bwareaopen enough?). Then any holes that might appear inthe roots need to be filled (matlab: imfill)
+ 
 4) Hopefully obtaining the skeleton version of the binary image (matlab: bwmorph).
 
-5) Label each individual object in the image so they can later be processed independently (matlab: bwconncomp). 
+5) Label each individual object in the image so they can later be processed independently (matlab: bwconncomp).
+ 
 6) For each root we then get the list of point belonging to the tip (upper x- and y-values) and we compute the curvature (eg on a 3-point polygonal chain)
