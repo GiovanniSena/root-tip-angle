@@ -16,7 +16,30 @@ clear variables
 
 lych_tst2 = imread(file_name);
 lych_tst2=double(lych_tst2) /255; % Converting to double
+lych_tst2 = lych_tst2 * 3; % Multiplying by 3
 
+% And another medfilt 18.7.18 11:26
+lych_tst2(:,:,1) = medfilt2(lych_tst2(:,:,1));
+lych_tst2(:,:,2) = medfilt2(lych_tst2(:,:,2));
+lych_tst2(:,:,3) = medfilt2(lych_tst2(:,:,3));
+
+
+lych_tst2 = adaptthresh(lych_tst2,1,'NeighborhoodSize',1); % Blurs things up. not good.
+
+% Inverting the image
+lych_tst2 = 1.- lych_tst2;
+
+% Using median filtering to help the user and the script
+% Changed to wiener2 and had to handle each color channel 18.7 10:55
+% lych_tst2(:,:,1) = wiener2(lych_tst2(:,:,1), [1 2]);
+% lych_tst2(:,:,2) = wiener2(lych_tst2(:,:,2), [1 2]);
+% lych_tst2(:,:,3) = wiener2(lych_tst2(:,:,3), [1 2]);
+
+% % Changed to the original idea of medfilt to make it bettger 11:02
+% lych_tst2(:,:,1) = medfilt2(lych_tst2(:,:,1));
+% lych_tst2(:,:,2) = medfilt2(lych_tst2(:,:,2));
+% lych_tst2(:,:,3) = medfilt2(lych_tst2(:,:,3));
+% TOO MANY
 
 
 % EPIC FAIL!!!!!!!!!! DO NOT RETURN TO!!!! CAUSED DISCREPANCY BETWEEN THE
@@ -36,18 +59,25 @@ lych_tst2=double(lych_tst2) /255; % Converting to double
 % Will try to implement it in a different manner.
 
 
+%showing the original photo
+%figure
+% UPDATE 17.7.18 10:32 - Will try to implement zooming to help with the
+% point choice
 
 % Writing the instructions for the user
 % UPDATE 16.7.18 15:07 - Added uiwait so that the image will not pop before
 % the user clicks ok
-uiwait(msgbox({'Please choose 5 evenly spaced points on the desired root starting with the tip.' 'Press BACKWARDS to delete point' 'Press ENTER when finished'},'User instructions','modal'));
-
-
-%showing the original photo
-figure
-image(lych_tst2*3); % Changed foe UPDATE**
+uiwait(msgbox({'Please zoom on the area of the desired root.' 'Press ANY KEY when finished'},'User instructions 1','modal'));
+image(lych_tst2); % Changed foe UPDATE**
 %image(imcrop(lych_tst2));
 
+
+zoom on
+pause
+% Writing the instructions for the user
+% UPDATE 16.7.18 15:07 - Added uiwait so that the image will not pop before
+% the user clicks ok
+uiwait(msgbox({'Please choose 5 evenly spaced points on the desired root starting with the tip.' 'Press BACKWARDS to delete point' 'Press ENTER when finished'},'User instructions','modal'));
 
 
 hold on
@@ -56,19 +86,50 @@ hold on
 hold off
 % Now that we have the points, we will use them for several purposes.
 
+close % Closes figure
+
+% UPDATE 18.7.18 10:45 -
+% Will try to implement an approach where the crop window will get smaller
+% if the area around the points is bright. See log.
+
+% First the default value
+crop_str = 0.5;
+
+% Inverted back to avoid a lot of problems - 18.7.18 11:07
+% Inverting the image
+lych_tst2 = 1.- lych_tst2;
+
+% % And another medfilt 11:07
+% lych_tst2(:,:,1) = medfilt2(lych_tst2(:,:,1));
+% lych_tst2(:,:,2) = medfilt2(lych_tst2(:,:,2));
+% lych_tst2(:,:,3) = medfilt2(lych_tst2(:,:,3));
+% TOO MANY
+
+% Rounding the indices
+rootx=round(rootx);
+rooty=round(rooty);
+
+
+%
+% if (max(mean(mean(lych_tst2(rooty(1):rooty(end),rootx(1):rootx(end),1:3))))>0.5)
+%     crop_str = crop_str/10;
+% end
+    
+
 % First, we will use them to define a cropping window:
 % We will create the cropping rectangle:
-rxmin = min(rootx)-0.5*std(rootx); % The minimal x of the rect.
-rymin = min(rooty)-0.5*std(rooty); % The minimal y of the rect.
-rwidth = max(rootx)+0.5*std(rootx) - rxmin; % The width of the rect.
-rheight = max(rooty)+0.5*std(rooty) - rymin; % The height of the rect.
+rxmin = min(rootx)- crop_str * std(rootx); % The minimal x of the rect.
+rymin = min(rooty)- crop_str * std(rooty); % The minimal y of the rect.
+rwidth = max(rootx)+ crop_str * std(rootx) - rxmin; % The width of the rect.
+rheight = max(rooty)+ crop_str * std(rooty) - rymin; % The height of the rect.
 crop_window = [rxmin, rymin, rwidth, rheight]; % The rect object that will be used in imcrop
 % The cropping of the image using the crop_window
-lychcrop2 = imcrop(lych_tst2,crop_window); 
+lychcrop2 = imcrop(lych_tst2,crop_window);
 clear('rxmin','rymin','rwidth','rheight');
 %TEST - showing the cropped part
 image(lychcrop2)
 
+lychcrop2 = adaptthresh(lychcrop2,0.5,'NeighborhoodSize',1); % Blurs things up. not good.
 
 % Second, we will use the point to decide on the filtering range for the
 % color filter, expanding it to filter using the information from the
@@ -82,8 +143,8 @@ image(lychcrop2)
 % rootxr=round(rootx);
 % rootyr=round(rooty);
 % TESTING COMPLETE
-rootx=round(rootx);
-rooty=round(rooty);
+% rootx=round(rootx);
+% rooty=round(rooty); % WE MOVED UPWARDS
 % Next, we exract the linear indices so we can extract the
 % colors.
 % HAD SOME DIFFICULTY. SEARCHED FOR ANSWER. FOUND ONE:
@@ -95,32 +156,51 @@ rooty=round(rooty);
 lychsize = size(lych_tst2);
 lychpoi = [0:2]*lychsize(1)*lychsize(2)+(rootx-1)*lychsize(1)+rooty;
 
-% Finally we extract the colors themselves
+% Finally we extract the colors themselves of the 5 chosen pixels
 lychpcolor = lych_tst2(lychpoi);
 
-% And now we can calculate the mean +- 1*standard deviation for the reange
-% for each color
-cfiltR = [mean(lychpcolor(:,1))-1*std(lychpcolor(:,1)) mean(lychpcolor(:,1))+1*std(lychpcolor(:,1))];
-cfiltG = [mean(lychpcolor(:,2))-1*std(lychpcolor(:,2)) mean(lychpcolor(:,2))+1*std(lychpcolor(:,2))];
-cfiltB = [mean(lychpcolor(:,3))-1*std(lychpcolor(:,3)) mean(lychpcolor(:,3))+1*std(lychpcolor(:,3))];
+% -- from here on original image no longer necessary 
 
+% Added (18.7 13:46)
+% Doing a scaled enhancement to differentiate them better - everything that isn't black gets brighter,
+% and the brighter you are the brighter you get
+lychpcolor = lychpcolor.*1.1;
+lychpcolor = lychpcolor.*1.1;
+lychpcolor = lychpcolor.*(1.1+lychpcolor.^2);
+
+
+% And now we can calculate the mean +- 3*standard deviation for the range
+% for each color
+cfiltR = [mean(lychpcolor(:,1))-3*std(lychpcolor(:,1)) mean(lychpcolor(:,1))+3*std(lychpcolor(:,1))];
+cfiltG = [mean(lychpcolor(:,2))-3*std(lychpcolor(:,2)) mean(lychpcolor(:,2))+3*std(lychpcolor(:,2))];
+cfiltB = [mean(lychpcolor(:,3))-3*std(lychpcolor(:,3)) mean(lychpcolor(:,3))+3*std(lychpcolor(:,3))];
+% tried 1*std, 2*std as well, but 3*std works best for now
 
 % Now for the brightness range. We'll just take an average of the three
 % above filters
 brighfilt = (cfiltR+cfiltG+cfiltB)./3;
-%% % Adding Colour separation filtering
+
+%% APPROACH 1: USING INPUT FROM USER TO ESTIMATE THE RANGE 
+%% Adding Colour separation filtering
 
 % UPDATE 16.718 12:06 - Now that we receive the poins from the user, we can
 % do an initial color filtering based on the R G & B values of those
 % points. After that, we will apply the gray-ing filter from before.
 Imtst = lychcrop2;
 
+% Doing a scaled enhancment - everything that isn't black gets brighter,
+% and the brighter you are the brighter you get
+Imtst = Imtst.*1.1;
+Imtst = Imtst.*1.1;
+Imtst = Imtst.*(1.1+Imtst.^2);
+
 % Seperate to R G & B matrices
 ImtstR=Imtst(:,:,1);
 ImtstG=Imtst(:,:,2);
 ImtstB=Imtst(:,:,3);
 
-% Creating 3 filtering masks according to the three color ranges
+% Creating 3 filtering masks according to the three color ranges for each
+% channel separately
 filmaskR = ImtstR<cfiltR(1) | ImtstR>cfiltR(2);
 filmaskG = ImtstG<cfiltG(1) | ImtstG>cfiltG(2);
 filmaskB = ImtstB<cfiltB(1) | ImtstB>cfiltB(2);
@@ -140,17 +220,18 @@ ImtstB(filmaskB)=0;
 Imtst = cat(3, ImtstR, ImtstG, ImtstB); % Concatenating the seperate R G and B matrices to reproduce an altered image.
 Imbacktst = Imtst; % I'll back it up for now until TESTING some of the things is over
 
-clear('filmaskR','filmaskG','filmaskB','rootx','rooty')
+clear('filmaskR','filmaskG','filmaskB') %  ,'rootx','rooty')
 % We (no longer) start with the brightness based filteration in order to enhance the
 % difference between the color channels
 
 % Imtst = lychcrop2*3; % UNNECESSARY NOW that we have the filter above.
 
-% Doing a scaled enhancment - everything that isn't black gets brighter,
-% and the brighter you are the brighter you get
-Imtst = Imtst.*1.1;
-Imtst = Imtst.*1.1;
-Imtst = Imtst.*(1.1+Imtst.^2);
+% % Doing a scaled enhancement - everything that isn't black gets brighter,
+% % and the brighter you are the brighter you get
+% Imtst = Imtst.*1.1;
+% Imtst = Imtst.*1.1;
+% Imtst = Imtst.*(1.1+Imtst.^2);
+% Moves (18.7 13:45)
 
 
 % Now performing RGB level difference based filtering. Basically, if the
@@ -160,7 +241,7 @@ Imtst = Imtst.*(1.1+Imtst.^2);
 
 % Creating the filtering mask
 % test if difference between R and G channel are above threshold
-filmask = (Imtst(:,:,1)-Imtst(:,:,2))>0.05;
+filmask = (Imtst(:,:,1)-Imtst(:,:,2))>(1.5*mean([cfiltR(2)-cfiltR(1),cfiltG(2)-cfiltG(1)]));
 
 % Seperate to R G & B matrices
 ImtstR=Imtst(:,:,1);
@@ -177,7 +258,7 @@ Imtst = cat(3, ImtstR, ImtstG, ImtstB); % Concatenating the seperate R G and B m
 % Second - R to B
 
 % Creating the filtering mask
-filmask = (Imtst(:,:,1)-Imtst(:,:,3))>0.05;
+filmask = (Imtst(:,:,1)-Imtst(:,:,3))>(1.5*mean([cfiltR(2)-cfiltR(1),cfiltB(2)-cfiltB(1)]));
 
 % Seperate to R G & B matrices
 ImtstR=Imtst(:,:,1);
@@ -194,7 +275,7 @@ Imtst = cat(3, ImtstR, ImtstG, ImtstB); % Concatenating the seperate R G and B m
 % Third - G to B
 
 % Creating the filtering mask
-filmask = (Imtst(:,:,2)-Imtst(:,:,3))>0.05;
+filmask = (Imtst(:,:,2)-Imtst(:,:,3))>(1.5*mean([cfiltB(2)-cfiltB(1),cfiltG(2)-cfiltG(1)]));
 
 % Seperate to R G & B matrices
 ImtstR=Imtst(:,:,1);
@@ -211,13 +292,20 @@ Imtst = cat(3, ImtstR, ImtstG, ImtstB); % Concatenating the seperate R G and B m
 graywarden = rgb2gray(Imtst);
 
 
-
-%%
+%% APPROACH 2:
+%% BRIGHTNESS FILTER (intensity based) 
 % The 'If it is brighter than bright eliminate it' approach:
 % we'll carefully enhance brightness and then get rid of too bright spots.
 
 
 Imtstbri = lychcrop2;
+
+% Doing a scaled enhancEment - everything that isn't black gets brighter,
+% and the brighter you are the brighter you get
+Imtstbri = Imtstbri.*1.1;
+Imtstbri = Imtstbri.*1.1;
+Imtstbri = Imtstbri.*(1.1+Imtstbri.^2);
+
 
 % Grayscaling it. Sooner than before, and maybe the whole loop will become
 % obsolete.
@@ -233,13 +321,17 @@ brighttst(filmask)=0;
 % OBSOLETE now that we have the filter above it.
 
 
-% % Will soon decide if it is still necessary
-% for i=1:5
+% % After testing and tweaking the loop will be reintroduced (See log for
+% % 17.7.18 11:26.
+% for i=1:4
 %     % Multiplication and elimination of >1
-%     Imtstbri = Imtstbri * 1.4;
+%     Imtstbri = Imtstbri * 1.1;
+%     % Scaling brighfilt as well
+%     brighfilt = brighfilt*1.1;
 %     % Filtering on all color channels.
-%     % We check which color values have value over 1.
-%     afilmask = Imtstbri>1;
+%     % We check which color values have value over 1.CHANGED
+%     % Changed to anything outside of brighfilt range 18.7.18 11:15
+%     afilmask = Imtstbri>1 | Imtstbri<brighfilt(1);
 %     % Then we create a filter which is 0 if even on of the channels is over
 %     % 1.
 %     filmask = (1.-afilmask(:,:,1)).* (1.-afilmask(:,:,2)).* (1.-afilmask(:,:,3));
@@ -250,13 +342,10 @@ brighttst(filmask)=0;
 %     
 % 
 % end
-% For now will not use it
+
+% TURNED OFF AGAIN AFTER BEING TOO HARSH 18.7.18 11:19
 
 
-
-
- 
- 
 
 %% %THE BEST APPROACH is this + the intensity filter. Not an average.
 
@@ -264,19 +353,20 @@ brighttst(filmask)=0;
 % sacrifiacing root. Hopefully, it will make the rest of the section become
 % better. First imfill though
 skeletor = imfill(graywarden,'holes');
-skeletor = fibermetric(skeletor,20, 'StructureSensitivity', 0.04);
+% function that enhances tubular structures(?)
+skeletor = fibermetric(skeletor,20, 'StructureSensitivity', 0.4);
 
 %Some Testing showed that
 % bwareaopen(imbinarize(wiener2(imfill(skeletor,'holes'),[1 12]),'adaptive','Sensitivity',0.45),400)
 % is very good, so we will do the necessary steps (16.7.18 18:56)
 
 skeletor = imfill(skeletor,'holes');
-skeletor = wiener2(skeletor,[1 12]);
+skeletor = wiener2(skeletor,[1 3]); 
 % The last added step is after the binarization.
 % % Doing a set of binarizing, getting rid of isolated points, filling stuff
 % % and then skeletonizing and other methods. One of the differnces from
 % before are the 2 steps above.
-skeletor=imbinarize(skeletor,'adaptive','Sensitivity',0.45);
+skeletor=imbinarize(skeletor,'adaptive','Sensitivity',0.60);
 % UPDATE - Added the wiener2 noise filtering function
 
 % Last new step
@@ -309,7 +399,7 @@ skeletor=bwareaopen(skeletor,35);
 
 
 % destroy small branches -- BE CAREFUL: IN PICTURE2 DESTROYS ROOTS --- FIX IT.
-skeletor = bwmorph(skeletor,'spur',25); 
+skeletor = bwmorph(skeletor,'spur',20); 
 
 % get rid of isolated non-root structures (< 35 pixels), BUT BE CAREFUL: WE CAN
 % DESTROY ROOTS
@@ -326,16 +416,16 @@ skeletor=bwareaopen(skeletor,35);
 
 skeletor2 = imfill(brighttst,'holes');
 
-skeletor2 = fibermetric(skeletor2,20, 'StructureSensitivity', 0.04);
+skeletor2 = fibermetric(skeletor2,20, 'StructureSensitivity', 0.4);
 
 %Some Testing showed that
 % bwareaopen(imbinarize(wiener2(imfill(skeletor,'holes'),[1 12]),'adaptive','Sensitivity',0.45),400)
 % is very good, so we will do the necessary steps (16.7.18 18:56)
 
 skeletor2 = imfill(skeletor2,'holes');
-skeletor2 = wiener2(skeletor2,[1 12]);
+skeletor2 = wiener2(skeletor2,[1 2]); 
 
-skeletor2=imbinarize(skeletor2,'adaptive','Sensitivity',0.45);
+skeletor2=imbinarize(skeletor2,'adaptive','Sensitivity',0.60);
 
 
 % Last new step
@@ -348,8 +438,8 @@ skeletor2=imfill(skeletor2,'holes');
 skeletor2=bwmorph(skeletor2,'skel',Inf);
 skeletor2=imfill(skeletor2,'holes');
 skeletor2=bwmorph(skeletor2,'bridge',Inf);
-skeletor2=bwareaopen(skeletor2,30);
-skeletor2=bwmorph(skeletor2,'spur',10); % Kind of a success. With these functions we get roots without little branches.
+skeletor2=bwareaopen(skeletor2,5000);
+skeletor2=bwmorph(skeletor2,'spur',1); % Kind of a success. With these functions we get roots without little branches.
 
 % figure
 %  imshowpair(lychcrop2*2,skeletor2); % TEST
@@ -364,39 +454,119 @@ skeletor2=bwmorph(skeletor2,'spur',10); % Kind of a success. With these function
  uniskel=0.5*(skeletor+skeletor2);
  uniskel(uniskel>0)=1;
  
- uniskel=bwmorph(uniskel,'spur',16); % Kind of a success. With these functions we get roots without little branches.
-
- uniskel = imfill(uniskel,'holes');
-uniskel = bwmorph(uniskel,'skel',Inf);
-uniskel=bwmorph(uniskel,'spur',1);
-
-% After some testing around, I arrived at this. Will now try other roots
+ uniskel=bwmorph(uniskel,'spur',15); % Kind of a success. With these functions we get roots without little branches.
+% for i=1:8
+%  uniskel = imfill(uniskel,'holes');
+% uniskel = bwmorph(uniskel,'skel',Inf);
+% 
+% % Trying to implement the idea from 18.7.18 18:13 - see log
+% %uniskel=uniskel-bwmorph(uniskel,'branchpoints',1);
+% uniskel=uniskel-bwmorph(uniskel,'endpoints',1);
+% 
+% uniskel=bwmorph(uniskel,'bridge',Inf);
+% uniskel=bwareaopen(uniskel,50);
+% end
+%uniskel=bwmorph(uniskel,'spur',3);
+% After some testing aroung, I arrived at this. Will now try other roots
 % (16.7.18 19:18).
- figure
+% figure
  %TESTING REGION
 % figure
  % imshowpair(skeletor+2*skeletor2,uniskel,'montage');
  imshowpair(lychcrop2*2,uniskel);
  
  %% % Instead of working on the whole window, we will work on each root separately and so ->
+%   figure
+%   [workskel,workcrop] = imcrop(uniskel);
+%   close
+%   lychcrop2(:,:,1:3)=imcrop(lychcrop2(:,:,1:3),workcrop);
+% % close % Closes figure
+% % imshow(workskel)
+%  
+%  
+%  % Vectors for positions of 1's (new y ordered [y after rotation])
+%  [skerowy,skecoly] = find(workskel);
+%  
+%  % And a matrix -(??Yaron not sure)
+% % skelmaty = cat(2,skerowy,1980.-skecoly);
+%  skelmaty = cat(2,skerowy,skecoly);
+%   
+%  % Creating a rotated matrix
+%  workskelR=imrotate(workskel,90);
+%  
+%  % Vectors for positions of 1's (new x ordered [x after rotation])
+%  [skerowx,skecolx] = find(workskelR);
+%  
+%  % And a matrix
+%  skelmatx = cat(2,skecolx,skerowx);
  
- workskel = imcrop(uniskel);
+ %% % LOG - Started updating at 17.7.18 10:53
+ 
+ % Had a problem that the colour filter kind of destroyed the root. So I
+ % opened a live script and started tweaking. Turns out the grayness
+ % checker was too restrictive. So I'm trying out an approach based on the
+ % original color ranges' size.
+ 
+ % 11:10
+ % Decided to adjust the previous idea by applying a multiplication to
+ % adjust to the multiplication of the data itself. Noticed another
+ % problem: now the root is cut. Will first try to reduce spur.
+ % It was fixd at the cost of a thorn.
+ % Will now apply to original code.
+ 
+ % 11:26
+ % Decided to check to loop I previously used in the broghtness filter.
+ % The original one is too much. Will try tweaking.
+ % Found that if I tweak the mult. factor to 1.1 And add a scaled filter
+ % for a bottom constraint I get better results. Will try some more
+ % tweaking. Changed the number of runs to 7.
+ % Will now apply to original code.
+ 
+ % 12:26
+ % We will now try inverting the image at the beginning as per 
+ % request.
+ % Also, will now try median filtering before the user chooses points, both for
+ % his sake and the script's.
+ % The median filtering was a complete failure. Will try to somehow
+ % deconvolve/deblur. The good functions require something called PSF but
+ % there is a blind function that uses a guess for PSF and returns a better
+ % estimate. So it is possible to then immidiately use a better function.
+ % I shall test in the live script.
 
-% imshow(workskel)
  
  
- % Vectors for positions of 1's (new y ordered [y after rotation])
- [skerowy,skecoly] = find(workskel);
+ % %18.7.18% %
  
- % And a matrix -(??Yaron not sure)
-% skelmaty = cat(2,skerowy,1980.-skecoly);
-% skelmaty = cat(2,skerowy,skecoly);
-  
- % Creating a rotated matrix
- workskelR=imrotate(workskel,-90);
+ %10:41
+ % Had an idea: checking the surroundings of the points and if they are
+ % bright then choose a smaller crop window. Will try to implement now.
  
- % Vectors for positions of 1's (new x ordered [x after rotation])
- [skerowx,skecolx] = find(workskelR);
+ % 13:16
+ % There are some updates written all over, but that's not why I'm here.
+ % It would seem the filters are being too restrictive on one of the
+ % roots. first og all, removed 2 excess medfilts and decided to add a
+ % condition that if the color ranges are too small so we'll enlarge them.
  
- % And a matrix
- skelmatx = cat(2,skecolx,skerowx);
+ % 13:36
+ % Still didn't do the condition but I did tweak the color difference,
+ % which didn't work well, which made me decide to do the
+ % *1.1*1.1*(1.1+_^2) even earlier and activate it on the color filters as
+ % well. and ergo the brightness filter will also be affected.
+ 
+ % 18:13
+ % Had a genius idea on how to remove thorns EFFECTIVELY
+ % Doing skel-bwmorph(branchpoints) and then bwareaopen and then fill in
+ % the gaps. Wiil try
+ 
+ % 18:28
+ % maybe removing the end points before performing the cleaning will hell.
+ 
+ % 19.7.18
+ 
+ % 1:23
+ % Will try to use 'adaptthresh' function on the lychcrop2 at the beginning
+ 
+ % 1:47
+ % After finding that you can change the neighborhood size achieved good
+ % results. Will try to implement at the beginning.
+ 

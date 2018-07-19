@@ -27,15 +27,18 @@ lych_tst1=double(lych_tst1) /255; % Converting to double
 % ask user to draw window
 lychcrop1 = imcrop(lych_tst1);
 %
-%% % Adding Colour separation filtering
+
+%% APPROACH 1: 
+%% 1. CONTRAST ENHANCEMENT (first filter)
+%% % Adding Colour separation filtering v.1
 
 % We start with the brightness based filteration in order to enhance the
 % difference between the color channels
-
 Imtst = lychcrop1*3;
 
-% Doing a scaled enhancment - everything that isn't black gets brighter,
+% Doing a scaled enhancement - everything that isn't black gets brighter,
 % and the brighter you are the brighter you get
+% HANDPICKED / TRIAL&ERROR -- unscalable(?)
 Imtst = Imtst.*1.1;
 Imtst = Imtst.*1.1;
 Imtst = Imtst.*(1.1+Imtst.^2);
@@ -114,7 +117,7 @@ Imtstdum3 = cat(3, ImtstR, ImtstG, ImtstB); % Concatenating the seperate R G and
 % 
 % title('On the right : Image after Scaled multi - phase filtarisation attempt. On the left : after an additional R-G & R-B & G-B difference based filtering');
 
-% Grayscaling it now
+%% 2. GRAYSCALING
 graywarden = rgb2gray(Imtstdum3);
 
 % figure
@@ -127,12 +130,10 @@ graywarden = rgb2gray(Imtstdum3);
 graywarden(graywarden>0.76)=0; % Much better. Eliminates the pipettes without losing too much of the roots
 
 
-
-%%
+%% APPROACH 2:
+%% BRIGHTNESS FILTER (intensity based)
 % The 'If it is brighter than bright eliminate it' approach:
 % we'll carefully enhance brightness and then get rid of too bright spots.
-
-
 
 % % Choosing a relevant window - Found a much better approach - using imcrop
 % if(strcmp(file_name,'Lychee_test1.jpg')==1)
@@ -188,9 +189,12 @@ brighttst = rgb2gray(Imtstbri);
  
  
 
-%% %THE BEST APPROACH is this + the intensity filter. Not an average.
+%% SKELETONISATION PREPARATION + EXECUTION
+ %% %THE BEST APPROACH is this + the intensity filter. Not an average.
 % % Trying a set of binarizing, getting rid of isolated points, filling stuff
 % % and then skeletonizing and other methods.
+%% APPROACH 1:
+%% 2. BINARISATION
 skeletor=imbinarize(wiener2(graywarden,[1 2]),'adaptive','Sensitivity',0.45);
 % UPDATE - Added the wiener2 noise filtering function
 
@@ -198,14 +202,16 @@ skeletor = medfilt2(skeletor);
 % Added the medfilt2 filtering function to try and improve the process to
 % exclude closed rings (loops) and such
 
-
 % fill in holes in the binarised image
 skeletor=imfill(skeletor,'holes');
 % clean isolated pixels until image series converges  -- DOES NOT CHANGE MUCH, sort of safety measure
 skeletor=bwmorph(skeletor,'clean',Inf);
+
 %  extract skeleton
 skeletor=bwmorph(skeletor,'skel',Inf);
 % fill in holes b/c skeltetisation creates holes sometimes
+
+%% further cleaning
 skeletor=imfill(skeletor,'holes');
 % close small gaps
 skeletor=bwmorph(skeletor,'bridge',Inf);
@@ -268,6 +274,7 @@ skeletor = bwmorph(skeletor,'spur',10);
 % figure
 % imshowpair(lych_tst1(805:1897,361:2815,:),skeletor);
 
+%% APPROACH 2:
 %% % A new idea: combining the two methods: taking both the skeleton of the color method and the intensity method and adding instead of averaging
 % I shall now add the second one here
 
@@ -303,12 +310,11 @@ skeletor2=bwmorph(skeletor2,'spur',10); % Kind of a success. With these function
 % 
 % figure
 %  imshowpair(lychcrop1*3,skeletor+skeletor2);
-%% %A unified front
+
+%% MERGING APPROACHES: A unified front -- to get a continuous roos(?)
  % The avarage binarized:
  uniskel=0.5*(skeletor+skeletor2);
  uniskel(uniskel>0)=1;
-
- 
  
  %% % Instead of working on the whole window, we will work on each root separately and so ->
  
@@ -347,8 +353,6 @@ skeletor2=bwmorph(skeletor2,'spur',10); % Kind of a success. With these function
 
 %% % UPDATE,9.7.18 13:57 - There are many cool functions in the image processing 
 % tool which kind of render a lot of this work obsolete
-
-
 
 %  J = imcrop(lych_tst1);
 % This one allows the user to crop the image as he/she desires.
