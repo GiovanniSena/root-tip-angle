@@ -212,12 +212,12 @@ cfiltB = [mean(lychpcolor(:,3))-3*std(lychpcolor(:,3)) mean(lychpcolor(:,3))+3*s
 % above filters
 brighfilt = (cfiltR+cfiltG+cfiltB)./3;
 
-%% APPROACH 1: USING INPUT FROM USER TO ESTIMATE THE RANGE
+%% APPROACH 1: USING INPUT FROM USER TO ESTIMATE THE RANGE of the root colours
 %% Adding Colour separation filtering
 
 % UPDATE 16.718 12:06 - Now that we receive the poins from the user, we can
-% do an initial color filtering based on the R G & B values of those
-% points. After that, we will apply the gray-ing filter from before.
+% do an initial color filtering based on the RGB values of those
+% points. After that, we will apply the graying filter from before.
 Imtst = lychcrop2;
 
 % % Doing a scaled enhancment - everything that isn't black gets brighter,
@@ -225,9 +225,9 @@ Imtst = lychcrop2;
 % Imtst = Imtst.*1.1;
 % Imtst = Imtst.*1.1;
 % Imtst = Imtst.*(1.1+Imtst.^2);
-% Gamma correction conflixts with this and is better
+% Gamma correction conflicts with this and is better
 
-% Seperate to R G & B matrices
+% Seperate to RGB matrices
 ImtstR=Imtst(:,:,1);
 ImtstG=Imtst(:,:,2);
 ImtstB=Imtst(:,:,3);
@@ -250,7 +250,7 @@ ImtstR(filmaskB)=0;
 ImtstG(filmaskB)=0;
 ImtstB(filmaskB)=0;
 
-Imtst = cat(3, ImtstR, ImtstG, ImtstB); % Concatenating the seperate R G and B matrices to reproduce an altered image.
+Imtst = cat(3, ImtstR, ImtstG, ImtstB); % Concatenating the seperate RGB matrices to reproduce an altered image.
 Imbacktst = Imtst; % I'll back it up for now until TESTING some of the things is over
 
 clear('filmaskR','filmaskG','filmaskB') %  ,'rootx','rooty')
@@ -276,7 +276,7 @@ clear('filmaskR','filmaskG','filmaskB') %  ,'rootx','rooty')
 % test if difference between R and G channel are above threshold
 filmask = (Imtst(:,:,1)-Imtst(:,:,2))>(1.5*mean([cfiltR(2)-cfiltR(1),cfiltG(2)-cfiltG(1)]));
 
-% Seperate to R G & B matrices
+% Separate to RGB matrices
 ImtstR=Imtst(:,:,1);
 ImtstG=Imtst(:,:,2);
 ImtstB=Imtst(:,:,3);
@@ -286,14 +286,14 @@ ImtstG(filmask)=0;
 ImtstB(filmask)=0;
 
 % rebuild RGB image
-Imtst = cat(3, ImtstR, ImtstG, ImtstB); % Concatenating the seperate R G and B matrices to reproduce an altered image.
+Imtst = cat(3, ImtstR, ImtstG, ImtstB); % Concatenating the seperate RGB matrices to reproduce an altered image.
 
 % Second - R to B
 
 % Creating the filtering mask
 filmask = (Imtst(:,:,1)-Imtst(:,:,3))>(1.5*mean([cfiltR(2)-cfiltR(1),cfiltB(2)-cfiltB(1)]));
 
-% Seperate to R G & B matrices
+% Seperate to RGB matrices
 ImtstR=Imtst(:,:,1);
 ImtstG=Imtst(:,:,2);
 ImtstB=Imtst(:,:,3);
@@ -310,7 +310,7 @@ Imtst = cat(3, ImtstR, ImtstG, ImtstB); % Concatenating the seperate R G and B m
 % Creating the filtering mask
 filmask = (Imtst(:,:,2)-Imtst(:,:,3))>(1.5*mean([cfiltB(2)-cfiltB(1),cfiltG(2)-cfiltG(1)]));
 
-% Seperate to R G & B matrices
+% Seperate to RGB matrices
 ImtstR=Imtst(:,:,1);
 ImtstG=Imtst(:,:,2);
 ImtstB=Imtst(:,:,3);
@@ -333,18 +333,18 @@ graywarden = rgb2gray(Imtst);
 
 Imtstbri = lychcrop2;
 
-% % Doing a scaled enhancEment - everything that isn't black gets brighter,
+% % Doing a scaled enhancement - everything that isn't black gets brighter,
 % % and the brighter you are the brighter you get
 % Imtstbri = Imtstbri.*1.1;
 % Imtstbri = Imtstbri.*1.1;
 % Imtstbri = Imtstbri.*(1.1+Imtstbri.^2);
-% Gamma correction conflixts with this and is better
+% Gamma correction conflicts with this and is better
 
 % Grayscaling it. Sooner than before, and maybe the whole loop will become
 % obsolete.
 brighttst = rgb2gray(Imtstbri);
 
-% Creating a filtering mask according to the brightness rang.
+% Creating a filtering mask according to the brightness rank.
 filmask = brighttst<brighfilt(1) | brighttst>brighfilt(2);
 
 brighttst(filmask)=0;
@@ -419,10 +419,10 @@ while (flag == true)
     
     
 end
-%% %THE BEST APPROACH is this + the intensity filter. Not an average.
+%% %%%THE BEST APPROACH is this + the intensity filter. Not an average.
 
 % Trying to use fibermetric to get rid of the annoying thorns without
-% sacrifiacing root. Hopefully, it will make the rest of the section become
+% sacrificing root. Hopefully, it will make the rest of the section become
 % better. First imfill though
 skeletor = imfill(graywarden,'holes');
 % function that enhances tubular structures(?)
@@ -481,7 +481,7 @@ skeletor=bwareaopen(skeletor,35);
 %  figure
 %  imshowpair(lychcrop2*2,skeletor); %TEST
 
-%% % The intensity method skeleton
+%% % AD APPROACH 2: The intensity method skeleton
 % I shall now apply the new refined process in the hopes of it working
 % smoothly.
 % SEE COMMENTS IN PREVIOUS SECTION PLEASE.
@@ -521,7 +521,7 @@ skeletor2=bwmorph(skeletor2,'spur',15); % Kind of a success. With these function
 
 % figure
 %  imshowpair(lychcrop2*2,skeletor+2*skeletor2); %TEST
-%% %A unified front
+%% COMBINING APPROACH 1 + 2: A unified front
 % The avarage binarized:
 uniskel=0.5*(skeletor+skeletor2);
 uniskel(uniskel>0)=1;
