@@ -1,0 +1,48 @@
+#===============================================================================
+#                               Steps of lychtest2.m                           #
+#===============================================================================
+
+PREPROCESSING THE IMAGE 
+
+0) User selects image. 
+
+
+1) Treating the image 
+- multiplying to enhance contrast
+- gamma correction
+- adaptive thresholding
+- inverting image
+
+2) User draws a window around root of interest, samples 5-10 points of chosen root.
+Using the mean value and standard deviation of the pixel intensity of these points a thresholding range is found. Say [mu-3sigma,mu+3sigma]. 
+(Using the same threshold for all the images in the experiment was not successful as the noise patterns of the images vary too much.)
+
+
+3) Treating the cropped image using different filters
+
+Approach 1: Colour separation filtering 
+- based on RGB values of points
+- gray scales image
+
+Approach 2: Brightness filtering (intensity-based approach)
+- enhances brightness 
+- eliminates too bright spots
+
+4) SKELETONIZATION
+- unified approach (approach 1+2)
+
+5) Optional: additional cleaning
+- iteratively removing bigger and bigger connected objects (in steps of 30 pixels)
+
+RETURNS: matrix of x- and y-values of skeleton
+
+
+#===============================================================================
+#                               Computing the curvature/ skeleton              #
+#===============================================================================
+
+Ideas:
+Only to perform on the tip of the root
+* For each root we then get the list of point belonging to the tip (upper x- and y-values) and we compute the curvature (eg on a 3-point polygonal chain)
+* Computing the local curvature, from that take the maximum, and compute the angle using the curvature and arclength
+
