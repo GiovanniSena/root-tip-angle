@@ -32,14 +32,31 @@ for i = 1:length(skelmatR(:,1))-2
     s = (a+b+c)/2;
     A = sqrt(s*(s-a)*(s-b)*(s-c)); % Area of triangle
     K(i) = 4*A/(a*b*c) % Curvature of circumscribing circle
+    K_2(i) = 2*abs((x2-x1).*(y3-y1)-(x3-x1).*(y2-y1)) ./ ...
+        sqrt(((skelmatR(i+1,1)-skelmatR(i,1)).^2+(skelmatR(i+1,2)-skelmatR(i,2)).^2)*((skelmatR(i+2,1)-skelmatR(i,1)).^2+(skelmatR(i+2,2)-skelmatR(i,2)).^2)*((skelmatR(i+2,1)-skelmatR(i+1,1)).^2+(skelmatR(i+2,2)-skelmatR(i+1,2)).^2));
 end
 plot(K)
+plot(K_2)
 % % or alternatively:
 % a = sqrt((x1-x2)^2+(y1-y2)^2); % The three sides
 % b = sqrt((x2-x3)^2+(y2-y3)^2);
 % c = sqrt((x3-x1)^2+(y3-y1)^2);
 % A = 1/2*abs((x1-x2)*(y3-y2)-(y1-y2)*(x3-x2)); % Area of triangle
 % K = 4*A/(a*b*c); % Curvature of circumscribing circle
+
+
+% Approximation to the curve's curvature at the middle point. (x2,y2), of the three points."
+% To have used 'cftool' you must have had the coordinates of a set of points that determined your curve. 
+% If you are very confident of the accuracy of these points, you can approximate the curvature at a point (x2,y2) 
+% by the curvature of the unique circle that goes through the three successive points (x1,y1), (x2,y2), and (x3,y3). 
+% Let (x1,y1), (x2,y2), and (x3,y3) be three successive points on your curve. 
+% The curvature of a circle drawn through them is simply four times the area of the triangle 
+% formed by the three points divided by the product of its three sides. 
+% Using the coordinates of the points this is given by:
+% K = 2*abs((x2-x1).*(y3-y1)-(x3-x1).*(y2-y1)) ./ ...
+%   sqrt(((x2-x1).^2+(y2-y1).^2)*((x3-x1).^2+(y3-y1).^2)*((x3-x2).^2+(y3-y2).^2));
+%   see K_2(i)
+
 
 
 %% APPROACH 2:  ANGLE BETWEEN TWO POINTS USING SCALAR PRODUCT
@@ -77,7 +94,11 @@ i = 3
 %end
 plot(curv)
 
-%% APPROACH 4: INTERPOLATION -- 9 POINTS
+%% APPROACH 4: 
+% https://www.researchgate.net/post/What_are_simple_methods_for_calculating_curvature_of_a_curve
+
+
+%% APPROACH 5: INTERPOLATION -- 9 POINTS
 
 % Use skeleton/bwboundaries to get a list of the (x,y) boundary coordinates. 
 % Run around that border taking a section of the curve, say 9 elements, and fit 
