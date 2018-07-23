@@ -2,7 +2,8 @@
 % 23.7. ~noon
 % Computes the curvature of the root tip
 
-%% APPROACH 1: TRIANGLE -- 3 POINTS %%%%% DOES NOT WORK WELL B/C OF NON-DIFFERNTIABILITY OF LINE
+%% APPROACH 1: CURVATURE VIA TRIANGLE -- 3 POINTS 
+%%%%% DOES NOT WORK WELL B/C OF NON-DIFFERENTIABILITY OF LINE
 
 % My formula for curvature is that of a curve defined in terms of a parameter t 
 % in which x?, y?, x?, and y? all refer to derivatives with respect to that parameter. 
@@ -16,13 +17,13 @@
 % Suppose (x1,y1), (x2,y2), and (x3,y3) are the coordinates of three adjacent points 
 % on the curve. The computation can go as follows:
 
-% x1 = skelmatR(1,1)
-% x2 = skelmatR(2,1)
-% x3 = skelmatR(3,1)
+% x1 = skelmatR(1,1);
+% x2 = skelmatR(2,1);
+% x3 = skelmatR(3,1);
 % 
-% y1 = skelmatR(1,2)
-% y2 = skelmatR(2,2)
-% y3 = skelmatR(3,2)
+% y1 = skelmatR(1,2);
+% y2 = skelmatR(2,2);
+% y3 = skelmatR(3,2);
 
 for i = 1:length(skelmatR(:,1))-2
     a = sqrt((skelmatR(i,1)-skelmatR(i+1,1))^2+(skelmatR(i,2)-skelmatR(i+1,2))^2); % The three sides
@@ -41,7 +42,42 @@ plot(K)
 % K = 4*A/(a*b*c); % Curvature of circumscribing circle
 
 
-%% APPROACH 2: INTERPOLATION -- 9 POINTS
+%% APPROACH 2:  ANGLE BETWEEN TWO POINTS USING SCALAR PRODUCT
+% using matlab function 'atan2' (more accurate for this purpose than 'acos'). 
+% Let P0 = [x0;y0] be a vector of x,y coordinates for the vertex of the angle 
+% to be measured and P1 = [x1;y1] and P2 = [x2;y2] be vectors for points on 
+% the two lines connecting them to P0.
+
+for i = 1:length(skelmatR(:,1))-2
+    x10 = skelmatR(i,1)-skelmatR(i+1,1);
+    y10 = skelmatR(i+1,2)-skelmatR(i,2);
+    x20 = skelmatR(i+2,1)-skelmatR(i+1,1);
+    y20 = skelmatR(i+2,2)-skelmatR(i+1,2); 
+    ang(i) = atan2(abs(x10*y20-x20*y10),x10*y10+x20*y20)
+end
+plot(ang)
+
+%%  APPROACH 3: CURVATURE USING FORMULA FROM PAPER ROBERT ISRAEL 
+% https://math.stackexchange.com/questions/1483105/matlab-code-for-finding-the-curvature-of-a-curve-using-given-data-points
+%%%%% DOES NOT WORK WELL: inf values
+
+i = 3
+%for i = 1:length(skelmatR(:,1)) 
+%     x = skelmatR(i,1);
+%     y = skelmatR(i,2);
+%     mx = mean(x); my = mean(y);
+    mx = mean(skelmatR(:,1)); my = mean(skelmatR(:,2));
+    X = x - mx; Y = y - my; % Get differences from means
+    dx2 = mean(X.^2); dy2 = mean(Y.^2); % Get variances
+    t = [X,Y]\(X.^2-dx2+Y.^2-dy2)/2; % Solve least mean squares problem
+    a0 = t(1); b0 = t(2); % t is the 2 x 1 solution array [a0;b0]
+    r = sqrt(dx2+dy2+a0^2+b0^2); % Calculate the radius
+    a = a0 + mx; b = b0 + my; % Locate the circle's center
+    curv(i) = 1/r % Get the curvature
+%end
+plot(curv)
+
+%% APPROACH 4: INTERPOLATION -- 9 POINTS
 
 % Use skeleton/bwboundaries to get a list of the (x,y) boundary coordinates. 
 % Run around that border taking a section of the curve, say 9 elements, and fit 
@@ -137,3 +173,10 @@ for k = halfWidth+1 : length(skelmatR(:,1)) - halfWidth
 	thisColor = myColorMap(thisIndex, :);
 	plot(skelmatR(k,1), skelmatR(k,2), '.', 'MarkerSize', 25, 'Color', thisColor);
 end
+
+
+%% COMPUTE CENTRAL ANGLE
+% central angle in radians a = arc length s / radius r
+
+% TODO:
+% compute arc length using pairwise segment lengths
