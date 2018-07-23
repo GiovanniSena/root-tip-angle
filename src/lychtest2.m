@@ -609,9 +609,9 @@ end
 imshowpair(lychcrop2*2,uniskel);
 
 %% % Instead of working on the whole window, we will work on each root separately and so ->
-   figure
-   [workskel,workcrop] = imcrop(uniskel);
-   close
+%    figure
+%    [workskel,workcrop] = imcrop(uniskel);
+%    close
 %   lychcrop2(:,:,1:3)=imcrop(lychcrop2(:,:,1:3),workcrop);
 % % close % Closes figure
 % % imshow(workskel)
@@ -624,8 +624,14 @@ imshowpair(lychcrop2*2,uniskel);
 % % % skelmat = cat(2,skerowy,1980.-skecoly);
 %   skelmat = cat(2,skecoly,skerowy);
 %
+
 %  % Creating a rotated matrix
-  workskelR=imrotate(workskel,90);
+[lastrow, junk] = find(uniskel, 1, 'last' ); % last white pixel is tip of the root
+uniskelsize = size(uniskel);
+crop_window = [0, lastrow-50, uniskelsize(2), 65];
+   workskel = imcrop(uniskel,crop_window);
+   workskelR=imrotate(workskel,90);
+%  workskelR=imrotate(uniskel,90);
 %
 %  % Vectors for positions of 1's (new x ordered [x after rotation])
   [skerowx,skecolx] = find(workskelR);
