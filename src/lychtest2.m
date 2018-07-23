@@ -609,29 +609,29 @@ end
 imshowpair(lychcrop2*2,uniskel);
 
 %% % Instead of working on the whole window, we will work on each root separately and so ->
-%   figure
-%   [workskel,workcrop] = imcrop(uniskel);
-%   close
+   figure
+   [workskel,workcrop] = imcrop(uniskel);
+   close
 %   lychcrop2(:,:,1:3)=imcrop(lychcrop2(:,:,1:3),workcrop);
 % % close % Closes figure
 % % imshow(workskel)
 %
 %
-%  % Vectors for positions of 1's (new y ordered [y after rotation])
-%  [skerowy,skecoly] = find(workskel);
+% %  % Vectors for positions of 1's (new y ordered [y after rotation])
+%   [skerowy,skecoly] = find(workskel);
 %
-%  % And a matrix -(??Yaron not sure)
-% % skelmaty = cat(2,skerowy,1980.-skecoly);
-%  skelmaty = cat(2,skerowy,skecoly);
+% %  % And a matrix -(not sure)
+% % % skelmat = cat(2,skerowy,1980.-skecoly);
+%   skelmat = cat(2,skecoly,skerowy);
 %
 %  % Creating a rotated matrix
-%  workskelR=imrotate(workskel,90);
+  workskelR=imrotate(workskel,90);
 %
 %  % Vectors for positions of 1's (new x ordered [x after rotation])
-%  [skerowx,skecolx] = find(workskelR);
+  [skerowx,skecolx] = find(workskelR);
 %
 %  % And a matrix
-%  skelmatx = cat(2,skecolx,skerowx);
+  skelmatR = cat(2,skecolx,skerowx);
 
 %% % LOG - Started updating at 17.7.18 10:53
 
