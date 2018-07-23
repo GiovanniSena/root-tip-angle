@@ -16,13 +16,23 @@
 % Suppose (x1,y1), (x2,y2), and (x3,y3) are the coordinates of three adjacent points 
 % on the curve. The computation can go as follows:
 
-a = sqrt((x1-x2)^2+(y1-y2)^2); % The three sides
-b = sqrt((x2-x3)^2+(y2-y3)^2);
-c = sqrt((x3-x1)^2+(y3-y1)^2);
-s = (a+b+c)/2;
-A = sqrt(s*(s-a)*(s-b)*(s-c)); % Area of triangle
-K = 4*A/(a*b*c); % Curvature of circumscribing circle
+% x1 = skelmatR(1,1)
+% x2 = skelmatR(2,1)
+% x3 = skelmatR(3,1)
+% 
+% y1 = skelmatR(1,2)
+% y2 = skelmatR(2,2)
+% y3 = skelmatR(3,2)
 
+for i = 1:length(skelmatR(:,1))-2
+    a = sqrt((skelmatR(i,1)-skelmatR(i+1,1))^2+(skelmatR(i,2)-skelmatR(i+1,2))^2); % The three sides
+    b = sqrt((skelmatR(i+1,1)-skelmatR(i+2,1))^2+(skelmatR(i+1,2)-skelmatR(i+2,2))^2);
+    c = sqrt((skelmatR(i+2,1)-skelmatR(i,1))^2+(skelmatR(i+2,2)-skelmatR(i,2))^2);
+    s = (a+b+c)/2;
+    A = sqrt(s*(s-a)*(s-b)*(s-c)); % Area of triangle
+    K(i) = 4*A/(a*b*c) % Curvature of circumscribing circle
+end
+plot(K)
 % % or alternatively:
 % a = sqrt((x1-x2)^2+(y1-y2)^2); % The three sides
 % b = sqrt((x2-x3)^2+(y2-y3)^2);
