@@ -1,6 +1,6 @@
 % curvature.m
 % 23.7. ~noon
-% Computes the curvature of the root tip
+% Approaches to compute the curvature/angle of the root tip
 
 %% APPROACH 1: CURVATURE VIA TRIANGLE -- 3 POINTS 
 %%%%% DOES NOT WORK WELL B/C OF NON-DIFFERENTIABILITY OF LINE
