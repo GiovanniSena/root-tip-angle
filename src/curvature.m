@@ -75,7 +75,13 @@ for i = 1:length(skelmatR(:,1))-2
 end
 plot(ang)
 
-%%  APPROACH 3: CURVATURE USING FORMULA FROM PAPER ROBERT ISRAEL 
+
+%% APPROACH 3: 
+% https://www.researchgate.net/post/What_are_simple_methods_for_calculating_curvature_of_a_curve
+% taking the gradient of a grayscale image 
+% DOES NOT WORK ON OUR TYPE OF DATA (list of x- and y-coordinates)
+
+%%  APPROACH 4: CURVATURE USING FORMULA FROM PAPER ROBERT ISRAEL 
 %%%%% DOES NOT WORK WELL: inf values
 
 %i = 3
@@ -96,11 +102,6 @@ for i = 1:length(skelmatR(:,1))
 end
 plot(curv)
 
-%% APPROACH 4: 
-% https://www.researchgate.net/post/What_are_simple_methods_for_calculating_curvature_of_a_curve
-% taking the gradient of a grayscale image 
-% DOES NOT WORK ON OUR TYPE OF DATA (list of x- and y-coordinates)
-
 %% APPROACH 5: INTERPOLATION -- 9 POINTS
 
 % Use skeleton/bwboundaries to get a list of the (x,y) boundary coordinates. 
@@ -112,11 +113,9 @@ plot(curv)
 
 % A large radius of curvature means a "flat" part of the curve while a small radius 
 % of curvature means "pointy" parts of the curve.
-% Whether it's positive or negative just says which side of the curve it's bending to. 
-% I could just take the absolute value of the curvature if I don't care which 
-% side it bends toward; however, we do care as the root bends positively
-% (clockwise).
-
+% Whether it is positive or negative just says which side of the curve it is bending to. 
+% I could just take the absolute value of the curvature if I do not care which 
+% side it bends toward; however, we do care as the root bends positively (clockwise).
 
 % I = imread('curv_circle.tif');
 % binaryImage = im2bw(I);
