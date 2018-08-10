@@ -106,10 +106,10 @@ lych_tst2 = adaptthresh(lych_tst2,1,'NeighborhoodSize',1,'Statistic','median'); 
 
 % Inverting the image
 lych_tst2 = 1.- lych_tst2;
-uiwait(msgbox('Please zoom on the area of the desired root.','User instructions 1','modal'));
+uiwait(msgbox({'Please zoom on the area of the desired root.' 'Press ANY KEY when finished'},'User instructions 1','modal'));
 image(lych_tst2);
 zoom on
-% pause
+pause
 
 assignin('base','lych_tst2',lych_tst2);
 
@@ -129,7 +129,7 @@ function point_chooser_Callback(hObject, eventdata, handles)
 if (evalin('base', 'zoom_flag') == 1)
     % Inverting the image
     lych_tst2 =  evalin('base', 'lych_tst2');
-    uiwait(msgbox('Please zoom in again.','User instructions 1','modal'));
+    uiwait(msgbox({'Please zoom in again.' 'Press ANY KEY when finished'},'User instructions 1','modal'));
     image(lych_tst2);
     zoom on
     pause
