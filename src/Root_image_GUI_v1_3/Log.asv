@@ -1,0 +1,132 @@
+*************************************************
+*----Update log-----Created: 10.8.2018,21:18----*
+*************************************************
+
+I have decided to create the beta version.
+Now that I started creating the GUI, I have decided to split the process into functions and
+use several buttons in the GUI.
+I will now start to implement.
+For the progress so far see Old_Versions_Log.
+I will start by migrating a copy of GUItest and changing it to a beta.
+
+I then went on to separarte the image choosing and image zooming into functions 
+and make the appropriate changes to the GUI code.
+
+-21:53
+I realized the flag for the zoom is no longer necessary, at least not in the 
+same manner, since I shall soon add a zoom button.
+
+-22:02
+Migrated the point choosing functionality to an external function and will
+now update to the one from lychtst3.
+
+-22:19
+I have started migrating the rest of the script.
+Started by migrating all of it to a function called root_skel.
+Now will delegate all the stuff before the imfreehand to image_process,
+the crop to an image_freecrop and the skeleton will stay where it is.
+Will create necessary buttons and callbacks.
+
+-23:04
+I thought I needed to change something I didn't need to. 
+Now I will move the image(cropped_roots_img) to the end of point_choose.
+
+-23:38
+Small change - change the prompt of the cleaning.
+Big change that will be implemented - migration of cleaning
+
+-- 11.8.18
+
+-01:32
+Discovered impoly, which might be easier to handle than imfreehand.
+But! I realized that I don't have to choose between them, I can let the user do so.
+
+-01:39
+Will try to implement the forcing of the tip now.
+Just had an idea - maybe instead of the user clumsily creating a line, we will ask him to 
+use impoly to encircle the area between the end of the skeleton and the tip
+and whiten it.
+
+-18:17
+Several minutes ago started working on implementing a save figure button.
+Had to search online for a solution for saving a specific axes.
+Will use check boxes to allow the user to save either or both of the axes.
+
+-- 12.8.18
+
+-18:45
+Decided to change a little the force tip function.
+Instead of 1 we'll try to use root_points_color.
+
+-- 13.8.18
+
+-08:53
+Am in the process of implementing the clear image (+left and right checkboxes) and show image.
+Show image becomes available after Process image.
+
+-09:25
+Decided to scrap force_tip and instead to an open polygon that forces unified skeleton.
+
+-09:30
+Moved as a result the enabling of the shower to get skel.
+
+-09:34
+Will show skeleton with picture on the right image at shoe skeleton.
+
+-10:10
+Decided to change forcetip to imline.
+
+-13:26
+Starting to implement the getting the point of most curvature in final_prep.
+Will take the point in skelmatR closest to where the user pressed.
+
+-13:35
+Decided to migrate "point_get" to a separate file so that final_prep can also use it.
+Hopefully it doesn't do problems. And removing the srcx and srcy which are redundant.
+and so IMPORTANT: POINT_CHOOSE AND POINT_GET ARE SEPARATE NOW. THE NEW FINAL_PREP 
+WILL NOT WORK PROPERLY WITH THE OLD POINT_CHOOSE AND WITHOUT A SEPARATE POINT_GET!
+
+-13:52
+I realized the save variables doesn't do what it's suposed to. Will try to fix quickly
+
+-13:59
+Will migrate the saving function to a new function.
+WARNING: Root_image_GUI_1.3 and further NEED THE NEW FUNCTION!
+
+-14:25
+Realized I had to ask the user for a point in final_skeleton for the whole curvature point
+to work. So implementation ensued
+
+-14:42
+A new decision has been made. We move the cropping in final_prep to after the user's
+point selection and we create a new skelmatR_simp which includes the whole root 
+and goes with the user's selection if he chooses to choose a point.
+
+-14:59
+Had to make more changes to var_saver but now it works! Root_image_GUI_v1.3 
+is almost ready! Or if I don't realize why it takes the wrong part of the 
+root then it's ready!
+
+-15:16 
+I understood the problem!!!
+Find uses linear indices, where it goes over the columns instead of the rows. 
+So I need to rotate unified skeleton first and then not r
+
+Name changes so far:
+lych_tst2  -> original_roots_img
+lychcrop2  -> cropped_roots_img
+graywarden -> color_filt_img
+brighttst  -> bright_filt_img
+lychsize (in image_process) -> originalsize
+lychsize (in root_skel) -> croppedsize
+lychpoi (in image_process) -> triple_root_points
+lychpoi (in root_skel) -> tip_root_point
+lychpcolor -> root_points_color
+Imtst -> colortemp
+Imtstbri -> brighttemp
+skeletor -> color_skeleton
+skeletor2 -> brightness_skeleton
+uniskel -> unified_skeleton
+superskel -> temp_skeleton
+workskel -> work_skeleton
+workskel2 -> work_skeleton2
