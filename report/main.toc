@@ -1,0 +1,56 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\contentsline {chapter}{Abstract}{iii}{section*.1}
+\contentsline {chapter}{Acknowledgements}{iv}{section*.2}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.8}
+\contentsline {section}{\numberline {1.1}Biological background}{1}{section.9}
+\contentsline {section}{\numberline {1.2}Literature review}{2}{section.10}
+\contentsline {subsection}{\numberline {1.2.1}RootTrace}{2}{subsection.11}
+\contentsline {subsection}{\numberline {1.2.2}PlantCV}{2}{subsection.12}
+\contentsline {chapter}{\numberline {2}Methods}{3}{chapter.13}
+\contentsline {section}{\numberline {2.1}Image processing}{3}{section.14}
+\contentsline {subsection}{\numberline {2.1.1}What is a digital image?}{3}{subsection.21}
+\contentsline {subsection}{\numberline {2.1.2}Image processing operation}{4}{subsection.22}
+\contentsline {subsection}{\numberline {2.1.3}Key stages in digital image processing}{4}{subsection.23}
+\contentsline {section}{\numberline {2.2}Matlab}{5}{section.24}
+\contentsline {section}{\numberline {2.3}Workflow}{5}{section.25}
+\contentsline {section}{\numberline {2.4}Pre-processing -- getting the skeleton}{5}{section.26}
+\contentsline {section}{\numberline {2.5}Computing the angle}{5}{section.27}
+\contentsline {subsection}{\numberline {2.5.1}Using the position of the tip of the root -- more in detail}{6}{subsection.28}
+\contentsline {subsection}{\numberline {2.5.2}Using the angle of the tangents to the points that are x points/pixels away from the point of highest local curvature}{7}{subsection.33}
+\contentsline {subsection}{\numberline {2.5.3}INSERT VARIOUS OTHER IDEAS OF ANGLE COMPUTATION -- even if not implemented}{7}{subsection.34}
+\contentsline {chapter}{\numberline {3}Results}{8}{chapter.35}
+\contentsline {section}{\numberline {3.1}Elaborate pre-processing tool for skeletonisation}{8}{section.36}
+\contentsline {section}{\numberline {3.2}Optimisation: Graphical User Interface (GUI)}{8}{section.37}
+\contentsline {section}{\numberline {3.3}Different ways of curvature and angle measuring}{8}{section.38}
+\contentsline {section}{\numberline {3.4}Standardised and automated version of angle computation}{8}{section.39}
+\contentsline {section}{\numberline {3.5}Comparing the automated calculated angles with the manually calculated angles}{8}{section.40}
+\contentsline {section}{\numberline {3.6}Learning \LaTeX {}}{9}{section.41}
+\contentsline {subsection}{\numberline {3.6.1}A (not so short) Introduction to \LaTeX {}}{9}{subsection.42}
+\contentsline {subsection}{\numberline {3.6.2}A Short Math Guide for \LaTeX {}}{9}{subsection.43}
+\contentsline {subsection}{\numberline {3.6.3}Common \LaTeX {} Math Symbols}{9}{subsection.44}
+\contentsline {subsection}{\numberline {3.6.4}\LaTeX {} on a Mac}{9}{subsection.45}
+\contentsline {section}{\numberline {3.7}Getting Started with this Template}{9}{section.46}
+\contentsline {subsection}{\numberline {3.7.1}About this Template}{9}{subsection.47}
+\contentsline {chapter}{\numberline {4}Discussion}{10}{chapter.48}
+\contentsline {section}{\numberline {4.1}Challenges}{10}{section.49}
+\contentsline {subsection}{\numberline {4.1.1}Low contrast}{10}{subsection.50}
+\contentsline {subsection}{\numberline {4.1.2}Objects interferring with objet of interest}{10}{subsection.51}
+\contentsline {subsection}{\numberline {4.1.3}Skeletonisation}{10}{subsection.52}
+\contentsline {subsection}{\numberline {4.1.4}Scalability}{11}{subsection.53}
+\contentsline {subsection}{\numberline {4.1.5}Reproducability}{11}{subsection.54}
+\contentsline {subsection}{\numberline {4.1.6}Problems}{11}{subsection.55}
+\contentsline {subsection}{\numberline {4.1.7}High user-interaction}{11}{subsection.56}
+\contentsline {section}{\numberline {4.2}Suggestions for future data acquisition}{11}{section.57}
+\contentsline {subsection}{\numberline {4.2.1}More focus on images}{11}{subsection.58}
+\contentsline {subsection}{\numberline {4.2.2}Less waste of resolution}{11}{subsection.59}
+\contentsline {subsection}{\numberline {4.2.3}A Short Math Guide for \LaTeX {}}{11}{subsection.60}
+\contentsline {subsection}{\numberline {4.2.4}Common \LaTeX {} Math Symbols}{11}{subsection.61}
+\contentsline {subsection}{\numberline {4.2.5}\LaTeX {} on a Mac}{11}{subsection.62}
+\contentsline {section}{\numberline {4.3}Broader application of this tool}{11}{section.63}
+\contentsline {chapter}{\numberline {5}Conclusion}{12}{chapter.64}
+\contentsline {chapter}{Bibliography}{13}{chapter*.65}
+\contentsline {chapter}{\numberline {A}Data}{14}{appendix.66}
+\contentsline {chapter}{\numberline {B}Frequently Asked Questions}{15}{appendix.67}
+\contentsline {section}{\numberline {B.1}How do I change the colors of links?}{15}{section.68}

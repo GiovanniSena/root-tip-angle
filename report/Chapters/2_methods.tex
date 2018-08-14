@@ -1,0 +1,170 @@
+% Chapter 2: METHODS
+
+\chapter{Methods} % Main chapter title
+
+\label{methods} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+%%----------------------------------------------------------------------------------------
+%
+%% Define some commands to keep the formatting separated from the content 
+%\newcommand{\keyword}[1]{\textbf{#1}}
+%\newcommand{\tabhead}[1]{\textbf{#1}}
+%\newcommand{\code}[1]{\texttt{#1}}
+%\newcommand{\file}[1]{\texttt{\bfseries#1}}
+%\newcommand{\option}[1]{\texttt{\itshape#1}}
+
+%----------------------------------------------------------------------------------------
+
+\section{Image processing}
+
+Image processing pools together a lot of different domains including physics (optics), signal processing and pattern recognition/ Machine Learning (ML) to ultimately feed computer to understand how do interpret images and make decisions based on them. 
+
+combines optics and signal processing and is often used in computer vision.
+\begin{enumerate}
+	\item Image aquisition
+	\item Image preprocessing 
+	\item Image segmentation
+	\item Image representation and description -- dep on image that you are studying
+	\item Image understanding
+	\item Results (output)
+\end{enumerate}
+
+\subsection{What is a digital image?}
+
+We operate on digital (discrete) images:
+\begin{itemize}
+	\item Sample the 2D space on a regular grid
+	\item Quantise each sample, ie round to nearest integer
+\end{itemize}
+
+If our samples are \( \Delta \) apart, we can write this as:
+\[
+f(x,y) = Quantize{f(\Delta x, \Delta y)}
+\]
+The image can now be represented as a matrix of integer values:
+
+[INSERT EXAMPLE PICTURE HERE]
+
+
+\subsection{Image processing operation}
+
+An image processing operation typically defines a new image \( g \) in terms of an existing image \( f \).
+\begin{itemize}
+	\item Transform the range of \( f \)
+	\[ 
+	g(x, y) = t(f(x,y)) 
+	\]
+	\item Transform the domain of \( f \)
+	\[
+	g(x,y) = f(t_{x}(x,y), t_{y}(x,y))
+	\]
+\end{itemize}
+
+\subsection{Key stages in digital image processing}
+
+[INSERT FLOW CHART HERE]
+
+	Problem Domain -- here plant morphology 
+\begin{itemize}
+	\item Image Aquisition
+	\item Image Enhancement -- contrasting images so human eye can best see things, manipulate values of pixels so you can best caracterise and structure them |
+	\item Morphological Processing -- growing and thinning of pixels, eg fingerpringt medical operations
+	\item Image Segmentation -- separating parts of the image such as features and object you want to look at, distribution of pixel values |
+	\item Representation \& Description -- based on quantised space that you're working in. What's realised in that digital output? Two ways to describe features being observed in that pixel space. Inverting etc
+	\item Object Recognition -- see example iris data set. cluster to identify different objects.
+	\item [Computer \& Machine Vision] -- feeds into computer vision and ML
+\end{itemize}
+	[Robotics \& AI], [Deep Learning]
+	
+	feature space that you're working in on top of your labels.
+	put in our own bias and how we train model.
+	
+	A lot of noise in the image makes it grainy. We can apply interpolation, ie smoothing the image based on its nn. bi-cubic interpolation.  Smoothes some of the details as well as a side effect, but especially the noise. -- important for edge detection later
+
+%----------------------------------------------------------------------------------------
+
+\section{Matlab}
+
+As a language we chose Matlab as it has a well-documented image processing toolbox with a very good documentation. Alternative languages are Python and Julia. 
+
+ImageJ
+
+Avizo
+
+ 
+%----------------------------------------------------------------------------------------
+
+\section{Workflow}
+
+
+Generic image processing workflow:
+
+However, every single case is different. 
+
+Skeletonisation
+
+fill in holes
+
+
+[INSERT FLOWCHART WITH SINGLE STEPS]
+
+%0) Convert the image from rgb to gray scale (matlab: rgb2gray) (3-tensor to matrix)
+%
+%intensify the matrix \arrowvert distinguish roots for user
+%highlight window \arrowvert help user where approximately roots are 
+%
+%1. The user will select a region of interest on the image so only roots appear. This window can be used over the whole experiment (as camera doesn’t move) ///TODO: or better to define window for each root?
+%
+%2. The user then clicks on some points over the roots (I'd say at least 7, preferably 10). Using the mean value and standard deviation of the pixel intensity of these points a thresholding range is found. Say [mu-2sigma,mu+2sigma]. 
+%Initially trying to use the same threshold for all the images in the experiment, maybe this will do the job already…
+%
+%3. After segmenting the images, the binary images need to postprocessed so we get rid of the bright spots and noise, eg by removing any object that has fewer than 1000 pixels (matlab: bwareaopen enough?). Then any holes that might appear in the roots need to be filled (matlab: imfill) 
+%
+%4. Hopefully obtaining the skeleton version of the binary image (matlab: bwmorph).
+%
+%5. Label each individual object in the image so they can later be processed independently (matlab: bwconncomp). 
+%6. For each root we then get the list of point belonging to the tip (upper x- and y-values) and we compute the curvature (eg on a 3-point polygonal chain)
+
+\section{Pre-processing -- getting the skeleton}
+
+The initial problem of coming up with a "good" definition by comparing different angle and curvature definition shifted. The focus was now on the pre-processing, the extracting the skeleton. 
+However, we will still present some possible definitions of angles and curvature, also not implemented in the current version of the tool.
+
+\section{Computing the angle}
+
+Once you defined the lines, it is straight-forward to compute the angle.
+
+Eg using Hough transform from Matlab Image Processing Toolbox to detect lines in an image not applicable here as highly pixled image.
+
+\subsection{Using the position of the tip of the root -- more in detail}
+
+INSERT FIGURE OF WHAT ANGLE WE CALCULATE AND WHAT IS THE ANGLE OF INTEREST. 
+USER-FRIENDLY: EASILY SWITCH BETWEEN THE TWO OF THEM.
+
+We find the angle between the two lines (point of highest mean curvture OR manually click point of highest curvature and tip and point of highest mean curvature and equally distant point/ pixel on root).
+
+There are other ways such as finding vectors on the lines and using their dot products. However, we can use simple, basic trigonometric methods as shown in figure ....
+
+We would then compute the angles of the two lines to the x-axis  in radians mode by 
+\[
+\pi - | \tan^{-1}(\frac{x(2) - x(1)}{y(2) - y(1)}) - \tan^{-1}(\frac{z(2) - z(1)}{y(2) - y(1)}) |
+\]
+or 
+\[
+180^{\circ} - | \tan^{-1}(\frac{x(2) - x(1)}{y(2) - y(1)}) - \tan^{-1}(\frac{z(2) - z(1)}{y(2) - y(1)}) |
+\]
+if we wanted it in degrees mode.
+
+The single steps are shown in figure ....
+[PSEUDOCODE]
+\begin{enumerate}
+	\item Find the slope of each line.
+	\item Find the inclination of each line using \( \alpha = \tan^{-1} m \), where  \( \alpha \) is the angle of inclination, \( m \) is the slope.
+	\item Take the difference of these two angles.
+	\item Handle the case where this difference is not an acute, ie less than 90 degrees, angle. If we get a negative angle, we take its absolute value. We want to find an acute angle, so if we calculated an obtuse angle, oe greater than 90 degrees, we just subtract the value from pi radians or 180 degrees to get the acute values.
+\end{enumerate}
+
+
+\subsection{Using the angle of the tangents to the points that are x points/pixels away from the point of highest local curvature}
+
+\subsection{INSERT VARIOUS OTHER IDEAS OF ANGLE COMPUTATION -- even if not implemented}
