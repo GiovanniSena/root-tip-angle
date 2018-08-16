@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  14 AUG 2018 20:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  15 AUG 2018 13:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1937,7 +1937,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 237.
  (./main.toc
-Overfull \hbox (22.03072pt too wide) in paragraph at lines 21--21
+Overfull \hbox (22.03072pt too wide) in paragraph at lines 22--22
  [][] [][][]\T1/ppl/m/n/10.95 Using the an-gle of the tan-gents to the points t
 hat are x points/pixels 
  []
@@ -1985,26 +1985,27 @@ MY CON-
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 23.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 35.
-
-Overfull \hbox (1.60811pt too wide) in paragraph at lines 37--38
-\T1/ppl/m/n/10.95 RootTrace [IN-SERT REF-ER-ENCE] has been de-vel-oped to mea-s
-ure root lengths across
- []
-
 1: section
 [1
 
 
 
-]
-Overfull \hbox (27.65454pt too wide) in paragraph at lines 47--48
+] [2]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 52.
+
+Overfull \hbox (1.60811pt too wide) in paragraph at lines 54--55
+\T1/ppl/m/n/10.95 RootTrace [IN-SERT REF-ER-ENCE] has been de-vel-oped to mea-s
+ure root lengths across
+ []
+
+
+Overfull \hbox (27.65454pt too wide) in paragraph at lines 64--65
 \T1/ppl/m/n/10.95 COULD HAVE USED ONE OF THESE AP-PRAOCHES, BUT STARTED FROM SC
 RATCH.
  []
 
-) [2]
+) [3]
 \openout2 = `Chapters/2_methods.aux'.
 
  (./Chapters/2_methods.tex
@@ -2017,99 +2018,95 @@ LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
 
 1: section
-[3
+[4
 
 
 
-] [4] [5]) [6] [7]
+] [5] [6] [7]) [8]
 \openout2 = `Chapters/3_results.aux'.
 
  (./Chapters/3_results.tex
 Chapter 3.
+1: section
+[9
 
-Overfull \hbox (5.85014pt too wide) in paragraph at lines 44--44
+
+
+]
+Overfull \hbox (5.85014pt too wide) in paragraph at lines 61--61
 []\T1/ppl/b/n/14.4 Comparing the au-to-mated cal-cu-lated an-gles with the man-
 
  []
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 55.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 72.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 58.
-)
-1: section
-[8
-
-
-
-] [9]
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 75.
+) [10]
 \openout2 = `Chapters/4_discussion.aux'.
 
  (./Chapters/4_discussion.tex
 Chapter 4.
 1: section
-[10
+[11
 
 
 
-]) [11]
+]) [12]
 \openout2 = `Chapters/5_conclusion.aux'.
 
  (./Chapters/5_conclusion.tex
 Chapter 5.
 )
 1: section
-[12
-
-
-
-]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 311.
-
- (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-1: section
 [13
 
 
+
 ]
+
+LaTeX Warning: Empty bibliography on input line 312.
+
 \openout2 = `Appendices/AppendixA.aux'.
 
- (./Appendices/AppendixA.tex
+(./Appendices/AppendixA.tex
 Appendix A.
 1: section
 [14
 
 
+
 ]
 Appendix B.
-)
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 17.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+))
 1: section
 [15
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 328.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 328.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 329.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 329.
  (./main.aux (./Chapters/1_introduction.aux) (./Chapters/2_methods.aux)
 (./Chapters/3_results.aux) (./Chapters/4_discussion.aux)
 (./Chapters/5_conclusion.aux) (./Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 328.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 328.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 329.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 329.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8897CC373E75F38A1FE5A9258BDFA9F3;10298.
+(rerunfilecheck)             Checksum: 7F7048EFD1EE08110F8121E99BB12CFC;9921.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32198 strings out of 493014
- 650298 string characters out of 6133351
+ 32055 strings out of 493014
+ 647571 string characters out of 6133351
  837130 words of memory out of 5000000
- 35264 multiletter control sequences out of 15000+600000
- 65449 words of font info for 130 fonts, out of 8000000 for 9000
+ 35126 multiletter control sequences out of 15000+600000
+ 65135 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,21n,82p,10377b,2245s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,21n,77p,10377b,2245s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
@@ -2117,15 +2114,14 @@ ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
-palatino/uplri8a.pfb>
-Output written on main.pdf (26 pages, 181328 bytes).
+f-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
+w/palatino/uplri8a.pfb>
+Output written on main.pdf (26 pages, 162047 bytes).
 PDF statistics:
- 483 PDF objects out of 1000 (max. 8388607)
- 440 compressed objects within 5 object streams
- 98 named destinations out of 1000 (max. 500000)
- 425 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 464 PDF objects out of 1000 (max. 8388607)
+ 422 compressed objects within 5 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 417 words of extra memory for PDF output out of 10000 (max. 10000000)
 
