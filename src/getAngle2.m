@@ -7,12 +7,25 @@ skelmatR = skelmatR_simp;
 
 % just take lower/ RHS half of the skeleton  -- ADJUST THIS, MIGHT ADD INPUT
 % PARAMETER HOW MUCH OF THE ROOT TIP WE WANT TO CONSIDER, ~0.2
+
+% vertices = skelmatR;
 vertices = skelmatR(round(length(skelmatR) - length(skelmatR)/5):end, :);
 % vertices = skelmatR(length(skelmatR)/2):end, :);
 % vertices = skelmatR(end-(length(skelmatR)/5)+1:end, end-(length(skelmatR)/5)+1:end)
-curv = LineCurvature(vertices);
-[maxValue, linearIndexesOfMaxes] = max(curv(:));
+curv = LineCurvature(vertices)
+%[maxValue, linearIndexesOfMaxes] = max(curv(:))
 
+%[linearIndexesOfMaxes, maxValue] = find((abs(curv - max(curv)) < 0.001),21)
+maximum = max(curv(:));
+[linearIndexesOfMaxes, maxValue] = find(maximum-curv<0.001)
+% if maximum is not unique
+if length(linearIndexesOfMaxes) ~= 1
+    % there is no curved tip
+    error('No unique curved root tip detected.')
+end
+
+linearIndexesOfMaxes = linearIndexesOfMaxes(end) 
+maxValue = curv(linearIndexesOfMaxes)
 
 % OPTION A:
 if ~exist('max_curv_point','var')
@@ -37,7 +50,7 @@ end
 %turningP = skelmatR(349,:) % replace 349 by "get index of turning point":
 % turningP = curvature(skelmatR)
 
-tip = skelmatR(end,:); % [305, 45]
+tip = skelmatR(end,:) % [305, 45]
 % len = length(skelmatR) - turningP_ind; % 132
 % top = skelmatR(turningP_ind - len,:);
 
@@ -53,7 +66,7 @@ aoi = acosd(sum(v1.*v2) / (norm(v1) * norm(v2)))
 %aoi = 180 - angle2 % 11.25 % wrong angle
 % aoi = angle2 - 90
 % angle3 = atan2(norm(cross(v1,v2)),dot(v1,v2)) % Angle in radians
-angle4 = atan2(v1(1), v1(2)) * 180/pi;
+angle4 = atan2(v1(1), v1(2)) * 180/pi; % does the same as aoi
 % angle4b = atan2(v1(2), v1(1)) * 180/pi
 
 ef = [0 1];
@@ -134,14 +147,16 @@ b(:,2)=invM(:,1,2).*y(:,1)+invM(:,2,2).*y(:,2)+invM(:,3,2).*y(:,3);
 b(:,3)=invM(:,1,3).*y(:,1)+invM(:,2,3).*y(:,2)+invM(:,3,3).*y(:,3);
 
 % Calculate the curvature from the fitted polygon
-k = 2*(a(:,2).*b(:,3)-a(:,3).*b(:,2)) ./ ((a(:,2).^2+b(:,2).^2).^(3/2))
+k = 2*(a(:,2).*b(:,3)-a(:,3).*b(:,2)) ./ ((a(:,2).^2+b(:,2).^2).^(3/2));
 
-% PLOT IT
+%%
+% PLOT CURVATURE
 plot(k)
 title('Curvature of the root skeleton')
 xlabel('position')
 ylabel('curvature')
 %legend('curvature')
+%%
 
 function  Minv  = inverse3(M)
 % This function does inv(M) , but then for an array of 3x3 matrices
