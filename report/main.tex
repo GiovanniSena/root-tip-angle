@@ -69,7 +69,9 @@ headsepline, % Uncomment to get a line under the header
 %	THESIS INFORMATION
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Computing angles of plant root tips} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+%\thesistitle{Computing angles of plant root tips} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+%\thesistitle{Software tool to compute angles of plant root tips}
+\thesistitle{\textit{RootSkel} -- A software tool to measure curved plant root tips}
 \supervisor{Dr Giovanni \textsc{Sena}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
 \examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
 \degree{MSc Bioinformatics and Theoretical Systems Biology} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
@@ -201,20 +203,32 @@ headsepline, % Uncomment to get a line under the header
 
 Plant morphology studies the form and structure of plants and how these develop over time under different circumstances. \\
 %It compares and interprets these structures in various plants of the same or different species which can lead to insights into the underlying biology, and the understanding of plant relationships and plant evolution.\\
-A not so frequently studied but interesting phenomenon in plant morphology is electrotropism, ie the response of a plant to an electric field, where biologists are interested in the curvature of root tip. Unlike gravitropism [DO I HAVE TO EXPLAIN IT HERE?] there exist to our knowledge no tools specifically designed to assist biologists in studying this effect, most importantly the angle resulting from the curving of root tips. This is especially relevant as the experiment setup is more complex and the images tend to be more error-prone, which is often the reason why standard gravitropism study tools fail and biologists compute angle resulting from the curved root tip manually.
+One phenomenon that, despite being first identified more than 100 years ago, has not been researched much and we know little about its underlying molecular mechanisms, is electrotropism.
+Electrotropism describes the response of a plant to an electric field; one common response is the curving of a plant’s root tip. Unlike gravitropism [DO I HAVE TO EXPLAIN IT HERE?] there exist to our knowledge no tools specifically designed to assist biologists in studying this effect, most importantly the angle resulting from the curving of root tips. This is especially relevant as the experiment setup is more complex and the images tend to be more error-prone, which is often the reason why standard gravitropism study tools fail and biologists compute angle resulting from the curved root tip manually.
 
-Here we present a novel and stand-alone software for image processing developed in MATLAB optimised for noise-intensive electrotropism images. % built from the ground up. 
-Unlike when doing the angle computation to measure the curvature of a root tip manually, our tool ensures a standardised version of the angle computation. On top of it, we  developed a user-friendly graphical user interface (GUI) that will help the user in processing the images and compute the angles in a standardised and controlled fashion.
+Here we present \textit{RootSkel}, a novel and stand-alone software for image processing developed in MATLAB, whose pipeline was optimised for noise-intensive electrotropism images. % built from the ground up. 
+Unlike when doing the angle computation to measure the curvature of a root tip manually, our tool ensures a standardised version of the angle computation. To make the tool more user-friendly, we developed a graphical user interface (GUI) that will help the user in processing the images and computing the angles in a standardised and controlled fashion.
 
-We use a data set of high-throughput time-lapse images of Arabidopsis roots from 5 experiments with 4-6 roots each containing between 32 and 36 images over a period of approximately 5 hours produced by the Plant Morphology lab at Imperial College London, we evaluate our results by comparing it to previously manually computed angles. [INCLUDE RESULTS A LA 70\% of the images could be found to be reproduced]
+%Our data set consisted of high-throughput time-lapse images of Arabidopsis roots taken by a standard Raspberry Pi V2 camera from 5 experiments with 5-6 roots each containing between 32 and 36 images over a period of approximately 5 hours. 
+
+% produced by the Plant Morphology lab at Imperial College London. 
+%We will present an example for the user on how to use the tool.
+
+%Additionally, we evaluated our results by comparing it to previously manually computed angles. [INCLUDE RESULTS A LA 70\% of the images could be found to be reproduced]
+
+Additionally we computed the angle of a an Arabidopsis root tip over one whole experiment (approximately 5 hours) and evaluated the results by comparing it to previously manually computed angles on the same images. The results show correspondence with manual angles; however, unlike the manually computed angles, using a standard definition of the angle, our software delivers angles free from human bias which makes the results comparable. Indeed, we show that on this example we can eliminate in average [INSERT VARIANCE HERE, STATE HOW MUCH HUMAN VARIANCE WE COULD ELIMINATE BY STANDARDISING IT] of human bias; further validation on more images is to be done.
+%can be done on already existing data as well as data gathered in the future. 
+Previously computed angles can be checked by using our software, and more angles of curved roots can be computed in the future and hopefully %help 
+reveal interesting insights in electrotropism. 
+Moreover, our tool is not limited to roots but could theoretically be used on any curved object; slight modifications in the code and the GUI might be necessary.
 
 
-AIMS
-METHODS
-RESULTS 
-CONCLUSION
-
-CITE SOME KEY NUMERICAL RESULTS RATHER THAN JUST GENERALITIES
+%AIMS
+%METHODS
+%RESULTS 
+%CONCLUSION
+%
+%CITE SOME KEY NUMERICAL RESULTS RATHER THAN JUST GENERALITIES
  
 \end{abstract}
 
@@ -225,9 +239,9 @@ CITE SOME KEY NUMERICAL RESULTS RATHER THAN JUST GENERALITIES
 \begin{acknowledgements}
 \addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
 
-This project was conducted under the supervision of Dr Giovanni Sena, whom I thank for his advice and guidance. Thanks also to the members of the Plant Morphogenesis Laboratory at Imperial College London, especially Nick Oliver, for their help and expertise from the biological side as well as Suhail A Islam for fixing technical issues and his incredible patience. Finally, thanks to Prof Michael PH Stumpf, Prof Michael Sternberg and others involved in conducting and overseeing the MSc in Bioinformatics and Theoretical Systems Biology at Imperial College London.
+This project was conducted under the supervision of Dr Giovanni Sena, whom I thank for his advice and guidance. Thanks also to Nick Oliver for their help and expertise from the biological side and other members from the Plant Morphogenesis Laboratory at Imperial College London, as well as Suhail A Islam for fixing technical issues and his incredible patience. Finally, thanks to Prof Michael PH Stumpf, Prof Michael Sternberg and others involved in conducting and overseeing the MSc in Bioinformatics and Theoretical Systems Biology at Imperial College London.
 
-\ldots
+%\ldots
 \end{acknowledgements}
 
 %----------------------------------------------------------------------------------------
@@ -246,10 +260,14 @@ This project was conducted under the supervision of Dr Giovanni Sena, whom I tha
 
 \begin{abbreviations}{lll} % Include a list of abbreviations (a table of two columns)
 
+%\textbf{AORC} & \textbf{A}node-\textbf{o}riented \textbf{R}oot \textbf{C}urvature & \\
+%\textbf{CORC} & \textbf{C}athode-\textbf{o}riented \textbf{R}oot \textbf{C}urvature & \\
+\textbf{EF} & \textbf{E}lectric \textbf{F}ield & \\
 \textbf{GUI} & \textbf{G}raphical \textbf{U}ser \textbf{I}nterface & \\
 \textbf{ie} & \textit{latin} \textbf{i}d \textbf{e}st & that is\\
-\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere & \\
-\textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or & \\
+
+%\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere & \\
+%\textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or & \\
 
 \end{abbreviations}
 
@@ -322,7 +340,7 @@ This project was conducted under the supervision of Dr Giovanni Sena, whom I tha
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-\include{Appendices/AppendixA}
+%\include{Appendices/AppendixA}
 %\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
 

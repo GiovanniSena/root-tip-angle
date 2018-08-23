@@ -22,73 +22,138 @@ REPRODUCABILITY OF WORK, ie make sure reader could redo it
 %%----------------------------------------------------------------------------------------
 %%----------------------------------------------------------------------------------------
 
-The following section of this report will explain the tool briefly from a technical perspective and show how to use the tool in practice. Additionally, we present an example of the tool in use.
+The following section of this report will briefly explain the tool from a technical perspective; .  %and show how to use it in practice. %Additionally, we present an example of the tool in use.
+We will present some feature highlights of the tool and we will guide the user through one example to illustrate how the tool is used in practice.
 
-The code is open-source and publically available on [INSERT GITHUB REFERENCE HERE]; all previous versions including log files can be found on [INSERT GITHUB REFERENCE HERE].
-[EMPHAISE THIS: MAKE RESEARACH TRANSPARENT]
+Additionally, we will show some validation of the tool by comparing the angle computed by our tool to the one computed manually on one time-series image data set of one Arabidopsis root. 
 
+The code is open-source and publicly available on [INSERT GITHUB REFERENCE HERE]; all previous versions including log files can be found on [INSERT GITHUB REFERENCE HERE].
+[EMPHASISE THIS: MAKE RESEARCH TRANSPARENT]
+
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 \section{Key components}
 
-Figure [INSERT REFERENCE HERE] explains the key components of this image-analysis software tool to address the problem of highly noisy electrotropism consumer camera images of Arabidopsis roots and a standardised way of computing the angle for the curved root tip. 
+Figure [INSERT REFERENCE HERE: PIPELINE FROM GUI] explains the key components of this image-analysis software tool to address the problem of highly noisy electrotropism consumer camera images of Arabidopsis roots and a standardised way of computing the angle for the curved root tip. 
 
-This tool takes the form of a MATLAB program with a graphical user interface.
+This tool takes the form of a MATLAB program with a graphical user interface (GUI).
 
-\section{Elaborate pre-processing tool for skeletonisation}
+%----------------------------------------------------------------------------------------
+\subsection{Discerning root from background}
+
+Gamma correction (imadjust)
+
+%----------------------------------------------------------------------------------------
+\subsection{Handling user's mistakes}
+
+- Are you using the user’s inputs to identify root-specific ROI to work with (instead of a single ROI)? I cannot see this in the code, but I might have missed it. I think that would be a good way to correct user’s small mistakes because it will only get a region where the root is, and it doesn’t matter if it is off by few pixels…
+
+Yes, I have added it now. I take the neighbourhood average around the pixel (for now 3x3 neighbourhood but can be changed).
+I am using adaptive thresholding using the median (much better results than the default mean, which makes sense somehow).
+
+%----------------------------------------------------------------------------------------
+\subsection{Adaptive thresholding}
+
+ Another similar approach would be to ask the user to quickly draw small ROI (rectangles) to frame each root in the inverted (much easier) image. The code could then global threshold each ROI separately and go from there.
+ 
+ I basically did this approach in lychtest1.m but using one big rectangle containing all the roots and then implemented an adaptive variable setting approach.
+ 
+ 
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\section{Workflow of skeletonisation of root}
+
+%----------------------------------------------------------------------------------------
+\subsection{Optional additional cleaning}
+
+Other than that, the user can perform iterative cleaning that gradually gets rid of those artificial branches (most of the times) as well; one has to be careful not to "loose" the root completely, but the user can undo the last cleaning step. 
+
+%----------------------------------------------------------------------------------------
+\subsection{Optional additional cropping of root}
+
+Additional cropping of the root ultimately solves the problem of getting rid of any artificial branches caused by noise close to the tip of the root.
+Also, the cropping does not have to be very accurate.
+
+
+IN EACH STEP THE USER CAN GO BACK, AND STEPS ARE ONLY PERFORMED IF NECESSARY TO SAVE TIME.
+
+
+NOISE PATTERN VARIES A LOT ACROSS IMAGES.
+
+
+The workflow developed via  many iterations on different images and 
+
+elaborate pre-procecessing tool for skeletonisation
+
 high functionality, reiterated process
 
-%----------------------------------------------------------------------------------------
 
-\section{Optimisation: Graphical User Interface (GUI)}
 
-\begin{itemize}
-	\item User interaction
-	\item Error messages if user does not enter right values.
-\end{itemize}
+Generic image processing workflow:
 
-INCLUDE FIGURES HERE.
+However, every single case is different. 
 
-%----------------------------------------------------------------------------------------
+Skeletonisation
 
-\section{Different ways of curvature and angle measuring}
+fill in holes
 
-What was implemented as we found that this approach worked best on these data and this resolution.
 
-%----------------------------------------------------------------------------------------
+[INSERT FLOWCHART WITH SINGLE STEPS]
 
-\section{Standardised and automated version of angle computation}
+%0) Convert the image from rgb to gray scale (matlab: rgb2gray) (3-tensor to matrix)
+%
+%intensify the matrix \arrowvert distinguish roots for user
+%highlight window \arrowvert help user where approximately roots are 
+%
+%1. The user will select a region of interest on the image so only roots appear. This window can be used over the whole experiment (as camera doesn’t move) ///TODO: or better to define window for each root?
+%
+%2. The user then clicks on some points over the roots (I'd say at least 7, preferably 10). Using the mean value and standard deviation of the pixel intensity of these points a thresholding range is found. Say [mu-2sigma,mu+2sigma]. 
+%Initially trying to use the same threshold for all the images in the experiment, maybe this will do the job already…
+%
+%3. After segmenting the images, the binary images need to postprocessed so we get rid of the bright spots and noise, eg by removing any object that has fewer than 1000 pixels (matlab: bwareaopen enough?). Then any holes that might appear in the roots need to be filled (matlab: imfill) 
+%
+%4. Hopefully obtaining the skeleton version of the binary image (matlab: bwmorph).
+%
+%5. Label each individual object in the image so they can later be processed independently (matlab: bwconncomp). 
+%6. For each root we then get the list of point belonging to the tip (upper x- and y-values) and we compute the curvature (eg on a 3-point polygonal chain)
 
-%----------------------------------------------------------------------------------------
-
-\section{Comparing the automated calculated angles with the manually calculated angles}
-
-%----------------------------------------------------------------------------------------
 
 Two approaches:
 1.
 Converted into gray channel images.
 2.
 
+
 %----------------------------------------------------------------------------------------
-
-\section{Learning \LaTeX{}}
-
-
-\subsection{A (not so short) Introduction to \LaTeX{}}
-
-
-\subsection{A Short Math Guide for \LaTeX{}}
-
-
-\subsection{Common \LaTeX{} Math Symbols}
-
-
-\subsection{\LaTeX{} on a Mac}
- 
 %----------------------------------------------------------------------------------------
+\section{Graphical User Interface (GUI)}
 
-\section{Getting Started with this Template}
+To make the program more user-friendly, we developed a graphical user interface (GUI). Pop-up windows will guide the user through the process; a separate manual was not necessary.
+
+\begin{itemize}
+	\item User interaction
+	\item Error messages if user does not enter right values.
+\end{itemize}
 
 
-\subsection{About this Template}
+add error messages
 
+visualise workflow, straight forward, very intuitive and user-friendly with lots of buttons and pop-up windows, no manual necessary.
+
+INCLUDE FIGURES HERE.
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\section{Validation: Comparing the automated calculated angles with the manually calculated angles}
+
+As a preview of validation we performed our webtool on [INSERT HERE] roots over a time of [INSERT HERE] hours. We compared both the automatically computed angles with the previously computed manual angle. As a second validation step we also compared the angles to the computed angles with user input.
+
+Figure [INSERT HERE] shows the comparison of the angle of interest \( Theta \), both of the manual as well as the automatically computed angle at [INSERT HERE] times steps over a period of [INSERT HERE] time.
+
+The variance of the angle pairs is shown in figure [INSERT HERE]. Performing a t-test [OR CHI-SQUARED TEST] we can conclude that the improvement of the angle computation accuracy is significant. Approximately [INSERT HERE] \% due to human error can be eliminated.
+%Looking at the variance of the angle pairs and performing a t-Test, we can conclude that by our tool we can minimise the human error by [INSERT HERE]\%. 
+
+Once more angles have been compared, more confident statistics can be obtained. 
 

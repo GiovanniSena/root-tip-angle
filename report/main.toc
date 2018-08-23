@@ -2,54 +2,42 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \contentsline {chapter}{Abstract}{iii}{section*.1}
-\contentsline {chapter}{Acknowledgements}{iv}{section*.2}
+\contentsline {chapter}{Acknowledgements}{v}{section*.2}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.8}
 \contentsline {section}{\numberline {1.1}Biological background}{1}{section.9}
 \contentsline {section}{\numberline {1.2}Literature review}{2}{section.10}
 \contentsline {section}{\numberline {1.3}Motivation}{3}{section.11}
 \contentsline {subsection}{\numberline {1.3.1}RootTrace}{3}{subsection.12}
-\contentsline {subsection}{\numberline {1.3.2}PlantCV}{3}{subsection.13}
-\contentsline {chapter}{\numberline {2}Methods}{4}{chapter.14}
-\contentsline {section}{\numberline {2.1}Image processing}{4}{section.15}
-\contentsline {subsection}{\numberline {2.1.1}What is a digital image?}{4}{subsection.22}
-\contentsline {subsection}{\numberline {2.1.2}Image processing operation}{5}{subsection.23}
-\contentsline {subsection}{\numberline {2.1.3}Key stages in digital image processing}{5}{subsection.24}
-\contentsline {section}{\numberline {2.2}Matlab}{6}{section.25}
-\contentsline {section}{\numberline {2.3}Workflow}{6}{section.26}
-\contentsline {section}{\numberline {2.4}Pre-processing -- getting the skeleton}{6}{section.27}
-\contentsline {section}{\numberline {2.5}Computing the angle}{6}{section.28}
-\contentsline {subsection}{\numberline {2.5.1}Using the position of the tip of the root -- more in detail}{7}{subsection.29}
-\contentsline {subsection}{\numberline {2.5.2}Using the angle of the tangents to the points that are x points/pixels away from the point of highest local curvature}{8}{subsection.34}
-\contentsline {subsection}{\numberline {2.5.3}INSERT VARIOUS OTHER IDEAS OF ANGLE COMPUTATION -- even if not implemented}{8}{subsection.35}
-\contentsline {chapter}{\numberline {3}Results}{9}{chapter.36}
-\contentsline {section}{\numberline {3.1}Key components}{9}{section.37}
-\contentsline {section}{\numberline {3.2}Elaborate pre-processing tool for skeletonisation}{9}{section.38}
-\contentsline {section}{\numberline {3.3}Optimisation: Graphical User Interface (GUI)}{9}{section.39}
-\contentsline {section}{\numberline {3.4}Different ways of curvature and angle measuring}{10}{section.40}
-\contentsline {section}{\numberline {3.5}Standardised and automated version of angle computation}{10}{section.41}
-\contentsline {section}{\numberline {3.6}Comparing the automated calculated angles with the manually calculated angles}{10}{section.42}
-\contentsline {section}{\numberline {3.7}Learning \LaTeX {}}{10}{section.43}
-\contentsline {subsection}{\numberline {3.7.1}A (not so short) Introduction to \LaTeX {}}{10}{subsection.44}
-\contentsline {subsection}{\numberline {3.7.2}A Short Math Guide for \LaTeX {}}{10}{subsection.45}
-\contentsline {subsection}{\numberline {3.7.3}Common \LaTeX {} Math Symbols}{10}{subsection.46}
-\contentsline {subsection}{\numberline {3.7.4}\LaTeX {} on a Mac}{10}{subsection.47}
-\contentsline {section}{\numberline {3.8}Getting Started with this Template}{10}{section.48}
-\contentsline {subsection}{\numberline {3.8.1}About this Template}{10}{subsection.49}
-\contentsline {chapter}{\numberline {4}Discussion}{11}{chapter.50}
-\contentsline {section}{\numberline {4.1}Challenges}{11}{section.51}
-\contentsline {subsection}{\numberline {4.1.1}Low contrast}{11}{subsection.52}
-\contentsline {subsection}{\numberline {4.1.2}Objects interferring with objet of interest}{11}{subsection.53}
-\contentsline {subsection}{\numberline {4.1.3}Skeletonisation}{11}{subsection.54}
-\contentsline {subsection}{\numberline {4.1.4}Scalability}{12}{subsection.55}
-\contentsline {subsection}{\numberline {4.1.5}Reproducability}{12}{subsection.56}
-\contentsline {subsection}{\numberline {4.1.6}Problems}{12}{subsection.57}
-\contentsline {subsection}{\numberline {4.1.7}High user-interaction}{12}{subsection.58}
-\contentsline {section}{\numberline {4.2}Suggestions for future data acquisition}{12}{section.59}
-\contentsline {subsection}{\numberline {4.2.1}More focus on images}{12}{subsection.60}
-\contentsline {subsection}{\numberline {4.2.2}Resolution}{12}{subsection.61}
-\contentsline {section}{\numberline {4.3}Broader application of this tool}{12}{section.62}
-\contentsline {section}{\numberline {4.4}Further work}{12}{section.63}
-\contentsline {chapter}{\numberline {5}Conclusion}{13}{chapter.64}
-\contentsline {chapter}{\numberline {A}Data}{14}{appendix.65}
-\contentsline {chapter}{\numberline {B}Frequently Asked Questions}{15}{appendix.66}
-\contentsline {section}{\numberline {B.1}How do I change the colors of links?}{15}{section.67}
+\contentsline {chapter}{\numberline {2}Methods}{4}{chapter.13}
+\contentsline {section}{\numberline {2.1}Data set}{4}{section.14}
+\contentsline {section}{\numberline {2.2}Experiment setup}{4}{section.15}
+\contentsline {section}{\numberline {2.3}Image processing}{4}{section.16}
+\contentsline {subsection}{\numberline {2.3.1}Digital images}{5}{subsection.17}
+\contentsline {subsection}{\numberline {2.3.2}On spatial resolution, gray levels and coloured images}{5}{subsection.18}
+\contentsline {subsection}{\numberline {2.3.3}Image processing operations}{6}{subsection.19}
+\contentsline {section}{\numberline {2.4}\textit {Matlab} as a programming language}{7}{section.20}
+\contentsline {section}{\numberline {2.5}Pre-processing: Getting the root's skeleton}{7}{section.21}
+\contentsline {section}{\numberline {2.6}Computing the angle}{7}{section.22}
+\contentsline {subsection}{\numberline {2.6.1}Other ways of curvature and angle measuring}{9}{subsection.27}
+\contentsline {subsection}{\numberline {2.6.2}Computing the curvature of the root tip}{9}{subsection.28}
+\contentsline {chapter}{\numberline {3}Results}{10}{chapter.29}
+\contentsline {section}{\numberline {3.1}Key components}{10}{section.30}
+\contentsline {section}{\numberline {3.2}Workflow of skeletonisation of root}{11}{section.31}
+\contentsline {section}{\numberline {3.3}Graphical User Interface (GUI)}{11}{section.32}
+\contentsline {section}{\numberline {3.4}Validation: Comparing the automated calculated angles with the manually calculated angles}{11}{section.33}
+\contentsline {chapter}{\numberline {4}Discussion}{12}{chapter.34}
+\contentsline {section}{\numberline {4.1}Challenges}{12}{section.35}
+\contentsline {subsection}{\numberline {4.1.1}Low contrast}{12}{subsection.36}
+\contentsline {subsection}{\numberline {4.1.2}Objects interferring with objet of interest}{12}{subsection.37}
+\contentsline {subsection}{\numberline {4.1.3}Skeletonisation}{12}{subsection.38}
+\contentsline {subsection}{\numberline {4.1.4}Scalability}{13}{subsection.39}
+\contentsline {subsection}{\numberline {4.1.5}Reproducability}{13}{subsection.40}
+\contentsline {subsection}{\numberline {4.1.6}Highly pixeled images}{13}{subsection.41}
+\contentsline {subsection}{\numberline {4.1.7}Problems}{13}{subsection.42}
+\contentsline {subsection}{\numberline {4.1.8}High user-interaction}{13}{subsection.43}
+\contentsline {section}{\numberline {4.2}Suggestions for future data acquisition}{13}{section.44}
+\contentsline {subsection}{\numberline {4.2.1}More focus on images}{13}{subsection.45}
+\contentsline {subsection}{\numberline {4.2.2}Resolution}{13}{subsection.46}
+\contentsline {section}{\numberline {4.3}Broader application of this tool}{13}{section.47}
+\contentsline {section}{\numberline {4.4}Further work}{14}{section.48}
+\contentsline {chapter}{\numberline {5}Conclusion}{15}{chapter.49}

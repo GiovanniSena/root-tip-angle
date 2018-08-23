@@ -18,9 +18,11 @@
 PUT RESULTS IN BROADER PICTURE
 
 %----------------------------------------------------------------------------------------
-
+%----------------------------------------------------------------------------------------
 \section{Challenges}
 
+
+%----------------------------------------------------------------------------------------
 \subsection{Low contrast}
 
 There is a very low contrast between the background and the roots, so that one could hardly recognise the roots on some images [INSERT EXAMPLE IMAGE HERE].
@@ -35,49 +37,79 @@ Many objects of no interest which can be not
 
 [INSERT 4 EXAMPLES HOW DIFFICULT DATA WAS]
 
+
+%----------------------------------------------------------------------------------------
 \subsection{Objects interferring with objet of interest}
 
 Eg specs not so much of an issue as separate from the root.
 Issue when it is connected.
 
+
+%----------------------------------------------------------------------------------------
 \subsection{Skeletonisation}
 Get rid of loop.
 
 How to go along the curve?
 
+
+%----------------------------------------------------------------------------------------
 \subsection{Scalability}
 
 A lot of paramter tuning to single images. Work with single images to tune.
 
 
+%----------------------------------------------------------------------------------------
 \subsection{Reproducability}
 
 angle computation yes, but still variability in pre-processing step
 
+
+%----------------------------------------------------------------------------------------
+\subsection{Highly pixeled images}
+Due to compressing? 
+Challenge in curvature computing part
+Eg using Hough transform from Matlab Image Processing Toolbox to detect lines in an image not applicable here as highly pixled image.
+
+
+%----------------------------------------------------------------------------------------
 \subsection{Problems}
 A lot of trial \& error / hand-picking. 
 
+
+%----------------------------------------------------------------------------------------
 \subsection{High user-interaction}
 Might be reduced with better-quality images, however very flexible.
 
-%----------------------------------------------------------------------------------------
 
+standard-deviation not as high as i think?
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 \section{Suggestions for future data acquisition}
 
 
+%----------------------------------------------------------------------------------------
 \subsection{More focus on images}
 
+
+%----------------------------------------------------------------------------------------
 \subsection{Resolution}
 
 Better camera, less waste of resolution
+
+improve spatial resolution, other format? no compression?
+ 
  
 %----------------------------------------------------------------------------------------
-
+%----------------------------------------------------------------------------------------
 \section{Broader application of this tool}
 
 This tool can be reused for many purposes, it is not restricted to root detection.
 Might also be used for easier problems like gravitropism.
 
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 \section{Further work}
 
 Here in the first version of the tool, the main goal was to standardise the angle computation; if in the future  a method for handling the different noise pattern in the images was efficiently handled which require less user input, it would be desireable to automate the whole angle computation.
