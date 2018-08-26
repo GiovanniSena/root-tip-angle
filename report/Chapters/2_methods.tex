@@ -14,18 +14,17 @@
 %\newcommand{\option}[1]{\texttt{\itshape#1}}
 
 %----------------------------------------------------------------------------------------
-
-The purpose of this methods section is to give an overview on first the data that was used to develop the software tool, how the data were collected as well as image processing basics, and what programming languages, definitions and methods chosen when developing the tool. This will help the reader to replicate, understand and modify the methods and source code of the tool. 
+The purpose of this methods section is to give an overview on, first, the data that was used to develop the software tool and how the data were collected, second, image processing basics, and third, what programming languages, definitions and methods chosen when developing the tool. This will help the reader to replicate, understand and modify the methods and source code of the tool. 
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 \section{Data set}
 
-Our data set consisted of high-throughput time-lapse images of Arabidopsis roots taken by a standard Raspberry Pi V2 camera from 5 experiments with 5-6 roots each containing between 32 and 36 images over a period of approximately 5 hours. 
+Our data set consisted of high-throughput time-lapse images of Arabidopsis roots taken by a standard Raspberry Pi V2 camera from 5 experiments with 5-6 roots each containing between 32 and 36 images over a period of at least 5 hours, ie every 10 minutes a photo was taken. The images were named by the date and time they were taken. 
 
 It should be noted that these images had already been collected in a previous project and are not subject but only the basis of the work presented here. 
 
-However, to better understand the nature of the data, we will give a high-level explanation of the experiment setup that was used to collect the data.
+However, to better understand the nature of the data, we will give a high-level explanation of the experiment setup that was used to collect these data.
 
 
 %----------------------------------------------------------------------------------------
@@ -34,6 +33,10 @@ However, to better understand the nature of the data, we will give a high-level 
 
 [SEE SLIDES, THESIS]
 
+[INSERT FIGURE: ESSAY FOR ROOT ELECTROTROPISM]
+
+[INSERT FIGURE: PHENOMENOLOGY OF ROOT ELECTROTROPISM]
+
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
@@ -41,7 +44,7 @@ However, to better understand the nature of the data, we will give a high-level 
 
 Having these images as a basis, the nature of this work was mainly of image processing nature.
 
-Image processing pools together a lot of different domains including physics (optics), signal processing and pattern recognition/ Machine Learning (ML) to ultimately feed computer to understand how do interpret images and make decisions based on them. 
+Image processing pools together a lot of different domains including physics (optics), signal processing and pattern recognition/ Machine Learning (ML) to ultimately feed computer to understand how to interpret images and make decisions based on them. 
 
 The idea behind image processing is to extract information from an image information in a form that is suitable for computer processing [INSERT REFERENCE HERE]. 
 
@@ -59,8 +62,6 @@ Figure [INSERT REFERENCE HERE] shows fundamental steps in image processing, that
 %\end{enumerate}
 
 [INSERT FLOWCHART FIGURE HERE, adapted from....]
-
-
 
 
 %----------------------------------------------------------------------------------------
@@ -90,7 +91,7 @@ What we get is an image represented as a matrix of integer values; the elements 
 \subsection{On spatial resolution, gray levels and coloured images}
 
 The storage and preprocessing requirements increase rapidly with the spatial resolution and the number of gray levels. 
-For instance, a 256 gray-scale image of size 256 \( times \) 256 occupies 64K bytes of memory. Figure [INSERT REFERENCE HERE] shows images of different spatial resolution. 
+For instance, a 256 gray-scale image of size 256 \( \times \) 256 occupies 64K bytes of memory. Figure [INSERT REFERENCE HERE] shows images of different spatial resolution. 
 
 [INSERT FIGURE: Images with decreasing spatial resolution, taken from .....]
 
@@ -106,30 +107,34 @@ Since we deal with coloured images, we chose the RGB colour model which is an ad
 \subsection{Image processing operations}
 
 An image processing operation typically defines a new image \( g \) in terms of an existing image \( f \).
+We can 
 \begin{itemize}
-	\item Transform the range of \( f \)
+	\item transform the range of \( f \)
 	\[ 
 	g(x, y) = t(f(x,y)) 
 	\]
-	\item Transform the domain of \( f \)
+	\item transform the domain of \( f \)
 	\[
-	g(x,y) = f(t_{x}(x,y), t_{y}(x,y))
+	g(x,y) = f(t_{x}(x,y), t_{y}(x,y)).
 	\]
 \end{itemize}
 
 %IMAGE PROCESSING OPERATIONS USED IN THIS WORK INCLUDE: 
 
-From an image processing point of view, poin as well as local operations have been performed. 
+From an image processing point of view, we performed point as well as local operations.
 
-A point operation are functions that are performed on each single pixel of an image, independent of all the other pixels in that image [INSERT REFERENCE HERE]. These include operations like inversing, changing the brightness or contrast of an image, changing the gamma of an image, binarising an image and logical operations. 
+A point operation is a function that is performed on each single pixel of an image, independent of all the other pixels in that image [INSERT REFERENCE HERE]. These include operations like inversing, changing the brightness or contrast of an image, changing the gamma of an image, binarising an image and logical operations. 
 
-Local operations, on the other hand, compute the new value of each single pixel with a neighbourhood around it [INSERT REFERENCE HERE]. They can be divided in two groups, linear and nonlinear filters.
+Local operations, on the other hand, compute the new value of each single pixel with a neighbourhood around it [INSERT REFERENCE HERE]. %They can be divided in two groups, linear and nonlinear filters.
+They include filters which are operations that converts a source image to a result image by applying some kind of tranformation, be it of linear or nonlinear nature [INSERT REFERENCE HERE]. There are more than 134 different filter functions in the MATLAB Image Processing toolbox that can be applied with different arguments and sensitivity thresholds. Filters used in our work include the 2D median filtering \textit{medfilt2} or the 2D adaptive noise-removal filtering \textit{wiener2}.
 
-A a filter is an operation, which converts a source image via some kind of transformation to a result image [INSERT REFERENCE HERE]. 
+%A a filter is an operation, which converts a source image via some kind of transformation to a result image [INSERT REFERENCE HERE]. 
 
-%Another possibility for the subdivision of local operations is the division in low-pass and high-pass filters. Low-pass filters are used to inhibit noise and small details on images, whereas high-pass filters are used to emphasize edges."
+% FOR VIIVA: Another possibility for the subdivision of local operations is the division in low-pass and high-pass filters. Low-pass filters are used to inhibit noise and small details on images, whereas high-pass filters are used to emphasize edges."
 % http://www.tlmtracker.tu-bs.de/index.php/Image_processing_operations#Threshold
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%----TO DELETE---
 %\subsection{Key stages in digital image processing}
 %
 %[INSERT FLOW CHART HERE]
@@ -150,15 +155,17 @@ A a filter is an operation, which converts a source image via some kind of trans
 %	put in our own bias and how we train model.
 %	
 %	A lot of noise in the image makes it grainy. We can apply interpolation, ie smoothing the image based on its nn. bi-cubic interpolation.  Smoothes some of the details as well as a side effect, but especially the noise. -- important for edge detection later
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
-\section{\textit{Matlab} as a programming language}
+\section{\textit{MATLAB} as a programming language}
 
-As a language we chose \textit{Matlab} as it is very popular in academic circles for image/ data processing given the number of built-in functions, including well documented image processing toolbox (\textit{MATLAB Image Processing Toolbox}).
+As a language we chose \textit{Matlab} as it is very popular in academic circles for image/ data processing given the number of built-in functions, including well documented image processing toolbox (\textit{MATLAB Image Processing Toolbox} [INSERT REFERENCE HERE]).
 %with a very good documentation. 
-Alternative languages that were considered were \textit{Python} and \textit{Julia}. Another recommended language is \textit{OpenCV} as it is very fast and well documented. Other non-open source software such as \textit{ImageJ}, a Java based image processing program, and \textit{Avizo} which is a general-purpose commercial software application for scientific and industrial data visualisation and analysis with a nice GUI, could not be investigated further in this work. 
+% GOES TO DISCUSSION/ FUTURE WORK:
+%Alternative languages that were considered were \textit{Python} and \textit{Julia}. Another recommended language is \textit{OpenCV} as it is very fast and well documented. Other non-open source software such as \textit{ImageJ}, a Java based image processing program, and \textit{Avizo} which is a general-purpose commercial software application for scientific and industrial data visualisation and analysis with a nice GUI, could not be investigated further in this work. 
 
 
 %----------------------------------------------------------------------------------------
@@ -169,9 +176,10 @@ The goal of the preprocessing step was to extract the skeleton, ie the coordinat
 This task turned out to be highly challenging on noisy image data and can be regarded as the actual achievement of the presented work. The highly elaborate pipeline of the preprocessing step can be found in chapter [INSERT REFERENCE HERE].
 
 
-For the
-The initial problem of coming up with a "good" definition by comparing different angle and curvature definition shifted. The focus was now on the pre-processing, the extracting the skeleton. 
-However, we will still present some possible definitions of angles and curvature, also not implemented in the current version of the tool.
+% TO DELETE
+%For the
+%The initial problem of coming up with a "good" definition by comparing different angle and curvature definition shifted. The focus was now on the pre-processing, the extracting the skeleton. 
+%However, we will still present some possible definitions of angles and curvature, also not implemented in the current version of the tool.
 
 
 %----------------------------------------------------------------------------------------
@@ -179,58 +187,67 @@ However, we will still present some possible definitions of angles and curvature
 \section{Computing the angle}
 
 Once the skeleton has been extracted, one can compute the curvature and the angle of the root tip. 
-In fact, we only need to segment the bit of the root that is close to the tip including the bending point, ie the point with highest mean local curvature, not the entire root. This will help to discard lots of noise caused by tubes and other objects at the upper part of the root.
-
+In fact, we only need to segment the bit of the root that is close to the tip including the bending point, ie the point with highest local curvature, not the entire root. This will help to discard lots of noise caused by tubes and other objects at the upper part of the root, see section [INSERT REFERENCE] for example of images.
 
 Various definitions of angles associated to the root tip had been considered; however, in order to make the angles comparable to the so far manually computed angles we chose an emulation of the manual computation of the angle in our final implementation. 
 
-Approaches like computing the Gaussian mean curvature, definitions of different, possibly more robust methods of computing and angle %are mentioned here, but has 
-have not been incorporated in our final tool. 
+% GOES TO DISCUSSION/ FUTURE WORK
+%Approaches like computing the Gaussian mean curvature, definitions of different, possibly more robust methods of computing and angle %are mentioned here, but has 
+%have not been incorporated in our final tool. 
 
-The angle \( \Theta \) we are after, is the angle between the line through the point of the highest local (Gaussian) curvature and the root tip and the horizontal line parallel to the electric field (EF).  
+
+The angle \( \Theta \) we want to compute is the angle between the line through the point of the highest local (Gaussian) curvature and the root tip and a line parallel to the electric field (EF).  
 
 Figure [INSERT REFERENCE HERE] illustrates the angle \( \Theta \) that is computed. 
 
-[INSERT FIGURE OF DRAWING WHICH ANGLE IS COMPUTED HERE]
-
-Once these two lines are correctly defined, provided the point of highest local curvature is unique, it is straight-forward to compute angle \( Theta \):
-
-There are other ways such as finding vectors on the lines and using their dot products. However, we can use simple, basic trigonometric methods as shown in figure [INSERT REFERENCE HERE].
-
-We would then compute the angles of the two lines to the x-axis  in radians mode by 
-\[
-\pi - | \tan^{-1}(\frac{x(2) - x(1)}{y(2) - y(1)}) - \tan^{-1}(\frac{z(2) - z(1)}{y(2) - y(1)}) |
-\]
-or 
-\[
-180^{\circ} - | \tan^{-1}(\frac{x(2) - x(1)}{y(2) - y(1)}) - \tan^{-1}(\frac{z(2) - z(1)}{y(2) - y(1)}) |
-\]
-if we wanted it in degrees mode.
-
-The single steps are shown in figure ....
-[PSEUDOCODE]
-\begin{enumerate}
-	\item Find the slope of each line.
-	\item Find the inclination of each line using \( \alpha = \tan^{-1} m \), where  \( \alpha \) is the angle of inclination, \( m \) is the slope.
-	\item Take the difference of these two angles.
-	\item Handle the case where this difference is not an acute, ie less than 90 degrees, angle. If we get a negative angle, we take its absolute value. We want to find an acute angle, so if we calculated an obtuse angle, oe greater than 90 degrees, we just subtract the value from pi radians or 180 degrees to get the acute values.
-\end{enumerate}
+[INSERT FIGURE: HOW THE ANGLE IN RESPONSE TO THE ELECTRIC FIELD IS CALCULATED: The angle \( \Theta \) represents the angle between the line through the tip of the root and the point of highest local curvature and a line parallel to the EF.]
 
 
-We refer to figure [INSERT REFERENCE HERE] to how the angle was computed in previous approaches. 
+Once these two lines are correctly defined, provided the point of highest local curvature is unique, it is straight forward to compute angle \( Theta \).
 
 
-%----------------------------------------------------------------------------------------
-\subsection{Other ways of curvature and angle measuring}
+%There are other ways such as finding vectors on the lines and using their dot products. However, we can use simple, basic trigonometric methods as shown in figure [INSERT REFERENCE HERE].
+%
+%We would then compute the angles of the two lines to the x-axis  in radians mode by 
+%\[
+%\pi - | \tan^{-1}(\frac{x(2) - x(1)}{y(2) - y(1)}) - \tan^{-1}(\frac{z(2) - z(1)}{y(2) - y(1)}) |
+%\]
+%or 
+%\[
+%180^{\circ} - | \tan^{-1}(\frac{x(2) - x(1)}{y(2) - y(1)}) - \tan^{-1}(\frac{z(2) - z(1)}{y(2) - y(1)}) |
+%\]
+%if we wanted it in degrees mode.
+%
+%The single steps are shown in figure ....
+%[PSEUDOCODE]
+%\begin{enumerate}
+%	\item Find the slope of each line.
+%	\item Find the inclination of each line using \( \alpha = \tan^{-1} m \), where  \( \alpha \) is the angle of inclination, \( m \) is the slope.
+%	\item Take the difference of these two angles.
+%	\item Handle the case where this difference is not an acute, ie less than 90 degrees, angle. If we get a negative angle, we take its absolute value. We want to find an acute angle, so if we calculated an obtuse angle, oe greater than 90 degrees, we just subtract the value from pi radians or 180 degrees to get the acute values.
+%\end{enumerate}
 
-What was implemented as we found that this approach worked best on these data and this resolution.
 
-%Standardised and automated version of angle computation
+%We refer to figure [INSERT REFERENCE HERE] to how the angle was computed in previous approaches. 
+
+
+Let \( v_{1} \) be the line through the tip of the root and the point of highest local curvature and \( v_{2} \) a line parallel to the EF. 
+We can compute angle \( \Theta \)  by using simple trigonometric methods 
+
+\begin{equation} \label{angle1}
+\Theta_{1}  = \cos^{-1}\frac{( v_{1} \cdot v_{2}) }{ | v_{1} | \cdot | v_{2} |}
+\end{equation}
+or equivalently
+\begin{equation} \label{angle2}
+\Theta_{2} = \tan^{-1}( v_{1}, v_{2}) \times \frac{180}{\pi}
+\end{equation}
+depending on the signedness of \( v_{1} \) and \( v_{2} \). Assuming the tip of the root only bends positively, ie towards the cathode (the negative pole of the EF) in our experiment setup, and \( v_{2} \) is not positive nor negative, the sign of \( \Theta \) only depends on \( v_{1} \). If the root tip crosses the line that is completely aligned with, ie parallel to, the EF (where \( \Theta \) takes the value 0), \( \Theta \) becomes negative as \( v_{1} \) will become negative. 
+
 
 %----------------------------------------------------------------------------------------
 \subsection{Computing the curvature of the root tip}
 
-In order to detect the point of highest local (Gaussian) curvature, we need to compute the curvature at each point in the skeleton. 
+In order to detect the point of highest local curvature, we need to compute the curvature at each point in the skeleton. 
 
 
 

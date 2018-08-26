@@ -44,12 +44,49 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage{mathpazo} % Use the Palatino font by default
 
+
 \usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
 
 \addbibresource{example.bib} % The filename of the bibliography
 
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
+
+%----------------------------------------------------------------------------------------
+%% include hebrew letters
+
+%\usepackage{ucs}   % package to add unicode support
+%\usepackage[utf8x]{inputenc}  % adding the UTF-8 encoding
+%\usepackage[english,hebrew]{babel}  % telling babel: english & hebrew in doc.
+%\usepackage{hebfont}  % Adding a selection of fonts.
+
+%\usepackage[hebrew,english]{babel}
+%\usepackage{hyperref}
+%\HeblatexRedefineL  % this stands for \def\L{\protect\pL}
+
+%\textbf{\usepackage{amsmath,amssymb}
+%
+%\DeclareFontFamily{U}{rcjhbltx}{}
+%\DeclareFontShape{U}{rcjhbltx}{m}{n}{<->rcjhbltx}{}
+%\DeclareSymbolFont{hebrewletters}{U}{rcjhbltx}{m}{n}
+%
+%% remove the definitions from amssymb
+%\let\aleph\relax\let\beth\relax
+%\let\gimel\relax\let\daleth\relax
+%
+%\DeclareMathSymbol{\aleph}{\mathord}{hebrewletters}{39}
+%\DeclareMathSymbol{\beth}{\mathord}{hebrewletters}{98}\let\bet\beth
+%\DeclareMathSymbol{\gimel}{\mathord}{hebrewletters}{103}
+%\DeclareMathSymbol{\daleth}{\mathord}{hebrewletters}{100}\let\dalet\daleth
+%
+%\DeclareMathSymbol{\lamed}{\mathord}{hebrewletters}{108}
+%\DeclareMathSymbol{\mem}{\mathord}{hebrewletters}{109}\let\mim\mem
+%\DeclareMathSymbol{\ayin}{\mathord}{hebrewletters}{96}
+%\DeclareMathSymbol{\tsadi}{\mathord}{hebrewletters}{118}
+%\DeclareMathSymbol{\qof}{\mathord}{hebrewletters}{114}
+%\DeclareMathSymbol{\shin}{\mathord}{hebrewletters}{152}
+% \usepackage{cjhebrew}
+%%----------------------------------------------------------------------------------------
 
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
@@ -144,14 +181,13 @@ headsepline, % Uncomment to get a line under the header
 \end{center}
 \end{titlepage}
 
-% %----------------------------------------------------------------------------------------
-% %	DECLARATION PAGE
-% %----------------------------------------------------------------------------------------
+ %----------------------------------------------------------------------------------------
+ %	DECLARATION PAGE
+ %----------------------------------------------------------------------------------------
 
 % \begin{declaration}
 % \addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
 % \noindent I, \authorname, declare that this thesis titled, \enquote{\ttitle} and the work presented in it are my own. I confirm that:
-
 % \begin{itemize} 
 % \item This work was done wholly or mainly while in candidature for a research degree at this University.
 % \item Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
@@ -160,10 +196,8 @@ headsepline, % Uncomment to get a line under the header
 % \item I have acknowledged all main sources of help.
 % \item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
 % \end{itemize}
- 
 % \noindent Signed:\\
 % \rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
- 
 % \noindent Date:\\
 % \rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
 % \end{declaration}
@@ -183,6 +217,8 @@ headsepline, % Uncomment to get a line under the header
 \noindent\enquote{\itshape If you thought that science was certain -- well, that is just an error on your part.}\bigbreak
 
 \hfill Richard Feynman
+
+
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE
@@ -206,7 +242,7 @@ Plant morphology studies the form and structure of plants and how these develop 
 One phenomenon that, despite being first identified more than 100 years ago, has not been researched much and we know little about its underlying molecular mechanisms, is electrotropism.
 Electrotropism describes the response of a plant to an electric field; one common response is the curving of a plant’s root tip. Unlike gravitropism [DO I HAVE TO EXPLAIN IT HERE?] there exist to our knowledge no tools specifically designed to assist biologists in studying this effect, most importantly the angle resulting from the curving of root tips. This is especially relevant as the experiment setup is more complex and the images tend to be more error-prone, which is often the reason why standard gravitropism study tools fail and biologists compute angle resulting from the curved root tip manually.
 
-Here we present \textit{RootSkel}, a novel and stand-alone software for image processing developed in MATLAB, whose pipeline was optimised for noise-intensive electrotropism images. % built from the ground up. 
+Here we present \textit{RootSkel}, a novel intuitive and robust stand-alone software for image processing developed in \textit{MATLAB}, whose pipeline was optimised for noise-intensive electrotropism images. % built from the ground up. 
 Unlike when doing the angle computation to measure the curvature of a root tip manually, our tool ensures a standardised version of the angle computation. To make the tool more user-friendly, we developed a graphical user interface (GUI) that will help the user in processing the images and computing the angles in a standardised and controlled fashion.
 
 %Our data set consisted of high-throughput time-lapse images of Arabidopsis roots taken by a standard Raspberry Pi V2 camera from 5 experiments with 5-6 roots each containing between 32 and 36 images over a period of approximately 5 hours. 
@@ -216,7 +252,11 @@ Unlike when doing the angle computation to measure the curvature of a root tip m
 
 %Additionally, we evaluated our results by comparing it to previously manually computed angles. [INCLUDE RESULTS A LA 70\% of the images could be found to be reproduced]
 
-Additionally we computed the angle of a an Arabidopsis root tip over one whole experiment (approximately 5 hours) and evaluated the results by comparing it to previously manually computed angles on the same images. The results show correspondence with manual angles; however, unlike the manually computed angles, using a standard definition of the angle, our software delivers angles free from human bias which makes the results comparable. Indeed, we show that on this example we can eliminate in average [INSERT VARIANCE HERE, STATE HOW MUCH HUMAN VARIANCE WE COULD ELIMINATE BY STANDARDISING IT] of human bias; further validation on more images is to be done.
+Additionally we computed the angle of three Arabidopsis root tips at 30 time points over one whole experiment (approximately 5 hours) and evaluated the results by comparing it to previously manually computed angles on the same images. The results show same patterns as manual computed angles;
+% overall correspondence with manual angles; 
+statistics on our data set suggest that our tool removes human error in the angle calculation process %which accounts in average [INSERT VARIANCE HERE, STATE HOW MUCH HUMAN VARIANCE WE COULD ELIMINATE BY STANDARDISING IT] 
+of up to 10\% of the actual angle. However, further validation on more images need to be done. Unlike the manually computed angles, with using a standard definition of the angle, our software delivers angles free from human bias which makes the results comparable and reproducible. 
+% Indeed, we show that on this example we can eliminate in average [INSERT VARIANCE HERE, STATE HOW MUCH HUMAN VARIANCE WE COULD ELIMINATE BY STANDARDISING IT] of human bias; further validation on more images is to be done.
 %can be done on already existing data as well as data gathered in the future. 
 Previously computed angles can be checked by using our software, and more angles of curved roots can be computed in the future and hopefully %help 
 reveal interesting insights in electrotropism. 
@@ -243,6 +283,7 @@ This project was conducted under the supervision of Dr Giovanni Sena, whom I tha
 
 %\ldots
 \end{acknowledgements}
+
 
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
@@ -300,11 +341,23 @@ This project was conducted under the supervision of Dr Giovanni Sena, whom I tha
 
 % \end{symbols}
 
-% %----------------------------------------------------------------------------------------
-% %	DEDICATION
-% %----------------------------------------------------------------------------------------
+ %----------------------------------------------------------------------------------------
+ %	DEDICATION
+ %----------------------------------------------------------------------------------------
 
-% \dedicatory{For/Dedicated to/To my\ldots} 
+ \dedicatory{For Yaron Efrat -- the person I admire the most.} 
+ 
+ %\textaleph \hebnun \hebyod 
+ %
+ %\selectlanguage{hebrew}
+ 
+ %	אני אוהבת אותך 
+ % 	%מתוק
+ % 	נפש תאומה שלי}
+ % תודה על היותם בשבילי
+ 
+ 
+ 
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - CHAPTERS
