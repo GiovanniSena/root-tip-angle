@@ -48,7 +48,7 @@ Image processing pools together a lot of different domains including physics (op
 
 The idea behind image processing is to extract information from an image information in a form that is suitable for computer processing [INSERT REFERENCE HERE]. 
 
-Figure [INSERT REFERENCE HERE] shows fundamental steps in image processing, that served as a guideline for the presented work.
+Figure [INSERT REFERENCE HERE] shows fundamental steps in image processing, that served as a guideline for the presented work. However, every single image processing case is different and there will always be slight variations to this generic image proessing workflow.
 
 
 %combines optics and signal processing and is often used in computer vision.
@@ -256,7 +256,7 @@ In the following, we will sketch the mathematical framework which describes the 
 This will help the user to understand the rather formula intense implementation computing the analytical curvature using fitted polygons to the points, ie the coordinates from the root skeleton.
 
 There exist various different concepts and definitions of curvature in different branches of geometry.
-Intuitively, curvature captures the amount by which a geometric object, in the 2D case a curve deviates from being a (straight) line
+Intuitively, curvature in the 2D case captures the amount by which a curve deviates from being a (straight) line.
 We will only touch upon \textit{extrinsic} curvature here, which is defined for objects embedded in some higher-dimensional usually Euclidean space. This allows us to use the radius of circles that touch the object, so-called \textit{osculating cirlce}, to compute the curvature.
 
 % Curvature is usually a scalar quantity, but one may define a curvature vector that takes into account the direction of the bend in addition to its magnitude.
@@ -285,6 +285,10 @@ The script outputs the curvature values of each point.
 
 %I wish to calculate the curvature (as accurate as possible) at the points on the curve.
 % what I have until now is a simple calculation of the tangent vector (1st derivate) and then the curvature (2nd derivate):
+
+
+In a previous version, we  took a section of the curve (here 9 vertices) and fitted a polynomial to it; this will be our cuve model. From this model we can compute the derivative and with the coefficients of the fitted polynomial we can compute the curvature at each point. 
+A large radius of curvature means a rather straight part of the curve, while we get a small radius of curvature in parts where the curve is "pointy", ie bends more. The sign of the curvature indicates whether it is right (positive) or left (negative) bending. However, the here used function \textit{polyfit} should not be used on very noisy data.
 
 
 

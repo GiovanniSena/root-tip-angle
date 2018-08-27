@@ -22,8 +22,8 @@ REPRODUCABILITY OF WORK, ie make sure reader could redo it
 %%----------------------------------------------------------------------------------------
 %%----------------------------------------------------------------------------------------
 
-The following section of this report will briefly explain the tool from a technical perspective; .  %and show how to use it in practice. %Additionally, we present an example of the tool in use.
-We will present some feature highlights of the tool and we will guide the user through one example to illustrate how the tool is used in practice.
+The following section of this report will briefly explain the tool from a technical perspective, but more importantly  %and show how to use it in practice. %Additionally, we present an example of the tool in use.
+we will present some highlights of the tool that sets it apart from other tools and we will guide the user through one example to illustrate how the tool is used in practice.
 
 Additionally, we will show some validation of the tool by comparing the angle computed by our tool to the one computed manually on one time-series image data set of one Arabidopsis root. 
 
@@ -33,38 +33,56 @@ The code is open-source and publicly available on [INSERT GITHUB REFERENCE HERE]
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
-\section{Key components}
+\section{Key features} %SHOW HOW ELEABORATE TOOL IS
 
 Figure [INSERT REFERENCE HERE: PIPELINE FROM GUI] explains the key components of this image-analysis software tool to address the problem of highly noisy electrotropism consumer camera images of Arabidopsis roots and a standardised way of computing the angle for the curved root tip. 
 
-This tool takes the form of a MATLAB program with a graphical user interface (GUI).
+This tool takes the form of a MATLAB program and subprograms with a graphical user interface (GUI) on top of it.
+
+%----------------------------------------------------------------------------------------
+\subsection{Graphical User Interface}
+To make the program more user-friendly, we developed a graphical user interface (GUI). Pop-up windows will guide the user through the process (see [INSERT REFERENCE HERE]); a separate manual is not necessary as the steps are very intuitive and straight-forward.
+There are various benefits of the GUI such as
+\begin{itemize}
+	\item Visualising the process including the pipeline
+	\item Easy user interaction with mouse clicking
+	\item Flexibility, eg the user can go back at each step without rerunning the whole script from the beginning
+	\item Pop-up windows and mouseover functions on buttons that guide the user through the process and explain the steps
+	\item Error messages if user does not enter right values.
+\end{itemize}
+
 
 %----------------------------------------------------------------------------------------
 \subsection{Discerning root from background}
 
 Gamma correction (imadjust)
 
+
 %----------------------------------------------------------------------------------------
 \subsection{Handling user's mistakes}
 
-- Are you using the user’s inputs to identify root-specific ROI to work with (instead of a single ROI)? I cannot see this in the code, but I might have missed it. I think that would be a good way to correct user’s small mistakes because it will only get a region where the root is, and it doesn’t matter if it is off by few pixels…
+When we take the user's input, eg choosing samples along the root, we correct for small mistakes by taking an neighbourhood (3 \( \times \)) average around the pixel. 
+%followed by adaptive thresholding.
+This means the user does not have to take special care when choosing the points as long as it is in the approximate region of the root.
 
-Yes, I have added it now. I take the neighbourhood average around the pixel (for now 3x3 neighbourhood but can be changed).
-I am using adaptive thresholding using the median (much better results than the default mean, which makes sense somehow).
 
-%----------------------------------------------------------------------------------------
-\subsection{Adaptive thresholding}
+\subsection{User interaction and optional steps}
+The software tool was created in a ways that it is easy to interact with for a future user. 
+We implemented several optional steps that only need to be performed if the user thinks it is necessary. This on the other hand saves time in the preprocessing but on the other hand also ensures that tricky roots can be tackled by various optional steps in order to extract a skeleton. 
 
- Another similar approach would be to ask the user to quickly draw small ROI (rectangles) to frame each root in the inverted (much easier) image. The code could then global threshold each ROI separately and go from there.
- 
- I basically did this approach in lychtest1.m but using one big rectangle containing all the roots and then implemented an adaptive variable setting approach.
- 
- 
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
-\section{Workflow of skeletonisation of root}
+\section{Workflow of root skeletonisation -- explained on GUI}
 
+The pipeline that has been developed for the preprocessing step of extracting the skeleton can be viewed on the bottom of the GUI, see figure [INSERT REFERENCE HERE].
+In the following we will present the tool on one example image guides the reader through the pipeline and can serve as a manual for future users.
+
+[INSERT FIGURE OF DIFFERENT STEPS (SUBFIGURES) THAT ARE THEN REFERRED TO IN THE TEXT INDIVISUALLY]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%-----WORK FROM HERE----%%%%%%%%%%%
 %----------------------------------------------------------------------------------------
 \subsection{Optional additional cleaning}
 
@@ -77,30 +95,6 @@ Additional cropping of the root ultimately solves the problem of getting rid of 
 Also, the cropping does not have to be very accurate.
 
 
-IN EACH STEP THE USER CAN GO BACK, AND STEPS ARE ONLY PERFORMED IF NECESSARY TO SAVE TIME.
-
-
-NOISE PATTERN VARIES A LOT ACROSS IMAGES.
-
-
-The workflow developed via  many iterations on different images and 
-
-elaborate pre-procecessing tool for skeletonisation
-
-high functionality, reiterated process
-
-
-
-Generic image processing workflow:
-
-However, every single case is different. 
-
-Skeletonisation
-
-fill in holes
-
-
-[INSERT FLOWCHART WITH SINGLE STEPS]
 
 %0) Convert the image from rgb to gray scale (matlab: rgb2gray) (3-tensor to matrix)
 %
@@ -126,23 +120,6 @@ Converted into gray channel images.
 2.
 
 
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
-\section{Graphical User Interface (GUI)}
-
-To make the program more user-friendly, we developed a graphical user interface (GUI). Pop-up windows will guide the user through the process; a separate manual was not necessary.
-
-\begin{itemize}
-	\item User interaction
-	\item Error messages if user does not enter right values.
-\end{itemize}
-
-
-add error messages
-
-visualise workflow, straight forward, very intuitive and user-friendly with lots of buttons and pop-up windows, no manual necessary.
-
-INCLUDE FIGURES HERE.
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
@@ -157,6 +134,7 @@ The variance of the angle pairs is shown in figure [INSERT HERE]. Performing a t
 
 Once more angles have been compared, more confident statistics can be obtained. 
 
+[INSERT FIGURE HERE]
 
 We can observe that the angle \( \Theta \) converges continuously towards 0.
 

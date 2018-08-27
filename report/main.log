@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  27 AUG 2018 01:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  27 AUG 2018 20:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1946,7 +1946,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 [6
 
 ]
-Overfull \hbox (1.5658pt too wide) in paragraph at lines 31--31
+Overfull \hbox (1.5658pt too wide) in paragraph at lines 30--30
  [][] [][][]\T1/ppl/m/n/10.95 Validation: Com-par-ing the au-to-mated cal-cu-la
 ted an-gles with the man- 
  []
@@ -1998,7 +1998,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 25.
-<Figures/../Figures/tropism.png, id=328, 464.73625pt x 577.15625pt>
+<Figures/../Figures/tropism.png, id=333, 464.73625pt x 577.15625pt>
 File: Figures/../Figures/tropism.png Graphic file (type png)
 
 <use Figures/../Figures/tropism.png>
@@ -2097,14 +2097,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 400.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 400.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 400.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0AF8E360B0A4CD889B0B5E064078C002;8718.
+(rerunfilecheck)             Checksum: F3CA91A09D7BE7DB81B29241598606BD;8969.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31996 strings out of 493014
- 646404 string characters out of 6133351
+ 31997 strings out of 493014
+ 646413 string characters out of 6133351
  836246 words of memory out of 5000000
  35078 multiletter control sequences out of 15000+600000
  57892 words of font info for 98 fonts, out of 8000000 for 9000
@@ -2120,10 +2120,10 @@ ist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on main.pdf (32 pages, 201974 bytes).
+Output written on main.pdf (32 pages, 202752 bytes).
 PDF statistics:
- 471 PDF objects out of 1000 (max. 8388607)
- 421 compressed objects within 5 object streams
- 91 named destinations out of 1000 (max. 500000)
- 398 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 476 PDF objects out of 1000 (max. 8388607)
+ 426 compressed objects within 5 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 406 words of extra memory for PDF output out of 10000 (max. 10000000)
 

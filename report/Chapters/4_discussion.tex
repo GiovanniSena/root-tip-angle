@@ -81,6 +81,8 @@ Eg using Hough transform from Matlab Image Processing Toolbox to detect lines in
 A lot of trial \& error / hand-picking. 
 
 
+NOISE PATTERN VARIES A LOT ACROSS IMAGES.
+
 %----------------------------------------------------------------------------------------
 \subsection{High user-interaction}
 Might be reduced with better-quality images, however very flexible.
@@ -161,3 +163,34 @@ compared to gravitropism, it is much harder to keep the roots in a plane. we onl
 % discrete approximation to the derivative to compute it. 
 % The same code on a more densly samples outline will give a good
 % approximation of the curvature of the outline
+
+
+\subsection{Less user interaction / automatisation}
+
+%----------------------------------------------------------------------------------------
+\subsubsection{Adaptive thresholding}
+%  Another similar approach would be to ask the user to quickly draw small ROI (rectangles) to frame each root in the inverted (much easier) image. The code could then global threshold each ROI separately and go from there.
+Before opting to take user input in the form of samples of the roots in the image, we investigated adaptive (global) thresholding on each of the root and an adaptive variable setting approach on all of the roots together to extract the root. This however failed, or would have been beyond the scope of this project -- the reason why we implemented it the way it was suggested.
+
+
+
+\subsection{more data}
+
+
+The workflow developed via  many iterations on different images and 
+
+elaborate pre-procecessing tool for skeletonisation
+
+high functionality, reiterated process
+
+has been overengineered on one dataset, if it should be robust on other data, it needs to be trained/ tweeked on other data.
+
+
+
+
+\section{Next steps}
+
+\subsection{Maintenance and building upon}
+
+\subsection{Features to implement}
+
