@@ -78,7 +78,38 @@ We implemented several optional steps that only need to be performed if the user
 The pipeline that has been developed for the preprocessing step of extracting the skeleton can be viewed on the bottom of the GUI, see figure [INSERT REFERENCE HERE].
 In the following we will present the tool on one example image guides the reader through the pipeline and can serve as a manual for future users.
 
-[INSERT FIGURE OF DIFFERENT STEPS (SUBFIGURES) THAT ARE THEN REFERRED TO IN THE TEXT INDIVISUALLY]
+[INSERT FIGURE OF DIFFERENT STEPS (SUBFIGURES) THAT ARE THEN REFERRED TO IN THE TEXT INDIVIDUALLY]
+
+
+%%%%
+
+1) Treating the image 
+- multiplying to enhance contrast
+- gamma correction
+- adaptive thresholding
+- inverting image
+
+2) User draws a window around root of interest, samples 5-10 points of chosen root.
+Using the mean value and standard deviation of the pixel intensity of these points a thresholding range is found. Say [mu-3sigma,mu+3sigma]. 
+(Using the same threshold for all the images in the experiment was not successful as the noise patterns of the images vary too much.)
+
+
+3) Treating the cropped image using different filters
+
+Approach 1: Colour separation filtering 
+- based on RGB values of points
+- gray scales image
+
+Approach 2: Brightness filtering (intensity-based approach)
+- enhances brightness 
+- eliminates too bright spots
+
+4) SKELETONIZATION
+- unified approach (approach 1+2)
+
+5) Optional: additional cleaning
+- iteratively removing bigger and bigger connected objects (in steps of 30 pixels)
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
