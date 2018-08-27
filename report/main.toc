@@ -19,32 +19,34 @@
 \contentsline {section}{\numberline {2.5}Pre-processing: Getting the root's skeleton}{8}{section.23}
 \contentsline {section}{\numberline {2.6}Computing the angle}{8}{section.24}
 \contentsline {subsection}{\numberline {2.6.1}Computing the curvature of the root tip}{9}{subsection.27}
-\contentsline {chapter}{\numberline {3}Results}{10}{chapter.28}
-\contentsline {section}{\numberline {3.1}Key components}{10}{section.29}
-\contentsline {subsection}{\numberline {3.1.1}Discerning root from background}{11}{subsection.30}
-\contentsline {subsection}{\numberline {3.1.2}Handling user's mistakes}{11}{subsection.31}
-\contentsline {subsection}{\numberline {3.1.3}Adaptive thresholding}{11}{subsection.32}
-\contentsline {section}{\numberline {3.2}Workflow of skeletonisation of root}{11}{section.33}
-\contentsline {subsection}{\numberline {3.2.1}Optional additional cleaning}{11}{subsection.34}
-\contentsline {subsection}{\numberline {3.2.2}Optional additional cropping of root}{11}{subsection.35}
-\contentsline {section}{\numberline {3.3}Graphical User Interface (GUI)}{12}{section.36}
-\contentsline {section}{\numberline {3.4}Validation: Comparing the automated calculated angles with the manually calculated angles}{12}{section.37}
-\contentsline {chapter}{\numberline {4}Discussion}{14}{chapter.38}
-\contentsline {section}{\numberline {4.1}Challenges and limitations}{14}{section.39}
-\contentsline {subsection}{\numberline {4.1.1}Low contrast}{14}{subsection.40}
-\contentsline {subsection}{\numberline {4.1.2}Objects interferring with objet of interest}{14}{subsection.41}
-\contentsline {subsection}{\numberline {4.1.3}Skeletonisation}{14}{subsection.42}
-\contentsline {subsection}{\numberline {4.1.4}Scalability}{15}{subsection.43}
-\contentsline {subsection}{\numberline {4.1.5}Reproducability}{15}{subsection.44}
-\contentsline {subsection}{\numberline {4.1.6}Highly pixeled images}{15}{subsection.45}
-\contentsline {subsection}{\numberline {4.1.7}Problems}{15}{subsection.46}
-\contentsline {subsection}{\numberline {4.1.8}High user-interaction}{15}{subsection.47}
-\contentsline {section}{\numberline {4.2}Suggestions for future data acquisition}{15}{section.48}
-\contentsline {subsection}{\numberline {4.2.1}More focus on images}{15}{subsection.49}
-\contentsline {subsection}{\numberline {4.2.2}Resolution}{15}{subsection.50}
-\contentsline {section}{\numberline {4.3}Broader application of this tool}{15}{section.51}
-\contentsline {section}{\numberline {4.4}Further work}{16}{section.52}
-\contentsline {subsection}{\numberline {4.4.1}Other programming languages}{16}{subsection.53}
-\contentsline {subsection}{\numberline {4.4.2}Other ways of curvature and angle measuring}{16}{subsection.54}
-\contentsline {subsection}{\numberline {4.4.3}Othere definition of the angle}{16}{subsection.55}
-\contentsline {chapter}{\numberline {5}Conclusion}{17}{chapter.56}
+\contentsline {chapter}{\numberline {3}Results}{11}{chapter.28}
+\contentsline {section}{\numberline {3.1}Key components}{11}{section.29}
+\contentsline {subsection}{\numberline {3.1.1}Discerning root from background}{12}{subsection.30}
+\contentsline {subsection}{\numberline {3.1.2}Handling user's mistakes}{12}{subsection.31}
+\contentsline {subsection}{\numberline {3.1.3}Adaptive thresholding}{12}{subsection.32}
+\contentsline {section}{\numberline {3.2}Workflow of skeletonisation of root}{12}{section.33}
+\contentsline {subsection}{\numberline {3.2.1}Optional additional cleaning}{12}{subsection.34}
+\contentsline {subsection}{\numberline {3.2.2}Optional additional cropping of root}{12}{subsection.35}
+\contentsline {section}{\numberline {3.3}Graphical User Interface (GUI)}{13}{section.36}
+\contentsline {section}{\numberline {3.4}Validation: Comparing the automated calculated angles with the manually calculated angles}{13}{section.37}
+\contentsline {chapter}{\numberline {4}Discussion}{15}{chapter.38}
+\contentsline {section}{\numberline {4.1}Challenges and limitations}{15}{section.39}
+\contentsline {subsection}{\numberline {4.1.1}Low contrast}{15}{subsection.40}
+\contentsline {subsection}{\numberline {4.1.2}Objects interferring with objet of interest}{15}{subsection.41}
+\contentsline {subsection}{\numberline {4.1.3}Skeletonisation}{15}{subsection.42}
+\contentsline {subsection}{\numberline {4.1.4}Scalability}{16}{subsection.43}
+\contentsline {subsection}{\numberline {4.1.5}Reproducability}{16}{subsection.44}
+\contentsline {subsection}{\numberline {4.1.6}Highly pixeled images}{16}{subsection.45}
+\contentsline {subsection}{\numberline {4.1.7}Problems}{16}{subsection.46}
+\contentsline {subsection}{\numberline {4.1.8}High user-interaction}{16}{subsection.47}
+\contentsline {section}{\numberline {4.2}Suggestions for future data acquisition}{16}{section.48}
+\contentsline {subsection}{\numberline {4.2.1}More focus on images}{16}{subsection.49}
+\contentsline {subsection}{\numberline {4.2.2}Resolution}{16}{subsection.50}
+\contentsline {section}{\numberline {4.3}Broader application of this tool}{16}{section.51}
+\contentsline {section}{\numberline {4.4}Further work}{17}{section.52}
+\contentsline {subsection}{\numberline {4.4.1}Other programming languages}{17}{subsection.53}
+\contentsline {subsection}{\numberline {4.4.2}Other ways of curvature and angle measuring}{17}{subsection.54}
+\contentsline {subsection}{\numberline {4.4.3}Othere definition of the angle}{17}{subsection.55}
+\contentsline {subsection}{\numberline {4.4.4}Root is not in plane}{18}{subsection.56}
+\contentsline {subsection}{\numberline {4.4.5}Curvature better on dense data set}{18}{subsection.57}
+\contentsline {chapter}{\numberline {5}Conclusion}{19}{chapter.58}

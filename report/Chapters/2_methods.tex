@@ -247,15 +247,58 @@ depending on the signedness of \( v_{1} \) and \( v_{2} \). Assuming the tip of 
 %----------------------------------------------------------------------------------------
 \subsection{Computing the curvature of the root tip}
 
+
 In order to detect the point of highest local curvature, we need to compute the curvature at each point in the skeleton. 
 
 
+In the following, we will sketch the mathematical framework which describes the curvature of a curve embedded in a plane.
+%For that, we want to introduce the reader to the concepts of a mathematical curvature in order 
+This will help the user to understand the rather formula intense implementation computing the analytical curvature using fitted polygons to the points, ie the coordinates from the root skeleton.
+
+There exist various different concepts and definitions of curvature in different branches of geometry.
+Intuitively, curvature captures the amount by which a geometric object, in the 2D case a curve deviates from being a (straight) line
+We will only touch upon \textit{extrinsic} curvature here, which is defined for objects embedded in some higher-dimensional usually Euclidean space. This allows us to use the radius of circles that touch the object, so-called \textit{osculating cirlce}, to compute the curvature.
+
+% Curvature is usually a scalar quantity, but one may define a curvature vector that takes into account the direction of the bend in addition to its magnitude.
+% The curvature of more complex objects (such as surfaces or even curved n-dimensional spaces) is described by more complex objects from linear algebra, such as the general Riemann curvature tensor. 
+
+Geometrically, the curvature measures how fast the unit tangent vector, ie the vector tangent to the curve and of length 1,  to the curve rotates. 
+[INSERT FIGURE HERE]
+If the curve is close to a straight line, and thus the unit tangent vector changes very little, the curvature is small; if the curve contains a sharp turn, the curvature is large.
+In the implementation we will use the difference between edge direction vectors to compute this velocity.
 
 
-%APPROACH 2
-% This function calculates the curvature of a 2D line. It first fits 
-% polygons to the points. Then calculates the analytical curvature from
-% the polygons
+%INSERT PRECISE DEFINITION HERE AND INSERT HERE "CURVATURE OF SPACE CURVES" FROM WIKIPEDIA
+
+
+For the implementation we first compute the first derivative (in between pairs of samples); we take into account unequal segment lengths. In the same way we then compute the second derivative , we take the average length of two neighbouring edges, ie the length of edge in between neighbouring normals if we consider the normals to be halfway between vertices.
+Once we have the normals, we can compute the rate of change between neighbouring normals to assign the specific curvature value to each point.
+
+[INSERT FIGURE HERE, DRAW IT]
+
+%The current implementation of the \textit{getAngle.m} script fits polygons to the points, ie the coordinates from the root skeleton, and then calculates the analytical curvature from these fitted polygons. 
+
+We assume the line pieces to connect two neighbouring points if the user does not specify otherwise. 
+
+The script outputs the curvature values of each point. 
+
+
+%I wish to calculate the curvature (as accurate as possible) at the points on the curve.
+% what I have until now is a simple calculation of the tangent vector (1st derivate) and then the curvature (2nd derivate):
+
+
+
+%REFERENCES:  Rusinkiewicz, "Estimating Curvatures and Their Derivatives on Triangle Meshes
+%gfx.cs.princeton.edu/pubs/_2004_ECA/curvpaper.pdf
+%https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&ved=2ahUKEwijgv644IvdAhUHTsAKHfYiAVQQFjADegQIBxAC&url=http%3A%2F%2Fwww.cs.jhu.edu%2F~misha%2FFall09%2F4-surfaces.pdf&usg=AOvVaw2wHCpX0Ruh46CviayKYl0d
+
+%http://http.cs.berkeley.edu/~jrs/meshpapers/MeyerDesbrunSchroderBarr.pdf
+
+%REFERENCES: https://www.jstor.org/stable/10.4169/amer.math.monthly.122.04.332?seq=1#page_scan_tab_contents
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %
 %  k = LineCurvature(Vertices,Lines)
 % 
