@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  27 AUG 2018 20:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  27 AUG 2018 20:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1946,16 +1946,16 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 [6
 
 ]
-Overfull \hbox (1.5658pt too wide) in paragraph at lines 30--30
+Overfull \hbox (1.5658pt too wide) in paragraph at lines 31--31
  [][] [][][]\T1/ppl/m/n/10.95 Validation: Com-par-ing the au-to-mated cal-cu-la
 ted an-gles with the man- 
  []
 
-)
+[7])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [7] (./main.lof
+ [8] (./main.lof
 Overfull \hbox (15.04515pt too wide) in paragraph at lines 5--5
  [][] [][][]\T1/ppl/m/n/10.95 Different forms of tropism: Pho-totropism, thig-m
 otropism, hy-drotropism, 
@@ -1967,7 +1967,7 @@ otropism, hy-drotropism,
 
 
 1: section
-[8
+[9
 
 ] (./main.lot)
 \tf@lot=\write8
@@ -1975,18 +1975,18 @@ otropism, hy-drotropism,
 
 
 1: section
-[9
+[10
 
 ]
 1: section
-[10
+[11
 
 ]
 --------------------
  Dedicatory
 --------------------
 1: section
-[11
+[12
 
 ]
 1: section
@@ -1998,7 +1998,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 25.
-<Figures/../Figures/tropism.png, id=333, 464.73625pt x 577.15625pt>
+<Figures/../Figures/tropism.png, id=362, 464.73625pt x 577.15625pt>
 File: Figures/../Figures/tropism.png Graphic file (type png)
 
 <use Figures/../Figures/tropism.png>
@@ -2097,16 +2097,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 400.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 400.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 400.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F3CA91A09D7BE7DB81B29241598606BD;8969.
+(rerunfilecheck)             Checksum: 7742642E11479E901C8B4CEE8BC29ACE;9865.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31997 strings out of 493014
- 646413 string characters out of 6133351
- 836246 words of memory out of 5000000
- 35078 multiletter control sequences out of 15000+600000
+ 32008 strings out of 493014
+ 646560 string characters out of 6133351
+ 837246 words of memory out of 5000000
+ 35083 multiletter control sequences out of 15000+600000
  57892 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,20n,82p,10377b,2242s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2120,10 +2120,10 @@ ist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on main.pdf (32 pages, 202752 bytes).
+Output written on main.pdf (33 pages, 204714 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
- 426 compressed objects within 5 object streams
- 92 named destinations out of 1000 (max. 500000)
- 406 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 506 PDF objects out of 1000 (max. 8388607)
+ 455 compressed objects within 5 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 446 words of extra memory for PDF output out of 10000 (max. 10000000)
 
