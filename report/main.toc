@@ -32,29 +32,30 @@
 \contentsline {chapter}{\numberline {4}Discussion}{15}{chapter.38}
 \contentsline {section}{\numberline {4.1}Validation on more images}{15}{section.39}
 \contentsline {section}{\numberline {4.2}Challenges and limitations of \textit {RootSkel}}{15}{section.40}
-\contentsline {subsection}{\numberline {4.2.1}Error quantification in the angle computation}{15}{subsection.41}
-\contentsline {subsection}{\numberline {4.2.2}Low contrast}{15}{subsection.42}
-\contentsline {subsection}{\numberline {4.2.3}Objects interferring with objet of interest}{16}{subsection.43}
-\contentsline {subsection}{\numberline {4.2.4}Skeletonisation}{16}{subsection.44}
-\contentsline {subsection}{\numberline {4.2.5}Scalability}{16}{subsection.45}
-\contentsline {subsection}{\numberline {4.2.6}Reproducability}{16}{subsection.46}
-\contentsline {subsection}{\numberline {4.2.7}Highly pixeled images}{16}{subsection.47}
-\contentsline {subsection}{\numberline {4.2.8}Problems}{16}{subsection.48}
-\contentsline {subsection}{\numberline {4.2.9}High user-interaction}{16}{subsection.49}
-\contentsline {section}{\numberline {4.3}Suggestions for future data acquisition}{17}{section.50}
-\contentsline {subsection}{\numberline {4.3.1}More focus on images}{17}{subsection.51}
-\contentsline {subsection}{\numberline {4.3.2}Resolution}{17}{subsection.52}
-\contentsline {section}{\numberline {4.4}Broader application of this tool}{17}{section.53}
-\contentsline {section}{\numberline {4.5}Further work}{17}{section.54}
-\contentsline {subsection}{\numberline {4.5.1}Other programming languages}{17}{subsection.55}
-\contentsline {subsection}{\numberline {4.5.2}Other ways of curvature and angle measuring}{18}{subsection.56}
-\contentsline {subsection}{\numberline {4.5.3}Othere definition of the angle}{18}{subsection.57}
-\contentsline {subsection}{\numberline {4.5.4}Root is not in plane}{18}{subsection.58}
-\contentsline {subsection}{\numberline {4.5.5}Curvature better on dense data set}{18}{subsection.59}
-\contentsline {subsection}{\numberline {4.5.6}Less user interaction / automatisation}{18}{subsection.60}
-\contentsline {subsubsection}{Adaptive thresholding}{18}{section*.61}
-\contentsline {subsection}{\numberline {4.5.7}more data}{18}{subsection.62}
-\contentsline {section}{\numberline {4.6}Next steps}{19}{section.63}
-\contentsline {subsection}{\numberline {4.6.1}Maintenance and building upon}{19}{subsection.64}
-\contentsline {subsection}{\numberline {4.6.2}Features to implement}{19}{subsection.65}
-\contentsline {chapter}{\numberline {5}Conclusion}{20}{chapter.66}
+\contentsline {subsection}{\numberline {4.2.1}Root is not in plane}{15}{subsection.41}
+\contentsline {subsection}{\numberline {4.2.2}Discerning the root from the background and the noise}{15}{subsection.42}
+\contentsline {subsection}{\numberline {4.2.3}Low contrast}{16}{subsection.43}
+\contentsline {subsection}{\numberline {4.2.4}Objects interferring with objet of interest}{16}{subsection.44}
+\contentsline {subsection}{\numberline {4.2.5}Skeletonisation}{16}{subsection.45}
+\contentsline {subsection}{\numberline {4.2.6}Scalability}{16}{subsection.46}
+\contentsline {subsection}{\numberline {4.2.7}Reproducability}{16}{subsection.47}
+\contentsline {subsection}{\numberline {4.2.8}Highly pixeled images}{16}{subsection.48}
+\contentsline {subsection}{\numberline {4.2.9}High user-interaction}{17}{subsection.49}
+\contentsline {section}{\numberline {4.3}Further work}{17}{section.50}
+\contentsline {subsection}{\numberline {4.3.1}Use more shape-based filters}{17}{subsection.51}
+\contentsline {subsection}{\numberline {4.3.2}Effective noise reduction}{17}{subsection.52}
+\contentsline {subsection}{\numberline {4.3.3}Less user input up to automatisation}{17}{subsection.53}
+\contentsline {subsubsection}{Adaptive thresholding}{17}{section*.54}
+\contentsline {subsection}{\numberline {4.3.4}Maintenance and bug fixing}{18}{subsection.55}
+\contentsline {subsection}{\numberline {4.3.5}More features}{18}{subsection.56}
+\contentsline {subsection}{\numberline {4.3.6}Other programming languages}{18}{subsection.57}
+\contentsline {subsection}{\numberline {4.3.7}Other ways of curvature and angle measuring}{18}{subsection.58}
+\contentsline {subsubsection}{Curvature better on dense data set}{18}{section*.59}
+\contentsline {subsubsection}{Othere definition of the angle}{18}{section*.60}
+\contentsline {subsection}{\numberline {4.3.8}Robustness}{19}{subsection.61}
+\contentsline {subsection}{\numberline {4.3.9}Error quantification in the angle computation}{19}{subsection.62}
+\contentsline {section}{\numberline {4.4}Broader application of this tool}{19}{section.63}
+\contentsline {section}{\numberline {4.5}Suggestions for future data acquisition}{19}{section.64}
+\contentsline {subsection}{\numberline {4.5.1}More focus on images}{19}{subsection.65}
+\contentsline {subsection}{\numberline {4.5.2}Resolution}{19}{subsection.66}
+\contentsline {chapter}{\numberline {5}Conclusion}{20}{chapter.67}

@@ -15,7 +15,7 @@
 
 %----------------------------------------------------------------------------------------
 
-PUT RESULTS IN BROADER PICTURE
+%PUT RESULTS IN BROADER PICTURE
 
 %* What informed choice of methods?
 %* Could it have been done in another way?
@@ -36,14 +36,21 @@ As this could not happen in this project due to time constraints we suggest a th
 
 %Difficult decisions had to be made in planning the research, leading to subsequent tradeoffs. Then, focus in on the need for future work.
 
-%----------------------------------------------------------------------------------------
-\subsection{Error quantification in the angle computation}
 
+\subsection{Root is not in plane}
+
+compared to gravitropism, it is much harder to keep the roots in a plane. we only capture the angle based on 2D images.
+
+
+%----------------------------------------------------------------------------------------
+\subsection{Discerning the root from the background and the noise}
+
+For that we mostly implemented colour and intensity filters which can still include different kinds of noise. The most distinct feature of the root is the tubular structure and functions that recognise this have been used; however, this can still be optimised in the future.
+
+we did not get the most out of it
 
 %----------------------------------------------------------------------------------------
 \subsection{Low contrast}
-
-
 
 There is a very low contrast between the background and the roots, so that one could hardly recognise the roots on some images [INSERT EXAMPLE IMAGE HERE].
 Inverting the image was not enough. We intensified the contrast by ... / making the background darker, we increased the brightness. We used further filtering so that the difference between two pixels is more pronounced.
@@ -56,7 +63,6 @@ Many objects of no interest which can be not
 
 
 [INSERT 4 EXAMPLES HOW DIFFICULT DATA WAS]
-
 
 %----------------------------------------------------------------------------------------
 \subsection{Objects interferring with objet of interest}
@@ -92,10 +98,6 @@ Eg using Hough transform from Matlab Image Processing Toolbox to detect lines in
 
 % GIVE SAMPLE IMAGE
 
-%----------------------------------------------------------------------------------------
-\subsection{Problems}
-A lot of trial \& error / hand-picking. 
-
 
 NOISE PATTERN VARIES A LOT ACROSS IMAGES.
 
@@ -107,6 +109,103 @@ Might be reduced with better-quality images, however very flexible.
 standard-deviation not as high as i think?
 
 Would be desirable if it could be automated more. 
+
+
+ 
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\section{Further work}
+
+
+\subsection{Use more shape-based filters}
+
+To overcome the problem of separating the root from the background and the noise, one should use and optimise specific shape-based filters instead of a series of colour and intensity filters that have shown to be not very efficient on our data set. This is due to the observation that the tubular structure is the most distinctive feature of the roots. Tubular structure recognising fulters have been implemented but there is room for improvement. This might help to extract the skeleton more easily and reliably without the need of optional cropping or cleaning.
+
+\subsection{Effective noise reduction}
+
+
+
+\subsection{Less user input up to automatisation}
+
+Here in the first version of \textit{RootSkel}, the main goal was to standardise the angle computation; if in the future  a method for handling the different noise pattern in the images was efficiently handled which require less user input, it would be desireable to automate the whole angle computation.
+
+%----------------------------------------------------------------------------------------
+\subsubsection{Adaptive thresholding}
+%  Another similar approach would be to ask the user to quickly draw small ROI (rectangles) to frame each root in the inverted (much easier) image. The code could then global threshold each ROI separately and go from there.
+Before opting to take user input in the form of samples of the roots in the image, we investigated adaptive (global) thresholding on each of the root and an adaptive variable setting approach on all of the roots together to extract the root. This however failed, or would have been beyond the scope of this project -- the reason why we implemented it the way it was suggested.
+
+
+
+\subsection{Maintenance and bug fixing}
+
+\subsection{More features}
+
+More features such as a zooming in function at the beginning of force tip can be included; however, they will not change anything in the core functionality of \textit{RootSkel}.
+
+Also, what would be nice to implement in the GUI or in an extra window from a user perspective is a graph superimposing the skeleton to illustrate what angle is computed. This way, the user can doublecheck that the correct angle is computed. This feature will be provided in the next version of \textit{RootSkel}.
+
+
+
+\subsection{Other programming languages}
+
+Eventhouth MATLAB has several advantages, it might worth looking into alternative non-proprietary programming language to make the tool accessible to a wider public or other options of making the tool portable, ie without requiring the user to have MATLAB installed.
+Alternative languages that one want to consider are \textit{Python} and \textit{Julia}. Another recommended language is \textit{OpenCV} as it is very fast and well documented. Other non-open source software such as \textit{ImageJ}, a Java based image processing program, and \textit{Avizo} which is a general-purpose commercial software application for scientific and industrial data visualisation and analysis with a nice GUI, could not be investigated further in this work. 
+
+
+%----------------------------------------------------------------------------------------
+\subsection{Other ways of curvature and angle measuring}
+
+What was implemented as we found that this approach worked best on these data and this resolution. However, MATLAB does have some issues with singularities, eg it whenever the angle is (exactly) 45 degrees one should doublecheck of this is due to an infinity issue in the arctan. 
+
+\subsubsection{Curvature better on dense data set}
+
+% FUTURE WORK: curvature on a sparse polygon like this might not be very
+% meaningful but that does not mean it is not possible to apply the
+% discrete approximation to the derivative to compute it. 
+% The same code on a more densly samples outline will give a good
+% approximation of the curvature of the outline
+
+%Standardised and automated version of angle computation
+\subsubsection{Othere definition of the angle}
+Approaches like computing the Gaussian mean curvature, definitions of different, possibly more robust methods of computing and angle %are mentioned here, but has 
+have not been incorporated in our final tool. 
+
+
+\subsection{Robustness}
+
+The workflow developed via  many iterations on different images and 
+
+elaborate pre-procecessing tool for skeletonisation
+
+high functionality, reiterated process
+
+has been overengineered on one dataset, if it should be robust on other data, it needs to be trained/ tweeked on other data.
+
+
+
+If one wants to make the tool available to a wider public and make it more robust so it will work on other, unseen data (which was not the goal of this work), one might want to collect higher-quality, less noisy data in the future. 
+
+
+%High-throughput software tools that can produce objective, quantitative analyses od the resulting images are now required.
+
+
+
+
+%----------------------------------------------------------------------------------------
+\subsection{Error quantification in the angle computation}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\section{Broader application of this tool}
+
+This tool can be reused for many purposes, it is not restricted to root detection.
+Might also be used for easier problems like gravitropism.
+
+
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
@@ -123,90 +222,5 @@ Would be desirable if it could be automated more.
 Better camera, less waste of resolution
 
 improve spatial resolution, other format? no compression?
- 
- 
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
-\section{Broader application of this tool}
 
-This tool can be reused for many purposes, it is not restricted to root detection.
-Might also be used for easier problems like gravitropism.
-
-
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
-\section{Further work}
-
-Here in the first version of the tool, the main goal was to standardise the angle computation; if in the future  a method for handling the different noise pattern in the images was efficiently handled which require less user input, it would be desireable to automate the whole angle computation.
-
-Use on better-quality images in the future.
-
-%High-throughput software tools that can produce objective, quantitative analyses od the resulting images are now required.
-
-graph on GUI will be implemented, to make sure that we are computing the right angle.
-
-
-- How tool accessible for people who do not have matlab?
-
-NowL GUI reenter, no single script. no time, just did not bother, can easily be added.
-
-
-
-\subsection{Other programming languages}
-
-Alternative languages that were considered were \textit{Python} and \textit{Julia}. Another recommended language is \textit{OpenCV} as it is very fast and well documented. Other non-open source software such as \textit{ImageJ}, a Java based image processing program, and \textit{Avizo} which is a general-purpose commercial software application for scientific and industrial data visualisation and analysis with a nice GUI, could not be investigated further in this work. 
-
-
-%----------------------------------------------------------------------------------------
-\subsection{Other ways of curvature and angle measuring}
-
-What was implemented as we found that this approach worked best on these data and this resolution.
-
-%Standardised and automated version of angle computation
-\subsection{Othere definition of the angle}
-Approaches like computing the Gaussian mean curvature, definitions of different, possibly more robust methods of computing and angle %are mentioned here, but has 
-have not been incorporated in our final tool. 
-
-
-\subsection{Root is not in plane}
-
-compared to gravitropism, it is much harder to keep the roots in a plane. we only capture the angle based on 2D images.
-
-\subsection{Curvature better on dense data set}
-
-% FUTURE WORK: curvature on a sparse polygon like this might not be very
-% meaningful but that does not mean it is not possible to apply the
-% discrete approximation to the derivative to compute it. 
-% The same code on a more densly samples outline will give a good
-% approximation of the curvature of the outline
-
-
-\subsection{Less user interaction / automatisation}
-
-%----------------------------------------------------------------------------------------
-\subsubsection{Adaptive thresholding}
-%  Another similar approach would be to ask the user to quickly draw small ROI (rectangles) to frame each root in the inverted (much easier) image. The code could then global threshold each ROI separately and go from there.
-Before opting to take user input in the form of samples of the roots in the image, we investigated adaptive (global) thresholding on each of the root and an adaptive variable setting approach on all of the roots together to extract the root. This however failed, or would have been beyond the scope of this project -- the reason why we implemented it the way it was suggested.
-
-
-
-\subsection{more data}
-
-
-The workflow developed via  many iterations on different images and 
-
-elaborate pre-procecessing tool for skeletonisation
-
-high functionality, reiterated process
-
-has been overengineered on one dataset, if it should be robust on other data, it needs to be trained/ tweeked on other data.
-
-
-
-
-\section{Next steps}
-
-\subsection{Maintenance and building upon}
-
-\subsection{Features to implement}
 
