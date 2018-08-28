@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  28 AUG 2018 00:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  28 AUG 2018 20:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1998,7 +1998,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 25.
-<Figures/../Figures/tropism.png, id=377, 464.73625pt x 577.15625pt>
+<Figures/../Figures/tropism.png, id=357, 464.73625pt x 577.15625pt>
 File: Figures/../Figures/tropism.png Graphic file (type png)
 
 <use Figures/../Figures/tropism.png>
@@ -2069,19 +2069,25 @@ Chapter 3.
 
  (./Chapters/4_discussion.tex
 Chapter 4.
+
+Overfull \hbox (6.96341pt too wide) in paragraph at lines 38--39
+\T1/ppl/m/n/10.95 and trade-offs to over-come them were nec-es-sary; there are 
+some lim-i-ta-tions of \T1/ppl/m/it/10.95 RootSkel
+ []
+
 1: section
 [15
 
 
 
-] [16] [17] [18]) [19]
+] [16] [17] [18] [19] [20]) [21]
 \openout2 = `Chapters/5_conclusion.aux'.
 
  (./Chapters/5_conclusion.tex
 Chapter 5.
 )
 1: section
-[20
+[22
 
 
 
@@ -2097,19 +2103,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 400.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 400.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 400.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 614EEEF617CC64F365065004AF699FC9;10894.
+(rerunfilecheck)             Checksum: 2CEB25A673888E4A2789C2130EACF304;10295.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32015 strings out of 493014
- 646643 string characters out of 6133351
+ 32009 strings out of 493014
+ 646553 string characters out of 6133351
  837246 words of memory out of 5000000
- 35086 multiletter control sequences out of 15000+600000
+ 35082 multiletter control sequences out of 15000+600000
  57892 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,20n,82p,10377b,2242s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,20n,82p,10377b,2245s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
@@ -2120,10 +2126,10 @@ ist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on main.pdf (34 pages, 208129 bytes).
+Output written on main.pdf (36 pages, 210730 bytes).
 PDF statistics:
- 525 PDF objects out of 1000 (max. 8388607)
- 473 compressed objects within 5 object streams
- 102 named destinations out of 1000 (max. 500000)
- 470 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 513 PDF objects out of 1000 (max. 8388607)
+ 459 compressed objects within 5 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 438 words of extra memory for PDF output out of 10000 (max. 10000000)
 
