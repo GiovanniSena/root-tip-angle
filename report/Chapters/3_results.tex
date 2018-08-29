@@ -114,17 +114,59 @@ In the appendix [INSERT REFERENCE HERE] we present the tool on one example image
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%-----WORK FROM HERE----%%%%%%%%%%%
-%----------------------------------------------------------------------------------------
-\subsection{Optional additional cleaning}
 
-Other than that, the user can perform iterative cleaning that gradually gets rid of those artificial branches (most of the times) as well; one has to be careful not to "loose" the root completely, but the user can undo the last cleaning step. 
 
 %----------------------------------------------------------------------------------------
-\subsection{Optional additional cropping of root}
+\subsection{Loading a file}
+
+%----------------------------------------------------------------------------------------
+\subsection{Zooming in}
+
+and cropping
+
+
+%----------------------------------------------------------------------------------------
+\subsection{Choosing points}
+
+
+%----------------------------------------------------------------------------------------
+\subsection{Processing the image}
+
+Two approaches:
+1.
+Converted into gray channel images.
+2.
+
+
+%----------------------------------------------------------------------------------------
+\subsection{Optional image cropping}
 
 Additional cropping of the root ultimately solves the problem of getting rid of any artificial branches caused by noise close to the tip of the root.
 Also, the cropping does not have to be very accurate.
 
+
+%----------------------------------------------------------------------------------------
+\subsection{Extracting the skeleton}
+
+%----------------------------------------------------------------------------------------
+\subsection{Optional skeleton cropping}
+
+
+%----------------------------------------------------------------------------------------
+\subsection{Optional foreign object removal}
+
+Other than that, the user can perform iterative cleaning that gradually gets rid of those artificial branches (most of the times) as well; one has to be careful not to "loose" the root completely, but the user can undo the last cleaning step. 
+
+%----------------------------------------------------------------------------------------
+\subsection{Optional tip forcing}
+
+
+%----------------------------------------------------------------------------------------
+\subsection{Final preparation}
+
+
+%----------------------------------------------------------------------------------------
+\subsection{Angle computation}
 
 
 %0) Convert the image from rgb to gray scale (matlab: rgb2gray) (3-tensor to matrix)
@@ -145,16 +187,8 @@ Also, the cropping does not have to be very accurate.
 %6. For each root we then get the list of point belonging to the tip (upper x- and y-values) and we compute the curvature (eg on a 3-point polygonal chain)
 
 
-Two approaches:
-1.
-Converted into gray channel images.
-2.
-
-
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
-
-
 \section{Components of the GUI}
 
 With the development of the GUI for more user-friendliness, we split our source code of the tool based on functionality, ie we create separate functions or modules that we then connect to several objects in the GUI. This process, also known as \textit{modularity} in software engineering, has various benefits for developing and maintaining the application: The code is less cluttered but more structured and readable and just by reading the main functions which calls all other subfunctions you get a general overview and understanding of what the code does. Also, it reduces redundancy in the main code if the codes get split up into smaller subfunctions and helps debugging. Speaking variables also add to a better understanding of the code.
@@ -179,199 +213,54 @@ Every function representing one specific step in the pipeline or objects accesse
 Table [INSERT REFERENCE HERE] gives an overview of the different components and modules our software tool \textit{RootSkel} consists of. It has been developed over a cycle of various iterations, together with an exemplary future user. 
 The current version of the package can be downloaded from %https://github.com/burfel/root-tip-angle/tree/master/src/Root_image_GUI_v1_5 and will be maintained on [INSERT GIOVANNIS GITHUB HERE].
 
-1. Root_image_GUI.m
-The main file that calls all subfiles and the GUI handler?,
-added warning and message boxes
 
-2. Log files: Lox.txt and Old_Versions_Log.txt 
-Log files documenting all changes including dates since the last version (Log.txt) as well as previous versions (Old_Versions_Log.txt) so changes can be undone and future developers can build upon the existing version. A shorter versions of previous log files including bug fixes can be found in CurrentVersion.txt
-
-3. Functions 
-Folder containing the following 18 functions with a short description of each:
-
-var_saver.m
-* creates a variable varnames which contains the names of the relevant variables (skelmatR, skelmatR_simp, max_curv_point, savename). It then pulls them from the base workspace and lets the user save them in a .mat file. skelmatR or skelmatR_simp include the skeleton of the root (their x and y coordinates), max_curv_point includes the user’s input for the possible turning point or an empty set, savename includes the name of the image (date and hour) and the number of the roots which is used for names of figures, first column in csv file and default of var_saver.m
-skelmatR is redundant.
-
-var_loader.m
-* allows the user to load the .mat files including the relevant objects from the workspace
-* contains the enabling of appropriate angle calculation buttons; buttons are disabled to avoid bugs and errors (eg angle computation on nothing should not work)
-
-skel_crop.m
-* contains the optional free hand cropping of the skeleton
-
-skel_clean.m
-* loops on optional additional cleaning, ie bigger and bigger objects are removed, until user is satisfied
-
-savename_crea.m
-* saves the label of the root or root number the user chooses in order to keep track of which root is analysed
-* combines the label with the name of the file and saves it as a folder where the variables (see above) would go
+%image_process.m
+%* extracts the cropped image 
+%* extracts the colours from the sample pixels, averages it with a certain neighbourhood
+%* takes a brightness range, an average of the three filters used 
+%* approach 1: using input from the user to estimate the range of the root colours
+%* initial colour filtering based on the RGB values of the selected points
+%* subsequent gray filtering
+%* RGB level difference based filtering
+%* …….
+%* approach 2: using brightness filter (intensity based)
+%* Idea: We carefully enhance the brightness and then get rid of too bright spots.
+%* gray scaling
+%* creating a filtering mask according to the brightness rank
 
 
-root_skel.m: 
-* Different steps of filtering and cleaning until we get root skeleton????? ACTUAL CODE?
-The main functions from the Matlab Image Processing Toolbox used here were different versions and combinations of imfill, fibremetric, wiener2, imbinarise, bwareaopen, medfilt2, bwmorph that we identified worked best on our given data set. For a detailed description of the functions we refer to [INSERT REFERENCE HERE].
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%          AD APPROACH 1: the colour-based approach                           %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Trying to use fibermetric to get rid of the annoying thorns without
-% sacrificing root. Hopefully, it will make the rest of the section become
-% better. First imfill though
-* imfill
-* fibremetric — to get rid of branches without sacrifising the root, with specific sensitivity, enhances tubular structure
-* imfill — fill in holes
-* wiener2 noise filtering function (after the binarisation)
-doing a set of binarising, getting rid of isolated points, filling stuff and them skeletonising and other methods.
-* turn neighbourhood of the tip to white and hope it helps
-* whitening of the tip’s neighbourhood
-* bwareopen
-* medfilt2 function tro try and improve the process to exclude closed loops and such
-* imfill — fill in holes in binarised image
-* bwmorph — clean isolated pixels until image series converges (does not change much, sort of safety measure)
-* bwareaopen — get rid of isolated non-root structures (< 35 pixels), but be careful since we can destroy roots
-
-* bwmorph — extract skeleton
-* imfill — fill in holes bc skeletonisation creates holes sometimes
-* bwmorph— close small gaps
-* bwareaopen — get rid of isolates non-root structures (< 35 pixels), but be careful that not destroy roots
-
-* bwmorph — destroy small branches (be carful in picture2 destroys roots? fix it.)
-
-* bwareaopen — get rid of isolates non-root structures (< 35 pixels), but be careful that not destroy roots
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%          AD APPROACH 2: The intensity method skeleton                       %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% I shall now apply the new refined process in the hopes of it working
-% smoothly.
-* imfill — see comments above
-* fibermetric
-* imfill
-* wiener2
-* whitening of tip’s neighbourhoos
-* imbinarise
-* bwareaopen
-* medfilt2
-
-* imfill — holes
-* bwmorph — skel
-* imfill — holes
-* bwmorph — bridge
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%          COMBINING APPROACH 1 + 2: A unified front                          %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The avarage binarized:
-unified_skeleton=0.5*(color_skeleton+brightness_skeleton);
-unified_skeleton(unified_skeleton>0)=1;
-unified_skeleton=bwmorph(unified_skeleton,'spur',15) % SUCCESS. we got roots without little branches.
-
-
-point_get.m
-* asks the user for points as long as she does not provide the required number (defined as a number of points between minimum and maximum)
-* The user’s input is stored in the strings srcx and srcy are strings with the name of the variable that will receive the data in the base workspace; they tell assignin in which variable in the caller to store the data.
-
-
-point_choose.m
-* collects the necessary points from the user: 5 points  close to the tip, 5 - 10 evenly spaced points on the desired root starting with the tip, the tip of the root
-* each step can be redone
-
-
-THE USER DOES NOT HAVE TO HIT THE EXACT ROOT, WE TAKE AN AVERAGE VALUE WITHIN A CERTAIN NEIGHBOURHOOD.
-INCLUDES HOVER UP MESSAGES. 
-
-COLOUR AND INTENSITY FILTERS, GOOD START BUT NOT ENOUGH BC NOISE CAN SAME COLOURS AND INTENSITY.
-fails on too images/ getting skeleton is really hard.
-noise which skeleton functions mistakes for non-noise
-what can really differentiate: shape of root, but didn’t get to work on that.
-implementing a shape based filter
-
-image_zoom.m
-* inverts the image 
-* lets the user zoom in (and zoom out via right click)
-
-image_process.m
-* extracts the cropped image 
-* extracts the colours from the sample pixels, averages it with a certain neighbourhood
-* takes a brightness range, an average of the three filters used 
-* approach 1: using input from the user to estimate the range of the root colours
-* initial colour filtering based on the RGB values of the selected points
-* subsequent gray filtering
-* RGB level difference based filtering
-* …….
-* approach 2: using brightness filter (intensity based)
-* Idea: We carefully enhance the brightness and then get rid of too bright spots.
-* gray scaling
-* creating a filtering mask according to the brightness rank
-
-image_crop.m
-* optional free hand cropping
-
-image_choose.m
-* allows the user to choose an image
-* modifies the image using various filter to help the user discern the root
-
-getAngle.m
-* takes the skeleton as input
-* computes the curvature and angle of the root tip
-
-force_tip.m
-* prompts user to create an open polygon between the edge of the current skeleton and the tip 
-* in order to make sure that the tip of the root is definitely included in the skeleton 
-
-final_prep.m
-* extracts only the tip of the root and the respective x and y values which are passed on to getAngle.m
-* user can choose to select the turning point, ie point with highest local curvature, which can serve as another verification of the computed turning point; it does not have to be exactly on the root as the point in the skeleton that is closest to the chosen point is used
-
-fig_saver.m
-* saves the relevant objects upon clicking different buttons
-
-fig_loader.m
-* loads respective figures
-
-
-
-angle_file.m
-* creates a .txt file containing the label of the root (picture name and root number) and the angle
-* creates a file with the name 'root_angles.csv' or 'user_assisted' depending on user_flag (see LOG 22.8.18 16:57) and prints the label of the root and the angle; this file can be appended for consecutive angle calculations of the same root in other images
-
-
-
-
-%%%%-------------------------------------------
-We will now guide the user through the different steps of the pipeline and present one example each; this can serve as a manual for users even though the steps are rather self-explanatory by just using the GUI. Also, having a GUI rather than a script with pop-up-windows not only makes the tool more visually attractive but it one can also repeat a step without restarting the whole process or script again. This all adds to the user-friendliness.
-
-Even though most of image processing work is empirical, ie based on trial and error and educated guesses on the given data set, we try to explain why certain features were necessary to implement; this explanations are marked in italics.
+Even though most of image processing work is empirical, ie based on trial and error and educated guesses on the given data set, we try to explain why certain features were necessary to implement. %this explanations are marked in italics.
 The pipeline can be seen in the at the bottom of the GUI in figure [INSERT REFERENCE HERE].
 
 [INCLUDE IN GRAPHIC IF EXCEED WORD COUNT]
 
-1. Open file
-2. Zoom in
-3. Choose Points
-4. Process image
-5. Crop image (optional): 
-6. Get skeleton
-7. Crop skeleton (optional): It allows the user to crop a region around the skeleton by hand to definitely remove things outside the region of interest. The user can redo the cropping in case she is not satisfied. 
-8. Foreign object removal (optional): It allows the user to remove objects, ie if the skeleton contains undesired branches. The user can undo the last cleaning step in case the root gets removed in the last step, to not start the entire process again. 
-9. Force tip
-10. Final preparation
-
-The bar on the left shows various other buttons that allow the user to perform other functions:
-* In the upper part: 
-* Save variables
-* Save figures: select the cropped image or the skeleton; both are greyed out as longs as objects have not been created
-* Load variables
-* Load figure: choose one of the radio buttons either on the left or on the right
-* In the middle part: 
-* Show skeleton; greyed out as long as the skeleton has not been created
-* Clear figure: choose one of the radio buttons either on the left or on the right
-* The bottom part to compute and display the angle:
-* Using user’s point
-* Using curvature
+%1. Open file
+%2. Zoom in
+%3. Choose Points
+%4. Process image
+%5. Crop image (optional): 
+%6. Get skeleton
+%7. Crop skeleton (optional): It allows the user to crop a region around the skeleton by hand to definitely remove things outside the region of interest. The user can redo the cropping in case she is not satisfied. 
+%8. Foreign object removal (optional): It allows the user to remove objects, ie if the skeleton contains undesired branches. The user can undo the last cleaning step in case the root gets removed in the last step, to not start the entire process again. 
+%9. Force tip (optional)
+%10. Final preparation
+%
+%The bar on the left shows various other buttons that allow the user to perform other functions:
+%* In the upper part: 
+%* Save variables
+%* Save figures: select the cropped image or the skeleton; both are greyed out as longs as objects have not been created
+%* Load variables
+%* Load figure: choose one of the radio buttons either on the left or on the right
+%* In the middle part: 
+%* Show skeleton; greyed out as long as the skeleton has not been created
+%* Clear figure: choose one of the radio buttons either on the left or on the right
+%* The bottom part to compute and display the angle:
+%* Using user’s point
+%* Using curvature
 
 The GUI includes helpful text along the pipeline as well as pop up windows including instructions or warnings in case the user does not follow them. 
 
+In the appendix [INSERT REFERENCE HERE] we guide the user through the different steps of the pipeline and present one example each; this can serve as a manual for users even though the steps are rather self-explanatory by just using the GUI. Also, having a GUI rather than a script with pop-up-windows not only makes the tool more visually attractive but it one can also repeat a step without restarting the whole process or script again. This all adds to the user-friendliness.
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
