@@ -3,30 +3,31 @@
 \select@language {english}
 \contentsline {chapter}{Abstract}{iii}{section*.1}
 \contentsline {chapter}{Acknowledgements}{v}{section*.2}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.9}
-\contentsline {section}{\numberline {1.1}Biological background}{1}{section.10}
-\contentsline {section}{\numberline {1.2}Literature review}{2}{section.12}
-\contentsline {section}{\numberline {1.3}Motivation}{3}{section.13}
-\contentsline {chapter}{\numberline {2}Methods}{4}{chapter.14}
-\contentsline {section}{\numberline {2.1}Data set}{4}{section.15}
-\contentsline {section}{\numberline {2.2}Experiment setup}{4}{section.16}
-\contentsline {section}{\numberline {2.3}Image processing}{5}{section.18}
-\contentsline {subsection}{\numberline {2.3.1}Digital images}{5}{subsection.19}
-\contentsline {subsection}{\numberline {2.3.2}On spatial resolution, gray levels and coloured images}{6}{subsection.20}
-\contentsline {subsection}{\numberline {2.3.3}Image processing operations}{6}{subsection.21}
-\contentsline {section}{\numberline {2.4}\textit {MATLAB} as a programming language}{7}{section.22}
-\contentsline {section}{\numberline {2.5}Pre-processing: Getting the root's skeleton}{7}{section.23}
-\contentsline {section}{\numberline {2.6}Computing the angle}{8}{section.24}
-\contentsline {subsection}{\numberline {2.6.1}Computing the curvature of the root tip}{9}{subsection.28}
-\contentsline {chapter}{\numberline {3}Results}{11}{chapter.29}
-\contentsline {section}{\numberline {3.1}Key features}{11}{section.30}
-\contentsline {subsection}{\numberline {3.1.1}Graphical User Interface}{12}{subsection.31}
-\contentsline {subsection}{\numberline {3.1.2}Discerning root from background}{12}{subsection.32}
-\contentsline {subsection}{\numberline {3.1.3}Handling user's mistakes}{12}{subsection.33}
-\contentsline {subsection}{\numberline {3.1.4}User interaction and optional steps}{12}{subsection.34}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.8}
+\contentsline {section}{\numberline {1.1}Biological background}{1}{section.9}
+\contentsline {section}{\numberline {1.2}Literature review}{2}{section.11}
+\contentsline {section}{\numberline {1.3}Motivation}{3}{section.12}
+\contentsline {chapter}{\numberline {2}Methods}{4}{chapter.13}
+\contentsline {section}{\numberline {2.1}Data set}{4}{section.14}
+\contentsline {section}{\numberline {2.2}Experiment setup}{4}{section.15}
+\contentsline {section}{\numberline {2.3}Image processing}{5}{section.17}
+\contentsline {subsection}{\numberline {2.3.1}Digital images}{5}{subsection.18}
+\contentsline {subsection}{\numberline {2.3.2}On spatial resolution, gray levels and coloured images}{6}{subsection.19}
+\contentsline {subsection}{\numberline {2.3.3}Image processing operations}{6}{subsection.20}
+\contentsline {section}{\numberline {2.4}\textit {MATLAB} as a programming language}{7}{section.21}
+\contentsline {section}{\numberline {2.5}Pre-processing: Getting the root's skeleton}{7}{section.22}
+\contentsline {section}{\numberline {2.6}Computing the angle}{8}{section.23}
+\contentsline {subsection}{\numberline {2.6.1}Computing the curvature of the root tip}{9}{subsection.27}
+\contentsline {chapter}{\numberline {3}Results}{11}{chapter.28}
+\contentsline {section}{\numberline {3.1}Key features}{11}{section.29}
+\contentsline {subsection}{\numberline {3.1.1}Graphical User Interface}{12}{subsection.30}
+\contentsline {subsection}{\numberline {3.1.2}Discerning root from background}{12}{subsection.31}
+\contentsline {subsection}{\numberline {3.1.3}Handling user's mistakes}{12}{subsection.32}
+\contentsline {subsection}{\numberline {3.1.4}User interaction and optional steps}{12}{subsection.33}
+\contentsline {subsection}{\numberline {3.1.5}Drawing of the angle}{13}{subsection.34}
 \contentsline {section}{\numberline {3.2}Workflow of root skeletonisation -- explained on GUI}{13}{section.35}
-\contentsline {section}{\numberline {3.3}Components of the GUI}{14}{section.37}
-\contentsline {section}{\numberline {3.4}Validation: Comparing the automated calculated angles with the manually calculated angles}{15}{section.39}
+\contentsline {section}{\numberline {3.3}Components of the GUI}{13}{section.37}
+\contentsline {section}{\numberline {3.4}Validation: Comparing the automated calculated angles with the manually calculated angles}{14}{section.39}
 \contentsline {chapter}{\numberline {4}Discussion}{20}{chapter.42}
 \contentsline {section}{\numberline {4.1}Validation on more images}{20}{section.43}
 \contentsline {section}{\numberline {4.2}Challenges and limitations of \textit {RootSkel}}{20}{section.44}
