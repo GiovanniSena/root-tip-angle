@@ -2,9 +2,9 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Different forms of tropism: Phototropism, thigmotropism, hydrotropism, gravitropism and different effects of gravitropism; taken from [INSERT REFERENCE].\relax }}{2}{figure.caption.10}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Different forms of tropism: Phototropism, thigmotropism, hydrotropism, and different effects of gravitropism; taken from [INSERT REFERENCE].\relax }}{2}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The experiment setup: Taken from [INSERT REFERENCE].\relax }}{5}{figure.caption.16}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The experimental setup for root electrotropism: Subfigure A shows a V-box containing plants in a medium, stabilised by PCR tubes with agar and seeds. To the left a submerged negative electrode (cathode); to the right a submerged positive electrode (anode); inflow and outflow tube controlling the medium. Subfigure B shows the components of an EF experiment: The V-box connected to a power source, a media reservoir connected to the V-box via two pumps controlling the medium inflow and outflow, and a camera controlled via a Raspberry Pi facing the V-box to to take time lapse images of the roots at 10 intervals. Taken from [INSERT REFERENCE].\relax }}{5}{figure.caption.16}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces How the angle in reponse to the EF is measured: The angle \( \Theta \) represents the angle between the line through the tip of the root and the point of highest local curvature and a line parallel to the EF; taken from [INSERT REFERENCE].\relax }}{8}{figure.caption.24}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces The workflow of \textit {RootSkel} and different component of the GUI: Pre-processing steps to extract the skeleton are highlighted in orange, the actual angle computation is shaded in blue. Steps that have a front-end, ie are visible on the GUI, are framed in red, only back-end components are without a frame. \relax }}{16}{figure.caption.36}

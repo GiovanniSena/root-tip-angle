@@ -14,35 +14,37 @@
 %\newcommand{\option}[1]{\texttt{\itshape#1}}
 
 %----------------------------------------------------------------------------------------
-The purpose of this methods section is to give an overview on, first, the data that was used to develop the software tool and how the data were collected, second, image processing basics, and third, what programming languages, definitions and methods chosen when developing the tool. This will help the reader to replicate, understand and modify the methods and source code of the tool. 
+The purpose of this methods section is to give an overview on, first, the data used to develop the software tool and how the data were collected, second, image processing basics, and third, what programming languages, definitions and methods chosen when developing the tool. This will help the reader to replicate, understand and modify the methods and source code of the tool. 
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 \section{Data set}
 
-Our data set consisted of high-throughput time-lapse images of Arabidopsis roots taken by a standard Raspberry Pi V2 camera from 5 experiments with 5-6 roots each containing between 32 and 36 images over a period of at least 5 hours, ie every 10 minutes a photo was taken. The images were named by the date and time they were taken. 
+Our data set consisted of high-throughput time-lapse images of \textit{Arabidopsis thaliana} (Arabidopsis) roots taken by a standard Raspberry Pi V2 camera from 5 experiments with 5-6 roots each containing between 32 and 36 images over a period of at least 5 hours, ie every 10 minutes a photo was taken. The images were named after the date and time they were taken; information on the strength of the EF in voltage was captured in each folder containing one experiment data set. 
+All the other parameters except for the applied voltage remain the same (eg media, temperature, reservoir size). The specifications are available on request.
 
 It should be noted that these images had already been collected in a previous project and are not subject but only the basis of the work presented here. 
 
-However, to better understand the nature of the data, we will give a high-level explanation of the experiment setup that was used to collect these data.
-
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
-\section{Experiment setup}
+\section{Experimental setup}
+
+To better understand the nature of the data, we give a high-level explanation of the experimental setup used for data collection in figure [INSERT REFERENCE HERE].
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{../Figures/experiment_circuit.png}
-	\caption{The experiment setup: Taken from [INSERT REFERENCE].}
+	\caption{The experimental setup for root electrotropism: \\
+		Subfigure A shows a V-box containing plants in a medium, stabilised by PCR tubes with agar and seeds. To the left a submerged negative electrode (cathode); to the right a submerged positive electrode (anode); inflow and outflow tube controlling the medium. \\
+		Subfigure B shows the components of an EF experiment: The V-box connected to a power source, a media reservoir connected to the V-box via two pumps controlling the medium inflow and outflow, and a camera controlled via a Raspberry Pi facing the V-box to to take time lapse images of the roots at 10 intervals. \\
+		Taken from [INSERT REFERENCE].}
 	\label{fig:experiment}
 \end{figure}
 
 [SEE SLIDES, THESIS]
 
-[INSERT FIGURE: ESSAY FOR ROOT ELECTROTROPISM]
-
-[INSERT FIGURE: PHENOMENOLOGY OF ROOT ELECTROTROPISM]
+%INSERT FIGURE: PHENOMENOLOGY OF ROOT ELECTROTROPISM]
 
 
 %----------------------------------------------------------------------------------------

@@ -9,13 +9,13 @@
 \contentsline {section}{\numberline {1.3}Motivation}{3}{section.12}
 \contentsline {chapter}{\numberline {2}Methods}{4}{chapter.13}
 \contentsline {section}{\numberline {2.1}Data set}{4}{section.14}
-\contentsline {section}{\numberline {2.2}Experiment setup}{4}{section.15}
+\contentsline {section}{\numberline {2.2}Experimental setup}{4}{section.15}
 \contentsline {section}{\numberline {2.3}Image processing}{5}{section.17}
-\contentsline {subsection}{\numberline {2.3.1}Digital images}{5}{subsection.18}
+\contentsline {subsection}{\numberline {2.3.1}Digital images}{6}{subsection.18}
 \contentsline {subsection}{\numberline {2.3.2}On spatial resolution, gray levels and coloured images}{6}{subsection.19}
 \contentsline {subsection}{\numberline {2.3.3}Image processing operations}{6}{subsection.20}
 \contentsline {section}{\numberline {2.4}\textit {MATLAB} as a programming language}{7}{section.21}
-\contentsline {section}{\numberline {2.5}Pre-processing: Getting the root's skeleton}{7}{section.22}
+\contentsline {section}{\numberline {2.5}Pre-processing: Getting the root's skeleton}{8}{section.22}
 \contentsline {section}{\numberline {2.6}Computing the angle}{8}{section.23}
 \contentsline {subsection}{\numberline {2.6.1}Computing the curvature of the root tip}{9}{subsection.27}
 \contentsline {chapter}{\numberline {3}Results}{11}{chapter.28}
