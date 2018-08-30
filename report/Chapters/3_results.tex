@@ -232,7 +232,7 @@ Table [INSERT REFERENCE HERE] gives an overview of the different components and 
 The current version of the package can be downloaded from [INSERT REFERENCE HERE]. %https://github.com/burfel/root-tip-angle/tree/master/src/Root_image_GUI_v1_5 and will be maintained on [INSERT GIOVANNIS GITHUB HERE].
 
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth]{../Figures/components.pdf}
 	\caption{The different components and modules of \textit{RootSkel} with a description of each of them; the most important ones containing the core functionality of \textit{RootSkel} are framed in red, the high-level components are shaded in yellow.}
@@ -296,7 +296,7 @@ The current version of the package can be downloaded from [INSERT REFERENCE HERE
 
 As a preview of validation we performed our webtool on 3 randomly chosen roots from 4 different experiments over a time of 330 minutes. We compared both the automatically computed angles with the previously computed manual angle. As a second validation step we also compared the angles to the computed angles with the turning point as user input.
 
-Figure [INSERT HERE] shows the comparison of the angle of interest \( Theta \), both of the manual as well as the automatically computed angle at about 11 times steps over a period of 330 minutes.
+Figure [INSERT HERE] shows the comparison of the angle of interest \( \Theta \), both of the manual as well as the automatically computed angle at about 11 times steps over a period of 330 minutes.
 
 %\begin{figure}[h]
 %\centering
@@ -336,14 +336,14 @@ Figure [INSERT HERE] shows the comparison of the angle of interest \( Theta \), 
 \end{figure}
 
 
-Differences between the three approaches are in the magnitute of 5 degrees, single points vary up to 12 degrees, see also table [INSERT REFERENCE HERE].
-Table [INSERT REFERENCE HERE] compares the autmoatically computed angle by \textit{RootSkel} with the manually computed angles on the 3 roots. We compute the absolute difference in the angles and introduce an \textit{improvement score} defined as 
+Differences between the three approaches are in the magnitute of 5 degrees, single points vary up to 12 degrees, see also figure [INSERT REFERENCE HERE].
+Table [INSERT REFERENCE HERE] compares the automatically computed angle by \textit{RootSkel} with the manually computed angles of the 3 roots. We compute the absolute difference in the angles and introduce an \textit{improvement score} defined as 
 \[
-| \frac{ \alpha_{\text{RootSkel}} - \alpha_{\text{manual}} }{\alpha_{\text{manual}}} |
+ \text{score}_{\textbf{imp}} := | \frac{ \alpha_{\text{RootSkel}} - \alpha_{\text{manual}} }{\alpha_{\text{manual}}} |
 \]
 where $\alpha_{\text{RootSkel}}$ denotes the angle computed by \textit{RootSkel} and $\alpha_{\text{manual}}$ denotes the manually computed angle; this way we compare to the manually computed angles. For how much our method is really an improvement of the theoretical true value, that cannot be computed as any measurement will be subject to errors, we refer to the discussion section [INSERT REFERENCE HERE]. The improvement score on our 3 example data sets average between 5\% and 23\% with an ensemble average of 12.4\%.
 
-When studying our data sets (manually computed and automatically computed angles), we could oberve that as the angle approaches zero, the values get more volatile, ie the variance increases; this matches up with our observations in presented in table [INSERT REFERENCE HERE]. However, it should be noted that our improvement score is based on relative values and, therefore, can easily blow up for small values (of manually computed angles and increasing or constant difference/ variance to the automatically computed angle).
+When studying our data sets (manually computed and automatically computed angles), we could oberve that as the angle approaches zero, the values get more volatile, ie the variance increases; this matches up with our observations in presented in figure [INSERT REFERENCE HERE]. However, it should be noted that our improvement score is based on relative values and, therefore, can easily blow up for small values. %(of manually computed angles and increasing or constant difference/ variance to the automatically computed angle).
 
 
 \begin{figure}[h!]
