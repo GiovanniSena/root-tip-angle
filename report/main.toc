@@ -48,10 +48,11 @@
 \contentsline {subsection}{\numberline {4.3.8}Other ways of curvature and angle measuring}{25}{subsection.60}
 \contentsline {subsection}{\numberline {4.3.9}Error quantification in the angle computation}{26}{subsection.61}
 \contentsline {section}{\numberline {4.4}Broader application of this tool}{26}{section.62}
-\contentsline {section}{\numberline {4.5}Suggestions for future data acquisition}{26}{section.63}
-\contentsline {subsection}{\numberline {4.5.1}Stable conditions in the experiment}{26}{subsection.64}
-\contentsline {subsection}{\numberline {4.5.2}No objects interfering with the object of interest}{27}{subsection.65}
-\contentsline {subsection}{\numberline {4.5.3}Increase of the contrast}{27}{subsection.66}
-\contentsline {subsection}{\numberline {4.5.4}Higher resolution}{27}{subsection.67}
-\contentsline {chapter}{\numberline {5}Conclusion}{28}{chapter.68}
-\contentsline {chapter}{\numberline {A}Manual of \textit {RootSkel}}{29}{appendix.69}
+\contentsline {chapter}{\numberline {5}Conclusion}{27}{chapter.63}
+\contentsline {chapter}{\numberline {A}On the data set}{28}{appendix.64}
+\contentsline {section}{\numberline {A.1}Suggestions for future data acquisition}{28}{section.65}
+\contentsline {subsection}{\numberline {A.1.1}Stable conditions in the experiment}{28}{subsection.66}
+\contentsline {subsection}{\numberline {A.1.2}No objects interfering with the object of interest}{28}{subsection.67}
+\contentsline {subsection}{\numberline {A.1.3}Increase of the contrast}{29}{subsection.68}
+\contentsline {subsection}{\numberline {A.1.4}Higher resolution}{29}{subsection.69}
+\contentsline {chapter}{\numberline {B}Manual of \textit {RootSkel}}{30}{appendix.70}
