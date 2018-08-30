@@ -195,7 +195,8 @@ This task turned out to be highly challenging on noisy image data and can be reg
 \section{Computing the angle}
 
 Once the skeleton has been extracted, one can compute the curvature and the angle of the root tip. 
-In fact, we only need to segment the bit of the root that is close to the tip including the bending point, ie the point with highest local curvature, not the entire root. This will help to discard lots of noise caused by tubes and other objects at the upper part of the root, see section [INSERT REFERENCE] for example of images.
+In fact, we only need to segment the bit of the root that is close to the tip including the bending point, ie the point with highest local curvature. %, not the entire root. 
+This will help to discard lots of noise caused by tubes and other objects at the upper part of the root, see section [INSERT REFERENCE TO APPENDIX] for example of images.
 
 Various definitions of angles associated to the root tip had been considered; however, in order to make the angles comparable to the so far manually computed angles we chose an emulation of the manual computation of the angle in our final implementation. 
 
@@ -204,7 +205,7 @@ Various definitions of angles associated to the root tip had been considered; ho
 %have not been incorporated in our final tool. 
 
 
-The angle \( \Theta \) we want to compute is the angle between the line through the point of the highest local (Gaussian) curvature and the root tip and a line parallel to the electric field (EF).  
+The angle \( \Theta \) we want to compute is the angle between the line through the point of the highest local %(Gaussian) curvature and the root tip and a line parallel to the electric field (EF).  
 
 Figure [INSERT REFERENCE HERE] illustrates the angle \( \Theta \) that is computed. 
 
@@ -218,7 +219,7 @@ Figure [INSERT REFERENCE HERE] illustrates the angle \( \Theta \) that is comput
 
 
 
-Once these two lines are correctly defined, provided the point of highest local curvature is unique, it is straight forward to compute angle \( Theta \).
+Once these two lines are correctly defined, provided the point of highest local curvature is unique, it is straight forward to compute angle \( \Theta \).
 
 
 %There are other ways such as finding vectors on the lines and using their dot products. However, we can use simple, basic trigonometric methods as shown in figure [INSERT REFERENCE HERE].
@@ -256,7 +257,7 @@ or equivalently
 \begin{equation} \label{angle2}
 \Theta_{2} = \tan^{-1}( v_{1}, v_{2}) \times \frac{180}{\pi}
 \end{equation}
-depending on the signedness of \( v_{1} \) and \( v_{2} \). Assuming the tip of the root only bends positively, ie towards the cathode (the negative pole of the EF) in our experiment setup, and \( v_{2} \) is not positive nor negative, the sign of \( \Theta \) only depends on \( v_{1} \). If the root tip crosses the line that is completely aligned with, ie parallel to, the EF (where \( \Theta \) takes the value 0), \( \Theta \) becomes negative as \( v_{1} \) will become negative. 
+depending on the signedness of \( v_{1} \) and \( v_{2} \). Assuming the tip of the root only bends positively, ie towards the cathode (the negative pole of the EF) in our experimental setup, and \( v_{2} \) is not positive nor negative, the sign of \( \Theta \) only depends on \( v_{1} \). If the root tip crosses the line that is completely aligned with, ie parallel to, the EF (where \( \Theta \) takes the value 0), \( \Theta \) becomes negative as \( v_{1} \) will become negative. 
 
 
 %----------------------------------------------------------------------------------------
@@ -272,30 +273,30 @@ This will help the user to understand the rather formula intense implementation 
 
 There exist various different concepts and definitions of curvature in different branches of geometry.
 Intuitively, curvature in the 2D case captures the amount by which a curve deviates from being a (straight) line.
-We will only touch upon \textit{extrinsic} curvature here, which is defined for objects embedded in some higher-dimensional usually Euclidean space. This allows us to use the radius of circles that touch the object, so-called \textit{osculating cirlce}, to compute the curvature.
+We will only touch upon \textit{extrinsic} curvature here, which is defined for objects embedded in some higher-dimensional usually Euclidean space. This allows us to use the radius of circles that touch the object, so-called \textit{osculating cirlces}, to compute the curvature.
 
 % Curvature is usually a scalar quantity, but one may define a curvature vector that takes into account the direction of the bend in addition to its magnitude.
 % The curvature of more complex objects (such as surfaces or even curved n-dimensional spaces) is described by more complex objects from linear algebra, such as the general Riemann curvature tensor. 
 
 Geometrically, the curvature measures how fast the unit tangent vector, ie the vector tangent to the curve and of length 1,  to the curve rotates. 
 [INSERT FIGURE HERE]
+
 If the curve is close to a straight line, and thus the unit tangent vector changes very little, the curvature is small; if the curve contains a sharp turn, the curvature is large.
-In the implementation we will use the difference between edge direction vectors to compute this velocity.
+In the implementations we used the difference between edge direction vectors to compute this velocity.
 
 
 %INSERT PRECISE DEFINITION HERE AND INSERT HERE "CURVATURE OF SPACE CURVES" FROM WIKIPEDIA
 
 
-For the implementation we first compute the first derivative (in between pairs of samples); we take into account unequal segment lengths. In the same way we then compute the second derivative , we take the average length of two neighbouring edges, ie the length of edge in between neighbouring normals if we consider the normals to be halfway between vertices.
+%For the implementation 
+We first compute the first derivative (in between pairs of samples), and we take into account unequal segment lengths. In the same way we then compute the second derivative, we take the average length of two neighbouring edges, ie the length of edge in between neighbouring normals if we consider the normals to be halfway between vertices.
 Once we have the normals, we can compute the rate of change between neighbouring normals to assign the specific curvature value to each point.
 
 [INSERT FIGURE HERE, DRAW IT]
 
 %The current implementation of the \textit{getAngle.m} script fits polygons to the points, ie the coordinates from the root skeleton, and then calculates the analytical curvature from these fitted polygons. 
 
-We assume the line pieces to connect two neighbouring points if the user does not specify otherwise. 
-
-The script outputs the curvature values of each point. 
+If the user does not specify otherwise, we assume the line pieces to connect two neighbouring points. The curvature function outputs a vector of curvature values of the points.
 
 
 %I wish to calculate the curvature (as accurate as possible) at the points on the curve.
@@ -303,7 +304,7 @@ The script outputs the curvature values of each point.
 
 
 In a previous version, we  took a section of the curve (here 9 vertices) and fitted a polynomial to it; this will be our cuve model. From this model we can compute the derivative and with the coefficients of the fitted polynomial we can compute the curvature at each point. 
-A large radius of curvature means a rather straight part of the curve, while we get a small radius of curvature in parts where the curve is "pointy", ie bends more. The sign of the curvature indicates whether it is right (positive) or left (negative) bending. However, the here used function \textit{polyfit} should not be used on very noisy data.
+A large radius of the osculating circle, ie a high curvature, means a rather straight part of the curve, while we get a small radius or curvature in parts where the curve is "pointy", ie bends more. The sign of the curvature indicates whether it is right (positive) or left (negative) bending. However, the here used function \textit{polyfit} should not be used on very noisy data.
 
 
 

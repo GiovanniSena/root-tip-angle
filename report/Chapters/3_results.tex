@@ -23,12 +23,12 @@
 %%----------------------------------------------------------------------------------------
 
 The following section of this report will briefly explain the tool from a technical perspective, but more importantly  %and show how to use it in practice. %Additionally, we present an example of the tool in use.
-we will present some highlights of the tool that sets it apart from other tools and we will guide the user through one example to illustrate how the tool is used in practice.
+we will present some highlights of the tool that sets it apart from other tools. In the appendix [INSERT REFERENCE HERE] we will guide the user through one example to illustrate how the tool is used in practice. Tthis can serve as a manual for users even though the steps are self-explanatory by just using the GUI. 
 
-Additionally, we will show some validation of the tool by comparing the angle computed by our tool to the one computed manually on one time-series image data set of one Arabidopsis root. 
+Additionally, we will show some validation of the tool by comparing the angle computed by our tool to the one computed manually on 3 time-series image data set of one Arabidopsis roots. 
 
 The code is open-source and publicly available on [INSERT GITHUB REFERENCE HERE]; all previous versions including log files can be found on [INSERT GITHUB REFERENCE HERE].
-[EMPHASISE THIS: MAKE RESEARCH TRANSPARENT]
+%EMPHASISE THIS: MAKE RESEARCH TRANSPARENT
 
 
 %----------------------------------------------------------------------------------------
@@ -37,42 +37,42 @@ The code is open-source and publicly available on [INSERT GITHUB REFERENCE HERE]
 
 Figure [INSERT REFERENCE HERE: PIPELINE FROM GUI] explains the key components of this image-analysis software tool to address the problem of highly noisy electrotropism consumer camera images of Arabidopsis roots and a standardised way of computing the angle for the curved root tip. 
 
-This tool takes the form of a MATLAB program and subprograms with a graphical user interface (GUI) on top of it.
+This tool takes the form of a MATLAB program and subprograms with a graphical user interface on top of it.
 
 %----------------------------------------------------------------------------------------
 \subsection{Graphical User Interface}
-To make the program more user-friendly, we developed a graphical user interface (GUI). Pop-up windows will guide the user through the process (see [INSERT REFERENCE HERE]); a separate manual is not necessary as the steps are very intuitive and straight-forward.
+To make the program more user-friendly, we developed a graphical user interface (GUI). Pop-up windows, message boxes as well as error boxes, will guide the user through the process (see [INSERT REFERENCE HERE]); a separate manual is not necessary as the steps are very intuitive and straight-forward.
 There are various benefits of the GUI such as
 \begin{itemize}
-	\item Visualising the process including the pipeline
+	\item Visualising the process including the pipeline and the angle that is computed
 	\item Easy user interaction with mouse clicking
-	\item Flexibility, eg the user can go back at each step without rerunning the whole script from the beginning
+	\item Flexibility, eg the user can go back at each step without running the whole script from the beginning
 	\item Pop-up windows and mouseover functions on buttons that guide the user through the process and explain the steps
-	\item Error messages if user does not enter right values.
+	\item Error messages if user does not enter allowed values.
 \end{itemize}
 
 
-%----------------------------------------------------------------------------------------
-\subsection{Discerning root from background}
-
-Gamma correction (imadjust)
-[TO COMPLETE]
+%%----------------------------------------------------------------------------------------
+%\subsection{Discerning root from background}
+%
+%Gamma correction (imadjust)
+%[TO COMPLETE]
 
 
 %----------------------------------------------------------------------------------------
 \subsection{Handling user's mistakes}
 
-When we take the user's input, eg choosing samples along the root, we correct for small mistakes by taking an neighbourhood (3 \( \times \)) average around the pixel. 
+When we take the user's input, eg choosing samples along the root, we correct for small mistakes by taking a neighbourhood (3 \(\times\)3) average around the pixel. 
 %followed by adaptive thresholding.
 This means the user does not have to take special care when choosing the points as long as it is in the approximate region of the root.
 
 %----------------------------------------------------------------------------------------
 \subsection{User interaction and optional steps}
-The software tool was created in a ways that it is easy to interact with for a future user. 
-We implemented several optional steps that only need to be performed if the user thinks it is necessary. This on the other hand saves time in the preprocessing but on the other hand also ensures that tricky roots can be tackled by various optional steps in order to extract a skeleton. 
+The software tool was created in ways that it is easy to interact with for a future user. 
+We implemented several optional steps that only need to be performed if the user thinks they are necessary. This on the other hand saves time in the preprocessing but on the other hand also ensures that tricky roots can be tackled by various optional steps in order to extract a skeleton. 
 
 %----------------------------------------------------------------------------------------
-\subsection{Drawing of the angle}
+\subsection{Drawing the angle}
 The GUI lets the user visualise the angle that is computed. This not only helps to make the tool more visual and transparent, but can also assist in debugging. 
 
 
@@ -81,7 +81,7 @@ The GUI lets the user visualise the angle that is computed. This not only helps 
 \section{Workflow of root skeletonisation -- explained on GUI}
 
 The pipeline that has been developed for the preprocessing step of extracting the skeleton is displayed in figure [INSERT REFERENCE HERE] and can be viewed at the bottom of the GUI, see figure [INSERT REFERENCE HERE].
-In the appendix [INSERT REFERENCE HERE] we present the tool on one example image guides the reader through the pipeline and can serve as a manual for future users.
+%In the appendix [INSERT REFERENCE HERE] we present the tool on one example image guides the reader through the pipeline and can serve as a manual for future users.
 
 %[INSERT FIGURE OF DIFFERENT STEPS (SUBFIGURES) THAT ARE THEN REFERRED TO IN THE TEXT INDIVIDUALLY]
 
@@ -229,7 +229,7 @@ Every function representing one specific step in the pipeline or objects accesse
 
 
 Table [INSERT REFERENCE HERE] gives an overview of the different components and modules our software tool \textit{RootSkel} consists of. It has been developed over a cycle of various iterations, together with an exemplary future user. 
-The current version of the package can be downloaded from %https://github.com/burfel/root-tip-angle/tree/master/src/Root_image_GUI_v1_5 and will be maintained on [INSERT GIOVANNIS GITHUB HERE].
+The current version of the package can be downloaded from [INSERT REFERENCE HERE]. %https://github.com/burfel/root-tip-angle/tree/master/src/Root_image_GUI_v1_5 and will be maintained on [INSERT GIOVANNIS GITHUB HERE].
 
 
 \begin{figure}[h]
@@ -255,38 +255,40 @@ The current version of the package can be downloaded from %https://github.com/bu
 %* creating a filtering mask according to the brightness rank
 
 
-Even though most of image processing work is empirical, ie based on trial and error and educated guesses on the given data set, we try to explain why certain features were necessary to implement. %this explanations are marked in italics.
-The pipeline can be seen in the at the bottom of the GUI in figure [INSERT REFERENCE HERE].
 
-[INCLUDE IN GRAPHIC IF EXCEED WORD COUNT]
-
-%1. Open file
-%2. Zoom in
-%3. Choose Points
-%4. Process image
-%5. Crop image (optional): 
-%6. Get skeleton
-%7. Crop skeleton (optional): It allows the user to crop a region around the skeleton by hand to definitely remove things outside the region of interest. The user can redo the cropping in case she is not satisfied. 
-%8. Foreign object removal (optional): It allows the user to remove objects, ie if the skeleton contains undesired branches. The user can undo the last cleaning step in case the root gets removed in the last step, to not start the entire process again. 
-%9. Force tip (optional)
-%10. Final preparation
+%MAYBE USE STH FROM HERE BUT COMMENTED OUT FOR NOW, AS WIDELY REPETITION:
+%Even though most of image processing work is empirical, ie based on trial and error and educated guesses on the given data set, we try to explain why certain features were necessary to implement. %this explanations are marked in italics.
+%The pipeline can be seen in the at the bottom of the GUI in figure [INSERT REFERENCE HERE].
 %
-%The bar on the left shows various other buttons that allow the user to perform other functions:
-%* In the upper part: 
-%* Save variables
-%* Save figures: select the cropped image or the skeleton; both are greyed out as longs as objects have not been created
-%* Load variables
-%* Load figure: choose one of the radio buttons either on the left or on the right
-%* In the middle part: 
-%* Show skeleton; greyed out as long as the skeleton has not been created
-%* Clear figure: choose one of the radio buttons either on the left or on the right
-%* The bottom part to compute and display the angle:
-%* Using user’s point
-%* Using curvature
-
-The GUI includes helpful text along the pipeline as well as pop up windows including instructions or warnings in case the user does not follow them. 
-
-In the appendix [INSERT REFERENCE HERE] we guide the user through the different steps of the pipeline and present one example each; this can serve as a manual for users even though the steps are rather self-explanatory by just using the GUI. Also, having a GUI rather than a script with pop-up-windows not only makes the tool more visually attractive but it one can also repeat a step without restarting the whole process or script again. This all adds to the user-friendliness.
+%[INCLUDE IN GRAPHIC IF EXCEED WORD COUNT]
+%
+%%1. Open file
+%%2. Zoom in
+%%3. Choose Points
+%%4. Process image
+%%5. Crop image (optional): 
+%%6. Get skeleton
+%%7. Crop skeleton (optional): It allows the user to crop a region around the skeleton by hand to definitely remove things outside the region of interest. The user can redo the cropping in case she is not satisfied. 
+%%8. Foreign object removal (optional): It allows the user to remove objects, ie if the skeleton contains undesired branches. The user can undo the last cleaning step in case the root gets removed in the last step, to not start the entire process again. 
+%%9. Force tip (optional)
+%%10. Final preparation
+%%
+%%The bar on the left shows various other buttons that allow the user to perform other functions:
+%%* In the upper part: 
+%%* Save variables
+%%* Save figures: select the cropped image or the skeleton; both are greyed out as longs as objects have not been created
+%%* Load variables
+%%* Load figure: choose one of the radio buttons either on the left or on the right
+%%* In the middle part: 
+%%* Show skeleton; greyed out as long as the skeleton has not been created
+%%* Clear figure: choose one of the radio buttons either on the left or on the right
+%%* The bottom part to compute and display the angle:
+%%* Using user’s point
+%%* Using curvature
+%
+%The GUI includes helpful text along the pipeline as well as pop up windows including instructions or warnings in case the user does not follow them. 
+%
+%In the appendix [INSERT REFERENCE HERE] we guide the user through the different steps of the pipeline and present one example each; this can serve as a manual for users even though the steps are rather self-explanatory by just using the GUI. Also, having a GUI rather than a script with pop-up-windows not only makes the tool more visually attractive but it one can also repeat a step without restarting the whole process or script again. This all adds to the user-friendliness.
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
