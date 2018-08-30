@@ -51,13 +51,12 @@ To better understand the nature of the data, we give a high-level explanation of
 %----------------------------------------------------------------------------------------
 \section{Image processing}
 
-Having these images as a basis, the nature of this work was mainly of image processing nature.
+Having these images as a basis, the nature of this work was mainly an image processing one.
 
-Image processing pools together a lot of different domains including physics (optics), signal processing and pattern recognition/ Machine Learning (ML) to ultimately feed computer to understand how to interpret images and make decisions based on them. 
+Image processing pools together a lot of different domains including physics (optics), signal processing and pattern recognition/ Machine Learning (ML); %to ultimately feed computers to understand how to interpret images and make decisions based on them. 
+the idea behind it is to extract information from an image information in a form that is suitable for computer processing [INSERT REFERENCE HERE]. 
 
-The idea behind image processing is to extract information from an image information in a form that is suitable for computer processing [INSERT REFERENCE HERE]. 
-
-Figure [INSERT REFERENCE HERE] shows fundamental steps in image processing, that served as a guideline for the presented work. However, every single image processing case is different and there will always be slight variations to this generic image proessing workflow.
+Figure [INSERT REFERENCE HERE] shows fundamental steps in image processing, that served as a guideline for the presented work. However, every single image processing case is different and there will always be slight variations to this generic image processing workflow.
 
 
 %combines optics and signal processing and is often used in computer vision.
@@ -78,7 +77,7 @@ Figure [INSERT REFERENCE HERE] shows fundamental steps in image processing, that
 
 In image processing, we operate on digital (discrete) images.
 An image refers to a 2D light intesity function \( f(x,y) \), where \( (x,y) \) denote spatial coordinates and the value of \( f \) at any point \( (x,y) \) is proportional to the brightness or gray levels of the image at that point [INSERT REFERENCE HERE].
-A digital image is an image \( f(x,y)  \) that has been discretised both in spatial coordinates and brightness, ie we
+Thus, a digital image is an image \( f(x,y)  \) that has been discretised both in spatial coordinates and brightness, ie we
 
 \begin{itemize}
 	\item Sample the 2D space on a regular grid
@@ -100,7 +99,7 @@ What we get is an image represented as a matrix of integer values; the elements 
 \subsection{On spatial resolution, gray levels and coloured images}
 
 The storage and preprocessing requirements increase rapidly with the spatial resolution and the number of gray levels. 
-For instance, a 256 gray-scale image of size 256 \( \times \) 256 occupies 64K bytes of memory. Figure [INSERT REFERENCE HERE] shows images of different spatial resolution. 
+For instance, a 256 gray-scale image of size 256\( \times \)256 occupies 64K bytes of memory. Figure [INSERT REFERENCE HERE] shows images of different spatial resolution. 
 
 [INSERT FIGURE: Images with decreasing spatial resolution, taken from .....]
 
@@ -130,12 +129,12 @@ We can
 
 %IMAGE PROCESSING OPERATIONS USED IN THIS WORK INCLUDE: 
 
-From an image processing point of view, we performed point as well as local operations.
+From an image processing point of view, we performed point as well as local operations in our work.
 
 A point operation is a function that is performed on each single pixel of an image, independent of all the other pixels in that image [INSERT REFERENCE HERE]. These include operations like inversing, changing the brightness or contrast of an image, changing the gamma of an image, binarising an image and logical operations. 
 
 Local operations, on the other hand, compute the new value of each single pixel with a neighbourhood around it [INSERT REFERENCE HERE]. %They can be divided in two groups, linear and nonlinear filters.
-They include filters which are operations that converts a source image to a result image by applying some kind of tranformation, be it of linear or nonlinear nature [INSERT REFERENCE HERE]. There are more than 134 different filter functions in the MATLAB Image Processing toolbox that can be applied with different arguments and sensitivity thresholds. Filters used in our work include the 2D median filtering \textit{medfilt2} or the 2D adaptive noise-removal filtering \textit{wiener2}.
+They include filters which are operations that convert a source image to a result image by applying some kind of tranformation, be it of linear or nonlinear nature [INSERT REFERENCE HERE]. There are more than 134 different filter functions in the MATLAB Image Processing toolbox [INSERT REFERENCE HERE] that can be applied with different arguments and sensitivity thresholds. Filters used in our work include the 2D median filtering \textit{medfilt2} or the 2D adaptive noise-removal filtering \textit{wiener2}.
 
 %A a filter is an operation, which converts a source image via some kind of transformation to a result image [INSERT REFERENCE HERE]. 
 
@@ -171,7 +170,7 @@ They include filters which are operations that converts a source image to a resu
 %----------------------------------------------------------------------------------------
 \section{\textit{MATLAB} as a programming language}
 
-As a language we chose \textit{Matlab} as it is very popular in academic circles for image/ data processing given the number of built-in functions, including well documented image processing toolbox (\textit{MATLAB Image Processing Toolbox} [INSERT REFERENCE HERE]).
+As a language we chose \textit{Matlab} as it is very popular in academic circles for image/ data processing given the number of built-in functions, and a well documented image processing toolbox (\textit{MATLAB Image Processing Toolbox} [INSERT REFERENCE HERE]).
 %with a very good documentation. 
 % GOES TO DISCUSSION/ FUTURE WORK:
 %Alternative languages that were considered were \textit{Python} and \textit{Julia}. Another recommended language is \textit{OpenCV} as it is very fast and well documented. Other non-open source software such as \textit{ImageJ}, a Java based image processing program, and \textit{Avizo} which is a general-purpose commercial software application for scientific and industrial data visualisation and analysis with a nice GUI, could not be investigated further in this work. 
