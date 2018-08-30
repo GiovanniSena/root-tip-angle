@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  30 AUG 2018 13:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  30 AUG 2018 13:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2193,12 +2193,6 @@ some lim-i-ta-tions of \T1/ppl/m/it/10.95 RootSkel
 
  (./Chapters/5_conclusion.tex
 Chapter 5.
-
-Overfull \hbox (23.69994pt too wide) in paragraph at lines 34--35
-[]\T1/ppl/m/n/10.95 We hop \T1/ppl/m/it/10.95 RootSkel \T1/ppl/m/n/10.95 will c
-on-tribute to un-der-stand highly com-plex and poorly-understood
- []
-
 )
 1: section
 [25
@@ -2243,7 +2237,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  32161 strings out of 493014
  649991 string characters out of 6133351
- 839288 words of memory out of 5000000
+ 840288 words of memory out of 5000000
  35203 multiletter control sequences out of 15000+600000
  69986 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2258,7 +2252,7 @@ ist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on main.pdf (42 pages, 869733 bytes).
+Output written on main.pdf (42 pages, 869731 bytes).
 PDF statistics:
  644 PDF objects out of 1000 (max. 8388607)
  557 compressed objects within 6 object streams

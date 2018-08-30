@@ -337,11 +337,11 @@ Figure [INSERT HERE] shows the comparison of the angle of interest \( \Theta \),
 
 
 Differences between the three approaches are in the magnitute of 5 degrees, single points vary up to 12 degrees, see also figure [INSERT REFERENCE HERE].
-Table [INSERT REFERENCE HERE] compares the automatically computed angle by \textit{RootSkel} with the manually computed angles of the 3 roots. We compute the absolute difference in the angles and introduce an \textit{improvement score} defined as 
+Table [INSERT REFERENCE HERE] compares the automatically computed angle by \textit{RootSkel} with the manually computed angles on the 3 roots. We compute the absolute difference in the angles and introduce an \textit{improvement score} defined as 
 \[
  \text{score}_{\textbf{imp}} := | \frac{ \alpha_{\text{RootSkel}} - \alpha_{\text{manual}} }{\alpha_{\text{manual}}} |
 \]
-where $\alpha_{\text{RootSkel}}$ denotes the angle computed by \textit{RootSkel} and $\alpha_{\text{manual}}$ denotes the manually computed angle; this way we compare to the manually computed angles. For how much our method is really an improvement of the theoretical true value, that cannot be computed as any measurement will be subject to errors, we refer to the discussion section [INSERT REFERENCE HERE]. The improvement score on our 3 example data sets average between 5\% and 23\% with an ensemble average of 12.4\%.
+where $\alpha_{\text{RootSkel}}$ denotes the angle computed by \textit{RootSkel} and $\alpha_{\text{manual}}$ denotes the manually computed angle; this way we compare to the manually computed angles. For how much our method is really an improvement of the theoretical true value, that cannot be computed as any measurement will be subject to errors, we refer to the discussion section [INSERT REFERENCE HERE]. The improvement score on our 3 example data sets average between 5\% and 23\% with an ensemble average of 12.4\%, which can be concluded from figure [INSERT REFERENCE HERE].
 
 When studying our data sets (manually computed and automatically computed angles), we could oberve that as the angle approaches zero, the values get more volatile, ie the variance increases; this matches up with our observations in presented in figure [INSERT REFERENCE HERE]. However, it should be noted that our improvement score is based on relative values and, therefore, can easily blow up for small values. %(of manually computed angles and increasing or constant difference/ variance to the automatically computed angle).
 
