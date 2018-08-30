@@ -51,6 +51,9 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 
 %----------------------------------------------------------------------------------------
 %% include hebrew letters
@@ -253,15 +256,18 @@ Unlike when doing the angle computation to measure the curvature of a root tip m
 
 %Additionally, we evaluated our results by comparing it to previously manually computed angles. [INCLUDE RESULTS A LA 70\% of the images could be found to be reproduced]
 
-Additionally we computed the angle of three Arabidopsis root tips at 30 time points over one whole experiment (approximately 5 hours) and evaluated the results by comparing it to previously manually computed angles on the same images. The results show same patterns as manual computed angles;
+Additionally we computed the angle of 3 Arabidopsis root tips at 11 time points over one whole experiment (approximately 5 hours) and evaluated the results by comparing it to previously manually computed angles on the same images. The results show same patterns as manual computed angles;
 % overall correspondence with manual angles; 
-statistics on our data set suggest that our tool removes human error in the angle calculation process %which accounts in average [INSERT VARIANCE HERE, STATE HOW MUCH HUMAN VARIANCE WE COULD ELIMINATE BY STANDARDISING IT] 
-of up to 10\% of the actual angle. However, further validation on more images need to be done. Unlike the manually computed angles, with using a standard definition of the angle, our software delivers angles free from human bias which makes the results comparable and reproducible. 
+statistics on our data sets suggest that our tool improves accuracy of the manually computed angle by up to 12.4\%. 
+%removes human error in the angle calculation process %which accounts in average [INSERT VARIANCE HERE, STATE HOW MUCH HUMAN VARIANCE WE COULD ELIMINATE BY STANDARDISING IT] 
+%of up to 12.5\% of the actual angle. 
+However, further validation on more images needs to be done; measurement errors of both the manually as well as computationally computed angles need to be obtained. Unlike the manually computed angles, with using a standard definition of the angle, our software delivers angles free from human bias which makes the results comparable and reproducible. 
 % Indeed, we show that on this example we can eliminate in average [INSERT VARIANCE HERE, STATE HOW MUCH HUMAN VARIANCE WE COULD ELIMINATE BY STANDARDISING IT] of human bias; further validation on more images is to be done.
 %can be done on already existing data as well as data gathered in the future. 
 Previously computed angles can be checked by using our software, and more angles of curved roots can be computed in the future and hopefully %help 
 reveal interesting insights in electrotropism. 
-Moreover, our tool is not limited to roots but could theoretically be used on any curved object; slight modifications in the code and the GUI might be necessary.
+Moreover, our tool is not limited to roots but could theoretically be used on any curved object.
+%; slight modifications in the code and the GUI might be necessary.
 
 
 %AIMS
