@@ -14,16 +14,20 @@
 %\newcommand{\option}[1]{\texttt{\itshape#1}}
 
 %----------------------------------------------------------------------------------------
-The purpose of this methods section is to give an overview on, first, the data used to develop the software tool and how the data were collected, second, image processing basics, and third, what programming languages, definitions and methods chosen when developing the tool. This will help the reader to replicate, understand and modify the methods and source code of the tool. 
+The purpose of this methods section is to give an overview on, first, the data used to develop the software tool and how the data were collected, second, image processing basics, and third, which programming languages, definitions and methods were chosen when developing the tool. This will help the reader to replicate, understand and modify the methods and source code of the tool. 
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 \section{Data set}
 
-Our data set consisted of high-throughput time-lapse images of \textit{Arabidopsis thaliana} (Arabidopsis) roots taken by a standard Raspberry Pi V2 camera from 5 experiments with 5-6 roots each containing between 32 and 36 images over a period of at least 5 hours, ie every 10 minutes a photo was taken. The images were named after the date and time they were taken; information on the strength of the EF in voltage was captured in each folder containing one experiment data set. 
-All the other parameters except for the applied voltage remain the same (eg media, temperature, reservoir size). The specifications are available on request.
+Our data set consisted of high-throughput time-lapse images of \textit{Arabidopsis thaliana} (Arabidopsis) roots taken by a standard Raspberry Pi V2 camera from 5 experiments with 5-6 roots each containing between 32 and 36 images over a period of at least 5 hours, ie every 10 minutes a photo was taken. 
+All experimental parameters remained the same across experiments, except for the applied voltage.
+%CUT DUE TO STRICT WORD COUNT
+%The images were named after the date and time they were taken; information on the strength of the EF in voltage was captured in each folder containing one experiment data set. 
+%All the other parameters except for the applied voltage remain the same (e.g. media, temperature, reservoir size). The specifications are available on request.
 
-It should be noted that these images had already been collected in a previous project and are not subject but only the basis of the work presented here. 
+It should be noted that these images had already been collected in a previous project, and were not obtained as a part of the work described herein.
+% and are not subject but only the basis of the work presented here. 
 
 
 %----------------------------------------------------------------------------------------
@@ -36,8 +40,8 @@ To better understand the nature of the data, we give a high-level explanation of
 	\centering
 	\includegraphics[width=\textwidth]{../Figures/experiment_circuit.png}
 	\caption{The experimental setup for root electrotropism: \\
-		Subfigure A shows a V-box containing plants in a medium, stabilised by PCR tubes with agar and seeds. To the left a submerged negative electrode (cathode); to the right a submerged positive electrode (anode); inflow and outflow tube controlling the medium. \\
-		Subfigure B shows the components of an EF experiment: The V-box connected to a power source, a media reservoir connected to the V-box via two pumps controlling the medium inflow and outflow, and a camera controlled via a Raspberry Pi facing the V-box to to take time lapse images of the roots at 10 intervals. \\
+		Subfigure A shows a V-box containing plants in a medium, stabilised by PCR tubes with agar and seedlings. To the left a submerged negative electrode (cathode); to the right a submerged positive electrode (anode); inflow and outflow tube controlling the medium. \\
+		Subfigure B shows the components of an EF experiment: The V-box connected to a power source, a media reservoir connected to the V-box via two pumps controlling the medium inflow and outflow, and a camera controlled via a Raspberry Pi facing the V-box to to take time lapse images of the roots at 10 minute intervals. \\
 		Taken from [INSERT REFERENCE].}
 	\label{fig:experiment}
 \end{figure}
@@ -54,7 +58,7 @@ To better understand the nature of the data, we give a high-level explanation of
 Having these images as a basis, the nature of this work was mainly an image processing one.
 
 Image processing pools together a lot of different domains including physics (optics), signal processing and pattern recognition/ Machine Learning (ML); %to ultimately feed computers to understand how to interpret images and make decisions based on them. 
-the idea behind it is to extract information from an image information in a form that is suitable for computer processing [INSERT REFERENCE HERE]. 
+the idea behind it is to extract information from an image in a form that is suitable for computer processing [INSERT REFERENCE HERE]. 
 
 Figure [INSERT REFERENCE HERE] shows fundamental steps in image processing, that served as a guideline for the presented work. However, every single image processing case is different and there will always be slight variations to this generic image processing workflow.
 
@@ -77,11 +81,11 @@ Figure [INSERT REFERENCE HERE] shows fundamental steps in image processing, that
 
 In image processing, we operate on digital (discrete) images.
 An image refers to a 2D light intesity function \( f(x,y) \), where \( (x,y) \) denote spatial coordinates and the value of \( f \) at any point \( (x,y) \) is proportional to the brightness or gray levels of the image at that point [INSERT REFERENCE HERE].
-Thus, a digital image is an image \( f(x,y)  \) that has been discretised both in spatial coordinates and brightness, ie we
+Thus, a digital image is an image \( f(x,y)  \) that has been discretised both in spatial coordinates and brightness, i.e. we
 
 \begin{itemize}
 	\item Sample the 2D space on a regular grid
-	\item Quantise each sample, ie round to nearest integer.
+	\item Quantise each sample, i.e. round to nearest integer.
 \end{itemize}
 
 What we get is an image represented as a matrix of integer values; the elements of such a digital array are called image elements or pixels.
@@ -115,7 +119,7 @@ Since we deal with coloured images, we chose the RGB colour model which is an ad
 \subsection{Image processing operations}
 
 An image processing operation typically defines a new image \( g \) in terms of an existing image \( f \).
-We can 
+We can: 
 \begin{itemize}
 	\item transform the range of \( f \)
 	\[ 
@@ -151,7 +155,7 @@ They include filters which are operations that convert a source image to a resul
 %\begin{itemize}
 %	\item Image Aquisition
 %	\item Image Enhancement -- contrasting images so human eye can best see things, manipulate values of pixels so you can best caracterise and structure them |
-%	\item Morphological Processing -- growing and thinning of pixels, eg fingerpringt medical operations
+%	\item Morphological Processing -- growing and thinning of pixels, e.g. fingerpringt medical operations
 %	\item Image Segmentation -- separating parts of the image such as features and object you want to look at, distribution of pixel values |
 %	\item Representation \& Description -- based on quantised space that you're working in. What's realised in that digital output? Two ways to describe features being observed in that pixel space. Inverting etc
 %	\item Object Recognition -- see example iris data set. cluster to identify different objects.
@@ -162,7 +166,7 @@ They include filters which are operations that convert a source image to a resul
 %	feature space that you're working in on top of your labels.
 %	put in our own bias and how we train model.
 %	
-%	A lot of noise in the image makes it grainy. We can apply interpolation, ie smoothing the image based on its nn. bi-cubic interpolation.  Smoothes some of the details as well as a side effect, but especially the noise. -- important for edge detection later
+%	A lot of noise in the image makes it grainy. We can apply interpolation, i.e. smoothing the image based on its nn. bi-cubic interpolation.  Smoothes some of the details as well as a side effect, but especially the noise. -- important for edge detection later
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -180,7 +184,7 @@ As a language we chose \textit{Matlab} as it is very popular in academic circles
 %----------------------------------------------------------------------------------------
 \section{Pre-processing: Getting the root's skeleton}
 
-The goal of the preprocessing step was to extract the skeleton, ie the coordinates of the pixels that represent the root on the image.
+The goal of the preprocessing step was to extract the skeleton, i.e. the coordinates of the pixels that represent the root on the image.
 This task turned out to be highly challenging on noisy image data and can be regarded as the actual achievement of the presented work. The highly elaborate pipeline of the preprocessing step can be found in chapter [INSERT REFERENCE HERE].
 
 
@@ -195,7 +199,7 @@ This task turned out to be highly challenging on noisy image data and can be reg
 \section{Computing the angle}
 
 Once the skeleton has been extracted, one can compute the curvature and the angle of the root tip. 
-In fact, we only need to segment the bit of the root that is close to the tip including the bending point, ie the point with highest local curvature. %, not the entire root. 
+In fact, we only need to segment the part of the root that is close to the tip including the bending point, i.e. the point with highest local curvature. %, not the entire root. 
 This will help to discard lots of noise caused by tubes and other objects at the upper part of the root, see section [INSERT REFERENCE TO APPENDIX] for example of images.
 
 Various definitions of angles associated to the root tip had been considered; however, in order to make the angles comparable to the so far manually computed angles we chose an emulation of the manual computation of the angle in our final implementation. 
@@ -240,7 +244,7 @@ Once these two lines are correctly defined, provided the point of highest local 
 %	\item Find the slope of each line.
 %	\item Find the inclination of each line using \( \alpha = \tan^{-1} m \), where  \( \alpha \) is the angle of inclination, \( m \) is the slope.
 %	\item Take the difference of these two angles.
-%	\item Handle the case where this difference is not an acute, ie less than 90 degrees, angle. If we get a negative angle, we take its absolute value. We want to find an acute angle, so if we calculated an obtuse angle, oe greater than 90 degrees, we just subtract the value from pi radians or 180 degrees to get the acute values.
+%	\item Handle the case where this difference is not an acute, i.e. less than 90 degrees, angle. If we get a negative angle, we take its absolute value. We want to find an acute angle, so if we calculated an obtuse angle, oe greater than 90 degrees, we just subtract the value from pi radians or 180 degrees to get the acute values.
 %\end{enumerate}
 
 
@@ -257,7 +261,7 @@ or equivalently
 \begin{equation} \label{angle2}
 \Theta_{2} = \tan^{-1}( v_{1}, v_{2}) \times \frac{180}{\pi}
 \end{equation}
-depending on the signedness of \( v_{1} \) and \( v_{2} \). Assuming the tip of the root only bends positively, ie towards the cathode (the negative pole of the EF) in our experimental setup, and \( v_{2} \) is not positive nor negative, the sign of \( \Theta \) only depends on \( v_{1} \). If the root tip crosses the line that is completely aligned with, ie parallel to, the EF (where \( \Theta \) takes the value 0), \( \Theta \) becomes negative as \( v_{1} \) will become negative. 
+depending on the signedness of \( v_{1} \) and \( v_{2} \). Assuming the tip of the root only bends positively, i.e. towards the cathode (the negative pole of the EF) in our experimental setup, and \( v_{2} \) is not positive nor negative, the sign of \( \Theta \) only depends on \( v_{1} \). If the root tip crosses the line that is completely aligned with, i.e. parallel to, the EF (where \( \Theta \) takes the value 0), \( \Theta \) becomes negative as \( v_{1} \) will become negative. 
 
 
 %----------------------------------------------------------------------------------------
@@ -269,7 +273,7 @@ In order to detect the point of highest local curvature, we need to compute the 
 
 In the following, we will sketch the mathematical framework which describes the curvature of a curve embedded in a plane.
 %For that, we want to introduce the reader to the concepts of a mathematical curvature in order 
-This will help the user to understand the rather formula intense implementation computing the analytical curvature using fitted polygons to the points, ie the coordinates from the root skeleton.
+This will help the user to understand the rather formula intense implementation computing the analytical curvature using fitted polygons to the points, i.e. the coordinates from the root skeleton.
 
 There exist various different concepts and definitions of curvature in different branches of geometry.
 Intuitively, curvature in the 2D case captures the amount by which a curve deviates from being a (straight) line.
@@ -278,7 +282,7 @@ We will only touch upon \textit{extrinsic} curvature here, which is defined for 
 % Curvature is usually a scalar quantity, but one may define a curvature vector that takes into account the direction of the bend in addition to its magnitude.
 % The curvature of more complex objects (such as surfaces or even curved n-dimensional spaces) is described by more complex objects from linear algebra, such as the general Riemann curvature tensor. 
 
-Geometrically, the curvature measures how fast the unit tangent vector, ie the vector tangent to the curve and of length 1,  to the curve rotates. 
+Geometrically, the curvature measures how fast the unit tangent vector, i.e. the vector tangent to the curve and of length 1,  to the curve rotates. 
 [INSERT FIGURE HERE]
 
 If the curve is close to a straight line, and thus the unit tangent vector changes very little, the curvature is small; if the curve contains a sharp turn, the curvature is large.
@@ -289,12 +293,12 @@ In the implementations we used the difference between edge direction vectors to 
 
 
 %For the implementation 
-We first compute the first derivative (in between pairs of samples), and we take into account unequal segment lengths. In the same way we then compute the second derivative, we take the average length of two neighbouring edges, ie the length of edge in between neighbouring normals if we consider the normals to be halfway between vertices.
+We first compute the first derivative (in between pairs of samples), and we take into account unequal segment lengths. In the same way we then compute the second derivative, we take the average length of two neighbouring edges, i.e. the length of edge in between neighbouring normals if we consider the normals to be halfway between vertices.
 Once we have the normals, we can compute the rate of change between neighbouring normals to assign the specific curvature value to each point.
 
 [INSERT FIGURE HERE, DRAW IT]
 
-%The current implementation of the \textit{getAngle.m} script fits polygons to the points, ie the coordinates from the root skeleton, and then calculates the analytical curvature from these fitted polygons. 
+%The current implementation of the \textit{getAngle.m} script fits polygons to the points, i.e. the coordinates from the root skeleton, and then calculates the analytical curvature from these fitted polygons. 
 
 If the user does not specify otherwise, we assume the line pieces to connect two neighbouring points. The curvature function outputs a vector of curvature values of the points.
 
@@ -304,7 +308,7 @@ If the user does not specify otherwise, we assume the line pieces to connect two
 
 
 In a previous version, we  took a section of the curve (here 9 vertices) and fitted a polynomial to it; this will be our cuve model. From this model we can compute the derivative and with the coefficients of the fitted polynomial we can compute the curvature at each point. 
-A large radius of the osculating circle, ie a high curvature, means a rather straight part of the curve, while we get a small radius or curvature in parts where the curve is "pointy", ie bends more. The sign of the curvature indicates whether it is right (positive) or left (negative) bending. However, the here used function \textit{polyfit} should not be used on very noisy data.
+A large radius of the osculating circle, i.e. a high curvature, means a rather straight part of the curve, while we get a small radius or curvature in parts where the curve is "pointy", i.e. bends more. The sign of the curvature indicates whether it is right (positive) or left (negative) bending. However, the here used function \textit{polyfit} should not be used on very noisy data.
 
 
 

@@ -17,15 +17,15 @@
 
 %PROVIDE A HIGH-LEVEL REVIEW, NOT LOTS OF NUMBERS
 
-%REPRODUCABILITY OF WORK, ie make sure reader could redo it
+%REPRODUCABILITY OF WORK, i.e. make sure reader could redo it
 
 %%----------------------------------------------------------------------------------------
 %%----------------------------------------------------------------------------------------
 
 The following section of this report will briefly explain the tool from a technical perspective, but more importantly  %and show how to use it in practice. %Additionally, we present an example of the tool in use.
-we will present some highlights of the tool that sets it apart from other tools. In the appendix [INSERT REFERENCE HERE] we will guide the user through one example to illustrate how the tool is used in practice. Tthis can serve as a manual for users even though the steps are self-explanatory by just using the GUI. 
+we will present some highlights of the tool that sets it apart from other tools. In the appendix [INSERT REFERENCE HERE] we will guide the user through one example to illustrate how the tool is used in practice. This can serve as a manual for users even though the steps are self-explanatory by just using the GUI. 
 
-Additionally, we will show some validation of the tool by comparing the angle computed by our tool to the one computed manually on 3 time-series image data set of one Arabidopsis roots. 
+Additionally, we will show some validation of the tool by comparing the angle computed by our tool to the one computed manually on 3 time-series image data sets of Arabidopsis roots.
 
 The code is open-source and publicly available on [INSERT GITHUB REFERENCE HERE]; all previous versions including log files can be found on [INSERT GITHUB REFERENCE HERE].
 %EMPHASISE THIS: MAKE RESEARCH TRANSPARENT
@@ -46,7 +46,7 @@ There are various benefits of the GUI such as
 \begin{itemize}
 	\item Visualising the process including the pipeline and the angle that is computed
 	\item Easy user interaction with mouse clicking
-	\item Flexibility, eg the user can go back at each step without running the whole script from the beginning
+	\item Flexibility, e.g. the user can go back at each step without running the whole script from the beginning
 	\item Pop-up windows and mouseover functions on buttons that guide the user through the process and explain the steps
 	\item Error messages if user does not enter allowed values.
 \end{itemize}
@@ -62,14 +62,14 @@ There are various benefits of the GUI such as
 %----------------------------------------------------------------------------------------
 \subsection{Handling user's mistakes}
 
-When we take the user's input, eg choosing samples along the root, we correct for small mistakes by taking a neighbourhood (3 \(\times\)3) average around the pixel. 
+When we take the user's input, e.g. choosing samples along the root, we correct for small mistakes by taking a neighbourhood (3\(\times\)3) average around the pixel. 
 %followed by adaptive thresholding.
 This means the user does not have to take special care when choosing the points as long as it is in the approximate region of the root.
 
 %----------------------------------------------------------------------------------------
 \subsection{User interaction and optional steps}
 The software tool was created in ways that it is easy to interact with for a future user. 
-We implemented several optional steps that only need to be performed if the user thinks they are necessary. This on the other hand saves time in the preprocessing but on the other hand also ensures that tricky roots can be tackled by various optional steps in order to extract a skeleton. 
+We implemented several optional steps that only need to be performed if the user thinks they are necessary. This on the one hand saves time in the preprocessing but on the other hand also ensures that tricky roots can be tackled by various optional steps in order to extract a skeleton. 
 
 %----------------------------------------------------------------------------------------
 \subsection{Drawing the angle}
@@ -85,10 +85,10 @@ The pipeline that has been developed for the preprocessing step of extracting th
 
 %[INSERT FIGURE OF DIFFERENT STEPS (SUBFIGURES) THAT ARE THEN REFERRED TO IN THE TEXT INDIVIDUALLY]
 
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.6\textwidth]{../Figures/workflow_big.png}
-	\caption{The workflow of \textit{RootSkel} and different component of the GUI: Pre-processing steps to extract the skeleton are highlighted in orange, the actual angle computation is shaded in blue. Steps that have a front-end, ie are visible on the GUI, are framed in red, only back-end components are without a frame. }
+	\includegraphics[width=0.8\textwidth]{../Figures/workflow_big.png}
+	\caption{The workflow of \textit{RootSkel} and different components of the GUI: Pre-processing steps to extract the skeleton are highlighted in orange, the actual angle computation is shaded in blue. Steps that have a front-end, i.e. are visible on the GUI, are framed in red, only back-end components are without a frame. }
 	\label{fig:workflow}
 \end{figure}
 
@@ -195,19 +195,19 @@ The pipeline that has been developed for the preprocessing step of extracting th
 %2. The user then clicks on some points over the roots (I'd say at least 7, preferably 10). Using the mean value and standard deviation of the pixel intensity of these points a thresholding range is found. Say [mu-2sigma,mu+2sigma]. 
 %Initially trying to use the same threshold for all the images in the experiment, maybe this will do the job already…
 %
-%3. After segmenting the images, the binary images need to postprocessed so we get rid of the bright spots and noise, eg by removing any object that has fewer than 1000 pixels (matlab: bwareaopen enough?). Then any holes that might appear in the roots need to be filled (matlab: imfill) 
+%3. After segmenting the images, the binary images need to postprocessed so we get rid of the bright spots and noise, e.g. by removing any object that has fewer than 1000 pixels (matlab: bwareaopen enough?). Then any holes that might appear in the roots need to be filled (matlab: imfill) 
 %
 %4. Hopefully obtaining the skeleton version of the binary image (matlab: bwmorph).
 %
 %5. Label each individual object in the image so they can later be processed independently (matlab: bwconncomp). 
-%6. For each root we then get the list of point belonging to the tip (upper x- and y-values) and we compute the curvature (eg on a 3-point polygonal chain)
+%6. For each root we then get the list of point belonging to the tip (upper x- and y-values) and we compute the curvature (e.g. on a 3-point polygonal chain)
 
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 \section{Components of the GUI}
 
-With the development of the GUI for more user-friendliness, we split our source code of the tool based on functionality, ie we create separate functions or modules that we then connect to several objects in the GUI. This process, also known as \textit{modularity} in software engineering, has various benefits for developing and maintaining the application: The code is less cluttered but more structured and readable and just by reading the main functions which calls all other subfunctions you get a general overview and understanding of what the code does. Also, it reduces redundancy in the main code if the codes get split up into smaller subfunctions and helps debugging. Speaking variables also add to a better understanding of the code.
+With the development of the GUI for more user-friendliness, we split our source code of the tool based on functionality, i.e. we create separate functions or modules that we then connect to several objects in the GUI. This process, also known as \textit{modularity} in software engineering, has various benefits for developing and maintaining the application: The code is less cluttered but more structured and readable and just by reading the main functions which calls all other subfunctions you get a general overview and understanding of what the code does. Also, it reduces redundancy in the main code if the codes get split up into smaller subfunctions and helps debugging. A clear naming convention also adds to a better understanding of the code.
 
 %MODULARITY — main code is not as cluttered, things that are called again and again, migrate it. several functions use same code. 
 %REDUCE REDUNDANCY
@@ -216,7 +216,7 @@ With the development of the GUI for more user-friendliness, we split our source 
 
 [INSERT FIGURE FRONT-END BACK-END HERE]
 
-%Beyond that, provided the interface, ie input and output of each modules, is well defined modularity allows a team of developers to work on the functionality of one single module without involving other modules. They are not distracted by functionalities that are not relevant, known as information hiding in software engineering. Also, it helps to keep the code short and simple and focused one core functionality. It is also useful to identify bugs early on in the development process.
+%Beyond that, provided the interface, i.e. input and output of each modules, is well defined modularity allows a team of developers to work on the functionality of one single module without involving other modules. They are not distracted by functionalities that are not relevant, known as information hiding in software engineering. Also, it helps to keep the code short and simple and focused one core functionality. It is also useful to identify bugs early on in the development process.
 
 Here, it allowed us to not only handle front-end and back-end but also the different steps in the pipeline separately: 
 
@@ -232,12 +232,12 @@ Table [INSERT REFERENCE HERE] gives an overview of the different components and 
 The current version of the package can be downloaded from [INSERT REFERENCE HERE]. %https://github.com/burfel/root-tip-angle/tree/master/src/Root_image_GUI_v1_5 and will be maintained on [INSERT GIOVANNIS GITHUB HERE].
 
 
-\begin{figure}[h!]
+\begin{table}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{../Figures/components.pdf}
+	\includegraphics[width=1.\textwidth]{../Figures/components2.pdf}
 	\caption{The different components and modules of \textit{RootSkel} with a description of each of them; the most important ones containing the core functionality of \textit{RootSkel} are framed in red, the high-level components are shaded in yellow.}
 	\label{fig:modules}
-\end{figure}
+\end{table}
 
 
 %image_process.m
@@ -257,7 +257,7 @@ The current version of the package can be downloaded from [INSERT REFERENCE HERE
 
 
 %MAYBE USE STH FROM HERE BUT COMMENTED OUT FOR NOW, AS WIDELY REPETITION:
-%Even though most of image processing work is empirical, ie based on trial and error and educated guesses on the given data set, we try to explain why certain features were necessary to implement. %this explanations are marked in italics.
+%Even though most of image processing work is empirical, i.e. based on trial and error and educated guesses on the given data set, we try to explain why certain features were necessary to implement. %this explanations are marked in italics.
 %The pipeline can be seen in the at the bottom of the GUI in figure [INSERT REFERENCE HERE].
 %
 %[INCLUDE IN GRAPHIC IF EXCEED WORD COUNT]
@@ -269,7 +269,7 @@ The current version of the package can be downloaded from [INSERT REFERENCE HERE
 %%5. Crop image (optional): 
 %%6. Get skeleton
 %%7. Crop skeleton (optional): It allows the user to crop a region around the skeleton by hand to definitely remove things outside the region of interest. The user can redo the cropping in case she is not satisfied. 
-%%8. Foreign object removal (optional): It allows the user to remove objects, ie if the skeleton contains undesired branches. The user can undo the last cleaning step in case the root gets removed in the last step, to not start the entire process again. 
+%%8. Foreign object removal (optional): It allows the user to remove objects, i.e. if the skeleton contains undesired branches. The user can undo the last cleaning step in case the root gets removed in the last step, to not start the entire process again. 
 %%9. Force tip (optional)
 %%10. Final preparation
 %%
@@ -294,7 +294,7 @@ The current version of the package can be downloaded from [INSERT REFERENCE HERE
 %----------------------------------------------------------------------------------------
 \section{Validation: Comparing the automated calculated angles with the manually calculated angles}
 
-As a preview of validation we performed our webtool on 3 randomly chosen roots from 4 different experiments over a time of 330 minutes. We compared both the automatically computed angles with the previously computed manual angle. As a second validation step we also compared the angles to the computed angles with the turning point as user input.
+As a preview of validation we performed our webtool on 3 randomly chosen roots from 3 different experiments over a time of 330 minutes. We compared both the automatically computed angles with the previously computed manual angle. As a second validation step we also compared the latter to the computed angles with the turning point as user input.
 
 Figure [INSERT HERE] shows the comparison of the angle of interest \( \Theta \), both of the manual as well as the automatically computed angle at about 11 times steps over a period of 330 minutes.
 
@@ -330,23 +330,23 @@ Figure [INSERT HERE] shows the comparison of the angle of interest \( \Theta \),
 
 \includegraphics[width=.7\textwidth]{../Figures/2018-04-24.png}
 
-	\caption{Comparing the manually computed angle and the angle(s) computed by \textit{RootSkel}; in blue: computed by \textit{RootSkel}, in red: computed by \textit{RootSkel} with the turning point as user input, in yellow: manually computed angle. Each plot is labelled by the data set it was taken from (named after date) and the root number (starting from the left hand side in an image). Computations of all three approaches exhibit similar patterns; the angle \( \Theta \) continuously decreases. %Differences between the three approaches are in the magnitute of 5 degrees, single points vary up to 12 degrees, see also table [INSERT REFERENCE HERE].
+	\caption{Comparing the manually computed angle and the angle(s) computed by \textit{RootSkel}; in blue: computed by \textit{RootSkel}, in red: computed by \textit{RootSkel} with the turning point as user input, in yellow: manually computed angle. Each plot is labelled by the data set it was taken from (named after date) and the root number (starting from the left hand side in an image). Computations of all three approaches exhibit similar patterns; the angle \( \Theta \) continuously decreases. %Differences between the three approaches are in the magnitute of 5 degrees, single points vary up to 12 degrees, see also figure [INSERT REFERENCE HERE].
 		}
 
 \end{figure}
 
 
 Differences between the three approaches are in the magnitute of 5 degrees, single points vary up to 12 degrees, see also figure [INSERT REFERENCE HERE].
-Table [INSERT REFERENCE HERE] compares the automatically computed angle by \textit{RootSkel} with the manually computed angles on the 3 roots. We compute the absolute difference in the angles and introduce an \textit{improvement score} defined as 
+Table [INSERT REFERENCE HERE] compares the automatically computed angle by \textit{RootSkel} with the manually computed angles of the 3 roots. We compute the absolute difference in the angles and introduce an \textit{improvement score} defined as 
 \[
  \text{score}_{\textbf{imp}} := | \frac{ \alpha_{\text{RootSkel}} - \alpha_{\text{manual}} }{\alpha_{\text{manual}}} |
 \]
 where $\alpha_{\text{RootSkel}}$ denotes the angle computed by \textit{RootSkel} and $\alpha_{\text{manual}}$ denotes the manually computed angle; this way we compare to the manually computed angles. For how much our method is really an improvement of the theoretical true value, that cannot be computed as any measurement will be subject to errors, we refer to the discussion section [INSERT REFERENCE HERE]. The improvement score on our 3 example data sets average between 5\% and 23\% with an ensemble average of 12.4\%, which can be concluded from figure [INSERT REFERENCE HERE].
 
-When studying our data sets (manually computed and automatically computed angles), we could oberve that as the angle approaches zero, the values get more volatile, ie the variance increases; this matches up with our observations in presented in figure [INSERT REFERENCE HERE]. However, it should be noted that our improvement score is based on relative values and, therefore, can easily blow up for small values. %(of manually computed angles and increasing or constant difference/ variance to the automatically computed angle).
+When studying our data sets (manually computed and automatically computed angles), we could oberve that as the angle approaches zero, the values get more volatile, i.e. the variance increases; this matches up with our observations presented in figure [INSERT REFERENCE HERE]. However, it should be noted that our improvement score is based on relative values and, therefore, can easily increase for small values. %(of manually computed angles and increasing or constant difference/ variance to the automatically computed angle).
 
 
-\begin{figure}[h!]
+\begin{table}[h!]
 	
 	\centering
 	
@@ -357,26 +357,26 @@ When studying our data sets (manually computed and automatically computed angles
 	
 	\includegraphics[width=.7\textwidth]{../Figures/2018-04-24-stats-new.png}
 	
-	\caption{Comparing the autmoatically computed angle by \textit{RootSkel} with the manually computed angles on the 3 roots. Average values of the difference in the angles and the improvement score are highlighted by a read margin; values that highly skew the results and are advised to be left out when doing the average calculations are highlighted in yellow.
+	\caption{Comparing the automatically computed angle by \textit{RootSkel} with the manually computed angles on the 3 roots. Average values of the difference in the angles and the improvement score are highlighted by a red margin; values that highly skew the results and are advised to be left out when doing the average calculations are highlighted in yellow.
 		The p-values of a two sample t-test are highlighted in green.\\ 
-		It should be noted that we made an educated guess of the measurement error, i.e. the total error, to be about about 5\% of our computed \textit{RootSkel} value. We round this error to two significant digits according to convention and computed the absolute difference in the angles and the improvement score with this precision; we only round once we present the values to avoid rounding errors. }
+		It should be noted that we made an educated estimation of the measurement error, i.e. the total error, to be about about 5\% of our computed \textit{RootSkel} value. We round this error to two significant digits according to convention and computed the absolute difference in the angles and the improvement score with this precision; we only round once we present the values to avoid rounding errors. }
 	
-\end{figure}
+\end{table}
 
 
 As a validation that the computed values of \textit{RootSkel} are similar enough to the manually computed values, we perform a t-test between the two sets of angles.
-In all three cases we fail to reject the null hypothesis (at a 95\% confidence interval), implying that the difference between each of the two samples is not statitstically significant. The p-values of the two sample t-test can be found in figure [INSERT REFERENCE HERE].
+In all three cases we fail to reject the null hypothesis (at a 95\% confidence interval), implying that the difference between each of the two samples is not statitstically significant. The p-values of the two sample t-test can be found in table [INSERT REFERENCE HERE].
 
 %we fail to reject the null hypothesis. So we are not "rejecting the null", implying that we don't have enough evidence to assume that the difference in means is different from zero.
 
-%We assume there is no difference, and since the t-score with p-value is larger than 0.05 we cannot reject this hypothesis, ie the difference between the two samples is not statistically significant; this does not mean there is no difference that can be relevant in statistics.
+%We assume there is no difference, and since the t-score with p-value is larger than 0.05 we cannot reject this hypothesis, i.e. the difference between the two samples is not statistically significant; this does not mean there is no difference that can be relevant in statistics.
 
 
 %We show that there is no significant difference between the two sets of values. 
 
 %Kolmogorov Smirnov test is independent of distribution and would be suitable for your data.
 
-%FORVIVA: Alternatively, we could ask how similar the two data sets are and perform a \( \Chi^{2} \) test; 
+%FOR VIVA: Alternatively, we could ask how similar the two data sets are and perform a \( \Chi^{2} \) test; 
 % tests for strenght of association between the two variables.
 %If it was due to chance we would see it in 23\%.
 

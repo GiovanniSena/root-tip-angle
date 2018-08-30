@@ -4,6 +4,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces The different components and modules of \textit {RootSkel} with a description of each of them; the most important ones containing the core functionality of \textit {RootSkel} are framed in red, the high-level components are shaded in yellow.\relax }}{17}{table.caption.38}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparing the automatically computed angle by \textit {RootSkel} with the manually computed angles on the 3 roots. Average values of the difference in the angles and the improvement score are highlighted by a red margin; values that highly skew the results and are advised to be left out when doing the average calculations are highlighted in yellow. The p-values of a two sample t-test are highlighted in green. It should be noted that we made an educated estimation of the measurement error, i.e. the total error, to be about about 5\% of our computed \textit {RootSkel} value. We round this error to two significant digits according to convention and computed the absolute difference in the angles and the improvement score with this precision; we only round once we present the values to avoid rounding errors. \relax }}{19}{table.caption.41}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
