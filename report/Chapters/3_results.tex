@@ -357,13 +357,28 @@ When studying our data sets (manually computed and automatically computed angles
 	
 	\includegraphics[width=.7\textwidth]{../Figures/2018-04-24-stats.png}
 	
-	\caption{Comparing the autmoatically computed angle by \textit{RootSkel} with the manually computed angles on the 3 roots. Average values are highlighted by a read margin; values that highly skew the results and are advised to be left out when doing the average calculations are highlighted in yellow. 
+	\caption{Comparing the autmoatically computed angle by \textit{RootSkel} with the manually computed angles on the 3 roots. Average values of the difference in the angles and the improvement score are highlighted by a read margin; values that highly skew the results and are advised to be left out when doing the average calculations are highlighted in yellow.
+		The p-values of a two sample t-test are highlighted in gree.\\ 
 		It should be noted that we made an educated guess of the measurement error, i.e. the total error, to be about about 5\% of our computed \textit{RootSkel} value. We round this error to two significant digits according to convention and computed the absolute difference in the angles and the improvement score with this precision; we only round once we present the values to avoid rounding errors. }
 	
 \end{figure}
 
 
+As a validation that the computed values of \textit{RootSkel} are similar enough to the manually computed values, we perform a t-test between the two sets of angles.
+In all three cases we fail to reject the null hypothesis (at a 95\% confidence interval), implying that the difference between each of the two samples is not statitstically significant. The p-values of the two sample t-test can be found in figure [INSERT REFERENCE HERE].
 
+%we fail to reject the null hypothesis. So we are not "rejecting the null", implying that we don't have enough evidence to assume that the difference in means is different from zero.
+
+%We assume there is no difference, and since the t-score with p-value is larger than 0.05 we cannot reject this hypothesis, ie the difference between the two samples is not statistically significant; this does not mean there is no difference that can be relevant in statistics.
+
+
+%We show that there is no significant difference between the two sets of values. 
+
+%Kolmogorov Smirnov test is independent of distribution and would be suitable for your data.
+
+%FORVIVA: Alternatively, we could ask how similar the two data sets are and perform a \( \Chi^{2} \) test; 
+% tests for strenght of association between the two variables.
+%If it was due to chance we would see it in 23\%.
 
 
 %The variance of the angle pairs is shown in figure [INSERT HERE]. Performing a t-test we can conclude that the improvement of the angle computation accuracy is significant. Approximately [INSERT HERE] \% due to human error can be eliminated.
