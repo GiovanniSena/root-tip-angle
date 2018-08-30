@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  30 AUG 2018 19:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  30 AUG 2018 19:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1994,7 +1994,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 25.
-<Figures/../Figures/tropism.png, id=403, 464.73625pt x 577.15625pt>
+<Figures/../Figures/tropism.png, id=407, 464.73625pt x 577.15625pt>
 File: Figures/../Figures/tropism.png Graphic file (type png)
 
 <use Figures/../Figures/tropism.png>
@@ -2025,7 +2025,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
  (./Chapters/2_methods.tex
 Chapter 2.
-<Figures/../Figures/experiment_circuit.png, id=418, 764.8575pt x 392.46625pt>
+<Figures/../Figures/experiment_circuit.png, id=422, 764.8575pt x 392.46625pt>
 File: Figures/../Figures/experiment_circuit.png Graphic file (type png)
 
 <use Figures/../Figures/experiment_circuit.png>
@@ -2056,7 +2056,7 @@ LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/it' tried instead on input line 171.
  [7]
-<Figures/../Figures/angle.png, id=439, 318.18875pt x 142.5325pt>
+<Figures/../Figures/angle.png, id=443, 318.18875pt x 142.5325pt>
 File: Figures/../Figures/angle.png Graphic file (type png)
 
 <use Figures/../Figures/angle.png>
@@ -2074,7 +2074,7 @@ Chapter 3.
 
 
 ] [12]
-<Figures/../Figures/workflow_big.png, id=466, 1112.155pt x 2133.9725pt>
+<Figures/../Figures/workflow_big.png, id=468, 1112.155pt x 2133.9725pt>
 File: Figures/../Figures/workflow_big.png Graphic file (type png)
 
 <use Figures/../Figures/workflow_big.png>
@@ -2082,7 +2082,7 @@ Package pdftex.def Info: Figures/../Figures/workflow_big.png used on input line
  90.
 (pdftex.def)             Requested size: 242.4199pt x 465.1447pt.
  [13 <./Figures/../Figures/workflow_big.png>] <Figures/../Figures/components.pd
-f, id=472, 853.1875pt x 1207.36777pt>
+f, id=474, 853.1875pt x 1207.36777pt>
 File: Figures/../Figures/components.pdf Graphic file (type pdf)
 
 <use Figures/../Figures/components.pdf>
@@ -2093,7 +2093,7 @@ Package pdftex.def Info: Figures/../Figures/components.pdf used on input line 2
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14] <Figures/../Figures/2018-02-28.png, id=477, 562.2606pt x 421.575pt>
+[14] <Figures/../Figures/2018-02-28.png, id=479, 562.2606pt x 421.575pt>
 File: Figures/../Figures/2018-02-28.png Graphic file (type png)
 
 <use Figures/../Figures/2018-02-28.png>
@@ -2101,7 +2101,7 @@ Package pdftex.def Info: Figures/../Figures/2018-02-28.png used on input line 3
 26.
 (pdftex.def)             Requested size: 282.81912pt x 212.05421pt.
 
-<Figures/../Figures/2018-03-07.png, id=478, 562.2606pt x 421.575pt>
+<Figures/../Figures/2018-03-07.png, id=480, 562.2606pt x 421.575pt>
 File: Figures/../Figures/2018-03-07.png Graphic file (type png)
 
 <use Figures/../Figures/2018-03-07.png>
@@ -2109,7 +2109,7 @@ Package pdftex.def Info: Figures/../Figures/2018-03-07.png used on input line 3
 29.
 (pdftex.def)             Requested size: 282.81912pt x 212.05421pt.
 
-<Figures/../Figures/2018-04-24.png, id=479, 562.2606pt x 421.575pt>
+<Figures/../Figures/2018-04-24.png, id=481, 562.2606pt x 421.575pt>
 File: Figures/../Figures/2018-04-24.png Graphic file (type png)
 
 <use Figures/../Figures/2018-04-24.png>
@@ -2124,29 +2124,28 @@ LaTeX Warning: Float too large for page by 38.66443pt on input line 336.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/../Figures/2018-02-28-stats.png, id=523, 713.66624pt x 394.47375pt>
-File: Figures/../Figures/2018-02-28-stats.png Graphic file (type png)
 
-<use Figures/../Figures/2018-02-28-stats.png>
-Package pdftex.def Info: Figures/../Figures/2018-02-28-stats.png used on input 
-line 353.
-(pdftex.def)             Requested size: 282.81912pt x 156.32404pt.
+<Figures/../Figures/2018-02-28-stats-new.png, id=525, 705.63625pt x 427.5975pt>
+File: Figures/../Figures/2018-02-28-stats-new.png Graphic file (type png)
+<use Figures/../Figures/2018-02-28-stats-new.png>
+Package pdftex.def Info: Figures/../Figures/2018-02-28-stats-new.png used on in
+put line 353.
+(pdftex.def)             Requested size: 282.81912pt x 171.38176pt.
 
-<Figures/../Figures/2018-03-07-stats.png, id=524, 713.66624pt x 481.8pt>
-File: Figures/../Figures/2018-03-07-stats.png Graphic file (type png)
+<Figures/../Figures/2018-03-07-stats-new.png, id=526, 707.64375pt x 491.8375pt>
+File: Figures/../Figures/2018-03-07-stats-new.png Graphic file (type png)
+<use Figures/../Figures/2018-03-07-stats-new.png>
+Package pdftex.def Info: Figures/../Figures/2018-03-07-stats-new.png used on in
+put line 356.
+(pdftex.def)             Requested size: 282.81912pt x 196.5739pt.
 
-<use Figures/../Figures/2018-03-07-stats.png>
-Package pdftex.def Info: Figures/../Figures/2018-03-07-stats.png used on input 
-line 356.
-(pdftex.def)             Requested size: 282.81912pt x 190.93011pt.
-
-<Figures/../Figures/2018-04-24-stats.png, id=525, 709.65125pt x 503.8825pt>
-File: Figures/../Figures/2018-04-24-stats.png Graphic file (type png)
-
-<use Figures/../Figures/2018-04-24-stats.png>
-Package pdftex.def Info: Figures/../Figures/2018-04-24-stats.png used on input 
-line 358.
-(pdftex.def)             Requested size: 282.81912pt x 200.819pt.
+<Figures/../Figures/2018-04-24-stats-new.png, id=527, 707.64375pt x 500.87125pt
+>
+File: Figures/../Figures/2018-04-24-stats-new.png Graphic file (type png)
+ <use Figures/../Figures/2018-04-24-stats-new.png>
+Package pdftex.def Info: Figures/../Figures/2018-04-24-stats-new.png used on in
+put line 358.
+(pdftex.def)             Requested size: 282.81912pt x 200.18445pt.
 
 Underfull \hbox (badness 1552) in paragraph at lines 362--362
  []\T1/ppl/m/sc/10 Figure 3.4: |\T1/ppl/m/n/10 Com-par-ing the aut-moat-i-cally
@@ -2154,15 +2153,15 @@ Underfull \hbox (badness 1552) in paragraph at lines 362--362
  []
 
 
-LaTeX Warning: Float too large for page by 22.57494pt on input line 364.
+LaTeX Warning: Float too large for page by 42.64189pt on input line 364.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) [16] [17 <./Figures/../Figures/2018-02-28.png (PNG copy)> <./Figures/../Figur
 es/2018-03-07.png (PNG copy)> <./Figures/../Figures/2018-04-24.png (PNG copy)>]
-[18 <./Figures/../Figures/2018-02-28-stats.png> <./Figures/../Figures/2018-03-0
-7-stats.png> <./Figures/../Figures/2018-04-24-stats.png>]
+[18 <./Figures/../Figures/2018-02-28-stats-new.png> <./Figures/../Figures/2018-
+03-07-stats-new.png> <./Figures/../Figures/2018-04-24-stats-new.png>]
 \openout2 = `Chapters/4_discussion.aux'.
 
 
@@ -2239,7 +2238,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  32161 strings out of 493014
- 649991 string characters out of 6133351
+ 650051 string characters out of 6133351
  840288 words of memory out of 5000000
  35203 multiletter control sequences out of 15000+600000
  69986 words of font info for 121 fonts, out of 8000000 for 9000
@@ -2255,10 +2254,10 @@ ist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on main.pdf (42 pages, 870057 bytes).
+Output written on main.pdf (42 pages, 882100 bytes).
 PDF statistics:
- 644 PDF objects out of 1000 (max. 8388607)
- 557 compressed objects within 6 object streams
+ 646 PDF objects out of 1000 (max. 8388607)
+ 559 compressed objects within 6 object streams
  111 named destinations out of 1000 (max. 500000)
  488 words of extra memory for PDF output out of 10000 (max. 10000000)
 
