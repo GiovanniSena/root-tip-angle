@@ -26,10 +26,14 @@
 %----------------------------------------------------------------------------------------
 \section{Validation on more images}
 
-[INSERT ERROR MEASUREMENTS NEED TO BE OBTAINED, CURRENTLY NOT EXISITING IN MANUALLY COMPUTED ANGLES AND ALSO NOT IN ROOTSKEL, IN ORDER TO MAKE VALID ASSUMPTIONS ON ROBUSTNESS AND REPITABILITY]
+%[INSERT ERROR MEASUREMENTS NEED TO BE OBTAINED, CURRENTLY NOT EXISITING IN MANUALLY COMPUTED ANGLES AND ALSO NOT IN ROOTSKEL, IN ORDER TO MAKE VALID ASSUMPTIONS ON ROBUSTNESS AND REPITABILITY]
 
-%Certainly, validation needs to be done on a bigger data set in order for our claim to not only be a well grounded belief.
-%As this could not happen in this project due to time constraints we suggest a thorough (statistical) analysis of the collected data and, subsequently, quantification of population heterogeneity in electrotropic responseas future work.
+Certainly, validation needs to be done on a bigger data set in order for our claims to be valid.
+%not only be a well grounded belief.
+As this could not happen in this project due to time constraints we suggest a thorough (statistical) analysis of the collected data and, subsequently, quantification of population heterogeneity in electrotropic responseas as future work.
+
+Obtaining standard deviations in the measurements, both in the manual and the computational method, are necessary to make claims on their precision and therefore robustness of \textit{RootSkel}. Quantifying accuracy is almost impossible without having some underlying model or valid assumptions as we do not know the true theoretical values, and any measurements will inevitably contain errors. 
+%WE NEED TO FIT AGAINST STH TO SHOW THAT ACCURATE
 
 
 %----------------------------------------------------------------------------------------
@@ -60,10 +64,10 @@ The most distinct feature of the root is the tubular structure and functions tha
 
 
 %----------------------------------------------------------------------------------------
-\subsection{Challenging photos}
+\subsection{Challenging images}
 
 %There is a very low contrast between the background and the roots, so that one could hardly recognise the roots on some images [INSERT EXAMPLE IMAGE HERE].
-The data set we were working on contained highly challenging photos, this was due to
+The data set we were working on contained highly challenging images, this was due to
 \begin{itemize}
 	\item \textbf{Low} contrast between roots and background; the roots were almost not discernible for the human eye without previous treatment of the image
 	\item Lots of noise or \textbf{objects} that we classified as noise as there was \textbf{no apparent structure} to it
@@ -217,10 +221,11 @@ Also, alternative definitions instead of an emulation of the so far manually com
 %----------------------------------------------------------------------------------------
 \subsection{Error quantification in the angle computation}
 
-Another additional step towards validation %and especially precision 
-to ensure repeatability of our results would be to include an error quantification in the angle computation, eg the maximum or average error in the final result due to the changes in the pre-processing step. This could be computed empirically by trying our tool on a large amount of data to estimate the statistical error; there are ways to also try to quantify the instrumental error. 
-
-We can then make a claim regarding precision and therefore robustnessof our method. To quantify accuracy is almost impossible to measure without having some underlying model or valid assumprions as we do not know the true theoretical values, and any measurements will involve errors. 
+Another additional step towards validation or an integral part of taking measurements in general %and especially precision 
+%to ensure repeatability of our results 
+%would be to include 
+is to quantify the error in the angle computation, eg the maximum or average error in the final result due to the changes in the pre-processing step. %This could be computed 
+One can try to do achieve this empirically by trying our tool on a large amount of data to estimate the statistical error; there are ways to also try to quantify the instrumental error. 
 
 
 %%%%%%%%%%%%------------------------------------------
@@ -239,7 +244,7 @@ We can then make a claim regarding precision and therefore robustnessof our meth
 %
 %WE NEED TO FIT IT AGAINST STH TO SHOW THAT ACCURATE.
 %
-%PRECISION IS REPEADABILITY. ACCURACY -- HOW CLOSE TO TRUE VALUE.
+%PRECISION IS REPEATABILITY. ACCURACY -- HOW CLOSE TO TRUE VALUE.
 %
 %SAY STH ABOUT PRECISION, NOT ABOUT ACCURACY
 %SINCE WE HAVE NO REAL THEORETICAL VALUE
@@ -269,6 +274,7 @@ We can then make a claim regarding precision and therefore robustnessof our meth
 %
 %CAN'T COMPUTE ACCURACY, WE SIMPLY DON'T KNOW TRUE THEORETICAL VALUE.
 %HOW CAN A MODEL LOOK LIKE IN THIS CASE?
+
 %
 %We know that my measurements contain (sometimes quite large) degrees of error, but we also know they are going to be accurate enough that they represent roughly what the root is doing. So if the root is fully aligned with the field the measurement I take should be close to 0°, if it's only made it half of the way it should be close to 45°. 
 %
