@@ -44,18 +44,18 @@
   <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>main.bcf</file>
+      <file>ex.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>main.bbl</file>
+      <file>ex.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
-      <file>numeric.bbx</file>
+      <file>alphabetic.bbx</file>
       <file>standard.bbx</file>
-      <file>numeric.cbx</file>
+      <file>alphabetic.cbx</file>
       <file>biblatex.cfg</file>
       <file>english.lbx</file>
     </requires>
@@ -64,22 +64,22 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>main</infile>
+      <infile>ex</infile>
     </cmdline>
     <input>
-      <file>main.bcf</file>
+      <file>ex.bcf</file>
     </input>
     <output>
-      <file>main.bbl</file>
+      <file>ex.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>main.bbl</file>
+      <file>ex.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>main.bcf</file>
+      <file>ex.bcf</file>
     </requires>
     <requires type="editable">
-      <file>example.bib</file>
+      <file>sample.bib</file>
     </requires>
   </external>
 </requests>

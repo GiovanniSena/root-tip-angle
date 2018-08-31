@@ -1,18 +1,12 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: main.aux
-A level-1 auxiliary file: Chapters/1_introduction.aux
-A level-1 auxiliary file: Chapters/2_methods.aux
-A level-1 auxiliary file: Chapters/3_results.aux
-A level-1 auxiliary file: Chapters/4_discussion.aux
-A level-1 auxiliary file: Chapters/5_conclusion.aux
-A level-1 auxiliary file: Appendices/AppendixA.aux
-I found no \citation commands---while reading file main.aux
-I found no \bibdata command---while reading file main.aux
-I found no \bibstyle command---while reading file main.aux
+The top-level auxiliary file: ex.aux
+I found no \citation commands---while reading file ex.aux
+I found no \bibdata command---while reading file ex.aux
+I found no \bibstyle command---while reading file ex.aux
 You've used 0 entries,
             0 wiz_defined-function locations,
-            89 strings with 627 characters,
+            83 strings with 478 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0

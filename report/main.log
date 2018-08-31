@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  31 AUG 2018 12:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  31 AUG 2018 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1246,6 +1246,54 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2016/01/31 v5.1g context-sensitive quotations (JAW)
+\csq@reset=\count149
+\csq@gtype=\count150
+\csq@glevel=\count151
+\csq@qlevel=\count152
+\csq@maxlvl=\count153
+\csq@tshold=\count154
+\csq@ltx@everypar=\toks21
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2016/01/31 v5.1g csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+)
+Package csquotes Info: Enabling multilingual quotes.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
+\c@subfigure=\count155
+\c@subtable=\count156
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count157
+\float@exts=\toks22
+\float@box=\box53
+\@float@everytoks=\toks23
+\@floatcapt=\box54
+)
+Package scrhack Info: loading float hack on input line 55.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/float.hak
+File: float.hak 2016/05/10 v3.20 KOMA-Script package (hacking package float)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2016/05/10 v3.20 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip60
+\scr@dte@tocline@numbox=\box55
+)
+Package scrhack Info: redefining \newfloat on input line 161.
+Package scrhack Info: redefining \listof on input line 161.
+Package scrhack Info: undefining \float@addtolists on input line 161.
+)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2016/05/14 v3.4 programmable bibliographies (PK/JW/AB)
 
@@ -1281,7 +1329,7 @@ Package etexcmds Info: Could not find \expanded.
 )))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count149
+\lrq@indent=\count158
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -1296,202 +1344,190 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 (/usr/local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write3
-\integerpart=\count150
-\decimalpart=\count151
+\integerpart=\count159
+\decimalpart=\count160
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count152
-\c@listtotal=\count153
-\c@listcount=\count154
-\c@liststart=\count155
-\c@liststop=\count156
-\c@citecount=\count157
-\c@citetotal=\count158
-\c@multicitecount=\count159
-\c@multicitetotal=\count160
-\c@instcount=\count161
-\c@maxnames=\count162
-\c@minnames=\count163
-\c@maxitems=\count164
-\c@minitems=\count165
-\c@citecounter=\count166
-\c@savedcitecounter=\count167
-\c@uniquelist=\count168
-\c@uniquename=\count169
-\c@refsection=\count170
-\c@refsegment=\count171
-\c@maxextratitle=\count172
-\c@maxextratitleyear=\count173
-\c@maxextrayear=\count174
-\c@maxextraalpha=\count175
-\c@abbrvpenalty=\count176
-\c@highnamepenalty=\count177
-\c@lownamepenalty=\count178
-\c@maxparens=\count179
-\c@parenlevel=\count180
-\blx@tempcnta=\count181
-\blx@tempcntb=\count182
-\blx@tempcntc=\count183
-\blx@maxsection=\count184
-\blx@maxsegment@0=\count185
-\blx@notetype=\count186
-\blx@parenlevel@text=\count187
-\blx@parenlevel@foot=\count188
-\blx@sectionciteorder@0=\count189
-\labelnumberwidth=\skip60
-\labelalphawidth=\skip61
-\biblabelsep=\skip62
-\bibitemsep=\skip63
-\bibnamesep=\skip64
-\bibinitsep=\skip65
-\bibparsep=\skip66
-\bibhang=\skip67
+\c@tabx@nest=\count161
+\c@listtotal=\count162
+\c@listcount=\count163
+\c@liststart=\count164
+\c@liststop=\count165
+\c@citecount=\count166
+\c@citetotal=\count167
+\c@multicitecount=\count168
+\c@multicitetotal=\count169
+\c@instcount=\count170
+\c@maxnames=\count171
+\c@minnames=\count172
+\c@maxitems=\count173
+\c@minitems=\count174
+\c@citecounter=\count175
+\c@savedcitecounter=\count176
+\c@uniquelist=\count177
+\c@uniquename=\count178
+\c@refsection=\count179
+\c@refsegment=\count180
+\c@maxextratitle=\count181
+\c@maxextratitleyear=\count182
+\c@maxextrayear=\count183
+\c@maxextraalpha=\count184
+\c@abbrvpenalty=\count185
+\c@highnamepenalty=\count186
+\c@lownamepenalty=\count187
+\c@maxparens=\count188
+\c@parenlevel=\count189
+\blx@tempcnta=\count190
+\blx@tempcntb=\count191
+\blx@tempcntc=\count192
+\blx@maxsection=\count193
+\blx@maxsegment@0=\count194
+\blx@notetype=\count195
+\blx@parenlevel@text=\count196
+\blx@parenlevel@foot=\count197
+\blx@sectionciteorder@0=\count198
+\labelnumberwidth=\skip61
+\labelalphawidth=\skip62
+\biblabelsep=\skip63
+\bibitemsep=\skip64
+\bibnamesep=\skip65
+\bibinitsep=\skip66
+\bibparsep=\skip67
+\bibhang=\skip68
 \blx@bcfin=\read2
 \blx@bcfout=\write4
-\c@mincomprange=\count190
-\c@maxcomprange=\count191
-\c@mincompwidth=\count192
+\c@mincomprange=\count199
+\c@maxcomprange=\count266
+\c@mincompwidth=\count267
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-dm.def)
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count193
-\c@savedafterword=\count194
-\c@annotator=\count195
-\c@savedannotator=\count196
-\c@author=\count197
-\c@savedauthor=\count198
-\c@bookauthor=\count199
-\c@savedbookauthor=\count266
-\c@commentator=\count267
-\c@savedcommentator=\count268
-\c@editor=\count269
-\c@savededitor=\count270
-\c@editora=\count271
-\c@savededitora=\count272
-\c@editorb=\count273
-\c@savededitorb=\count274
-\c@editorc=\count275
-\c@savededitorc=\count276
-\c@foreword=\count277
-\c@savedforeword=\count278
-\c@holder=\count279
-\c@savedholder=\count280
-\c@introduction=\count281
-\c@savedintroduction=\count282
-\c@namea=\count283
-\c@savednamea=\count284
-\c@nameb=\count285
-\c@savednameb=\count286
-\c@namec=\count287
-\c@savednamec=\count288
-\c@translator=\count289
-\c@savedtranslator=\count290
-\c@shortauthor=\count291
-\c@savedshortauthor=\count292
-\c@shorteditor=\count293
-\c@savedshorteditor=\count294
-\c@labelname=\count295
-\c@savedlabelname=\count296
-\c@institution=\count297
-\c@savedinstitution=\count298
-\c@lista=\count299
-\c@savedlista=\count300
-\c@listb=\count301
-\c@savedlistb=\count302
-\c@listc=\count303
-\c@savedlistc=\count304
-\c@listd=\count305
-\c@savedlistd=\count306
-\c@liste=\count307
-\c@savedliste=\count308
-\c@listf=\count309
-\c@savedlistf=\count310
-\c@location=\count311
-\c@savedlocation=\count312
-\c@organization=\count313
-\c@savedorganization=\count314
-\c@origlocation=\count315
-\c@savedoriglocation=\count316
-\c@origpublisher=\count317
-\c@savedorigpublisher=\count318
-\c@publisher=\count319
-\c@savedpublisher=\count320
-\c@language=\count321
-\c@savedlanguage=\count322
-\c@pageref=\count323
-\c@savedpageref=\count324
-\shorthandwidth=\skip68
-\shortjournalwidth=\skip69
-\shortserieswidth=\skip70
-\shorttitlewidth=\skip71
-\shortauthorwidth=\skip72
-\shorteditorwidth=\skip73
+\c@afterword=\count268
+\c@savedafterword=\count269
+\c@annotator=\count270
+\c@savedannotator=\count271
+\c@author=\count272
+\c@savedauthor=\count273
+\c@bookauthor=\count274
+\c@savedbookauthor=\count275
+\c@commentator=\count276
+\c@savedcommentator=\count277
+\c@editor=\count278
+\c@savededitor=\count279
+\c@editora=\count280
+\c@savededitora=\count281
+\c@editorb=\count282
+\c@savededitorb=\count283
+\c@editorc=\count284
+\c@savededitorc=\count285
+\c@foreword=\count286
+\c@savedforeword=\count287
+\c@holder=\count288
+\c@savedholder=\count289
+\c@introduction=\count290
+\c@savedintroduction=\count291
+\c@namea=\count292
+\c@savednamea=\count293
+\c@nameb=\count294
+\c@savednameb=\count295
+\c@namec=\count296
+\c@savednamec=\count297
+\c@translator=\count298
+\c@savedtranslator=\count299
+\c@shortauthor=\count300
+\c@savedshortauthor=\count301
+\c@shorteditor=\count302
+\c@savedshorteditor=\count303
+\c@labelname=\count304
+\c@savedlabelname=\count305
+\c@institution=\count306
+\c@savedinstitution=\count307
+\c@lista=\count308
+\c@savedlista=\count309
+\c@listb=\count310
+\c@savedlistb=\count311
+\c@listc=\count312
+\c@savedlistc=\count313
+\c@listd=\count314
+\c@savedlistd=\count315
+\c@liste=\count316
+\c@savedliste=\count317
+\c@listf=\count318
+\c@savedlistf=\count319
+\c@location=\count320
+\c@savedlocation=\count321
+\c@organization=\count322
+\c@savedorganization=\count323
+\c@origlocation=\count324
+\c@savedoriglocation=\count325
+\c@origpublisher=\count326
+\c@savedorigpublisher=\count327
+\c@publisher=\count328
+\c@savedpublisher=\count329
+\c@language=\count330
+\c@savedlanguage=\count331
+\c@pageref=\count332
+\c@savedpageref=\count333
+\shorthandwidth=\skip69
+\shortjournalwidth=\skip70
+\shortserieswidth=\skip71
+\shorttitlewidth=\skip72
+\shortauthorwidth=\skip73
+\shorteditorwidth=\skip74
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
 )
-Package biblatex Info: Trying to load BibTeX backend compatibility...
-Package biblatex Info: ... file 'blx-bibtex.def' found.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-bibtex.def
-File: blx-bibtex.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
-
-
-Package biblatex Warning: Using fall-back BibTeX(8) backend:
-(biblatex)                functionality may be reduced/unavailable.
-
-)
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.def
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
-\c@textcitecount=\count325
-\c@textcitetotal=\count326
-\c@textcitemaxnames=\count327
-\c@biburlnumpenalty=\count328
-\c@biburlucpenalty=\count329
-\c@biburllcpenalty=\count330
-\c@smartand=\count331
+\c@textcitecount=\count334
+\c@textcitetotal=\count335
+\c@textcitemaxnames=\count336
+\c@biburlnumpenalty=\count337
+\c@biburlucpenalty=\count338
+\c@biburllcpenalty=\count339
+\c@smartand=\count340
 )
-Package biblatex Info: Trying to load natbib compatibility...
-Package biblatex Info: ... file 'blx-natbib.def' found.
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-natbib.def
-File: blx-natbib.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
-)
-Package biblatex Info: Trying to load bibliography style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.bbx' found.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
-File: authoryear.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count332
-\c@bbx:relatedtotal=\count333
+\c@bbx:relatedcount=\count341
+\c@bbx:relatedtotal=\count342
 ))
-Package biblatex Info: Trying to load citation style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.cbx' found.
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
-File: authoryear.cbx 2016/05/14 v3.4 biblatex citation style (PK/JW/AB)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2016/05/14 v3.4 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -1499,54 +1535,6 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2016/01/31 v5.1g context-sensitive quotations (JAW)
-\csq@reset=\count334
-\csq@gtype=\count335
-\csq@glevel=\count336
-\csq@qlevel=\count337
-\csq@maxlvl=\count338
-\csq@tshold=\count339
-\csq@ltx@everypar=\toks21
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2016/01/31 v5.1g csquotes generic definitions (JAW)
-)
-Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
-Package csquotes Info: ... configuration file loaded successfully.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.cfg
-File: csquotes.cfg 
-)
-Package csquotes Info: Enabling multilingual quotes.
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
-\c@subfigure=\count340
-\c@subtable=\count341
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count342
-\float@exts=\toks22
-\float@box=\box53
-\@float@everytoks=\toks23
-\@floatcapt=\box54
-)
-Package scrhack Info: loading float hack on input line 59.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/float.hak
-File: float.hak 2016/05/10 v3.20 KOMA-Script package (hacking package float)
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2016/05/10 v3.20 KOMA-Script package (handling toc-files)
-\scr@dte@tocline@numberwidth=\skip74
-\scr@dte@tocline@numbox=\box55
-)
-Package scrhack Info: redefining \newfloat on input line 161.
-Package scrhack Info: redefining \listof on input line 161.
-Package scrhack Info: undefining \float@addtolists on input line 161.
-)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
 
@@ -1627,7 +1615,7 @@ LaTeX Info: Redefining \pageref on input line 6372.
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 139.
+(scrhack)             need that hack, on input line 144.
 
 
 Package hyperref Message: Driver (autodetected): hpdftex.
@@ -1644,48 +1632,47 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip75
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 139.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 139.
-Package hyperref Info: Option `colorlinks' set `true' on input line 139.
-Package hyperref Info: Option `unicode' set `true' on input line 139.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 144.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 144.
+Package hyperref Info: Option `colorlinks' set `true' on input line 144.
+Package hyperref Info: Option `unicode' set `true' on input line 144.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2016/05/05 v6.83n Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 139.
+Package hyperref Info: Option `breaklinks' set `true' on input line 144.
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 )
-Package csquotes Info: Checking for multilingual support...
-Package csquotes Info: ... found 'babel' package.
-
 (./main.aux (./Chapters/1_introduction.aux) (./Chapters/2_methods.aux)
 (./Chapters/3_results.aux) (./Chapters/4_discussion.aux)
 (./Chapters/5_conclusion.aux) (./Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 139.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 144.
+LaTeX Font Info:    ... okay on input line 144.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 144.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -1840,7 +1827,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 139.
+(scrlayer)             \begin{document} on input line 144.
 
 Package scrlayer-scrpage Warning: Very small head height detected!
 (scrlayer-scrpage)                Using scrlayer-scrpage the head height
@@ -1852,29 +1839,26 @@ Package scrlayer-scrpage Warning: Very small head height detected!
 (scrlayer-scrpage)                geometry option `head=21.89601pt'
 (scrlayer-scrpage)                to avoid this warning.
 
-Package scrbase Info: activating english \abbrevname on input line 139.
-Package scrbase Info: activating english \byname on input line 139.
-Package scrbase Info: activating english \acknowledgementname on input line 139
+Package scrbase Info: activating english \abbrevname on input line 144.
+Package scrbase Info: activating english \byname on input line 144.
+Package scrbase Info: activating english \acknowledgementname on input line 144
 .
-Package scrbase Info: activating english \authorshipname on input line 139.
-Package scrbase Info: activating english \constantsname on input line 139.
-Package scrbase Info: activating english \symbolsname on input line 139.
+Package scrbase Info: activating english \authorshipname on input line 144.
+Package scrbase Info: activating english \constantsname on input line 144.
+Package scrbase Info: activating english \symbolsname on input line 144.
 \big@size=\dimen187
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-Package biblatex Info: Input encoding 'utf8' specified.
-Package biblatex Info: Data encoding 'utf8' specified.
-(biblatex)             No need to reencode data.
-\openout4 = `main-blx.bib'.
+\openout4 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 139.
-Package biblatex Info: Reference segment=0 on input line 139.
+Package biblatex Info: Reference section=0 on input line 144.
+Package biblatex Info: Reference segment=0 on input line 144.
 \AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring ON on input line 139.
+Package hyperref Info: Link coloring ON on input line 144.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1882,40 +1866,40 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count359
 )
-LaTeX Info: Redefining \ref on input line 139.
-LaTeX Info: Redefining \pageref on input line 139.
-LaTeX Info: Redefining \nameref on input line 139.
+LaTeX Info: Redefining \ref on input line 144.
+LaTeX Info: Redefining \pageref on input line 144.
+LaTeX Info: Redefining \nameref on input line 144.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 \c__siunitx_mathsf_int=\count360
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 139.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 144.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 139
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 144
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 139
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 144
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 139
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 144
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 139
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 144
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -1925,9 +1909,9 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
 1: section
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 157.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 162.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 157.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 162.
 [1
 
 
@@ -1942,7 +1926,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=21.896pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-88.
+93.
 
 
 Overfull \vbox (3.04236pt too high) has occurred while \output is active []
@@ -1953,9 +1937,9 @@ Overfull \vbox (3.04236pt too high) has occurred while \output is active []
  Abstract
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 233.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 238.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 233.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 238.
 1: section
 [2
 
@@ -1968,7 +1952,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 301.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 306.
  (./main.toc
 1: section
 [6
@@ -2215,7 +2199,7 @@ Chapter 5.
 
 ]
 
-LaTeX Warning: Empty bibliography on input line 396.
+LaTeX Warning: Empty bibliography on input line 405.
 
 \openout2 = `Appendices/AppendixA.aux'.
 
@@ -2235,34 +2219,36 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <24.88> not available
 [33
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 413.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 413.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 425.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 425.
  (./main.aux (./Chapters/1_introduction.aux) (./Chapters/2_methods.aux)
 (./Chapters/3_results.aux) (./Chapters/4_discussion.aux)
 (./Chapters/5_conclusion.aux) (./Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 413.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 413.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 49408258AF607B45B182809614739AB8;10117.
 
 
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 41F39B67272F7A97F91D38158539D545;10117
-(rerunfilecheck)             After:  49408258AF607B45B182809614739AB8;10117.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32448 strings out of 493014
- 655826 string characters out of 6133351
- 863667 words of memory out of 5000000
- 35467 multiletter control sequences out of 15000+600000
+ 32381 strings out of 493014
+ 654593 string characters out of 6133351
+ 1052666 words of memory out of 5000000
+ 35407 multiletter control sequences out of 15000+600000
  69986 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,21n,82p,10377b,2242s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,21n,82p,10377b,2240s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
@@ -2273,7 +2259,7 @@ ist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on main.pdf (48 pages, 1019648 bytes).
+Output written on main.pdf (48 pages, 1019662 bytes).
 PDF statistics:
  692 PDF objects out of 1000 (max. 8388607)
  597 compressed objects within 6 object streams

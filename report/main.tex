@@ -45,10 +45,6 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{mathpazo} % Use the Palatino font by default
 
 
-\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
-
-\addbibresource{example.bib} % The filename of the bibliography
-
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
 \usepackage{graphicx}
@@ -56,6 +52,15 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{subcaption}
 
 \usepackage{float}
+
+
+%\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+%\usepackage{biblatex}
+\usepackage[backend=biber, style=numeric, citestyle=numeric]{biblatex}
+
+\addbibresource{example.bib} % The filename of the bibliography
+%\bibliography{example.bib}
+
 
 %----------------------------------------------------------------------------------------
 %% include hebrew letters
@@ -258,7 +263,7 @@ Unlike when doing the angle computation to measure the curvature of a root tip m
 
 %Additionally, we evaluated our results by comparing it to previously manually computed angles. [INCLUDE RESULTS A LA 70\% of the images could be found to be reproduced]
 
-Additionally, we computed the angle of 3 \textit{Arabidopsis thaliana} root tips at 11 time points over one experiment each (approximately 5 hours) and evaluated the results by comparing it to previously manually computed angles of the same roots. The results show similar patterns in the computed angles and two sample t-tests on the data do not suggest they are significantly different (\(\alpha = 0.05 \)).
+Additionally, we computed the angle of 3 \textit{Arabidopsis thaliana} root tips at 11 time points over one experiment each (approximately 5 hours) and evaluated the results by comparing it to previously manually computed angles of the same roots. The results show similar patterns in the computed angles and two sample t-tests on the data show they are not significantly different (\(\alpha = 0.05 \)).
 % overall correspondence with manual angles; 
 Statistics on our data sets suggest that our tool improves the precision of the manually computed angle by up to 12.4\%. 
 %removes human error in the angle calculation process %which accounts in average [INSERT VARIANCE HERE, STATE HOW MUCH HUMAN VARIANCE WE COULD ELIMINATE BY STANDARDISING IT] 
@@ -393,7 +398,13 @@ This project was conducted under the supervision of Dr Giovanni Sena, whom I tha
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\printbibliography[heading=bibintoc]
+%\chapter*{References}
+%\printbibliography[heading=bibintoc]
+
+%\nocite{*}
+\printbibliography
+
+%\printbibliography[keyword=history]
 
 %----------------------------------------------------------------------------------------
 
@@ -409,5 +420,6 @@ This project was conducted under the supervision of Dr Giovanni Sena, whom I tha
 \include{Appendices/AppendixA}
 %\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
+
 
 \end{document}  
