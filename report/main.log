@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  31 AUG 2018 02:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  31 AUG 2018 12:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2242,8 +2242,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 413.
 (./Chapters/5_conclusion.aux) (./Appendices/AppendixA.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 413.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 413.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 41F39B67272F7A97F91D38158539D545;10117.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 41F39B67272F7A97F91D38158539D545;10117
+(rerunfilecheck)             After:  49408258AF607B45B182809614739AB8;10117.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -2266,7 +2273,7 @@ ist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on main.pdf (48 pages, 1019635 bytes).
+Output written on main.pdf (48 pages, 1019648 bytes).
 PDF statistics:
  692 PDF objects out of 1000 (max. 8388607)
  597 compressed objects within 6 object streams
