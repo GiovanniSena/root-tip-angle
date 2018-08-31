@@ -20,7 +20,7 @@ The purpose of this methods section is to give an overview on, first, the data u
 %----------------------------------------------------------------------------------------
 \section{Data set}
 
-Our data set consisted of high-throughput time-lapse images of \textit{Arabidopsis thaliana} (Arabidopsis) roots taken by a standard Raspberry Pi V2 camera from 5 experiments with 5-6 roots each containing between 32 and 36 images over a period of at least 5 hours, ie every 10 minutes a photo was taken. 
+Our data set consisted of high-throughput time-lapse images of \textit{Arabidopsis thaliana} (Arabidopsis) roots taken by a standard Raspberry Pi V2 camera from 5 experiments with 5-6 roots each containing between 32 and 36 images over a period of at least 5 hours, i.e. every 10 minutes a photo was taken. 
 All experimental parameters remained the same across experiments, except for the applied voltage.
 %CUT DUE TO STRICT WORD COUNT
 %The images were named after the date and time they were taken; information on the strength of the EF in voltage was captured in each folder containing one experiment data set. 
@@ -89,7 +89,7 @@ Figure [INSERT REFERENCE HERE] shows fundamental steps in image processing, that
 \subsection{Digital images}
 
 In image processing, we operate on digital (discrete) images.
-An image refers to a 2D light intesity function \( f(x,y) \), where \( (x,y) \) denote spatial coordinates and the value of \( f \) at any point \( (x,y) \) is proportional to the brightness or gray levels of the image at that point [INSERT REFERENCE HERE].
+An image refers to a 2D light intensity function \( f(x,y) \), where \( (x,y) \) denote spatial coordinates and the value of \( f \) at any point \( (x,y) \) is proportional to the brightness or gray levels of the image at that point [INSERT REFERENCE HERE].
 Thus, a digital image is an image \( f(x,y)  \) that has been discretised both in spatial coordinates and brightness, i.e. we
 
 \begin{itemize}
@@ -112,7 +112,7 @@ What we get is an image represented as a matrix of integer values; the elements 
 \subsection{On spatial resolution, gray levels and coloured images}
 
 The storage and preprocessing requirements increase rapidly with the spatial resolution and the number of gray levels. 
-For instance, a 256 gray-scale image of size 256\( \times \)256 occupies 64K bytes of memory. Figure [INSERT REFERENCE HERE] shows images of different spatial resolution. 
+For instance, a 256 grayscale image of size 256\( \times \)256 occupies 64K bytes of memory. Figure [INSERT REFERENCE HERE] shows images of different spatial resolution. 
 
 [INSERT FIGURE: Images with decreasing spatial resolution, taken from .....]
 
@@ -121,7 +121,7 @@ Also, an insufficient number of gray levels in smooth areas of a digital image m
 [INSERT FIGURE: Images of different gray-level quantisation]
 
 
-Since we deal with coloured images, we chose the RGB colour model which is an additative colour model in which red, green and blue light are added together in various ways to reproduce a broad spectrum of colours [INSERT REFERENCE HERE].
+Since we deal with coloured images, we chose the RGB colour model which is an additive colour model in which red, green and blue light are added together in various ways to reproduce a broad spectrum of colours [INSERT REFERENCE HERE].
 
 
 %----------------------------------------------------------------------------------------
@@ -144,7 +144,7 @@ We can:
 
 From an image processing point of view, we performed point as well as local operations in our work.
 
-A point operation is a function that is performed on each single pixel of an image, independent of all the other pixels in that image [INSERT REFERENCE HERE]. These include operations like inversing, changing the brightness or contrast of an image, changing the gamma of an image, binarising an image and logical operations. 
+A point operation is a function that is performed on each single pixel of an image, independent of all the other pixels in that image [INSERT REFERENCE HERE]. These include operations like inverting, changing the brightness or contrast of an image, changing the gamma of an image, binarising an image and logical operations. 
 
 Local operations, on the other hand, compute the new value of each single pixel with a neighbourhood around it [INSERT REFERENCE HERE]. %They can be divided in two groups, linear and nonlinear filters.
 They include filters which are operations that convert a source image to a result image by applying some kind of tranformation, be it of linear or nonlinear nature [INSERT REFERENCE HERE]. There are more than 134 different filter functions in the MATLAB Image Processing toolbox [INSERT REFERENCE HERE] that can be applied with different arguments and sensitivity thresholds. Filters used in our work include the 2D median filtering \textit{medfilt2} or the 2D adaptive noise-removal filtering \textit{wiener2}.
@@ -188,13 +188,13 @@ As a language we chose \textit{Matlab} as it is very popular in academic circles
 % GOES TO DISCUSSION/ FUTURE WORK:
 %Alternative languages that were considered were \textit{Python} and \textit{Julia}. Another recommended language is \textit{OpenCV} as it is very fast and well documented. Other non-open source software such as \textit{ImageJ}, a Java based image processing program, and \textit{Avizo} which is a general-purpose commercial software application for scientific and industrial data visualisation and analysis with a nice GUI, could not be investigated further in this work. 
 
-
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
-\section{Pre-processing: Getting the root's skeleton}
-
-The goal of the preprocessing step was to extract the skeleton, i.e. the coordinates of the pixels that represent the root on the image.
-This task turned out to be highly challenging on noisy image data and can be regarded as the actual achievement of the presented work. The highly elaborate pipeline of the preprocessing step can be found in chapter [INSERT REFERENCE HERE].
+%COMMENTED OUT DUE TO WORK OUT
+%%----------------------------------------------------------------------------------------
+%%----------------------------------------------------------------------------------------
+%\section{Pre-processing: Getting the root's skeleton}
+%
+%The goal of the preprocessing step was to extract the skeleton, i.e. the coordinates of the pixels that represent the root on the image.
+%This task turned out to be highly challenging on noisy image data and can be regarded as the actual achievement of the presented work. The highly elaborate pipeline of the preprocessing step can be found in chapter [INSERT REFERENCE HERE].
 
 
 % TO DELETE
@@ -274,7 +274,7 @@ depending on the signedness of \( v_{1} \) and \( v_{2} \). Assuming the tip of 
 
 
 %----------------------------------------------------------------------------------------
-\subsection{Computing the curvature of the root tip}
+\section{Computing the curvature of the root tip}
 
 
 In order to detect the point of highest local curvature, we need to compute the curvature at each point in the skeleton. 
@@ -286,7 +286,7 @@ This will help the user to understand the rather formula intense implementation 
 
 There exist various different concepts and definitions of curvature in different branches of geometry.
 Intuitively, curvature in the 2D case captures the amount by which a curve deviates from being a (straight) line.
-We will only touch upon \textit{extrinsic} curvature here, which is defined for objects embedded in some higher-dimensional usually Euclidean space. This allows us to use the radius of circles that touch the object, so-called \textit{osculating cirlces}, to compute the curvature.
+We will only touch upon \textit{extrinsic} curvature here, which is defined for objects embedded in some higher-dimensional usually Euclidean space. This allows us to use the radius of circles that touch the object, so-called \textit{osculating circles}, to compute the curvature.
 
 % Curvature is usually a scalar quantity, but one may define a curvature vector that takes into account the direction of the bend in addition to its magnitude.
 % The curvature of more complex objects (such as surfaces or even curved n-dimensional spaces) is described by more complex objects from linear algebra, such as the general Riemann curvature tensor. 

@@ -3,55 +3,48 @@
 \select@language {english}
 \contentsline {chapter}{Abstract}{iii}{section*.1}
 \contentsline {chapter}{Acknowledgements}{v}{section*.2}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.9}
-\contentsline {section}{\numberline {1.1}Biological background}{1}{section.10}
-\contentsline {section}{\numberline {1.2}Literature review}{3}{section.12}
-\contentsline {section}{\numberline {1.3}Motivation}{4}{section.13}
-\contentsline {chapter}{\numberline {2}Methods}{5}{chapter.14}
-\contentsline {section}{\numberline {2.1}Data set}{5}{section.15}
-\contentsline {section}{\numberline {2.2}Experimental setup}{5}{section.16}
-\contentsline {section}{\numberline {2.3}Image processing}{6}{section.18}
-\contentsline {subsection}{\numberline {2.3.1}Digital images}{7}{subsection.20}
-\contentsline {subsection}{\numberline {2.3.2}On spatial resolution, gray levels and coloured images}{7}{subsection.21}
-\contentsline {subsection}{\numberline {2.3.3}Image processing operations}{8}{subsection.22}
-\contentsline {section}{\numberline {2.4}\textit {MATLAB} as a programming language}{9}{section.23}
-\contentsline {section}{\numberline {2.5}Pre-processing: Getting the root's skeleton}{9}{section.24}
-\contentsline {section}{\numberline {2.6}Computing the angle}{9}{section.25}
-\contentsline {subsection}{\numberline {2.6.1}Computing the curvature of the root tip}{10}{subsection.29}
-\contentsline {chapter}{\numberline {3}Results}{12}{chapter.30}
-\contentsline {section}{\numberline {3.1}Key features}{12}{section.31}
-\contentsline {subsection}{\numberline {3.1.1}Graphical User Interface}{13}{subsection.32}
-\contentsline {subsection}{\numberline {3.1.2}Handling user's mistakes}{13}{subsection.33}
-\contentsline {subsection}{\numberline {3.1.3}User interaction and optional steps}{13}{subsection.34}
-\contentsline {subsection}{\numberline {3.1.4}Drawing the angle}{13}{subsection.35}
-\contentsline {section}{\numberline {3.2}Workflow of root skeletonisation -- explained on GUI}{14}{section.36}
-\contentsline {section}{\numberline {3.3}Components of the GUI}{16}{section.38}
-\contentsline {section}{\numberline {3.4}Validation: Comparing the automated calculated angles with the manually calculated angles}{19}{section.41}
-\contentsline {chapter}{\numberline {4}Discussion}{24}{chapter.44}
-\contentsline {section}{\numberline {4.1}Validation on more images}{24}{section.45}
-\contentsline {section}{\numberline {4.2}Challenges and limitations of \textit {RootSkel}}{24}{section.46}
-\contentsline {subsection}{\numberline {4.2.1}Non-planar root}{24}{subsection.47}
-\contentsline {subsection}{\numberline {4.2.2}Skeletonisation of the root}{25}{subsection.48}
-\contentsline {subsection}{\numberline {4.2.3}Challenging images}{25}{subsection.49}
-\contentsline {subsection}{\numberline {4.2.4}Scalability and reproducibility}{26}{subsection.50}
-\contentsline {subsection}{\numberline {4.2.5}High user-interaction}{26}{subsection.51}
-\contentsline {section}{\numberline {4.3}Further work}{26}{section.52}
-\contentsline {subsection}{\numberline {4.3.1}Use more shape-based filters}{26}{subsection.53}
-\contentsline {subsection}{\numberline {4.3.2}Effective noise reduction}{27}{subsection.54}
-\contentsline {subsection}{\numberline {4.3.3}Less user input up to automatisation}{27}{subsection.55}
-\contentsline {subsection}{\numberline {4.3.4}Robustness}{27}{subsection.56}
-\contentsline {subsubsection}{Adaptive thresholding}{27}{section*.57}
-\contentsline {subsection}{\numberline {4.3.5}Maintenance and bug fixing}{28}{subsection.58}
-\contentsline {subsection}{\numberline {4.3.6}More features}{28}{subsection.59}
-\contentsline {subsection}{\numberline {4.3.7}Other programming languages}{28}{subsection.60}
-\contentsline {subsection}{\numberline {4.3.8}Other ways of curvature and angle measuring}{28}{subsection.61}
-\contentsline {subsection}{\numberline {4.3.9}Error quantification in the angle computation}{29}{subsection.62}
-\contentsline {section}{\numberline {4.4}Broader application of this tool}{29}{section.63}
-\contentsline {chapter}{\numberline {5}Conclusion}{30}{chapter.64}
-\contentsline {chapter}{\numberline {A}On the data set}{32}{appendix.66}
-\contentsline {section}{\numberline {A.1}Suggestions for future data acquisition}{32}{section.67}
-\contentsline {subsection}{\numberline {A.1.1}Stable conditions in the experiment}{32}{subsection.68}
-\contentsline {subsection}{\numberline {A.1.2}No objects interfering with the object of interest}{32}{subsection.69}
-\contentsline {subsection}{\numberline {A.1.3}Increase of the contrast}{33}{subsection.70}
-\contentsline {subsection}{\numberline {A.1.4}Higher resolution}{33}{subsection.71}
-\contentsline {chapter}{\numberline {B}Manual of \textit {RootSkel}}{34}{appendix.72}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.7}
+\contentsline {section}{\numberline {1.1}Biological background}{1}{section.8}
+\contentsline {section}{\numberline {1.2}Literature review}{3}{section.10}
+\contentsline {section}{\numberline {1.3}Motivation}{4}{section.11}
+\contentsline {chapter}{\numberline {2}Methods}{5}{chapter.12}
+\contentsline {section}{\numberline {2.1}Data set}{5}{section.13}
+\contentsline {section}{\numberline {2.2}Experimental setup}{5}{section.14}
+\contentsline {section}{\numberline {2.3}Image processing}{6}{section.16}
+\contentsline {subsection}{\numberline {2.3.1}Digital images}{7}{subsection.18}
+\contentsline {subsection}{\numberline {2.3.2}On spatial resolution, gray levels and coloured images}{7}{subsection.19}
+\contentsline {subsection}{\numberline {2.3.3}Image processing operations}{8}{subsection.20}
+\contentsline {section}{\numberline {2.4}\textit {MATLAB} as a programming language}{9}{section.21}
+\contentsline {section}{\numberline {2.5}Computing the angle}{9}{section.22}
+\contentsline {section}{\numberline {2.6}Computing the curvature of the root tip}{10}{section.26}
+\contentsline {chapter}{\numberline {3}Results}{12}{chapter.27}
+\contentsline {section}{\numberline {3.1}Workflow of root skeletonisation}{12}{section.28}
+\contentsline {section}{\numberline {3.2}Graphical User Interface}{14}{section.30}
+\contentsline {section}{\numberline {3.3}Validation: Comparing the automated calculated angles with the manually calculated angles}{15}{section.32}
+\contentsline {chapter}{\numberline {4}Discussion}{21}{chapter.35}
+\contentsline {section}{\numberline {4.1}Validation on more images}{21}{section.36}
+\contentsline {section}{\numberline {4.2}Challenges and limitations of \textit {RootSkel}}{21}{section.37}
+\contentsline {subsection}{\numberline {4.2.1}Non-planar root}{21}{subsection.38}
+\contentsline {subsection}{\numberline {4.2.2}Skeletonisation of the root}{22}{subsection.39}
+\contentsline {subsection}{\numberline {4.2.3}Challenging images}{22}{subsection.40}
+\contentsline {subsection}{\numberline {4.2.4}Scalability and reproducibility}{23}{subsection.41}
+\contentsline {section}{\numberline {4.3}Further work}{23}{section.42}
+\contentsline {subsection}{\numberline {4.3.1}Effective noise reduction}{23}{subsection.43}
+\contentsline {subsection}{\numberline {4.3.2}Less user input up to automatisation}{23}{subsection.44}
+\contentsline {subsection}{\numberline {4.3.3}Robustness}{24}{subsection.45}
+\contentsline {subsection}{\numberline {4.3.4}Error quantification in the angle computation}{24}{subsection.46}
+\contentsline {section}{\numberline {4.4}Broader application of this tool}{24}{section.47}
+\contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.48}
+\contentsline {chapter}{\numberline {A}Detailed high-level description of the components of \textit {RootSkel}}{27}{appendix.50}
+\contentsline {chapter}{\numberline {B}Manual of \textit {RootSkel}}{29}{appendix.52}
+\contentsline {section}{\numberline {B.1}Key features}{29}{section.53}
+\contentsline {subsection}{\numberline {B.1.1}Handling user's mistakes}{29}{subsection.54}
+\contentsline {subsection}{\numberline {B.1.2}User interaction and optional steps}{29}{subsection.55}
+\contentsline {subsection}{\numberline {B.1.3}Drawing the angle}{30}{subsection.56}
+\contentsline {chapter}{\numberline {C}Other programming languages}{31}{appendix.57}
+\contentsline {chapter}{\numberline {D}On the data set}{32}{appendix.58}
+\contentsline {section}{\numberline {D.1}Suggestions for future data acquisition}{32}{section.59}
+\contentsline {subsection}{\numberline {D.1.1}Stable conditions in the experiment}{32}{subsection.60}
+\contentsline {subsection}{\numberline {D.1.2}No objects interfering with the object of interest}{32}{subsection.61}
+\contentsline {subsection}{\numberline {D.1.3}Increase of the contrast}{33}{subsection.62}
+\contentsline {subsection}{\numberline {D.1.4}Higher resolution}{33}{subsection.63}

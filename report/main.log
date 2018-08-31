@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  31 AUG 2018 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  31 AUG 2018 19:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1956,50 +1956,28 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 309.
  (./main.toc
-1: section
-[6
-
-]
-Overfull \hbox (1.5658pt too wide) in paragraph at lines 29--29
+Overfull \hbox (1.5658pt too wide) in paragraph at lines 23--23
  [][] [][][]\T1/ppl/m/n/10.95 Validation: Com-par-ing the au-to-mated cal-cu-la
 ted an-gles with the man- 
  []
 
-[7])
+1: section
+[6
+
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [8] (./main.lof
-Overfull \hbox (15.04515pt too wide) in paragraph at lines 5--5
- [][] [][][]\T1/ppl/m/n/10.95 Different forms of tropism: Pho-totropism, thig-m
-otropism, hy-drotropism, 
- []
-
+ [7]
 1: section
-[9
-
-])
-\tf@lof=\write7
-\openout7 = `main.lof'.
-
- [10] (./main.lot)
-\tf@lot=\write8
-\openout8 = `main.lot'.
-
-
-1: section
-[11
-
-]
-1: section
-[12
+[8
 
 ]
 --------------------
  Dedicatory
 --------------------
 1: section
-[13
+[9
 
 ]
 1: section
@@ -2011,7 +1989,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 25.
-<Figures/../Figures/tropism.png, id=433, 464.73625pt x 577.15625pt>
+<Figures/../Figures/tropism.png, id=304, 464.73625pt x 577.15625pt>
 File: Figures/../Figures/tropism.png Graphic file (type png)
 
 <use Figures/../Figures/tropism.png>
@@ -2039,7 +2017,7 @@ opism;
 
  (./Chapters/2_methods.tex
 Chapter 2.
-<Figures/../Figures/experiment_circuit.png, id=454, 764.8575pt x 392.46625pt>
+<Figures/../Figures/experiment_circuit.png, id=326, 764.8575pt x 392.46625pt>
 File: Figures/../Figures/experiment_circuit.png Graphic file (type png)
 
 <use Figures/../Figures/experiment_circuit.png>
@@ -2052,7 +2030,7 @@ t line 41.
 
 
 
-] <Figures/../Figures/imageprocessing.png, id=459, 1782.66pt x 365.365pt>
+] <Figures/../Figures/imageprocessing.png, id=331, 1782.66pt x 365.365pt>
 File: Figures/../Figures/imageprocessing.png Graphic file (type png)
 
 <use Figures/../Figures/imageprocessing.png>
@@ -2068,18 +2046,24 @@ File: omsppl.fd
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 96.
+
+Overfull \hbox (0.84079pt too wide) in paragraph at lines 114--116
+\T1/ppl/m/n/10.95 256$\OMS/zplm/m/n/10.95 ^^B$\T1/ppl/m/n/10.95 256 oc-cu-pies 
+64K bytes of mem-ory. Fig-ure [IN-SERT REF-ER-ENCE HERE] shows
+ []
+
 [7 <./Figures/../Figures/imageprocessing.png>] [8]
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/it' tried instead on input line 184.
 
-<Figures/../Figures/angle.png, id=475, 318.18875pt x 142.5325pt>
+<Figures/../Figures/angle.png, id=350, 318.18875pt x 142.5325pt>
 File: Figures/../Figures/angle.png Graphic file (type png)
 
 <use Figures/../Figures/angle.png>
 Package pdftex.def Info: Figures/../Figures/angle.png used on input line 228.
 (pdftex.def)             Requested size: 242.4199pt x 108.59114pt.
- [9] [10 <./Figures/../Figures/angle.png>])
-[11]
+ [9 <./Figures/../Figures/angle.png>]
+[10]) [11]
 \openout2 = `Chapters/3_results.aux'.
 
  (./Chapters/3_results.tex
@@ -2093,94 +2077,85 @@ Overfull \hbox (33.00848pt too wide) in paragraph at lines 30--32
 1/cmtt/m/n/10.95 https : / / github . com / GiovanniSena /
  []
 
+<Figures/../Figures/workflow_big.png, id=370, 1112.155pt x 2133.9725pt>
+File: Figures/../Figures/workflow_big.png Graphic file (type png)
+
+<use Figures/../Figures/workflow_big.png>
+Package pdftex.def Info: Figures/../Figures/workflow_big.png used on input line
+ 94.
+(pdftex.def)             Requested size: 323.22449pt x 620.20378pt.
+
 1: section
 [12
 
 
 
-] [13]
-<Figures/../Figures/workflow_big.png, id=505, 1112.155pt x 2133.9725pt>
-File: Figures/../Figures/workflow_big.png Graphic file (type png)
-
-<use Figures/../Figures/workflow_big.png>
-Package pdftex.def Info: Figures/../Figures/workflow_big.png used on input line
- 90.
-(pdftex.def)             Requested size: 323.22449pt x 620.20378pt.
- [14] [15 <./Figures/../Figures/workflow_big.png>] <Figures/../Figures/frontBac
-k.png, id=515, 1288.815pt x 971.63pt>
+] [13 <./Figures/../Figures/workflow_big.png>]
+<Figures/../Figures/frontBack.png, id=384, 1288.815pt x 971.63pt>
 File: Figures/../Figures/frontBack.png Graphic file (type png)
 
 <use Figures/../Figures/frontBack.png>
-Package pdftex.def Info: Figures/../Figures/frontBack.png used on input line 22
-7.
+Package pdftex.def Info: Figures/../Figures/frontBack.png used on input line 24
+3.
 (pdftex.def)             Requested size: 404.02908pt x 304.5973pt.
- [16]
-<Figures/../Figures/components2.pdf, id=521, 884.30376pt x 1366.10374pt>
-File: Figures/../Figures/components2.pdf Graphic file (type pdf)
-
-<use Figures/../Figures/components2.pdf>
-Package pdftex.def Info: Figures/../Figures/components2.pdf used on input line 
-245.
-(pdftex.def)             Requested size: 404.02908pt x 624.16296pt.
- [17 <./Figures/../Figures/frontBack.png>] [18 <./Figures/../Figures/components
-2.pdf>]
-<Figures/../Figures/2018-02-28.png, id=565, 562.2606pt x 421.575pt>
+ [14] [15 <./Figures/../Figures/frontBack.png>] <Figures/../Figures/2018-02-28.
+png, id=396, 562.2606pt x 421.575pt>
 File: Figures/../Figures/2018-02-28.png Graphic file (type png)
 
 <use Figures/../Figures/2018-02-28.png>
 Package pdftex.def Info: Figures/../Figures/2018-02-28.png used on input line 3
-34.
+43.
 (pdftex.def)             Requested size: 282.81912pt x 212.05421pt.
 
-<Figures/../Figures/2018-03-07.png, id=566, 562.2606pt x 421.575pt>
+<Figures/../Figures/2018-03-07.png, id=397, 562.2606pt x 421.575pt>
 File: Figures/../Figures/2018-03-07.png Graphic file (type png)
 
 <use Figures/../Figures/2018-03-07.png>
 Package pdftex.def Info: Figures/../Figures/2018-03-07.png used on input line 3
-37.
+46.
 (pdftex.def)             Requested size: 282.81912pt x 212.05421pt.
 
-<Figures/../Figures/2018-04-24.png, id=567, 562.2606pt x 421.575pt>
+<Figures/../Figures/2018-04-24.png, id=398, 562.2606pt x 421.575pt>
 File: Figures/../Figures/2018-04-24.png Graphic file (type png)
 
 <use Figures/../Figures/2018-04-24.png>
 Package pdftex.def Info: Figures/../Figures/2018-04-24.png used on input line 3
-39.
+48.
 (pdftex.def)             Requested size: 282.81912pt x 212.05421pt.
- [19]
+ [16]
 Overfull \vbox (38.66443pt too high) has occurred while \output is active []
 
 
-[20 <./Figures/../Figures/2018-02-28.png (PNG copy)> <./Figures/../Figures/2018
+[17 <./Figures/../Figures/2018-02-28.png (PNG copy)> <./Figures/../Figures/2018
 -03-07.png (PNG copy)> <./Figures/../Figures/2018-04-24.png (PNG copy)>]
-<Figures/../Figures/2018-02-28-stats-new.png, id=576, 705.63625pt x 427.5975pt>
+<Figures/../Figures/2018-02-28-stats-new.png, id=408, 705.63625pt x 427.5975pt>
 File: Figures/../Figures/2018-02-28-stats-new.png Graphic file (type png)
 <use Figures/../Figures/2018-02-28-stats-new.png>
 Package pdftex.def Info: Figures/../Figures/2018-02-28-stats-new.png used on in
-put line 361.
-(pdftex.def)             Requested size: 282.81912pt x 171.38176pt.
+put line 371.
+(pdftex.def)             Requested size: 404.02908pt x 244.82924pt.
 
-<Figures/../Figures/2018-03-07-stats-new.png, id=577, 706.64pt x 500.87125pt>
+<Figures/../Figures/2018-03-07-stats-new.png, id=409, 706.64pt x 500.87125pt>
 File: Figures/../Figures/2018-03-07-stats-new.png Graphic file (type png)
 
 <use Figures/../Figures/2018-03-07-stats-new.png>
 Package pdftex.def Info: Figures/../Figures/2018-03-07-stats-new.png used on in
-put line 364.
-(pdftex.def)             Requested size: 282.81912pt x 200.46722pt.
+put line 374.
+(pdftex.def)             Requested size: 404.02908pt x 286.37848pt.
 
-<Figures/../Figures/2018-04-24-stats-new.png, id=578, 707.64375pt x 500.87125pt
+<Figures/../Figures/2018-04-24-stats-new.png, id=410, 707.64375pt x 500.87125pt
 >
 File: Figures/../Figures/2018-04-24-stats-new.png Graphic file (type png)
  <use Figures/../Figures/2018-04-24-stats-new.png>
 Package pdftex.def Info: Figures/../Figures/2018-04-24-stats-new.png used on in
-put line 366.
-(pdftex.def)             Requested size: 282.81912pt x 200.18445pt.
- [21]
-Overfull \vbox (46.53522pt too high) has occurred while \output is active []
+put line 376.
+(pdftex.def)             Requested size: 404.02908pt x 285.97342pt.
+ [18]
+Overfull \vbox (291.68292pt too high) has occurred while \output is active []
 
 
-[22 <./Figures/../Figures/2018-02-28-stats-new.png> <./Figures/../Figures/2018-
-03-07-stats-new.png> <./Figures/../Figures/2018-04-24-stats-new.png>]) [23]
+[19 <./Figures/../Figures/2018-02-28-stats-new.png> <./Figures/../Figures/2018-
+03-07-stats-new.png> <./Figures/../Figures/2018-04-24-stats-new.png>]) [20]
 \openout2 = `Chapters/4_discussion.aux'.
 
 
@@ -2193,24 +2168,24 @@ some lim-i-ta-tions of \T1/ppl/m/it/10.95 RootSkel
  []
 
 1: section
-[24
+[21
 
 
 
-] [25] [26] [27] [28]) [29]
+] [22] [23]) [24]
 \openout2 = `Chapters/5_conclusion.aux'.
 
  (./Chapters/5_conclusion.tex
 Chapter 5.
 )
 1: section
-[30
+[25
 
 
 
 ]
 1: section
-[31
+[26
 
 
 ]
@@ -2218,37 +2193,59 @@ Chapter 5.
 
  (./Appendices/AppendixA.tex
 Appendix A.
+LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <24.88> not available
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 7.
+<Figures/../Figures/components2.pdf, id=458, 884.30376pt x 1366.10374pt>
+File: Figures/../Figures/components2.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/components2.pdf>
+Package pdftex.def Info: Figures/../Figures/components2.pdf used on input line 
+12.
+(pdftex.def)             Requested size: 404.02908pt x 624.16296pt.
+
+1: section
+[27
+
+
+]
+Overfull \vbox (229.05392pt too high) has occurred while \output is active []
+
+
+[28 <./Figures/../Figures/components2.pdf>]
+Appendix B.
+1: section
+[29
+
+] [30]
+Appendix C.
+1: section
+[31
+
+]
+Appendix D.
 1: section
 [32
 
-
-] [33]
-Appendix B.
-LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 59.
-)
-1: section
-[34
-
-]
+]) [33]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 430.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 430.
- (./main.aux (./Chapters/1_introduction.aux) (./Chapters/2_methods.aux)
-(./Chapters/3_results.aux) (./Chapters/4_discussion.aux)
-(./Chapters/5_conclusion.aux) (./Appendices/AppendixA.aux))
+ (./main.aux (./Chapters/1_introduction.aux)
+(./Chapters/2_methods.aux) (./Chapters/3_results.aux)
+(./Chapters/4_discussion.aux) (./Chapters/5_conclusion.aux)
+(./Appendices/AppendixA.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 430.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 430.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D9713D257BA4E1D6F9CA32BC8E16568A;10117.
+(rerunfilecheck)             Checksum: 9974735EC4624426FC36FE3953349A84;8756.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32653 strings out of 493014
- 659066 string characters out of 6133351
- 860961 words of memory out of 5000000
- 35679 multiletter control sequences out of 15000+600000
+ 32626 strings out of 493014
+ 658764 string characters out of 6133351
+ 856961 words of memory out of 5000000
+ 35672 multiletter control sequences out of 15000+600000
  70300 words of font info for 122 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,21n,82p,10377b,2240s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2264,10 +2261,10 @@ fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/
 type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/u
 rw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/pala
 tino/uplri8a.pfb>
-Output written on main.pdf (49 pages, 1049691 bytes).
+Output written on main.pdf (44 pages, 1038619 bytes).
 PDF statistics:
- 712 PDF objects out of 1000 (max. 8388607)
- 614 compressed objects within 7 object streams
- 123 named destinations out of 1000 (max. 500000)
- 498 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 586 PDF objects out of 1000 (max. 8388607)
+ 495 compressed objects within 5 object streams
+ 109 named destinations out of 1000 (max. 500000)
+ 442 words of extra memory for PDF output out of 10000 (max. 10000000)
 

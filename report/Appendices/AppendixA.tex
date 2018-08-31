@@ -1,6 +1,60 @@
 % Appendix A
 
 
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\chapter{Detailed high-level description of the components of \textit{RootSkel}}
+
+
+\begin{table}[H]
+	\centering
+	\includegraphics[width=1.\textwidth]{../Figures/components2.pdf}
+	\caption{The different components and modules of \textit{RootSkel} with a description of each of them; the most important ones containing the core functionality of \textit{RootSkel} are framed in red, the high-level components are shaded in yellow.}
+	\label{table:modules}
+	\end{table}
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\chapter{Manual of \textit{RootSkel}}
+
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\section{Key features} %SHOW HOW ELEABORATE TOOL IS
+
+Figure [INSERT REFERENCE HERE: PIPELINE FROM GUI] explains the key components of this image-analysis software tool to address the problem of highly noisy electrotropism consumer camera images of Arabidopsis roots and a standardised way of computing the angle for the curved root tip. 
+
+This tool takes the form of a MATLAB program and subprograms with a graphical user interface on top of it.
+
+%----------------------------------------------------------------------------------------
+\subsection{Handling user's mistakes}
+
+When we take the user's input, e.g. choosing samples along the root, we correct for small mistakes by taking a neighbourhood (3\(\times\)3) average around the pixel. 
+%followed by adaptive thresholding.
+This means the user does not have to take special care when choosing the points as long as it is in the approximate region of the root.
+
+%----------------------------------------------------------------------------------------
+\subsection{User interaction and optional steps}
+The software tool was created in ways that it is easy to interact with for a future user. 
+We implemented several optional steps that only need to be performed if the user thinks they are necessary. This on the one hand saves time in the preprocessing but on the other hand also ensures that tricky roots can be tackled by various optional steps in order to extract a skeleton. 
+
+%----------------------------------------------------------------------------------------
+\subsection{Drawing the angle}
+The GUI lets the user visualise the angle that is computed. This not only helps to make the tool more visual and transparent, but can also assist in debugging. 
+
+
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\chapter{Other programming languages}
+
+Even though MATLAB has several advantages, it might be worth looking into alternative non-proprietary programming languages to make the tool accessible to a wider public or other options of making the tool portable, i.e. without requiring the user to have MATLAB installed.
+Alternative languages one might want to consider are \textit{Python} and \textit{Julia}. Another recommended language is \textit{OpenCV} as it is very fast and well documented. Other non-open source software such as \textit{ImageJ}, a Java based image processing program, and \textit{Avizo} which is a general-purpose commercial software application for scientific and industrial data visualisation and analysis with a nice GUI, were not investigated further in this work. 
+
+
 \chapter{On the data set}
 
 The data set used can be found on [INSERT REFERENCE GITHUB HERE].
@@ -51,12 +105,6 @@ As a last suggestion, different cameras could be compared to see if it does have
 %Better camera, less waste of resolution
 %improve spatial resolution, other format? no compression?
 
-
-
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
-\chapter{Manual of \textit{RootSkel}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

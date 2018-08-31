@@ -23,7 +23,7 @@
 %%----------------------------------------------------------------------------------------
 
 The following section of this report will briefly explain the tool from a technical perspective, but more importantly  %and show how to use it in practice. %Additionally, we present an example of the tool in use.
-we will present some highlights of the tool that sets it apart from other tools. In the appendix [INSERT REFERENCE HERE] we will guide the user through one example to illustrate how the tool is used in practice. This can serve as a manual for users even though the steps are self-explanatory by just using the GUI. 
+we will present some highlights of the tool that sets it apart from other tools. In the appendix [INSERT REFERENCE HERE] we will guide the user through one example to illustrate how the tool is used in practice. This can serve as a manual for users even though the steps are self-explanatory by just using the Graphical User Interface (GUI). 
 
 Additionally, we will show some validation of the tool by comparing the angle computed by our tool to the one computed manually on 3 time-series image data sets of Arabidopsis roots.
 
@@ -31,25 +31,28 @@ The code is open-source and publicly available on \url{https://github.com/Giovan
 %EMPHASISE THIS: MAKE RESEARCH TRANSPARENT
 
 
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
-\section{Key features} %SHOW HOW ELEABORATE TOOL IS
+%COMMENTED OUT DUE TO WORD COUNT, goes into manual in appendix
+%%----------------------------------------------------------------------------------------
+%%----------------------------------------------------------------------------------------
+%\section{Key features} %SHOW HOW ELEABORATE TOOL IS
+%
+%Figure [INSERT REFERENCE HERE: PIPELINE FROM GUI] explains the key components of this image-analysis software tool to address the problem of highly noisy electrotropism consumer camera images of Arabidopsis roots and a standardised way of computing the angle for the curved root tip. 
+%
+%This tool takes the form of a MATLAB program and subprograms with a graphical user interface on top of it.
 
-Figure [INSERT REFERENCE HERE: PIPELINE FROM GUI] explains the key components of this image-analysis software tool to address the problem of highly noisy electrotropism consumer camera images of Arabidopsis roots and a standardised way of computing the angle for the curved root tip. 
 
-This tool takes the form of a MATLAB program and subprograms with a graphical user interface on top of it.
-
-%----------------------------------------------------------------------------------------
-\subsection{Graphical User Interface}
-To make the program more user-friendly, we developed a graphical user interface (GUI). Pop-up windows, message boxes as well as error boxes, will guide the user through the process (see [INSERT REFERENCE HERE]); a separate manual is not necessary as the steps are very intuitive and straight-forward.
-There are various benefits of the GUI such as
-\begin{itemize}
-	\item Visualising the process including the pipeline and the angle that is computed
-	\item Easy user interaction with mouse clicking
-	\item Flexibility, e.g. the user can go back at each step without running the whole script from the beginning
-	\item Pop-up windows and mouseover functions on buttons that guide the user through the process and explain the steps
-	\item Error messages if user does not enter allowed values.
-\end{itemize}
+%COMMENTED OUT DUE TO WORK OUT, shifted it down to "Components of GUI" section
+%%----------------------------------------------------------------------------------------
+%\subsection{Graphical User Interface}
+%To make the program more user-friendly, we developed a graphical user interface (GUI). Pop-up windows, message boxes as well as error boxes, will guide the user through the process (see [INSERT REFERENCE HERE]); a separate manual is not necessary as the steps are very intuitive and straight-forward.
+%There are various benefits of the GUI such as
+%\begin{itemize}
+%	\item Visualising the process including the pipeline and the angle that is computed
+%	\item Easy user interaction with mouse clicking
+%	\item Flexibility, e.g. the user can go back at each step without running the whole script from the beginning
+%	\item Pop-up windows and mouseover functions on buttons that guide the user through the process and explain the steps
+%	\item Error messages if user does not enter allowed values.
+%\end{itemize}
 
 
 %%----------------------------------------------------------------------------------------
@@ -59,28 +62,29 @@ There are various benefits of the GUI such as
 %[TO COMPLETE]
 
 
+%COMMENTED OUT DUE TO WORD COUNT, goes into manual in appendix
+%%----------------------------------------------------------------------------------------
+%\subsection{Handling user's mistakes}
+%
+%When we take the user's input, e.g. choosing samples along the root, we correct for small mistakes by taking a neighbourhood (3\(\times\)3) average around the pixel. 
+%%followed by adaptive thresholding.
+%This means the user does not have to take special care when choosing the points as long as it is in the approximate region of the root.
+%
+%%----------------------------------------------------------------------------------------
+%\subsection{User interaction and optional steps}
+%The software tool was created in ways that it is easy to interact with for a future user. 
+%We implemented several optional steps that only need to be performed if the user thinks they are necessary. This on the one hand saves time in the preprocessing but on the other hand also ensures that tricky roots can be tackled by various optional steps in order to extract a skeleton. 
+%
+%%----------------------------------------------------------------------------------------
+%\subsection{Drawing the angle}
+%The GUI lets the user visualise the angle that is computed. This not only helps to make the tool more visual and transparent, but can also assist in debugging. 
+
+
 %----------------------------------------------------------------------------------------
-\subsection{Handling user's mistakes}
-
-When we take the user's input, e.g. choosing samples along the root, we correct for small mistakes by taking a neighbourhood (3\(\times\)3) average around the pixel. 
-%followed by adaptive thresholding.
-This means the user does not have to take special care when choosing the points as long as it is in the approximate region of the root.
-
 %----------------------------------------------------------------------------------------
-\subsection{User interaction and optional steps}
-The software tool was created in ways that it is easy to interact with for a future user. 
-We implemented several optional steps that only need to be performed if the user thinks they are necessary. This on the one hand saves time in the preprocessing but on the other hand also ensures that tricky roots can be tackled by various optional steps in order to extract a skeleton. 
+\section{Workflow of root skeletonisation}
 
-%----------------------------------------------------------------------------------------
-\subsection{Drawing the angle}
-The GUI lets the user visualise the angle that is computed. This not only helps to make the tool more visual and transparent, but can also assist in debugging. 
-
-
-%----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
-\section{Workflow of root skeletonisation -- explained on GUI}
-
-The pipeline that has been developed for the preprocessing step of extracting the skeleton is displayed in figure [INSERT REFERENCE HERE] and can be viewed at the bottom of the GUI, see figure [INSERT REFERENCE HERE].
+The pipeline that has been developed for the preprocessing step of extracting the skeleton of the root is displayed in figure [INSERT REFERENCE HERE] and can be viewed at the bottom of the GUI (explained in next section), see figure [INSERT REFERENCE HERE].
 %In the appendix [INSERT REFERENCE HERE] we present the tool on one example image guides the reader through the pipeline and can serve as a manual for future users.
 
 %[INSERT FIGURE OF DIFFERENT STEPS (SUBFIGURES) THAT ARE THEN REFERRED TO IN THE TEXT INDIVIDUALLY]
@@ -205,9 +209,21 @@ The pipeline that has been developed for the preprocessing step of extracting th
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
-\section{Components of the GUI}
 
-With the development of the GUI for more user-friendliness, we split our source code of the tool based on functionality, i.e. we create separate functions or modules that we then connect to several objects in the GUI. This process, also known as \textit{modularity} in software engineering, has various benefits for developing and maintaining the application: The code is less cluttered but more structured and readable and just by reading the main functions which calls all other subfunctions you get a general overview and understanding of what the code does. Also, it reduces redundancy in the main code if the code gets split up into smaller subfunctions and helps debugging. A clear naming convention also adds to a better understanding of the code.
+%----------------------------------------------------------------------------------------
+\section{Graphical User Interface}
+To make the program more user-friendly, we developed a graphical user interface (GUI). Pop-up windows, message boxes as well as error boxes, will guide the user through the process (see [INSERT REFERENCE HERE]); a separate manual is not necessary as the steps are very intuitive and straight-forward.
+There are various benefits of the GUI such as
+\begin{itemize}
+	\item Visualising the process including the pipeline and the angle that is computed
+	\item Easy user interaction with mouse clicking
+	\item Flexibility, e.g. the user can go back at each step without running the whole script from the beginning
+	\item Pop-up windows and mouseover functions on buttons that guide the user through the process and explain the steps
+	\item Error messages if user does not enter allowed values.
+\end{itemize}
+
+
+With the development of the GUI, we split our source code of the tool based on functionality, i.e. we create separate functions or modules that we then connect to several objects in the GUI. This process, also known as \textit{modularity} in software engineering, has various benefits for developing and maintaining the application: The code is less cluttered but more structured and readable and just by reading the main functions which calls all other subfunctions you get a general overview and understanding of what the code does. Also, it reduces redundancy in the main code if the code gets split up into smaller subfunctions and helps debugging. A clear naming convention also adds to a better understanding of the code.
 
 %MODULARITY — main code is not as cluttered, things that are called again and again, migrate it. several functions use same code. 
 %REDUCE REDUNDANCY
@@ -237,15 +253,8 @@ Every function representing one specific step in the pipeline or objects accesse
 
 
 Table [INSERT REFERENCE HERE] gives an overview of the different components and modules our software tool \textit{RootSkel} consists of. It has been developed over a cycle of various iterations, together with an exemplary future user. 
-The current version of the package can be downloaded from [INSERT REFERENCE HERE]. %https://github.com/burfel/root-tip-angle/tree/master/src/Root_image_GUI_v1_5 and will be maintained on [INSERT GIOVANNIS GITHUB HERE].
+%The current version of the package can be downloaded from [INSERT REFERENCE HERE]. %https://github.com/burfel/root-tip-angle/tree/master/src/Root_image_GUI_v1_5 and will be maintained on [INSERT GIOVANNIS GITHUB HERE].
 
-
-\begin{table}[H]
-	\centering
-	\includegraphics[width=1.\textwidth]{../Figures/components2.pdf}
-	\caption{The different components and modules of \textit{RootSkel} with a description of each of them; the most important ones containing the core functionality of \textit{RootSkel} are framed in red, the high-level components are shaded in yellow.}
-	\label{table:modules}
-\end{table}
 
 
 %image_process.m
@@ -302,7 +311,7 @@ The current version of the package can be downloaded from [INSERT REFERENCE HERE
 %----------------------------------------------------------------------------------------
 \section{Validation: Comparing the automated calculated angles with the manually calculated angles}
 
-As a preview of validation we performed our webtool on 3 randomly chosen roots from 3 different experiments over a time of 330 minutes. We compared both the automatically computed angles with the previously computed manual angle. As a second validation step we also compared the latter to the computed angles with the turning point as user input.
+As a preview of validation we performed our software tool on 3 randomly chosen roots from 3 different experiments over a time of 330 minutes. We compared both the automatically computed angles with the previously computed manual angle. As a second validation step we also compared the latter to the computed angles with the turning point as user input.
 
 Figure [INSERT HERE] shows the comparison of the angle of interest \( \Theta \), both of the manual as well as the automatically computed angle at about 11 times steps over a period of 330 minutes.
 
@@ -338,32 +347,33 @@ Figure [INSERT HERE] shows the comparison of the angle of interest \( \Theta \),
 
 \includegraphics[width=.7\textwidth]{../Figures/2018-04-24.png}
 
-	\caption{Comparing the manually computed angle and the angle(s) computed by \textit{RootSkel}; in blue: computed by \textit{RootSkel}, in red: computed by \textit{RootSkel} with the turning point as user input, in yellow: manually computed angle. Each plot is labelled by the data set it was taken from (named after date) and the root number (starting from the left hand side in an image). Computations of all three approaches exhibit similar patterns; the angle \( \Theta \) continuously decreases. %Differences between the three approaches are in the magnitute of 5 degrees, single points vary up to 12 degrees, see also figure [INSERT REFERENCE HERE].
+	\caption{Comparing the manually computed angle and the angle(s) computed by \textit{RootSkel}; in blue: computed by \textit{RootSkel}, in red: computed by \textit{RootSkel} with the turning point as user input, in yellow: manually computed angle. Each plot is labelled by the data set it was taken from (named after date) and the root number (starting from the left hand side in an image). Computations of all three approaches exhibit similar patterns; the angle \( \Theta \) continuously decreases. %Differences between the three approaches are in the magnitude of 5 degrees, single points vary up to 12 degrees, see also figure [INSERT REFERENCE HERE].
 		}
 
 \end{figure}
 
 
-Differences between the three approaches are in the magnitute of 5 degrees, single points vary up to 12 degrees, see also figure [INSERT REFERENCE HERE].
+Differences between the three approaches are in the magnitude of 5 degrees, single points vary up to 12 degrees, see also figure [INSERT REFERENCE HERE].
 Table [INSERT REFERENCE HERE] compares the automatically computed angle by \textit{RootSkel} with the manually computed angles of the 3 roots. We compute the absolute difference in the angles and introduce an \textit{improvement score} defined as 
 \[
  \text{score}_{\textbf{imp}} := | \frac{ \alpha_{\text{RootSkel}} - \alpha_{\text{manual}} }{\alpha_{\text{manual}}} |
 \]
 where $\alpha_{\text{RootSkel}}$ denotes the angle computed by \textit{RootSkel} and $\alpha_{\text{manual}}$ denotes the manually computed angle; this way we compare to the manually computed angles. For how much our method is really an improvement of the theoretical true value, that cannot be computed as any measurement will be subject to errors, we refer to the discussion section [INSERT REFERENCE HERE]. The improvement score on our 3 example data sets average between 5\% and 23\% with an ensemble average of 12.4\%, which can be concluded from figure [INSERT REFERENCE HERE].
 
-When studying our data sets (manually computed and automatically computed angles), we could oberve that as the angle approaches zero, the values get more volatile, i.e. the variance increases; this matches up with our observations presented in figure [INSERT REFERENCE HERE]. However, it should be noted that our improvement score is based on relative values and, therefore, can easily increase for small values. %(of manually computed angles and increasing or constant difference/ variance to the automatically computed angle).
+When studying our data sets (manually computed and automatically computed angles), we could observe that as the angle approaches zero, the values get more volatile, i.e. the variance increases; this matches up with our observations presented in figure [INSERT REFERENCE HERE]. However, it should be noted that our improvement score is based on relative values and, therefore, can easily increase for small values. %(of manually computed angles and increasing or constant difference/ variance to the automatically computed angle).
 
 
 \begin{table}[H]
 	
 	\centering
 	
-	\includegraphics[width=.7\textwidth]{../Figures/2018-02-28-stats-new.png}
+	%\includegraphics[width=.7\textwidth]{../Figures/2018-02-28-stats-new.png}
+	\includegraphics[width=\textwidth]{../Figures/2018-02-28-stats-new.png}
 	%\includegraphics[width=150mm,scale=15]{../Figures/2018-02-28.png}
 	
-	\includegraphics[width=.7\textwidth]{../Figures/2018-03-07-stats-new.png}
+	\includegraphics[width=\textwidth]{../Figures/2018-03-07-stats-new.png}
 	
-	\includegraphics[width=.7\textwidth]{../Figures/2018-04-24-stats-new.png}
+	\includegraphics[width=\textwidth]{../Figures/2018-04-24-stats-new.png}
 	
 	\caption{Comparing the automatically computed angle by \textit{RootSkel} with the manually computed angles on the 3 roots. Average values of the difference in the angles and the improvement score are highlighted by a red margin; values that highly skew the results and are advised to be left out when doing the average calculations are highlighted in yellow.
 		The p-values of a two sample t-test are highlighted in green.\\ 
@@ -373,7 +383,7 @@ When studying our data sets (manually computed and automatically computed angles
 
 
 As a validation that the computed values of \textit{RootSkel} are similar enough to the manually computed values, we perform a t-test between the two sets of angles.
-In all three cases we fail to reject the null hypothesis (at a 95\% confidence interval), implying that the difference between each of the two samples is not statitstically significant. The p-values of the two sample t-test can be found in table [INSERT REFERENCE HERE].
+In all three cases we fail to reject the null hypothesis (at a 95\% confidence interval), implying that the difference between each of the two samples is not statistically significant. The p-values of the two sample t-test can be found in table [INSERT REFERENCE HERE].
 
 %we fail to reject the null hypothesis. So we are not "rejecting the null", implying that we don't have enough evidence to assume that the difference in means is different from zero.
 
