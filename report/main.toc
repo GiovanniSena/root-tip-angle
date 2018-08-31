@@ -27,11 +27,11 @@
 \contentsline {subsection}{\numberline {4.2.1}Non-planar root}{21}{subsection.38}
 \contentsline {subsection}{\numberline {4.2.2}Skeletonisation of the root}{22}{subsection.39}
 \contentsline {subsection}{\numberline {4.2.3}Challenging images}{22}{subsection.40}
-\contentsline {subsection}{\numberline {4.2.4}Scalability and reproducibility}{23}{subsection.41}
+\contentsline {subsection}{\numberline {4.2.4}Scalability and reproducibility}{22}{subsection.41}
 \contentsline {section}{\numberline {4.3}Further work}{23}{section.42}
 \contentsline {subsection}{\numberline {4.3.1}Effective noise reduction}{23}{subsection.43}
 \contentsline {subsection}{\numberline {4.3.2}Less user input up to automatisation}{23}{subsection.44}
-\contentsline {subsection}{\numberline {4.3.3}Robustness}{24}{subsection.45}
+\contentsline {subsection}{\numberline {4.3.3}Robustness}{23}{subsection.45}
 \contentsline {subsection}{\numberline {4.3.4}Error quantification in the angle computation}{24}{subsection.46}
 \contentsline {section}{\numberline {4.4}Broader application of this tool}{24}{section.47}
 \contentsline {chapter}{\numberline {5}Conclusion}{25}{chapter.48}

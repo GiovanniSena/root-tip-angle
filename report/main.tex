@@ -107,11 +107,15 @@ headsepline, % Uncomment to get a line under the header
 
 \geometry{
 	paper=a4paper, % Change to letterpaper for US letter
+%	inner=2.5cm, % Inner margin
 	inner=2.5cm, % Inner margin
-	outer=3.8cm, % Outer margin
+%	outer=3.8cm, % Outer margin
+	outer=2.5cm, % Outer margin
 	bindingoffset=.5cm, % Binding offset
+%	top=1.5cm, % Top margin
 	top=1.5cm, % Top margin
-	bottom=1.5cm, % Bottom margin
+%	bottom=1.5cm, % Bottom margin
+	bottom=1.4cm, % Bottom margin
 	%showframe, % Uncomment to show how the type block is set on the page
 }
 
@@ -131,10 +135,10 @@ headsepline, % Uncomment to get a line under the header
 
 %\subject{Biological Sciences} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
 \keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
-\university{\href{http://www.university.com}{Imperial College London}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
-\department{\href{http://department.university.com}{Department of Life Sciences}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
+\university{\href{https://www.imperial.ac.uk/}{Imperial College London}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
+\department{\href{https://www.imperial.ac.uk/life-sciences/}{Department of Life Sciences}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
 %\wordcount{Word count: INSERT WORDS HERE}
-\group{\href{http://researchgroup.university.com}{Laboratory of Plant Morphogenesis}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
+\group{\href{http://www.imperial.ac.uk/plant-morphogenesis}{Laboratory of Plant Morphogenesis}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
 \faculty{}
 %\faculty{\href{http://faculty.university.com}{Department of Life Sciences}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
 
@@ -158,7 +162,8 @@ headsepline, % Uncomment to get a line under the header
 \begin{center}
 
 \vspace*{.06\textheight}
-{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
+%{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
+{\scshape\LARGE \univname\par}\vspace{1.cm} % University name
 \textsc{\Large Report of project 3}\\[0.5cm] % Thesis type
 
 \HRule \\[0.4cm] % Horizontal line
@@ -168,15 +173,15 @@ headsepline, % Uncomment to get a line under the header
 \begin{minipage}[t]{0.4\textwidth}
 \begin{flushleft} \large
 \emph{Author:}\\
-\href{http://www.johnsmith.com}{\authorname} % Author name - remove the \href bracket to remove the link
+\href{https://burfel.github.io/}{\authorname} % Author name - remove the \href bracket to remove the link
 \end{flushleft}
 \end{minipage}
 \begin{minipage}[t]{0.4\textwidth}
 \begin{flushright} \large
 \emph{Supervisor:} \\
-\href{http://www.jamessmith.com}{\supname} % Supervisor name - remove the \href bracket to remove the link  
+\href{https://www.imperial.ac.uk/people/g.sena}{\supname} % Supervisor name - remove the \href bracket to remove the link  
 \end{flushright}
-\end{minipage}\\[3cm]
+\end{minipage}\\[2cm]
  
 \vfill
 
@@ -189,7 +194,7 @@ headsepline, % Uncomment to get a line under the header
 {\large \today}\\[2cm] % Date
 %\includegraphics{Logo} % University/department logo - uncomment to place it
  
- {Word count: INSERT \#WORDS HERE, without table of contents and acknowledgements}\\[2cm] % Date
+ {Word count: 4,739\\ (without table of contents, acknowledgements and appendix)}\\[2cm] % Date
  
 \vfill
 \end{center}
@@ -233,7 +238,6 @@ headsepline, % Uncomment to get a line under the header
 \hfill Richard Feynman
 
 
-
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE
 %----------------------------------------------------------------------------------------
@@ -254,7 +258,7 @@ headsepline, % Uncomment to get a line under the header
 Plant morphology studies the form and structure of plants and how these develop over time under different conditions. \\
 %It compares and interprets these structures in various plants of the same or different species which can lead to insights into the underlying biology, and the understanding of plant relationships and plant evolution.\\
 One phenomenon that, despite being first identified more than 100 years ago, has not been researched much and we know little about its underlying molecular mechanisms, is \textit{electrotropism}.
-Electrotropism describes the response of a plant to an electric field; one common response is the curving of a plant’s root tip. Unlike gravitropism [DO I HAVE TO EXPLAIN IT HERE?] there exist to our knowledge no tools specifically designed to assist biologists in studying this effect, most importantly the angle resulting from the curving of the root tip. This is especially relevant as the experimental setup for electrotropism is more complex and the images tend to be more error-prone, which is often the reason why standard gravitropism study tools fail and biologists compute the angles resulting from the curved root tip manually.
+Electrotropism describes the response of a plant to an electric field; one common response is the curving of a plant’s root tip. Unlike gravitropism, there exist to our knowledge no tools specifically designed to assist biologists in studying this effect, most importantly the angle resulting from the curving of the root tip. This is especially relevant as the experimental setup for electrotropism is more complex and the images tend to be more error-prone, which is often the reason why standard gravitropism study tools fail and biologists compute the angles resulting from the curved root tip manually.
 
 Here we present \textit{RootSkel}, a novel intuitive and flexible stand-alone software for image processing developed in \textit{MATLAB}, whose pipeline was optimised for noise-intensive electrotropism images. % built from the ground up. 
 Unlike when doing the angle computation to measure the curvature of a root tip manually, our tool ensures a standardised version of the angle computation. To make the tool more user-friendly, we developed a graphical user interface (GUI) that will help the user to process the images and compute the angles in a standardised and controlled fashion.
@@ -378,8 +382,6 @@ This project was conducted under the supervision of Dr Giovanni Sena, whom I tha
  % תודה על היותם בשבילי
  
  
- 
-
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - CHAPTERS
 %----------------------------------------------------------------------------------------
