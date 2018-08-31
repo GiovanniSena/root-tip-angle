@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  30 AUG 2018 23:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  31 AUG 2018 02:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1525,6 +1525,28 @@ Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
 \c@subfigure=\count340
 \c@subtable=\count341
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count342
+\float@exts=\toks22
+\float@box=\box53
+\@float@everytoks=\toks23
+\@floatcapt=\box54
+)
+Package scrhack Info: loading float hack on input line 59.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/float.hak
+File: float.hak 2016/05/10 v3.20 KOMA-Script package (hacking package float)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2016/05/10 v3.20 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip74
+\scr@dte@tocline@numbox=\box55
+)
+Package scrhack Info: redefining \newfloat on input line 161.
+Package scrhack Info: redefining \listof on input line 161.
+Package scrhack Info: undefining \float@addtolists on input line 161.
+)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
 
@@ -1564,15 +1586,15 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen181
-\Hy@linkcounter=\count342
-\Hy@pagecounter=\count343
+\Hy@linkcounter=\count343
+\Hy@pagecounter=\count344
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count344
+\Hy@SavedSpaceFactor=\count345
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1584,10 +1606,10 @@ Package hyperref Info: Plain pages OFF on input line 4461.
 Package hyperref Info: Backreferencing OFF on input line 4466.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4691.
-\c@Hy@tempcnt=\count345
+\c@Hy@tempcnt=\count346
 LaTeX Info: Redefining \url on input line 5044.
 \XeTeXLinkMargin=\dimen182
-\Fld@menulength=\count346
+\Fld@menulength=\count347
 \Field@Width=\dimen183
 \Fld@charsize=\dimen184
 Package hyperref Info: Hyper figures OFF on input line 6298.
@@ -1599,40 +1621,40 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6323.
 Package hyperref Info: PDF/A mode OFF on input line 6328.
 LaTeX Info: Redefining \ref on input line 6368.
 LaTeX Info: Redefining \pageref on input line 6372.
-\Hy@abspage=\count347
-\c@Item=\count348
-\c@Hfootnote=\count349
+\Hy@abspage=\count348
+\c@Item=\count349
+\c@Hfootnote=\count350
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 137.
+(scrhack)             need that hack, on input line 139.
 
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
-\Fld@listcount=\count350
-\c@bookmark@seq@number=\count351
+\Fld@listcount=\count351
+\c@bookmark@seq@number=\count352
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip74
+\Hy@SectionHShift=\skip75
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 137.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 137.
-Package hyperref Info: Option `colorlinks' set `true' on input line 137.
-Package hyperref Info: Option `unicode' set `true' on input line 137.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 139.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 139.
+Package hyperref Info: Option `colorlinks' set `true' on input line 139.
+Package hyperref Info: Option `unicode' set `true' on input line 139.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2016/05/05 v6.83n Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 137.
+Package hyperref Info: Option `breaklinks' set `true' on input line 139.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
@@ -1647,23 +1669,23 @@ Package csquotes Info: ... found 'babel' package.
 (./Chapters/5_conclusion.aux) (./Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 137.
-LaTeX Font Info:    ... okay on input line 137.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 137.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 139.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -1751,17 +1773,17 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 ) (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count352
+\scratchcounter=\count353
 \scratchdimen=\dimen185
-\scratchbox=\box53
-\nofMPsegments=\count353
-\nofMParguments=\count354
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count355
+\scratchbox=\box56
+\nofMPsegments=\count354
+\nofMParguments=\count355
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count356
 \MPscratchDim=\dimen186
-\MPnumerator=\count356
-\makeMPintoPDFobject=\count357
-\everyMPtoPDFconversion=\toks23
+\MPnumerator=\count357
+\makeMPintoPDFobject=\count358
+\everyMPtoPDFconversion=\toks25
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1778,6 +1800,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1817,7 +1840,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 137.
+(scrlayer)             \begin{document} on input line 139.
 
 Package scrlayer-scrpage Warning: Very small head height detected!
 (scrlayer-scrpage)                Using scrlayer-scrpage the head height
@@ -1829,13 +1852,13 @@ Package scrlayer-scrpage Warning: Very small head height detected!
 (scrlayer-scrpage)                geometry option `head=21.89601pt'
 (scrlayer-scrpage)                to avoid this warning.
 
-Package scrbase Info: activating english \abbrevname on input line 137.
-Package scrbase Info: activating english \byname on input line 137.
-Package scrbase Info: activating english \acknowledgementname on input line 137
+Package scrbase Info: activating english \abbrevname on input line 139.
+Package scrbase Info: activating english \byname on input line 139.
+Package scrbase Info: activating english \acknowledgementname on input line 139
 .
-Package scrbase Info: activating english \authorshipname on input line 137.
-Package scrbase Info: activating english \constantsname on input line 137.
-Package scrbase Info: activating english \symbolsname on input line 137.
+Package scrbase Info: activating english \authorshipname on input line 139.
+Package scrbase Info: activating english \constantsname on input line 139.
+Package scrbase Info: activating english \symbolsname on input line 139.
 \big@size=\dimen187
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -1848,63 +1871,63 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
 (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 137.
-Package biblatex Info: Reference segment=0 on input line 137.
-\AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring ON on input line 137.
+Package biblatex Info: Reference section=0 on input line 139.
+Package biblatex Info: Reference segment=0 on input line 139.
+\AtBeginShipoutBox=\box57
+Package hyperref Info: Link coloring ON on input line 139.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count358
+\c@section@level=\count359
 )
-LaTeX Info: Redefining \ref on input line 137.
-LaTeX Info: Redefining \pageref on input line 137.
-LaTeX Info: Redefining \nameref on input line 137.
+LaTeX Info: Redefining \ref on input line 139.
+LaTeX Info: Redefining \pageref on input line 139.
+LaTeX Info: Redefining \nameref on input line 139.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-\c__siunitx_mathsf_int=\count359
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 137.
+\c__siunitx_mathsf_int=\count360
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 139.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 137
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 139
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 137
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 139
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 137
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 139
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 137
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 139
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-\c__siunitx_mathtt_int=\count360
+\c__siunitx_mathtt_int=\count361
 
 1: section
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 155.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 157.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 155.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 157.
 [1
 
 
@@ -1919,7 +1942,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=21.896pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-86.
+88.
 
 
 Overfull \vbox (3.04236pt too high) has occurred while \output is active []
@@ -1930,9 +1953,9 @@ Overfull \vbox (3.04236pt too high) has occurred while \output is active []
  Abstract
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 231.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 233.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 231.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 233.
 1: section
 [2
 
@@ -1945,7 +1968,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 299.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 301.
  (./main.toc
 1: section
 [6
@@ -1966,15 +1989,14 @@ Overfull \hbox (15.04515pt too wide) in paragraph at lines 5--5
 otropism, hy-drotropism, 
  []
 
-)
-\tf@lof=\write7
-\openout7 = `main.lof'.
-
-
 1: section
 [9
 
-] [10] (./main.lot)
+])
+\tf@lof=\write7
+\openout7 = `main.lof'.
+
+ [10] (./main.lot)
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
@@ -2003,7 +2025,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 25.
-<Figures/../Figures/tropism.png, id=412, 464.73625pt x 577.15625pt>
+<Figures/../Figures/tropism.png, id=433, 464.73625pt x 577.15625pt>
 File: Figures/../Figures/tropism.png Graphic file (type png)
 
 <use Figures/../Figures/tropism.png>
@@ -2021,20 +2043,17 @@ Underfull \hbox (badness 1205) in paragraph at lines 33--33
 opism; 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 1: section
 [1
 
 
 
-] [2 <./Figures/../Figures/tropism.png>]) [3]
+] [2 <./Figures/../Figures/tropism.png>] [3]) [4]
 \openout2 = `Chapters/2_methods.aux'.
 
  (./Chapters/2_methods.tex
 Chapter 2.
-<Figures/../Figures/experiment_circuit.png, id=427, 764.8575pt x 392.46625pt>
+<Figures/../Figures/experiment_circuit.png, id=454, 764.8575pt x 392.46625pt>
 File: Figures/../Figures/experiment_circuit.png Graphic file (type png)
 
 <use Figures/../Figures/experiment_circuit.png>
@@ -2042,138 +2061,135 @@ Package pdftex.def Info: Figures/../Figures/experiment_circuit.png used on inpu
 t line 41.
 (pdftex.def)             Requested size: 404.02908pt x 207.31743pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 1: section
-[4
+[5
 
 
 
-]
+] <Figures/../Figures/imageprocessing.png, id=459, 1782.66pt x 365.365pt>
+File: Figures/../Figures/imageprocessing.png Graphic file (type png)
+
+<use Figures/../Figures/imageprocessing.png>
+Package pdftex.def Info: Figures/../Figures/imageprocessing.png used on input l
+ine 80.
+(pdftex.def)             Requested size: 404.02908pt x 82.80568pt.
+ [6 <./Figures/../Figures/experiment_circuit.png>]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 80.
- [5 <./Figures/../Figures/experiment_circuit.png>]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 87.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 89.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 96.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 87.
- [6]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 96.
+[7 <./Figures/../Figures/imageprocessing.png>] [8]
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 175.
- [7]
-<Figures/../Figures/angle.png, id=448, 318.18875pt x 142.5325pt>
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 184.
+
+<Figures/../Figures/angle.png, id=475, 318.18875pt x 142.5325pt>
 File: Figures/../Figures/angle.png Graphic file (type png)
 
 <use Figures/../Figures/angle.png>
-Package pdftex.def Info: Figures/../Figures/angle.png used on input line 219.
+Package pdftex.def Info: Figures/../Figures/angle.png used on input line 228.
 (pdftex.def)             Requested size: 242.4199pt x 108.59114pt.
- [8 <./Figures/../Figures/angle.png>]
-[9]) [10]
+ [9] [10 <./Figures/../Figures/angle.png>])
+[11]
 \openout2 = `Chapters/3_results.aux'.
 
  (./Chapters/3_results.tex
 Chapter 3.
 1: section
-[11
+[12
 
 
 
-] [12]
-<Figures/../Figures/workflow_big.png, id=473, 1112.155pt x 2133.9725pt>
+] [13]
+<Figures/../Figures/workflow_big.png, id=500, 1112.155pt x 2133.9725pt>
 File: Figures/../Figures/workflow_big.png Graphic file (type png)
 
 <use Figures/../Figures/workflow_big.png>
 Package pdftex.def Info: Figures/../Figures/workflow_big.png used on input line
  90.
 (pdftex.def)             Requested size: 323.22449pt x 620.20378pt.
+ [14] [15 <./Figures/../Figures/workflow_big.png>] <Figures/../Figures/frontBac
+k.png, id=510, 1288.815pt x 971.63pt>
+File: Figures/../Figures/frontBack.png Graphic file (type png)
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/../Figures/components2.pdf, id=474, 884.30376pt x 1366.10374pt>
+<use Figures/../Figures/frontBack.png>
+Package pdftex.def Info: Figures/../Figures/frontBack.png used on input line 22
+7.
+(pdftex.def)             Requested size: 404.02908pt x 304.5973pt.
+ [16]
+<Figures/../Figures/components2.pdf, id=516, 884.30376pt x 1366.10374pt>
 File: Figures/../Figures/components2.pdf Graphic file (type pdf)
 
 <use Figures/../Figures/components2.pdf>
 Package pdftex.def Info: Figures/../Figures/components2.pdf used on input line 
-237.
+245.
 (pdftex.def)             Requested size: 404.02908pt x 624.16296pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[13] <Figures/../Figures/2018-02-28.png, id=479, 562.2606pt x 421.575pt>
+ [17 <./Figures/../Figures/frontBack.png>] [18 <./Figures/../Figures/components
+2.pdf>]
+<Figures/../Figures/2018-02-28.png, id=559, 562.2606pt x 421.575pt>
 File: Figures/../Figures/2018-02-28.png Graphic file (type png)
 
 <use Figures/../Figures/2018-02-28.png>
 Package pdftex.def Info: Figures/../Figures/2018-02-28.png used on input line 3
-26.
+34.
 (pdftex.def)             Requested size: 282.81912pt x 212.05421pt.
 
-<Figures/../Figures/2018-03-07.png, id=480, 562.2606pt x 421.575pt>
+<Figures/../Figures/2018-03-07.png, id=560, 562.2606pt x 421.575pt>
 File: Figures/../Figures/2018-03-07.png Graphic file (type png)
 
 <use Figures/../Figures/2018-03-07.png>
 Package pdftex.def Info: Figures/../Figures/2018-03-07.png used on input line 3
-29.
+37.
 (pdftex.def)             Requested size: 282.81912pt x 212.05421pt.
 
-<Figures/../Figures/2018-04-24.png, id=481, 562.2606pt x 421.575pt>
+<Figures/../Figures/2018-04-24.png, id=561, 562.2606pt x 421.575pt>
 File: Figures/../Figures/2018-04-24.png Graphic file (type png)
 
 <use Figures/../Figures/2018-04-24.png>
 Package pdftex.def Info: Figures/../Figures/2018-04-24.png used on input line 3
-31.
+39.
 (pdftex.def)             Requested size: 282.81912pt x 212.05421pt.
+ [19]
+Overfull \vbox (38.66443pt too high) has occurred while \output is active []
 
 
-LaTeX Warning: Float too large for page by 38.66443pt on input line 336.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-<Figures/../Figures/2018-02-28-stats-new.png, id=482, 705.63625pt x 427.5975pt>
+[20 <./Figures/../Figures/2018-02-28.png (PNG copy)> <./Figures/../Figures/2018
+-03-07.png (PNG copy)> <./Figures/../Figures/2018-04-24.png (PNG copy)>]
+<Figures/../Figures/2018-02-28-stats-new.png, id=571, 705.63625pt x 427.5975pt>
 File: Figures/../Figures/2018-02-28-stats-new.png Graphic file (type png)
 <use Figures/../Figures/2018-02-28-stats-new.png>
 Package pdftex.def Info: Figures/../Figures/2018-02-28-stats-new.png used on in
-put line 353.
+put line 361.
 (pdftex.def)             Requested size: 282.81912pt x 171.38176pt.
 
-<Figures/../Figures/2018-03-07-stats-new.png, id=483, 706.64pt x 500.87125pt>
+<Figures/../Figures/2018-03-07-stats-new.png, id=572, 706.64pt x 500.87125pt>
 File: Figures/../Figures/2018-03-07-stats-new.png Graphic file (type png)
 
 <use Figures/../Figures/2018-03-07-stats-new.png>
 Package pdftex.def Info: Figures/../Figures/2018-03-07-stats-new.png used on in
-put line 356.
+put line 364.
 (pdftex.def)             Requested size: 282.81912pt x 200.46722pt.
 
-<Figures/../Figures/2018-04-24-stats-new.png, id=484, 707.64375pt x 500.87125pt
+<Figures/../Figures/2018-04-24-stats-new.png, id=573, 707.64375pt x 500.87125pt
 >
 File: Figures/../Figures/2018-04-24-stats-new.png Graphic file (type png)
  <use Figures/../Figures/2018-04-24-stats-new.png>
 Package pdftex.def Info: Figures/../Figures/2018-04-24-stats-new.png used on in
-put line 358.
+put line 366.
 (pdftex.def)             Requested size: 282.81912pt x 200.18445pt.
+ [21]
+Overfull \vbox (46.53522pt too high) has occurred while \output is active []
 
 
-LaTeX Warning: Float too large for page by 46.53522pt on input line 364.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[14]) [15] [16 <./Figures/../Figures/workflow_big.png>] [17 <./Figures/../Figur
-es/components2.pdf>] [18 <./Figures/../Figures/2018-02-28.png (PNG copy)> <./Fi
-gures/../Figures/2018-03-07.png (PNG copy)> <./Figures/../Figures/2018-04-24.pn
-g (PNG copy)>] [19 <./Figures/../Figures/2018-02-28-stats-new.png> <./Figures/.
-./Figures/2018-03-07-stats-new.png> <./Figures/../Figures/2018-04-24-stats-new.
-png>]
+[22 <./Figures/../Figures/2018-02-28-stats-new.png> <./Figures/../Figures/2018-
+03-07-stats-new.png> <./Figures/../Figures/2018-04-24-stats-new.png>]) [23]
 \openout2 = `Chapters/4_discussion.aux'.
 
- (./Chapters/4_discussion.tex
+
+(./Chapters/4_discussion.tex
 Chapter 4.
 
 Overfull \hbox (6.96341pt too wide) in paragraph at lines 44--45
@@ -2182,64 +2198,64 @@ some lim-i-ta-tions of \T1/ppl/m/it/10.95 RootSkel
  []
 
 1: section
-[20
+[24
 
 
 
-] [21] [22] [23] [24]) [25]
+] [25] [26] [27] [28]) [29]
 \openout2 = `Chapters/5_conclusion.aux'.
 
  (./Chapters/5_conclusion.tex
 Chapter 5.
 )
 1: section
-[26
+[30
 
 
 
 ]
 
-LaTeX Warning: Empty bibliography on input line 394.
+LaTeX Warning: Empty bibliography on input line 396.
 
 \openout2 = `Appendices/AppendixA.aux'.
 
 (./Appendices/AppendixA.tex
 Appendix A.
 1: section
-[27
+[31
 
 
 
-] [28]
+] [32]
 Appendix B.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/it' tried instead on input line 59.
 )
 1: section
-[29
+[33
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 411.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 411.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 413.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 413.
  (./main.aux (./Chapters/1_introduction.aux) (./Chapters/2_methods.aux)
 (./Chapters/3_results.aux) (./Chapters/4_discussion.aux)
 (./Chapters/5_conclusion.aux) (./Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 411.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 411.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 413.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 413.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E0E45F7828704BA9F65CAB68D15ECAE7;10117.
+(rerunfilecheck)             Checksum: 41F39B67272F7A97F91D38158539D545;10117.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32168 strings out of 493014
- 650119 string characters out of 6133351
- 842288 words of memory out of 5000000
- 35204 multiletter control sequences out of 15000+600000
+ 32448 strings out of 493014
+ 655826 string characters out of 6133351
+ 863667 words of memory out of 5000000
+ 35467 multiletter control sequences out of 15000+600000
  69986 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,20n,82p,10377b,2242s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,21n,82p,10377b,2242s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
@@ -2250,10 +2266,10 @@ ist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on main.pdf (44 pages, 881631 bytes).
+Output written on main.pdf (48 pages, 1019635 bytes).
 PDF statistics:
- 650 PDF objects out of 1000 (max. 8388607)
- 563 compressed objects within 6 object streams
- 114 named destinations out of 1000 (max. 500000)
- 488 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 692 PDF objects out of 1000 (max. 8388607)
+ 597 compressed objects within 6 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 498 words of extra memory for PDF output out of 10000 (max. 10000000)
 

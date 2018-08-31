@@ -85,7 +85,7 @@ The pipeline that has been developed for the preprocessing step of extracting th
 
 %[INSERT FIGURE OF DIFFERENT STEPS (SUBFIGURES) THAT ARE THEN REFERRED TO IN THE TEXT INDIVIDUALLY]
 
-\begin{figure}[h!]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{../Figures/workflow_big.png}
 	\caption{The workflow of \textit{RootSkel} and different components of the GUI: Pre-processing steps to extract the skeleton are highlighted in orange, the actual angle computation is shaded in blue. Steps that have a front-end, i.e. are visible on the GUI, are framed in red, only back-end components are without a frame. }
@@ -207,20 +207,28 @@ The pipeline that has been developed for the preprocessing step of extracting th
 %----------------------------------------------------------------------------------------
 \section{Components of the GUI}
 
-With the development of the GUI for more user-friendliness, we split our source code of the tool based on functionality, i.e. we create separate functions or modules that we then connect to several objects in the GUI. This process, also known as \textit{modularity} in software engineering, has various benefits for developing and maintaining the application: The code is less cluttered but more structured and readable and just by reading the main functions which calls all other subfunctions you get a general overview and understanding of what the code does. Also, it reduces redundancy in the main code if the codes get split up into smaller subfunctions and helps debugging. A clear naming convention also adds to a better understanding of the code.
+With the development of the GUI for more user-friendliness, we split our source code of the tool based on functionality, i.e. we create separate functions or modules that we then connect to several objects in the GUI. This process, also known as \textit{modularity} in software engineering, has various benefits for developing and maintaining the application: The code is less cluttered but more structured and readable and just by reading the main functions which calls all other subfunctions you get a general overview and understanding of what the code does. Also, it reduces redundancy in the main code if the code gets split up into smaller subfunctions and helps debugging. A clear naming convention also adds to a better understanding of the code.
 
 %MODULARITY — main code is not as cluttered, things that are called again and again, migrate it. several functions use same code. 
 %REDUCE REDUNDANCY
 %MORE READIBLE, CLEARER, MORE STRUCTURED, DON’T GET LOST IF YOU ONLY READ MAIN CODE, GENERAL THIGNS THAT HAPPEN.
 %SPEAKING VARIABLES. 
 
-[INSERT FIGURE FRONT-END BACK-END HERE]
 
 %Beyond that, provided the interface, i.e. input and output of each modules, is well defined modularity allows a team of developers to work on the functionality of one single module without involving other modules. They are not distracted by functionalities that are not relevant, known as information hiding in software engineering. Also, it helps to keep the code short and simple and focused one core functionality. It is also useful to identify bugs early on in the development process.
 
 Here, it allowed us to not only handle front-end and back-end but also the different steps in the pipeline separately: 
 
-Every function representing one specific step in the pipeline or objects accessed by various functions is encoded in the back-end which is not visible and relevant for the future user. These modules are connected via callbacks to different objects in the GUI which represent the front-end.
+Every function representing one specific step in the pipeline or objects accessed by various functions is encoded in the back-end which is not visible and relevant for the future user. These modules are connected via callbacks to different objects in the GUI which represent the front-end, see figure [INSERT REFERENCE HERE].
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.\textwidth]{../Figures/frontBack.png}
+	\caption{A scematic figure visualising how back-end and front-end communicate via a well-defined user interface: The back-end containing all the programs acts behind the scenes and controls the GUI; it sends content to the interface that get than transferred to the front-end. The front-end being the point of contact with the user contains the GUI and the design sends the user input data via the interface to the back-end.}
+	\label{fig:fronendBackend}
+\end{figure}
+
 
 %Back-end as well as front-end needs maintaining. 
 %The line between the two of them is often blurry.
@@ -232,11 +240,11 @@ Table [INSERT REFERENCE HERE] gives an overview of the different components and 
 The current version of the package can be downloaded from [INSERT REFERENCE HERE]. %https://github.com/burfel/root-tip-angle/tree/master/src/Root_image_GUI_v1_5 and will be maintained on [INSERT GIOVANNIS GITHUB HERE].
 
 
-\begin{table}[h!]
+\begin{table}[H]
 	\centering
 	\includegraphics[width=1.\textwidth]{../Figures/components2.pdf}
 	\caption{The different components and modules of \textit{RootSkel} with a description of each of them; the most important ones containing the core functionality of \textit{RootSkel} are framed in red, the high-level components are shaded in yellow.}
-	\label{fig:modules}
+	\label{table:modules}
 \end{table}
 
 
@@ -298,7 +306,7 @@ As a preview of validation we performed our webtool on 3 randomly chosen roots f
 
 Figure [INSERT HERE] shows the comparison of the angle of interest \( \Theta \), both of the manual as well as the automatically computed angle at about 11 times steps over a period of 330 minutes.
 
-%\begin{figure}[h]
+%\begin{figure}[H]
 %\centering
 %\includegraphics[width=0.6\textwidth]{Figures/2018-04-24.png}
 %\caption{}
@@ -319,7 +327,7 @@ Figure [INSERT HERE] shows the comparison of the angle of interest \( \Theta \),
 
 %\newpage
 
-\begin{figure}[h!]
+\begin{figure}[H]
 
 \centering
 
@@ -346,7 +354,7 @@ where $\alpha_{\text{RootSkel}}$ denotes the angle computed by \textit{RootSkel}
 When studying our data sets (manually computed and automatically computed angles), we could oberve that as the angle approaches zero, the values get more volatile, i.e. the variance increases; this matches up with our observations presented in figure [INSERT REFERENCE HERE]. However, it should be noted that our improvement score is based on relative values and, therefore, can easily increase for small values. %(of manually computed angles and increasing or constant difference/ variance to the automatically computed angle).
 
 
-\begin{table}[h!]
+\begin{table}[H]
 	
 	\centering
 	
