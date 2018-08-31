@@ -47,16 +47,19 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
+\usepackage{hyperref}
+
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{subcaption}
 
 \usepackage{float}
 
-
 %\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
 %\usepackage{biblatex}
-\usepackage[backend=biber, style=numeric, citestyle=numeric]{biblatex}
+%\usepackage[backend=biber, style=numeric, citestyle=numeric]{biblatex}
+\usepackage[backend=bibtex, style=numeric, citestyle=numeric]{biblatex}
+%\usepackage[backend=bibtex, style=alphabetic, citestyle=numeric]{biblatex}
 
 \addbibresource{example.bib} % The filename of the bibliography
 %\bibliography{example.bib}
@@ -401,7 +404,9 @@ This project was conducted under the supervision of Dr Giovanni Sena, whom I tha
 %\chapter*{References}
 %\printbibliography[heading=bibintoc]
 
-%\nocite{*}
+
+%\nocite{*} % IS NOT WORKING FOR SOME REASON
+\nocite{matlab}
 \printbibliography
 
 %\printbibliography[keyword=history]
