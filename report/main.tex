@@ -45,7 +45,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{mathpazo} % Use the Palatino font by default
 
 
-\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+%\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
 \usepackage{hyperref}
 
@@ -55,15 +55,28 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage{float}
 
-%\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
-%\usepackage{biblatex}
-%\usepackage[backend=biber, style=numeric, citestyle=numeric]{biblatex}
-\usepackage[backend=bibtex, style=numeric, citestyle=numeric]{biblatex}
-%\usepackage[backend=bibtex, style=alphabetic, citestyle=numeric]{biblatex}
+% complies with Imperial College citation convention
+\usepackage{csquotes}
+\usepackage[%
+style=numeric, 
+sortcites,
+backend=bibtex,
+giveninits=true % <===================================================
+]{biblatex}
+\addbibresource{example.bib}
 
-\addbibresource{example.bib} % The filename of the bibliography
-%\bibliography{example.bib}
+\DeclareNameAlias{default}{family-given} % <============================
 
+
+%%\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+%%\usepackage{biblatex}
+%%\usepackage[backend=biber, style=numeric, citestyle=numeric]{biblatex}
+%\usepackage[backend=bibtex, style=numeric, citestyle=numeric]{biblatex}
+%%\usepackage[backend=bibtex, style=acm, citestyle=numeric]{biblatex}
+%%\usepackage[backend=bibtex, style=alphabetic, citestyle=numeric]{biblatex}
+%
+%\addbibresource{example.bib} % The filename of the bibliography
+%%\bibliography{example.bib}
 
 %----------------------------------------------------------------------------------------
 %% include hebrew letters
@@ -227,6 +240,9 @@ headsepline, % Uncomment to get a line under the header
 %	QUOTATION PAGE
 %----------------------------------------------------------------------------------------
 
+%\newpage
+\leavevmode\thispagestyle{empty}\newpage
+
 \vspace*{0.2\textheight}
 
 %\noindent\enquote{\itshape Thanks to my solid academic training, today I can write hundreds of words on virtually any topic without possessing a shred of information, which is how I got a good job in journalism.}\bigbreak
@@ -272,7 +288,7 @@ Unlike when doing the angle computation to measure the curvature of a root tip m
 
 Additionally, we computed the angle of 3 \textit{Arabidopsis thaliana} root tips at 11 time points over one experiment each (approximately 5 hours) and evaluated the results by comparing it to previously manually computed angles of the same roots. The results show similar patterns in the computed angles and two sample t-tests on the data show they are not significantly different (\(\alpha = 0.05 \)).
 % overall correspondence with manual angles; 
-Statistics on our data sets suggest that our tool improves the precision of the manually computed angle by up to 12.4\%. 
+Statistics on our data sets suggest that our tool can improve the precision of the manually computed angles by up to 12.4\%. 
 %removes human error in the angle calculation process %which accounts in average [INSERT VARIANCE HERE, STATE HOW MUCH HUMAN VARIANCE WE COULD ELIMINATE BY STANDARDISING IT] 
 %of up to 12.5\% of the actual angle. 
 However, further validation on more images needs to be done; measurement errors of both the manually as well as computationally computed angles need to be obtained in order to show robustness of our method. Unlike the manually computed angles, with using a standard definition of the angle, our software delivers angles with less human bias which makes the results comparable and reproducible. 
@@ -408,7 +424,9 @@ This project was conducted under the supervision of Dr Giovanni Sena, whom I tha
 
 
 %\nocite{*} % IS NOT WORKING FOR SOME REASON
-\nocite{matlab}
+%\nocite{matlab,abas2006Intra,basu2007novel,beemster1998analysis,canny1986computational,nick2017}
+\nocite{GExpCircuit,abas2006Intra,basu2007novel,beemster1998analysis,canny1986computational,chavarria2008spatio,comaniciu2000real,do2016differential,french2008probabilistic,french2009high,ge2000importance,geometry2016,gilroy2008plant,ibraheem2012understanding,ibraheem2012understanding,imagProcFundamentals,ishikawa1990electrotropism,ishikawa1997novel,kimura1999accurate,kiss1996gravitropism,maini2010comprehensive,matlab,michener1938action,miller2007computer,mullen1998analysis,naeem2011high,nick2017,parry2001novel,pointOperation2018,pydata2018,qi2007rootlm,swarup2005root,van1934einfluss,van2003new,vandenbrink2014light,walter2002spatio,wang2009hypotrace,wolverton2000two}
+
 \printbibliography
 
 %\printbibliography[keyword=history]

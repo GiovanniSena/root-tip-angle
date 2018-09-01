@@ -18,7 +18,7 @@ The purpose of this methods section is to give an overview on, first, the data u
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
-\section{Data set}
+\section{Data set}\label{sec:data}
 
 Our data set consisted of high-throughput time-lapse images of \textit{Arabidopsis thaliana} (Arabidopsis) roots taken by a standard Raspberry Pi V2 camera from 5 experiments with 5-6 roots each containing between 32 and 36 images over a period of at least 5 hours, i.e. every 10 minutes a photo was taken. 
 All experimental parameters remained the same across experiments, except for the applied voltage.
@@ -32,21 +32,20 @@ It should be noted that these images had already been collected in a previous pr
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
-\section{Experimental setup}
+\section{Experimental setup}\label{sec:experiment}
 
-To better understand the nature of the data, we give a high-level explanation of the experimental setup used for data collection in figure [INSERT REFERENCE HERE].
+To better understand the nature of the data, we give a high-level explanation of the experimental setup used for data collection in figure \ref{fig:experiment}.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{../Figures/experiment_circuit.png}
-	\caption{The experimental setup for root electrotropism: \\
-		Subfigure A shows a V-box containing plants in a medium, stabilised by PCR tubes with agar and seedlings. To the left a submerged negative electrode (cathode); to the right a submerged positive electrode (anode); inflow and outflow tube controlling the medium. \\
-		Subfigure B shows the components of an EF experiment: The V-box connected to a power source, a media reservoir connected to the V-box via two pumps controlling the medium inflow and outflow, and a camera controlled via a Raspberry Pi facing the V-box to to take time lapse images of the roots at 10 minute intervals. \\
-		Taken from [INSERT REFERENCE].}
+	\caption{The experimental setup for root electrotropism: 
+		Subfigure A shows a V-box containing plants in a medium, stabilised by PCR tubes with agar and seedlings. To the left a submerged negative electrode (cathode); to the right a submerged positive electrode (anode); inflow and outflow tube controlling the medium. 
+		Subfigure B shows the components of an EF experiment: The V-box connected to a power source, a media reservoir connected to the V-box via two pumps controlling the medium inflow and outflow, and a camera controlled via a Raspberry Pi facing the V-box to to take time lapse images of the roots at 10 minute intervals. 
+		Taken from \cite{GExpCircuit}.}
 	\label{fig:experiment}
 \end{figure}
 
-[SEE SLIDES, THESIS]
 
 %INSERT FIGURE: PHENOMENOLOGY OF ROOT ELECTROTROPISM]
 
@@ -58,9 +57,9 @@ To better understand the nature of the data, we give a high-level explanation of
 Having these images as a basis, the nature of this work was mainly an image processing one.
 
 Image processing pools together a lot of different domains including physics (optics), signal processing and pattern recognition/ Machine Learning (ML); %to ultimately feed computers to understand how to interpret images and make decisions based on them. 
-the idea behind it is to extract information from an image in a form that is suitable for computer processing [INSERT REFERENCE HERE]. 
+the idea behind it is to extract information from an image in a form that is suitable for computer processing \cite{pydata2018}. 
 
-Figure [INSERT REFERENCE HERE] shows fundamental steps in image processing, that served as a guideline for the presented work. However, every single image processing case is different and there will always be slight variations to this generic image processing workflow.
+Figure \ref{fig:imageprocessingWorkflow} shows fundamental steps in image processing, that served as a guideline for the presented work. However, every single image processing case is different and there will always be slight variations to this generic image processing workflow.
 
 
 %combines optics and signal processing and is often used in computer vision.
@@ -73,13 +72,12 @@ Figure [INSERT REFERENCE HERE] shows fundamental steps in image processing, that
 %	\item Results (output)
 %\end{enumerate}
 
-[INSERT FLOWCHART FIGURE HERE, adapted from....]
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{../Figures/imageprocessing.png}
 	\caption{Image processing steps: (1) Digital image acquisition; (2) Preprocessing: To improve the image in ways that increase the chances for success of the other processes; (3) Segmentation: To partition an input image into its constituent parts or objects; (4) Representation and description: To convert the inut data to a form suitable for computer compressing, to extract features that result in some quantitative information of interest or features that are basic for differentiating one class of objects from another; (5) Recognition and interpretation: Understanding, to assign a label to an object based on the information provided by its descriptors, to assign meaning to an ensemble of recognised objects. All steps interact with the knowledge about the problem domain. 
-		Adapted from [INSERT REFERENCE].}
+		Adapted from \cite{imagProcFundamentals}.}
 	\label{fig:imageprocessingWorkflow}
 \end{figure}
 
@@ -89,7 +87,7 @@ Figure [INSERT REFERENCE HERE] shows fundamental steps in image processing, that
 \subsection{Digital images}
 
 In image processing, we operate on digital (discrete) images.
-An image refers to a 2D light intensity function \( f(x,y) \), where \( (x,y) \) denote spatial coordinates and the value of \( f \) at any point \( (x,y) \) is proportional to the brightness or gray levels of the image at that point [INSERT REFERENCE HERE].
+An image refers to a 2D light intensity function \( f(x,y) \), where \( (x,y) \) denote spatial coordinates and the value of \( f \) at any point \( (x,y) \) is proportional to the brightness or gray levels of the image at that point \cite{imagProcFundamentals}.
 Thus, a digital image is an image \( f(x,y)  \) that has been discretised both in spatial coordinates and brightness, i.e. we
 
 \begin{itemize}
@@ -105,23 +103,28 @@ What we get is an image represented as a matrix of integer values; the elements 
 %\]
 %The image can now be represented as a matrix of integer values:
 
-[INSERT EXAMPLE PICTURE HERE]
+%INSERT EXAMPLE PICTURE HERE]
 
 
 %----------------------------------------------------------------------------------------
 \subsection{On spatial resolution, gray levels and coloured images}
 
 The storage and preprocessing requirements increase rapidly with the spatial resolution and the number of gray levels. 
-For instance, a 256 grayscale image of size 256\( \times \)256 occupies 64K bytes of memory. Figure [INSERT REFERENCE HERE] shows images of different spatial resolution. 
+For instance, a 256 grayscale image of size 256\( \times \)256 occupies 64K bytes of memory. Figure \ref{fig:checkerboardEffect} shows images of different spatial resolution. 
 
-[INSERT FIGURE: Images with decreasing spatial resolution, taken from .....]
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../Figures/checkerboard.png}
+	\caption{Images of different spatial resolution: Decreasing the spatial resolution by a half in each step, starting from the top left corner to the bottom middle image. Images of very low spatial resolution produce a “checkerboard effect”.
+	Taken from \cite{imagProcFundamentals}.}
+	\label{fig:checkerboardEffect}
+\end{figure}
 
-Also, an insufficient number of gray levels in smooth areas of a digital image may result in false contouring, see figure [INSERT REFERENCE HERE].
+%Also, an insufficient number of gray levels in smooth areas of a digital image may result in false contouring, see figure [INSERT REFERENCE HERE].
+%
+%[INSERT FIGURE: Images of different gray-level quantisation]
 
-[INSERT FIGURE: Images of different gray-level quantisation]
-
-
-Since we deal with coloured images, we chose the RGB colour model which is an additive colour model in which red, green and blue light are added together in various ways to reproduce a broad spectrum of colours [INSERT REFERENCE HERE].
+Since we deal with coloured images, we chose the RGB colour model which is an additive colour model in which red, green and blue light are added together in various ways to reproduce a broad spectrum of colours \cite{ibraheem2012understanding}.
 
 
 %----------------------------------------------------------------------------------------
@@ -144,10 +147,10 @@ We can:
 
 From an image processing point of view, we performed point as well as local operations in our work.
 
-A point operation is a function that is performed on each single pixel of an image, independent of all the other pixels in that image [INSERT REFERENCE HERE]. These include operations like inverting, changing the brightness or contrast of an image, changing the gamma of an image, binarising an image and logical operations. 
+A point operation is a function that is performed on each single pixel of an image, independent of all the other pixels in that image \cite{maini2010comprehensive}. These include operations like inverting, changing the brightness or contrast of an image, changing the gamma of an image, binarising an image and logical operations. 
 
-Local operations, on the other hand, compute the new value of each single pixel with a neighbourhood around it [INSERT REFERENCE HERE]. %They can be divided in two groups, linear and nonlinear filters.
-They include filters which are operations that convert a source image to a result image by applying some kind of tranformation, be it of linear or nonlinear nature [INSERT REFERENCE HERE]. There are more than 134 different filter functions in the MATLAB Image Processing toolbox [INSERT REFERENCE HERE] that can be applied with different arguments and sensitivity thresholds. Filters used in our work include the 2D median filtering \textit{medfilt2} or the 2D adaptive noise-removal filtering \textit{wiener2}.
+Local operations, on the other hand, compute the new value of each single pixel with a neighbourhood around it \cite{pointOperation2018}. %They can be divided in two groups, linear and nonlinear filters.
+They include filters which are operations that convert a source image to a result image by applying some kind of tranformation, be it of linear or nonlinear nature \cite{pointOperation2018}. There are more than 36 different filter functions in the MATLAB Image Processing toolbox \cite{matlab} that can be applied with different arguments and sensitivity thresholds. Filters used in our work include the 2D median filtering \textit{medfilt2} or the 2D adaptive noise-removal filtering \textit{wiener2} \cite{matlab}.
 
 %A a filter is an operation, which converts a source image via some kind of transformation to a result image [INSERT REFERENCE HERE]. 
 
@@ -183,7 +186,7 @@ They include filters which are operations that convert a source image to a resul
 %----------------------------------------------------------------------------------------
 \section{\textit{MATLAB} as a programming language}
 
-As a language we chose \textit{Matlab} as it is very popular in academic circles for image/ data processing given the number of built-in functions, and a well documented image processing toolbox (\textit{MATLAB Image Processing Toolbox} [INSERT REFERENCE HERE]).
+As a language we chose \textit{MATLAB} as it is very popular in academic circles for image/ data processing given the number of built-in functions, and a well documented \textit{MATLAB Image Processing Toolbox} \cite{matlab}.
 %with a very good documentation. 
 % GOES TO DISCUSSION/ FUTURE WORK:
 %Alternative languages that were considered were \textit{Python} and \textit{Julia}. Another recommended language is \textit{OpenCV} as it is very fast and well documented. Other non-open source software such as \textit{ImageJ}, a Java based image processing program, and \textit{Avizo} which is a general-purpose commercial software application for scientific and industrial data visualisation and analysis with a nice GUI, could not be investigated further in this work. 
@@ -209,7 +212,7 @@ As a language we chose \textit{Matlab} as it is very popular in academic circles
 
 Once the skeleton has been extracted, one can compute the curvature and the angle of the root tip. 
 In fact, we only need to segment the part of the root that is close to the tip including the bending point, i.e. the point with highest local curvature. %, not the entire root. 
-This will help to discard lots of noise caused by tubes and other objects at the upper part of the root, see section [INSERT REFERENCE TO APPENDIX] for example of images.
+This will help to discard lots of noise caused by tubes and other objects at the upper part of the root, see subsection \ref{subsec:challengingImages} for examples of images.
 
 Various definitions of angles associated to the root tip had been considered; however, in order to make the angles comparable to the so far manually computed angles we chose an emulation of the manual computation of the angle in our final implementation. 
 
@@ -218,22 +221,20 @@ Various definitions of angles associated to the root tip had been considered; ho
 %have not been incorporated in our final tool. 
 
 
-The angle \( \Theta \) we want to compute is the angle between the line through the point of the highest local %(Gaussian) curvature and the root tip and a line parallel to the electric field (EF).  
-
-Figure [INSERT REFERENCE HERE] illustrates the angle \( \Theta \) that is computed. 
+The angle \(\Theta\) we want to compute is the angle between the line through the point of the highest local %(Gaussian) 
+curvature and the root tip and a line parallel to the electric field (EF).  
+Figure \ref{fig:angle} illustrates the angle \(\Theta\) that is computed. 
 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\textwidth]{../Figures/angle.png}
-	\caption{How the angle in reponse to the EF is measured: The angle \( \Theta \) represents the angle between the line through the tip of the root and the point of highest local curvature and a line parallel to the EF; taken from [INSERT REFERENCE].}
+	\includegraphics[width=0.6\textwidth]{../Figures/angle2.png}
+	\caption{How the angle in reponse to the EF is measured: The angle \( \Theta \) represents the angle between the line through the tip of the root and the point of highest local curvature (\( v_{1}\)) and a line parallel to the EF (\( v_{2} \)).
+	Adapted from \cite{GExpCircuit}.}
 	\label{fig:angle}
 \end{figure}
 
-
-
-Once these two lines are correctly defined, provided the point of highest local curvature is unique, it is straight forward to compute angle \( \Theta \).
-
+Once these two lines are correctly defined, provided the point of highest local curvature is unique, it is straight forward to compute angle \(\Theta\).
 
 %There are other ways such as finding vectors on the lines and using their dot products. However, we can use simple, basic trigonometric methods as shown in figure [INSERT REFERENCE HERE].
 %
@@ -260,17 +261,18 @@ Once these two lines are correctly defined, provided the point of highest local 
 %We refer to figure [INSERT REFERENCE HERE] to how the angle was computed in previous approaches. 
 
 
-Let \( v_{1} \) be the line through the tip of the root and the point of highest local curvature and \( v_{2} \) a line parallel to the EF. 
+Let \( v_{1} \) be the line through the tip of the root and the point of highest local curvature and \(v_{2} \) a line parallel to the EF. 
 We can compute angle \( \Theta \)  by using simple trigonometric methods 
 
 \begin{equation} \label{angle1}
-\Theta_{1}  = \cos^{-1}\frac{( v_{1} \cdot v_{2}) }{ | v_{1} | \cdot | v_{2} |}
+\Theta_{1}  = \cos^{-1}\frac{( v_{1} \cdot v_{2}) }{ | v_{1} | \cdot | v_{2} |}.
 \end{equation}
-or equivalently
-\begin{equation} \label{angle2}
-\Theta_{2} = \tan^{-1}( v_{1}, v_{2}) \times \frac{180}{\pi}
-\end{equation}
-depending on the signedness of \( v_{1} \) and \( v_{2} \). Assuming the tip of the root only bends positively, i.e. towards the cathode (the negative pole of the EF) in our experimental setup, and \( v_{2} \) is not positive nor negative, the sign of \( \Theta \) only depends on \( v_{1} \). If the root tip crosses the line that is completely aligned with, i.e. parallel to, the EF (where \( \Theta \) takes the value 0), \( \Theta \) becomes negative as \( v_{1} \) will become negative. 
+%or equivalently
+%\begin{equation} \label{angle2}
+%\Theta_{2} = \tan^{-1}( v_{1}, v_{2}) \times \frac{180}{\pi}
+%\end{equation}
+%depending on the signedness of \( v_{1} \) and \( v_{2} \). 
+Assuming the tip of the root only bends positively, i.e. towards the cathode (the negative pole of the EF) in our experimental setup, and \( v_{2} \) is not positive nor negative, the sign of \(\Theta \) only depends on \( v_{1} \). If the root tip crosses the line that is completely aligned with, i.e. parallel to, the EF (where \( \Theta \) takes the value 0), \( \Theta \) becomes negative as \( v_{1} \) will become negative. 
 
 
 %----------------------------------------------------------------------------------------
@@ -286,17 +288,26 @@ This will help the user to understand the rather formula intense implementation 
 
 There exist various different concepts and definitions of curvature in different branches of geometry.
 Intuitively, curvature in the 2D case captures the amount by which a curve deviates from being a (straight) line.
-We will only touch upon \textit{extrinsic} curvature here, which is defined for objects embedded in some higher-dimensional usually Euclidean space. This allows us to use the radius of circles that touch the object, so-called \textit{osculating circles}, to compute the curvature.
+We will only touch upon \textit{extrinsic} curvature here, which is defined for objects embedded in some higher-dimensional, usually Euclidean space. This allows us to use the radius of circles that touch the object, so-called \textit{osculating circles} (see figure \ref{fig:curveCircle}), to compute the curvature. 
+For the interested reader we refer to Do Carmo's book on differential geometry \cite{do2016differential} to learn more about different curvatures.
 
 % Curvature is usually a scalar quantity, but one may define a curvature vector that takes into account the direction of the bend in addition to its magnitude.
 % The curvature of more complex objects (such as surfaces or even curved n-dimensional spaces) is described by more complex objects from linear algebra, such as the general Riemann curvature tensor. 
 
 Geometrically, the curvature measures how fast the unit tangent vector, i.e. the vector tangent to the curve and of length 1,  to the curve rotates. 
-[INSERT FIGURE HERE]
+%TThe curvature of C at a point is a measure of how sensitive its tangent line is to moving the point to other nearby points. There are a number of equivalent definitions.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{../Figures/curveCircle.png}
+	\caption{The curvature and the osculating circle: Let \( C \) be a curve and \( P \) a point on it. Then there is a unique circle or line which best approximates the curve near \( C \) which we call the \textit{osculating circle} at \( P \). We define the curvature of \( C \) at \( P \) to be the curvature of that circle or line. 
+		%The radius of curvature is defined as the reciprocal of the curvature.
+		}
+	\label{fig:curveCircle}
+\end{figure}
 
 If the curve is close to a straight line, and thus the unit tangent vector changes very little, the curvature is small; if the curve contains a sharp turn, the curvature is large.
 In the implementations we used the difference between edge direction vectors to compute this velocity.
-
 
 %INSERT PRECISE DEFINITION HERE AND INSERT HERE "CURVATURE OF SPACE CURVES" FROM WIKIPEDIA
 
@@ -305,7 +316,7 @@ In the implementations we used the difference between edge direction vectors to 
 We first compute the first derivative (in between pairs of samples), and we take into account unequal segment lengths. In the same way we then compute the second derivative, we take the average length of two neighbouring edges, i.e. the length of edge in between neighbouring normals if we consider the normals to be halfway between vertices.
 Once we have the normals, we can compute the rate of change between neighbouring normals to assign the specific curvature value to each point.
 
-[INSERT FIGURE HERE, DRAW IT]
+%INSERT FIGURE HERE, DRAW IT
 
 %The current implementation of the \textit{getAngle.m} script fits polygons to the points, i.e. the coordinates from the root skeleton, and then calculates the analytical curvature from these fitted polygons. 
 
@@ -318,7 +329,16 @@ If the user does not specify otherwise, we assume the line pieces to connect two
 
 In a previous version, we  took a section of the curve (here 9 vertices) and fitted a polynomial to it; this will be our curve model. From this model we can compute the derivative and with the coefficients of the fitted polynomial we can compute the curvature at each point. 
 A large radius of the osculating circle, i.e. a high curvature, means a rather straight part of the curve, while we get a small radius or curvature in parts where the curve is "pointy", i.e. bends more. The sign of the curvature indicates whether it is right (positive) or left (negative) bending. However, the here used function \textit{polyfit} should not be used on very noisy data.
+An example of a curvature plot of one of our roots can be seen in figure \ref{fig:curvature}.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{../Figures/curvature_getAngle2.png}
+	\caption{The curvature of a root skeleton: The peak at position 63 (counted from the root tip) represents the turning point of the root tip; the local (and global) maximum, the positivity of the curvature (ie right-bent) and the position at the tip of the root indicate that this is the point we are looking for. Highly noisy and unreliable pixels close to the tubes had been cut out. 
+		%The radius of curvature is defined as the reciprocal of the curvature.
+	}
+	\label{fig:curvature}
+\end{figure}
 
 
 %REFERENCES:  Rusinkiewicz, "Estimating Curvatures and Their Derivatives on Triangle Meshes
