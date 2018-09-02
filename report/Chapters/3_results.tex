@@ -23,7 +23,7 @@
 %%----------------------------------------------------------------------------------------
 
 The following section of this report will briefly explain the tool from a technical perspective, but more importantly  %and show how to use it in practice. %Additionally, we present an example of the tool in use.
-we will present some highlights of the tool that sets it apart from other tools. In the appendix \ref{chp:manual} we guide the user through one example to illustrate how the tool is used in practice. This can serve as a manual for users even though the steps are self-explanatory by just using the Graphical User Interface (GUI). 
+we will present some highlights of the tool that sets it apart from other tools. In the appendix \ref{chp:manual} we guide the user through one example to illustrate how the tool is used in practice. This serves as a manual for users even though the steps are self-explanatory by just using the Graphical User Interface (GUI). 
 
 Additionally, we will show some validation of the tool by comparing the angle computed by our tool to the one computed manually on 3 time-series image data sets of Arabidopsis roots.
 
@@ -311,7 +311,7 @@ Table \ref{table:modules} gives an overview of the different components and modu
 %----------------------------------------------------------------------------------------
 \section{Validation: Comparing the automated calculated angles with the manually calculated angles}
 
-As a preview of validation we performed our software tool on 3 randomly chosen roots from 3 different experiments over a time of 330 minutes. We compared both the automatically computed angles with the previously computed manual angle. As a second validation layer we also compared the latter to the computed angles with the turning point as user input.
+As a preview of validation we performed our software tool on 3 randomly chosen roots from 3 different experiments over a time of 330 minutes (or 100 minutes respectively). We compared both the automatically computed angles with the previously computed manual angle. As a second validation layer we also compared the latter to the computed angles with the turning point as user input.
 
 Figure \ref{fig:resultPlots} shows the comparison of the angle of interest \( \Theta \), both of the manual as well as the automatically computed angle at about 11 times steps over a period of 330 minutes.
 
@@ -358,7 +358,7 @@ Table \ref{table:resultTable} compares the automatically computed angle by \text
 \[
  \text{score}_{\textbf{imp}} := | \frac{ \alpha_{\text{RootSkel}} - \alpha_{\text{manual}} }{\alpha_{\text{manual}}} |
 \]
-where $\alpha_{\text{RootSkel}}$ denotes the angle computed by \textit{RootSkel} and $\alpha_{\text{manual}}$ denotes the manually computed angle; this way we compare to the manually computed angles. How much our method is really an improvement of the theoretical true value, cannot be computed as any measurement will be subject to errors (see also section \ref{sec:validation}). The improvement score on our 3 example data sets average between 5\% and 23\% with an ensemble average of 12.4\%, which can be concluded from table \ref{table:resultTable}.
+where $\alpha_{\text{RootSkel}}$ denotes the angle computed by \textit{RootSkel} and $\alpha_{\text{manual}}$ denotes the manually computed angle; this way we compare to the manually computed angles. How much our method is really an improvement (in accuracy) to the manual method, i.e. how much closer it is to the theoretical true value, cannot be computed as any measurement will be subject to errors (see also section \ref{sec:validation}). The improvement score on our 3 example data sets average between 5\% and 23\% with an ensemble average of 12.4\%, which can be concluded from table \ref{table:resultTable}.
 
 When studying our data sets (manually computed and automatically computed angles), we could observe that as the angle approaches zero, the values get more volatile, i.e. the variance increases; this matches up with our observations presented in figure \ref{fig:resultPlots}. However, it should be noted that our improvement score is based on relative values and, therefore, can easily increase for small values. %(of manually computed angles and increasing or constant difference/ variance to the automatically computed angle).
 
