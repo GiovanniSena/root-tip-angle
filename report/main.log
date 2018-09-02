@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  2 SEP 2018 19:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  2 SEP 2018 19:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2190,31 +2190,31 @@ Chapter 4.
 File: Figures/2018-03-08_1000.jpg Graphic file (type jpg)
 
 <use Figures/2018-03-08_1000.jpg>
-Package pdftex.def Info: Figures/2018-03-08_1000.jpg used on input line 84.
+Package pdftex.def Info: Figures/2018-03-08_1000.jpg used on input line 86.
 (pdftex.def)             Requested size: 165.38164pt x 124.00975pt.
 
 <Figures/2018-02-28_2030.jpg, id=579, 3292.3pt x 2473.24pt>
 File: Figures/2018-02-28_2030.jpg Graphic file (type jpg)
 
 <use Figures/2018-02-28_2030.jpg>
-Package pdftex.def Info: Figures/2018-02-28_2030.jpg used on input line 91.
+Package pdftex.def Info: Figures/2018-02-28_2030.jpg used on input line 93.
 (pdftex.def)             Requested size: 165.38164pt x 124.23532pt.
 
 <Figures/2018-04-24_1840.jpg, id=580, 2601.72pt x 1951.29pt>
 File: Figures/2018-04-24_1840.jpg Graphic file (type jpg)
 
 <use Figures/2018-04-24_1840.jpg>
-Package pdftex.def Info: Figures/2018-04-24_1840.jpg used on input line 98.
+Package pdftex.def Info: Figures/2018-04-24_1840.jpg used on input line 100.
 (pdftex.def)             Requested size: 165.38164pt x 124.00975pt.
 
 <Figures/2018-03-06_2000.jpg, id=581, 3292.3pt x 2473.24pt>
 File: Figures/2018-03-06_2000.jpg Graphic file (type jpg)
 
 <use Figures/2018-03-06_2000.jpg>
-Package pdftex.def Info: Figures/2018-03-06_2000.jpg used on input line 104.
+Package pdftex.def Info: Figures/2018-03-06_2000.jpg used on input line 106.
 (pdftex.def)             Requested size: 165.38164pt x 124.23532pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--108
+Underfull \hbox (badness 10000) in paragraph at lines 84--110
 [][][]
  []
 
@@ -2899,7 +2899,7 @@ nts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
 pe1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw
 /palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palati
 no/uplri8a.pfb>
-Output written on main.pdf (87 pages, 24280793 bytes).
+Output written on main.pdf (87 pages, 24280830 bytes).
 PDF statistics:
  1175 PDF objects out of 1200 (max. 8388607)
  952 compressed objects within 10 object streams
