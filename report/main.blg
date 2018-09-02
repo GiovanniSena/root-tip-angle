@@ -22,7 +22,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated field_info (elt_size=4) to 10282 items from 5000.
+Reallocated field_info (elt_size=4) to 10421 items from 5000.
 Database file #1: main-blx.bib
 Database file #2: example.bib
 Repeated entry---line 203 of file example.bib
@@ -36,45 +36,45 @@ I'm skipping whatever remains of this entry
 Biblatex version: 3.3
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 38 entries,
+You've used 39 entries,
             6256 wiz_defined-function locations,
-            1420 strings with 16414 characters,
-and the built_in function-call counts, 256870 in all, are:
-= -- 19718
-> -- 4427
-< -- 1339
-+ -- 6635
-- -- 1455
-* -- 17980
-:= -- 26203
+            1427 strings with 16583 characters,
+and the built_in function-call counts, 260047 in all, are:
+= -- 19854
+> -- 4510
+< -- 1363
++ -- 6669
+- -- 1478
+* -- 18158
+:= -- 26434
 add.period$ -- 0
-call.type$ -- 38
-change.case$ -- 933
-chr.to.int$ -- 48
-cite$ -- 74
-duplicate$ -- 26699
-empty$ -- 23339
-format.name$ -- 2708
-if$ -- 52885
+call.type$ -- 39
+change.case$ -- 939
+chr.to.int$ -- 50
+cite$ -- 76
+duplicate$ -- 27090
+empty$ -- 23703
+format.name$ -- 2751
+if$ -- 53572
 int.to.chr$ -- 0
-int.to.str$ -- 108
+int.to.str$ -- 110
 missing$ -- 0
-newline$ -- 1362
-num.names$ -- 2155
-pop$ -- 13070
+newline$ -- 1381
+num.names$ -- 2193
+pop$ -- 13423
 preamble$ -- 1
-purify$ -- 1226
+purify$ -- 1235
 quote$ -- 0
-skip$ -- 7630
+skip$ -- 7783
 stack$ -- 0
-substring$ -- 34268
-swap$ -- 6082
-text.length$ -- 839
+substring$ -- 34433
+swap$ -- 6199
+text.length$ -- 868
 text.prefix$ -- 9
 top$ -- 1
-type$ -- 1256
+type$ -- 1290
 warning$ -- 0
-while$ -- 3057
+while$ -- 3092
 width$ -- 0
-write$ -- 1325
+write$ -- 1343
 (There were 2 error messages)

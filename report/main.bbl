@@ -642,6 +642,26 @@
     \field{year}{2016}
   \endentry
 
+  \entry{osculatingCircle}{online}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={Cepheus},
+         family_i={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{C1}
+    \strng{fullhash}{C1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{addendum}{[Accessed on 31 August 2018]}
+    \field{title}{Osculating circle for curvature}
+    \verb{url}
+    \verb https://pl.wikipedia.org/wiki/Plik:OsculatingCircle.png
+    \endverb
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
   \entry{abas2006Intra}{article}{}
     \name{author}{9}{}{%
       {{hash=AL}{%
