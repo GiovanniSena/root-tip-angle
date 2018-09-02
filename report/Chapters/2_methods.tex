@@ -89,7 +89,7 @@ Figure \ref{fig:imageprocessingWorkflow} shows fundamental steps in image proces
 \subsection{Digital images}
 
 In image processing, we operate on digital (discrete) images.
-An image refers to a 2D light intensity function \( f(x,y) \), where \( (x,y) \) denote spatial coordinates and the value of \( f \) at any point \( (x,y) \) is proportional to the brightness or gray levels of the image at that point \cite{imagProcFundamentals}.
+An image refers to a 2D light intensity function \( f(x,y) \), where \( (x,y) \) denote spatial coordinates and the value of \( f \) at any point \( (x,y) \) is proportional to the brightness or grey levels of the image at that point \cite{imagProcFundamentals}.
 Thus, a digital image is an image \( f(x,y)  \) that has been discretised both in spatial coordinates and brightness, i.e. we
 
 \begin{itemize}
@@ -109,10 +109,10 @@ What we get is an image represented as a matrix of integer values; the elements 
 
 
 %----------------------------------------------------------------------------------------
-\subsection{On spatial resolution, gray levels and coloured images}
+\subsection{On spatial resolution, grey levels and coloured images}
 
-The storage and preprocessing requirements increase rapidly with the spatial resolution and the number of gray levels. 
-For instance, a 256 grayscale image of size 256\( \times \)256 occupies 64K bytes of memory. Figure \ref{fig:checkerboardEffect} shows images of different spatial resolution. 
+The storage and preprocessing requirements increase rapidly with the spatial resolution and the number of grey levels. 
+For instance, a 256 greyscale image of size 256\( \times \)256 occupies 64K bytes of memory. Figure \ref{fig:checkerboardEffect} shows images of different spatial resolution. 
 
 \begin{figure}[H]
 	\centering
@@ -122,11 +122,11 @@ For instance, a 256 grayscale image of size 256\( \times \)256 occupies 64K byte
 	\label{fig:checkerboardEffect}
 \end{figure}
 
-%Also, an insufficient number of gray levels in smooth areas of a digital image may result in false contouring, see figure [INSERT REFERENCE HERE].
+%Also, an insufficient number of grey levels in smooth areas of a digital image may result in false contouring, see figure [INSERT REFERENCE HERE].
 %
-%[INSERT FIGURE: Images of different gray-level quantisation]
+%[INSERT FIGURE: Images of different grey-level quantisation]
 
-Since we deal with coloured images, we chose the RGB colour model which is an additive colour model in which red, green and blue light are added together in various ways to reproduce a broad spectrum of colours \cite{ibraheem2012understanding}.
+Since we deal with coloured images, we choose the RGB colour model which is an additive colour model in which red, green and blue light are added together in various ways to reproduce a broad spectrum of colours \cite{ibraheem2012understanding}; in a later step we will greyscale the image to save storage and time.
 
 
 %----------------------------------------------------------------------------------------

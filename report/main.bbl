@@ -653,10 +653,37 @@
     \strng{fullhash}{C1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{addendum}{[Accessed on 31 August 2018]}
+    \field{addendum}{[Accessed 31 August 2018]}
     \field{title}{Osculating circle for curvature}
     \verb{url}
     \verb https://pl.wikipedia.org/wiki/Plik:OsculatingCircle.png
+    \endverb
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
+  \entry{plantCV}{online}{}
+    \name{author}{1}{}{%
+      {{hash=eaNF}{%
+         prefix={et},
+         prefix_i={e\bibinitperiod},
+         family={al.},
+         family_i={a\bibinitperiod},
+         given={Noah\bibnamedelima Fahlgren},
+         given_i={N\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Donald Danforth Plant Science Center}%
+    }
+    \strng{namehash}{aNFe1}
+    \strng{fullhash}{aNFe1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{addendum}{[Accessed 31 August 2018]}
+    \field{title}{title}
+    \verb{url}
+    \verb https://github.com/danforthcenter/plantcv
     \endverb
     \warn{\item Invalid format of field 'date' \item Invalid format of field
   'date'}
