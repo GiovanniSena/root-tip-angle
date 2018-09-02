@@ -44,17 +44,17 @@
 \contentsline {section}{\numberline {B.2}\textit {RootGUI} for Dummies}{34}{section.60}
 \contentsline {subsection}{\numberline {B.2.1}Intro}{34}{subsection.61}
 \contentsline {subsection}{\numberline {B.2.2}Getting the angles -- main route}{35}{subsection.65}
-\contentsline {subsection}{\numberline {B.2.3}Saving}{46}{subsection.86}
-\contentsline {subsection}{\numberline {B.2.4}Optional}{52}{subsection.93}
-\contentsline {subsubsection}{Foreign objects removal}{52}{section*.94}
-\contentsline {subsubsection}{Force tip}{56}{section*.102}
-\contentsline {subsubsection}{Crop image}{61}{section*.112}
-\contentsline {subsubsection}{Crop skeleton}{65}{section*.122}
-\contentsline {subsubsection}{Giving the problem a turning point}{69}{section*.130}
-\contentsline {chapter}{\numberline {C}On the data set}{74}{appendix.138}
-\contentsline {section}{\numberline {C.1}Suggestions for future data acquisition}{74}{section.139}
-\contentsline {subsection}{\numberline {C.1.1}Stable conditions in the experiment}{74}{subsection.140}
-\contentsline {subsection}{\numberline {C.1.2}No objects interfering with the object of interest}{74}{subsection.141}
-\contentsline {subsection}{\numberline {C.1.3}Increase of the contrast}{75}{subsection.142}
-\contentsline {subsection}{\numberline {C.1.4}Higher resolution}{75}{subsection.143}
-\contentsline {chapter}{\numberline {D}Literature review}{76}{appendix.144}
+\contentsline {subsection}{\numberline {B.2.3}Saving}{45}{subsection.86}
+\contentsline {subsection}{\numberline {B.2.4}Optional}{51}{subsection.93}
+\contentsline {subsubsection}{Foreign objects removal}{51}{section*.94}
+\contentsline {subsubsection}{Force tip}{55}{section*.102}
+\contentsline {subsubsection}{Crop image}{60}{section*.112}
+\contentsline {subsubsection}{Crop skeleton}{64}{section*.122}
+\contentsline {subsubsection}{Giving the problem a turning point}{68}{section*.130}
+\contentsline {chapter}{\numberline {C}On the data set}{73}{appendix.138}
+\contentsline {section}{\numberline {C.1}Suggestions for future data acquisition}{73}{section.139}
+\contentsline {subsection}{\numberline {C.1.1}Stable conditions in the experiment}{73}{subsection.140}
+\contentsline {subsection}{\numberline {C.1.2}No objects interfering with the object of interest}{73}{subsection.141}
+\contentsline {subsection}{\numberline {C.1.3}Increase of the contrast}{74}{subsection.142}
+\contentsline {subsection}{\numberline {C.1.4}Higher resolution}{74}{subsection.143}
+\contentsline {chapter}{\numberline {D}Literature review}{75}{appendix.144}
