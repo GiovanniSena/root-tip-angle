@@ -77,7 +77,39 @@ The data set we were working on contained highly challenging images, this was du
 \end{itemize}
 Highly pixeled images made not only the preprocessing but especially the curvature computing part challenging; also various MATLAB functions do not work well on sparse data.
 
-[INSERT 4 EXAMPLES HOW CHALLENGING DATA WAS, MAYBE IN APPENDIX]
+
+\begin{figure}[H] 
+	\begin{subfigure}[b]{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{2018-03-08_1000.jpg} 
+		\caption{Changing light reflection (root on the LHS\\ is lost), low contrast} 
+		\label{fig7:a} 
+		\vspace{4ex}
+	\end{subfigure}%% 
+	\begin{subfigure}[b]{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{2018-02-28_2030.jpg} 
+		\caption{Foreign object sticking to root, \\blurry regions, other objects} 
+		\label{fig7:b} 
+		\vspace{4ex}
+	\end{subfigure} 
+	\begin{subfigure}[b]{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{2018-04-24_1840.jpg} 
+		\caption{Noisy image, many objects of same colour} 
+		\label{fig7:c} 
+	\end{subfigure}%%
+	\begin{subfigure}[b]{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.75\linewidth]{2018-03-06_2000.jpg} 
+		\caption{Low contrast, roots touching each other} 
+		\label{fig7:d} 
+	\end{subfigure} 
+	\caption{Problems of images; images taken from our data set: (A) 2018-03-08\_1000.jpg, (B) 2018-02-28\_2030.jpg, (C) 2018-04-24\_1840.jpg, (D) 2018-03-06\_2000.jpg}
+	\label{fig7} 
+\end{figure}
+
+
 
 %EXAMPLE: Objects interferring with object of interest
 %Eg specs not so much of an issue as separate from the root. Issue when it is connected.
