@@ -58,11 +58,18 @@ headsepline, % Uncomment to get a line under the header
 % complies with Imperial College citation convention
 \usepackage{csquotes}
 \usepackage[%
+sorting = none,
 style=numeric, 
-sortcites,
+%sortcites,
 backend=bibtex,
 giveninits=true % <===================================================
 ]{biblatex}
+%\usepackage[%
+%style=numeric, 
+%sortcites,
+%backend=bibtex,
+%giveninits=true % <===================================================
+%]{biblatex}
 \addbibresource{example.bib}
 
 \DeclareNameAlias{default}{family-given} % <============================
@@ -287,7 +294,7 @@ Unlike when doing the angle computation to measure the curvature of a root tip m
 
 %Additionally, we evaluated our results by comparing it to previously manually computed angles. [INCLUDE RESULTS A LA 70\% of the images could be found to be reproduced]
 
-Additionally, we computed the angle of 3 \textit{Arabidopsis thaliana} root tips at 11 time points over one experiment each (approximately 5 hours) and evaluated the results by comparing it to previously manually computed angles of the same roots. The results show similar patterns in the computed angles and two sample t-tests on the data show they are not significantly different (\(\alpha = 0.05 \)).
+Additionally, we computed the angle of 3 \textit{Arabidopsis thaliana} root tips at 11 time points over one experiment each (approximately 5 hours) and evaluated the results by comparing it to previously manually computed angles of the same roots. The results show similar patterns in the computed angles and two sample t-tests on the data show they are not significantly different (\(significance level \alpha = 0.05 \)).
 % overall correspondence with manual angles; 
 Statistics on our data sets suggest that our tool can improve the precision of the manually computed angles by up to 12.4\%. 
 %removes human error in the angle calculation process %which accounts in average [INSERT VARIANCE HERE, STATE HOW MUCH HUMAN VARIANCE WE COULD ELIMINATE BY STANDARDISING IT] 
