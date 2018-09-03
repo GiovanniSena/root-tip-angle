@@ -94,10 +94,10 @@ Thus, a digital image is an image \( f(x,y)  \) that has been discretised both i
 
 \begin{itemize}
 	\item Sample the 2D space on a regular grid
-	\item Quantise each sample, i.e. round to nearest integer.
+	\item Quantise each sample, i.e. round to the nearest integer.
 \end{itemize}
 
-What we get is an image represented as a matrix of integer values; the elements of such a digital array are called image elements or pixels.
+What we get is an image represented as a matrix of integer values; the elements of such a digital array are called \textit{image elements} or \textit{pixels} \cite{pydata2018}.
 
 %If our samples are \( \Delta \) apart, we can write this as:
 %\[
@@ -264,8 +264,7 @@ Once these two lines are correctly defined, provided the point of highest local 
 
 
 Let \( v_{1} \) be the line through the tip of the root and the point of highest local curvature and \(v_{2} \) a line parallel to the EF. 
-We can compute angle \( \Theta \)  by using simple trigonometric methods 
-
+We can compute angle \( \Theta \)  by using simple trigonometric methods:
 \begin{equation} \label{angle1}
 \Theta_{1}  = \cos^{-1}\frac{( v_{1} \cdot v_{2}) }{ | v_{1} | \cdot | v_{2} |}.
 \end{equation}
@@ -302,35 +301,32 @@ Geometrically, the curvature measures how fast the unit tangent vector, i.e. the
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{../Figures/curveCircle.png}
-	\caption{The curvature and the osculating circle: Let \( C \) be a curve and \( P \) a point on it. Then there is a unique circle or line which best approximates the curve near \( C \) which we call the \textit{osculating circle} at \( P \). We define the curvature of \( C \) at \( P \) to be the curvature of that circle or line. Adapted from \cite{osculatingCircle}.
+	\caption{The curvature and the osculating circle: Let \( C \) be a curve and \( P \) a point on it. Then there is a unique circle or line which best approximates the curve near \( C \) which we call the \textit{osculating circle} at \( P \). We define the curvature of \( C \) at \( P \) to be the curvature of that circle or line. The vector orthogonal to the tangent vector to the curve at point \( P \) and pointing inwards is called the \textit{normal} \(r\). Adapted from \cite{osculatingCircle}.
 		%The radius of curvature is defined as the reciprocal of the curvature.
 		}
 	\label{fig:curveCircle}
 \end{figure}
 
 If the curve is close to a straight line, and thus the unit tangent vector changes very little, the curvature is small; if the curve contains a sharp turn, the curvature is large.
-In the implementations we used the difference between edge direction vectors to compute this velocity.
+%In the implementations we used the difference between edge direction vectors to compute this velocity.
+In implementations we use the rate of change between neighbouring normals to compute this "velocity" which assigns the specific curvature to each point.
 
 %INSERT PRECISE DEFINITION HERE AND INSERT HERE "CURVATURE OF SPACE CURVES" FROM WIKIPEDIA
 
-
-%For the implementation 
-We first compute the first derivative (in between pairs of samples), and we take into account unequal segment lengths. In the same way we then compute the second derivative, we take the average length of two neighbouring edges, i.e. the length of edge in between neighbouring normals if we consider the normals to be halfway between vertices.
-Once we have the normals, we can compute the rate of change between neighbouring normals to assign the specific curvature value to each point.
+%%For the implementation 
+%We first compute the first derivative (in between pairs of samples), and we take into account unequal segment lengths. In the same way we then compute the second derivative, we take the average length of two neighbouring edges, i.e. the length of edge in between neighbouring normals if we consider the normals to be halfway between vertices.
+%Once we have the normals, we can compute the rate of change between neighbouring normals to assign the specific curvature value to each point.
 
 %INSERT FIGURE HERE, DRAW IT
-
-%The current implementation of the \textit{getAngle.m} script fits polygons to the points, i.e. the coordinates from the root skeleton, and then calculates the analytical curvature from these fitted polygons. 
-
-If the user does not specify otherwise, we assume the line pieces to connect two neighbouring points. The curvature function outputs a vector of curvature values of the points.
-
-
 %I wish to calculate the curvature (as accurate as possible) at the points on the curve.
 % what I have until now is a simple calculation of the tangent vector (1st derivate) and then the curvature (2nd derivate):
 
+We  take a section of the curve (of window size \(n\)) and fit a polynomial to it; this will be our curve model. From this model we can compute the derivative and with the coefficients of the fitted polynomial we can compute the curvature at each point. 
+A large radius of the osculating circle, i.e. a high curvature, means a rather straight part of the curve, while we get a small radius or curvature in parts where the curve is "pointy", i.e. bends more. The sign of the curvature indicates whether it is right (positive) or left (negative) bending. However, the here used function \textit{polyfit} should not be used on very noisy data or so-called \textit{ill-posed} problems, e.g. when the data is not equally spaced; it will amplify any noise in the data and will give inaccurate results.
+For this reason, the current implementation uses a more discrete approach: It fits polygons to the points, i.e. the coordinates from the root skeleton, and then calculates the analytical curvature from these fitted polygons. 
 
-In a previous version, we  took a section of the curve (here 9 vertices) and fitted a polynomial to it; this will be our curve model. From this model we can compute the derivative and with the coefficients of the fitted polynomial we can compute the curvature at each point. 
-A large radius of the osculating circle, i.e. a high curvature, means a rather straight part of the curve, while we get a small radius or curvature in parts where the curve is "pointy", i.e. bends more. The sign of the curvature indicates whether it is right (positive) or left (negative) bending. However, the here used function \textit{polyfit} should not be used on very noisy data.
+%If the user does not specify otherwise, we assume the line pieces to connect two neighbouring points. The curvature function outputs a vector of curvature values of the points.
+
 %An example of a curvature plot of one of our roots can be seen in figure \ref{fig:curvature}.
 %
 %\begin{figure}[H]

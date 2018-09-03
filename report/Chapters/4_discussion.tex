@@ -69,46 +69,46 @@ The most distinct feature of the root is the tubular structure and functions tha
 \subsection{Challenging images}\label{subsec:challengingImages}
 
 %There is a very low contrast between the background and the roots, so that one could hardly recognise the roots on some images [INSERT EXAMPLE IMAGE HERE].
-The data set we were working on contained highly challenging images, this was due to
+The data set we were working on contained highly challenging images (see figure \ref{fig:challenginRoots}), this was due to
 \begin{itemize}
-	\item Low contrast between roots and background; the roots were almost not discernible for the human eye without previous treatment of the image
-	\item Lots of noise or objects that we classified as noise as there was no apparent structure to it
-	\item Different noise patterns across the images; the noise was subtle or hiding and could only made visible on filtered images
-	\item Numerous objects that were of no interest, especially the ones interferring with our object of interest
+	\item Low contrast between roots and background; the roots were almost not discernible for the human eye without previous treatment of the image (see subfigure \ref{figsub:lowContrast})
+	\item Lots of noise or objects that we classified as noise as there was no apparent structure to it (see subfigure \ref{figsub:noisy})
+	\item Different noise patterns, i.e. inconsistency, across the images; the noise was subtle or hiding and could only made visible on filtered images (see subfigure \ref{figsub:noisy})
+	\item Numerous objects that were of no interest, especially the ones interfering with our object of interest (see subfigure \ref{figsub:stickyObject})
 	\item Low resolution of the images or object of interest itself taking up only a small fraction of the whole image. 
 \end{itemize}
 Highly pixeled images made not only the preprocessing but especially the curvature computing part challenging; also various MATLAB functions do not work well on sparse data.
-
+In section \ref{futuredataAquis} we make suggestions for future data collection.
 
 \begin{figure}[H] 
 	\begin{subfigure}[b]{0.5\linewidth}
 		\centering
 		\includegraphics[width=0.75\linewidth]{2018-03-08_1000.jpg} 
 		\caption{Changing light reflection (root on the LHS\\ is lost), low contrast} 
-		\label{fig7:a} 
+		\label{figsub:reflection} 
 		\vspace{4ex}
 	\end{subfigure}%% 
 	\begin{subfigure}[b]{0.5\linewidth}
 		\centering
 		\includegraphics[width=0.75\linewidth]{2018-02-28_2030.jpg} 
 		\caption{Foreign object sticking to root, \\blurry regions, other objects} 
-		\label{fig7:b} 
+		\label{figsub:stickyObject} 
 		\vspace{4ex}
 	\end{subfigure} 
 	\begin{subfigure}[b]{0.5\linewidth}
 		\centering
 		\includegraphics[width=0.75\linewidth]{2018-04-24_1840.jpg} 
 		\caption{Noisy image, many objects of same colour} 
-		\label{fig7:c} 
+		\label{figsub:noisy} 
 	\end{subfigure}%%
 	\begin{subfigure}[b]{0.5\linewidth}
 		\centering
 		\includegraphics[width=0.75\linewidth]{2018-03-06_2000.jpg} 
 		\caption{Low contrast, roots touching each other} 
-		\label{fig7:d} 
+		\label{figsub:lowContrast} 
 	\end{subfigure} 
 	\caption{Problems of images; images taken from our data set: (A) 2018-03-08\_1000.jpg, (B) 2018-02-28\_2030.jpg, (C) 2018-04-24\_1840.jpg, (D) 2018-03-06\_2000.jpg}
-	\label{fig7} 
+	\label{fig:challenginRoots} 
 \end{figure}
 
 
@@ -147,8 +147,10 @@ However, the error in the angles we observed is tiny and within reasonable bound
 \subsection{Other tools and languages}
 
 Even though MATLAB has several advantages, it might be worth looking into alternative non-proprietary programming languages to make the tool accessible to a wider public or other options of making the tool portable, i.e. without requiring the user to have MATLAB installed.
-Alternative languages one might want to consider are \textit{Julia} and \textit{Python}. Another recommended language is \textit{OpenCV} as it is very fast and well documented. 
-Regarding the last two it might be worth looking into \textit{PlantCV} to create image processing pipelines for plants; it offers several image processing packages designed for plant biology research and is built upon open-source software platforms like OpenCV, NumPy and MatPlotLib \cite{plantCV}.
+Alternative languages one might want to consider are \textit{Julia} and \textit{Python}. Another recommended language is \textit{OpenCV} as it is very fast and well documented.
+
+It might be worth looking into \textit{PlantCV} to create image processing pipelines for plants; it offers several image processing packages designed for plant biology research in Python syntax and is built upon open-source software platforms like OpenCV, NumPy and MatPlotLib \cite{plantCV}. It also points out some key things to consider when generating the data; more on that in section \ref{futuredataAquis}.
+
 Other non-open source software such as \textit{ImageJ}, a Java based image processing program, and \textit{Avizo} which is a general-purpose commercial software application for scientific and industrial data visualisation and analysis with a nice GUI, were not investigated further in this work. 
 
  
