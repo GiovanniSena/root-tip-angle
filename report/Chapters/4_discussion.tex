@@ -32,7 +32,11 @@ Certainly, validation needs to be done on a bigger data set in order for our cla
 %not only be a well grounded belief.
 As this could not happen in this project due to time constraints we suggest a thorough (statistical) analysis of the collected data and, subsequently, quantification of population heterogeneity in electrotropic responses as future work.
 
-Obtaining standard deviations in the measurements, both in the manual and the computational method, are necessary to make claims on their precision and therefore robustness of \textit{RootSkel}. Quantifying accuracy is almost impossible without having some underlying model or valid assumptions as we do not know the true theoretical values, and any measurements will inevitably contain errors. 
+Obtaining standard deviations in the measurements, both in the manual and the computational method, are necessary to make claims on their precision and therefore robustness of \textit{RootSkel}. Quantifying accuracy is almost impossible without having some underlying model or valid assumptions as we do not know the true theoretical values, and any measurements will inevitably contain errors, a problem also identified in \cite{dee2015image}.
+% This makes comparing it to the manual angles difficult
+% Of course, we are now left with the problem of defining reasonable accuracy versus people: if someone is measuring plants manually, are they sure they are measuring the right thing?. 
+
+%Of course, we are now left with the problem of defining reasonable accuracy versus people: if someone is measuring plants manually, are they sure they are measuring the right thing?
 %WE NEED TO FIT AGAINST STH TO SHOW THAT ACCURATE
 
 %FROM ROOTTRACE: IT IS NOT NECESSARY FOR THOSE WISHING TO USE ROOTTRACE TO UNDERSTAND THE UNDERLYING METHODS IN GREAT DEPTH; HOWEVER, THE INFORMATION IN THIS SECTION MAY HELP THOSE INTERESTED TO UDNESTAND THE SITUATIONS IN WHICH IT CAN BE APPLID AND WHAT CAN CAUSE THE SOFTWARE TO FAIL.
@@ -56,60 +60,62 @@ Another challenge of studying electrotropism compared to gravitropism in an agar
 %----------------------------------------------------------------------------------------
 \subsection{Skeletonisation of the root}
 
-Probably the biggest challenge in the development process was to extract the root skeleton, precisely to discern the root from the background and the noise, mainly due to the low contrast. % between them.
+The biggest challenge in the development process was to extract the root skeleton, precisely to discern the root from the background and the noise, mainly due to the low contrast. % between them.
 Our approach of implementing different colour and intensity filters is not optimal as these might not filter out the noise. 
 %For that we mostly implemented colour and intensity filters which can still include different kinds of noise. 
-The most distinct feature of the root is the tubular structure and functions that recognise this have been used; however, this can still be optimised in the future.
+The most distinct feature of the root is the tubular structure and functions that recognise this have been used; however, this can still be optimised in the future. 
 
 %we did not get the most out of it
 %get rid of loop
 
+For the angle calculation it is important that the tip of the root is included in the skeleton. This has shown to be particularly challenging in Arabidopsis images as the root often appears translucent \cite{french2009high} and causes algorithms to fail \cite{french2009high}. Where some tools require some backround appearance statistics or parameter as input from the user \cite{french2009high}, \textit{RootSkel} offers a separate optional step \textit{Force tip} for the user to trace along the tip of the root. Increasing the contrast is expected to help tremendously to detect the root tip; equally for other methods \cite{french2009high}.
 
-%----------------------------------------------------------------------------------------
-\subsection{Challenging images}\label{subsec:challengingImages}
 
-%There is a very low contrast between the background and the roots, so that one could hardly recognise the roots on some images [INSERT EXAMPLE IMAGE HERE].
-The data set we were working on contained highly challenging images (see figure \ref{fig:challenginRoots}), this was due to
-\begin{itemize}
-	\item Low contrast between roots and background; the roots were almost not discernible for the human eye without previous treatment of the image (see subfigure \ref{figsub:lowContrast})
-	\item Lots of noise or objects that we classified as noise as there was no apparent structure to it (see subfigure \ref{figsub:noisy})
-	\item Different noise patterns, i.e. inconsistency, across the images; the noise was subtle or hiding and could only made visible on filtered images (see subfigure \ref{figsub:noisy})
-	\item Numerous objects that were of no interest, especially the ones interfering with our object of interest (see subfigure \ref{figsub:stickyObject})
-	\item Low resolution of the images or object of interest itself taking up only a small fraction of the whole image. 
-\end{itemize}
-Highly pixeled images made not only the preprocessing but especially the curvature computing part challenging; also various MATLAB functions do not work well on sparse data.
-In section \ref{futuredataAquis} we make suggestions for future data collection.
-
-\begin{figure}[H] 
-	\begin{subfigure}[b]{0.5\linewidth}
-		\centering
-		\includegraphics[width=0.75\linewidth]{2018-03-08_1000.jpg} 
-		\caption{Changing light reflection (root on the LHS\\ is lost), low contrast} 
-		\label{figsub:reflection} 
-		\vspace{4ex}
-	\end{subfigure}%% 
-	\begin{subfigure}[b]{0.5\linewidth}
-		\centering
-		\includegraphics[width=0.75\linewidth]{2018-02-28_2030.jpg} 
-		\caption{Foreign object sticking to root, \\blurry regions, other objects} 
-		\label{figsub:stickyObject} 
-		\vspace{4ex}
-	\end{subfigure} 
-	\begin{subfigure}[b]{0.5\linewidth}
-		\centering
-		\includegraphics[width=0.75\linewidth]{2018-04-24_1840.jpg} 
-		\caption{Noisy image, many objects of same colour} 
-		\label{figsub:noisy} 
-	\end{subfigure}%%
-	\begin{subfigure}[b]{0.5\linewidth}
-		\centering
-		\includegraphics[width=0.75\linewidth]{2018-03-06_2000.jpg} 
-		\caption{Low contrast, roots touching each other} 
-		\label{figsub:lowContrast} 
-	\end{subfigure} 
-	\caption{Problems of images; images taken from our data set: (A) 2018-03-08\_1000.jpg, (B) 2018-02-28\_2030.jpg, (C) 2018-04-24\_1840.jpg, (D) 2018-03-06\_2000.jpg}
-	\label{fig:challenginRoots} 
-\end{figure}
+%%----------------------------------------------------------------------------------------
+%\subsection{Challenging images}\label{subsec:challengingImages}
+%
+%%There is a very low contrast between the background and the roots, so that one could hardly recognise the roots on some images [INSERT EXAMPLE IMAGE HERE].
+%The data set we were working on contained highly challenging images (see figure \ref{fig:challenginRoots}), this was due to
+%\begin{itemize}
+%	\item Low contrast between roots and background; the roots were almost not discernible for the human eye without previous treatment of the image (see subfigure \ref{figsub:lowContrast})
+%	\item Lots of noise or objects that we classified as noise as there was no apparent structure to it (see subfigure \ref{figsub:noisy})
+%	\item Different noise patterns, i.e. inconsistency, across the images; the noise was subtle or hiding and could only made visible on filtered images (see subfigure \ref{figsub:noisy})
+%	\item Numerous objects that were of no interest, especially the ones interfering with our object of interest (see subfigure \ref{figsub:stickyObject})
+%	\item Low resolution of the images or object of interest itself taking up only a small fraction of the whole image. 
+%\end{itemize}
+%Highly pixeled images made not only the preprocessing but especially the curvature computing part challenging; also various MATLAB functions do not work well on sparse data.
+%In section \ref{futuredataAquis} we make suggestions for future data collection.
+%
+%\begin{figure}[H] 
+%	\begin{subfigure}[b]{0.5\linewidth}
+%		\centering
+%		\includegraphics[width=0.75\linewidth]{2018-03-08_1000.jpg} 
+%		\caption{Changing light reflection (root on the LHS\\ is lost), low contrast} 
+%		\label{figsub:reflection} 
+%		\vspace{4ex}
+%	\end{subfigure}%% 
+%	\begin{subfigure}[b]{0.5\linewidth}
+%		\centering
+%		\includegraphics[width=0.75\linewidth]{2018-02-28_2030.jpg} 
+%		\caption{Foreign object sticking to root, \\blurry regions, other objects} 
+%		\label{figsub:stickyObject} 
+%		\vspace{4ex}
+%	\end{subfigure} 
+%	\begin{subfigure}[b]{0.5\linewidth}
+%		\centering
+%		\includegraphics[width=0.75\linewidth]{2018-04-24_1840.jpg} 
+%		\caption{Noisy image, many objects of same colour} 
+%		\label{figsub:noisy} 
+%	\end{subfigure}%%
+%	\begin{subfigure}[b]{0.5\linewidth}
+%		\centering
+%		\includegraphics[width=0.75\linewidth]{2018-03-06_2000.jpg} 
+%		\caption{Low contrast, roots touching each other} 
+%		\label{figsub:lowContrast} 
+%	\end{subfigure} 
+%	\caption{Problems of images; images taken from our data set: (A) 2018-03-08\_1000.jpg, (B) 2018-02-28\_2030.jpg, (C) 2018-04-24\_1840.jpg, (D) 2018-03-06\_2000.jpg}
+%	\label{fig:challenginRoots} 
+%\end{figure}
 
 
 %Eg specs not so much of an issue as separate from the root. Issue when it is connected.
@@ -118,12 +124,29 @@ In section \ref{futuredataAquis} we make suggestions for future data collection.
 %----------------------------------------------------------------------------------------
 \subsection{Scalability and reproducibility}
 
-The variation in the noise pattern in the images made it difficult to automate the process of extracting the root skeleton; every image is unique and needs to be treated uniquely. The developed pipeline works well on many images; other images require special and longer treatment. Scalability has been and continues to be a challenge.
+The variation in the noise pattern in the images (see \ref{fig:challenginRoots}) made it difficult to automate the process of extracting the root skeleton; every image is unique and needs to be treated uniquely. The developed pipeline works well on many images; other images require special and longer treatment. Scalability has been and continues to be a challenge.
 
+%Many iterations on different images of our data set led to an elaborate tool for the pre-processing of the roots; however, we cannot prevent the tool from failing on some images. 
 Even though our angle computation is deterministic %and straight-forward 
 and only depends on the root skeleton, there is still some variability in the preprocessing step due to the user's input. This means, it can happen that for the very same root in the very same image we get slightly different angles due to slightly different root skeletons. %This is due to the fact that our current version of \textit{RootSkel} does require user input for the preprocessing steps, meaning results of the root skeleton might slighly vary depending on the user's input.
 However, the error in the angles we observed is tiny and within reasonable bounds to be negligible; we expect the measurement error to be much smaller than in the manual computations. Having said that, reproducibility can not be fully guaranteed. %; errors should be quantified for each of the methods to make a valid claim regarding robustness and actual improvement in the angle computation. 
 %INSERT ERROR COMPUTATION NECESSARY, SHOW THAT OUR METHOD IS MORE ROBUST, LESS MEASUREMENT ERROR/ CLOSER TO THE TRUE THEORETICAL VALUE THATN NECESSARY
+
+
+
+A major disadvantage of the bottom-up approach (see \ref{sec:workflow}) is that errors can accumulate: one wrong result made by one process commonly introduces further errors later in the pipeline and in the worst case can seriously affect the final results \cite{pound2013rootnav}.
+% In the worst cases, this can initiate a cascading effect that can seriously affect final results. Poor noise reduction can lead to thresholding errors, for example. Imperfect thresholding in turn disrupts skeletonization, adding spurious segments and introducing breaks into true roots. 
+
+Possible solutions are more interactive tools that allows the user to clean up and correct these results \cite{armengaud2009ez,clark20113} like the optional steps in \textit{RootSkel}. Manual corrections to refine the results can be frustrating but should in general be preferred to inaccurate or unprecise manual. calculations.
+
+For \textit{top-down} approaches a model of the object of interest is needed; this could be of topological or geometrical nature \cite{pound2012cellset} or a number of assumptions \cite{mooney2012developing}. In our case we could focus the attention to the tubular structure of the root, the unique proerty of the roots. Top-down approaches tend to be more easily adapted to a wider range of data but require a suitable model a priori  \cite{pound2013rootnav}.
+
+
+%\cite{pound2013rootnav}:
+%One response to this problem is to quantify only broader root measures, such as convex hulls or overall root depth (Galkovskyi et al., 2012), which do not require detailed descriptions of the root architecture (nested structure, emergence angles, etc.). The alternative is to provide interactive tools (Armengaud, 2009; Clark et al., 2011) that allow the user to clean up and correct automatically generated results. This can be hard to achieve satisfactorily when large corrections are needed. More importantly, though most users are willing to spend some time interacting with their data to refine results, manual correction of obvious errors can be frustrating and requires the user to carefully scrutinize all of the automatically reported results. It tends to reduce both the confidence in, and use of, tools that rely upon it excessively. THEREFORE, CLEAN DATA THE MORE IMPORTANT
+%By contrast, top-down approaches match a clearly stated model of the object(s) of interest to the input data. Models may be explicit topological or geometrical structures, such as the network of contours employed by CellSet (Pound et al., 2012) or a loose collection of assumptions embedded in a search process (Pridmore et al., 2012). Though requiring a suitable model to be identified a priori, top-down methods can be more resistant to global image clutter and intensity change (French et al., 2009). The top-down approach focuses attention on the properties of target objects, roots, rather than on the properties of images of roots. As a result, top-down methods are frequently applicable, or at least more easily adapted, to a wider range of data sets.
+
+
 
 
 %COMMENTED OUT DUE TO WORD COUNT
@@ -179,17 +202,20 @@ In the following we will outline suggestions for future work including things th
 
 
 %----------------------------------------------------------------------------------------
-\subsection{Less user input up to automatisation}
+%\subsection{Less user input up to automatisation}
+\subsection{High-throughput and robustness}
 
-Here in the first version of \textit{RootSkel}, the main goal was to standardise the angle computation. If in the future  a method for handling the different noise patterns in the images was efficiently handled which required less user input; it would be desireable to automate the whole angle computation.
+Here in the first version of \textit{RootSkel}, the main goal was to standardise the angle computation. If in the future  a method for handling the different noise patterns in the images was efficiently handled which required less user input; it would be desireable to automate the whole angle computation. Indeed, robust high-throughput techniques for plant image processing problems have been desired for very long \cite{hartmann2011htpheno,diener2013automated,lee2018automated,plantCV} but have proven to be very difficult due to the challenges outlined above.
 
-In order to tackle the problem of noise reduction, it might be advisable to consult an expert not only on image processing but especially in the field of noise reduction to effectively implement filters that get rid of the noise our images contain. 
+%In order to tackle the problem of noise reduction, it might be advisable to consult an expert not only on image processing but especially in the field of noise reduction to effectively implement filters that get rid of the noise our images contain. 
 
 %in order to increase robustness on unseen data (which was not the goal of this work), first, one needs to collect high-quality data and second, tweak the data 
- 
+
+%REFER TO ML APPRAOCHES: \cite{pound2017deep}
+
 
 %----------------------------------------------------------------------------------------
-\subsection{Robustness}
+%\subsection{Robustness}
 
 %The workflow developed via  many iterations on different images and 
 %elaborate pre-procecessing tool for skeletonisation
@@ -197,12 +223,12 @@ In order to tackle the problem of noise reduction, it might be advisable to cons
 %has been overengineered on one dataset, if it should be robust on other data, it needs to be trained/ tweeked on other data.
 
 
-Many iterations on different images of our data set led to an elaborate tool for the pre-processing of the roots; however, we cannot prevent the tool from failing on some images. 
 
-If one wants to make the tool available to a wider public and make it more robust so it will work on other, unseen data (which was not the goal of this work), one might want to collect higher-quality, less noisy data in the future (for suggestions on data collection see \ref{futuredataAquis}) and investigate automated approaches. % such as adaptive thresholding. 
-
+It would be desirable to make the tool more robust so it will work on unknown and other type of data (which was not the goal of this work) and to make the tool available to a wider public. For that, one might want to first and foremost collect higher quality images in the future (for suggestions on data collection (see \ref{futuredataAquis}) and second, investigate automated approaches. % such as adaptive thresholding. 
+Our specific problem was not found to benefit immediately from having machine learning applied to it; however, in slightly different contexts deep learning could be a rich avenue to explore in order to discover patterns in the data \cite{pound2017deep,lee2018automated}.
 
 %High-throughput software tools that can produce objective, quantitative analyses od the resulting images are now required.
+
 
 
 %COMMENTED OUT DUE TO WORD COUNT

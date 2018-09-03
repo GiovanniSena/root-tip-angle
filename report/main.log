@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  3 SEP 2018 02:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  3 SEP 2018 21:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2012,7 +2012,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 25.
-<Figures/../Figures/tropism.png, id=360, 464.73625pt x 577.15625pt>
+<Figures/../Figures/tropism.png, id=355, 464.73625pt x 577.15625pt>
 File: Figures/../Figures/tropism.png Graphic file (type png)
 
 <use Figures/../Figures/tropism.png>
@@ -2035,7 +2035,7 @@ on-sumer cam-eras and elec-trotropism
 
  (./Chapters/2_methods.tex
 Chapter 2.
-<Figures/../Figures/experiment_circuit.png, id=411, 764.8575pt x 392.46625pt>
+<Figures/../Figures/experiment_circuit.png, id=406, 764.8575pt x 392.46625pt>
 File: Figures/../Figures/experiment_circuit.png Graphic file (type png)
 
 <use Figures/../Figures/experiment_circuit.png>
@@ -2048,7 +2048,7 @@ t line 42.
 
 
 
-] <Figures/../Figures/imageprocessing.png, id=421, 1782.66pt x 365.365pt>
+] <Figures/../Figures/imageprocessing.png, id=416, 1782.66pt x 365.365pt>
 File: Figures/../Figures/imageprocessing.png Graphic file (type png)
 
 <use Figures/../Figures/imageprocessing.png>
@@ -2058,39 +2058,39 @@ ine 79.
  [5 <./Figures/../Figures/experiment_circuit.png>]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 89.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 96.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 95.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 96.
-<Figures/../Figures/checkerboard.png, id=435, 877.2775pt x 426.59375pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 95.
+<Figures/../Figures/checkerboard.png, id=430, 877.2775pt x 426.59375pt>
 File: Figures/../Figures/checkerboard.png Graphic file (type png)
 
 <use Figures/../Figures/checkerboard.png>
 Package pdftex.def Info: Figures/../Figures/checkerboard.png used on input line
- 119.
+ 118.
 (pdftex.def)             Requested size: 441.01775pt x 214.455pt.
  [6 <./Figures/../Figures/imageprocessing.png>] [7 <./Figures/../Figures/checke
 rboard.png>]
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 189.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 188.
 
-<Figures/../Figures/angle2.png, id=464, 644.4075pt x 292.09125pt>
+<Figures/../Figures/angle2.png, id=459, 644.4075pt x 292.09125pt>
 File: Figures/../Figures/angle2.png Graphic file (type png)
 
 <use Figures/../Figures/angle2.png>
-Package pdftex.def Info: Figures/../Figures/angle2.png used on input line 233.
+Package pdftex.def Info: Figures/../Figures/angle2.png used on input line 232.
 (pdftex.def)             Requested size: 264.61333pt x 119.94536pt.
  [8] [9 <./Figures/../Figures/angle2.png>]
-<Figures/../Figures/curveCircle.png, id=484, 1105.12875pt x 575.14874pt>
+<Figures/../Figures/curveCircle.png, id=482, 1105.12875pt x 575.14874pt>
 File: Figures/../Figures/curveCircle.png Graphic file (type png)
 
 <use Figures/../Figures/curveCircle.png>
 Package pdftex.def Info: Figures/../Figures/curveCircle.png used on input line 
-303.
+304.
 (pdftex.def)             Requested size: 264.61333pt x 137.7138pt.
-) [10 <./Figures/../Figures/curveCircle.png>]
+ [10 <./Figures/../Figures/curveCircle.png>]) [11]
 \openout2 = `Chapters/3_results.aux'.
 
  (./Chapters/3_results.tex
@@ -2099,16 +2099,16 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 30.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<Figures/../Figures/workflow_big.png, id=500, 1112.155pt x 2133.9725pt>
+<Figures/../Figures/workflow_big.png, id=504, 1112.155pt x 2133.9725pt>
 File: Figures/../Figures/workflow_big.png Graphic file (type png)
 
 <use Figures/../Figures/workflow_big.png>
 Package pdftex.def Info: Figures/../Figures/workflow_big.png used on input line
- 94.
+ 96.
 (pdftex.def)             Requested size: 343.9933pt x 660.05937pt.
 
 1: section
-[11
+[12
 
 
 
@@ -2116,120 +2116,86 @@ Package pdftex.def Info: Figures/../Figures/workflow_big.png used on input line
 Overfull \vbox (33.71571pt too high) has occurred while \output is active []
 
 
-[12 <./Figures/../Figures/workflow_big.png>]
-<Figures/../Figures/frontBack.png, id=516, 1288.815pt x 971.63pt>
+[13 <./Figures/../Figures/workflow_big.png>]
+<Figures/../Figures/frontBack.png, id=522, 1288.815pt x 971.63pt>
 File: Figures/../Figures/frontBack.png Graphic file (type png)
 
 <use Figures/../Figures/frontBack.png>
 Package pdftex.def Info: Figures/../Figures/frontBack.png used on input line 24
-3.
+5.
 (pdftex.def)             Requested size: 441.01775pt x 332.48476pt.
- [13]
-<Figures/../Figures/2018-02-28.png, id=525, 562.2606pt x 421.575pt>
+ [14]
+<Figures/../Figures/2018-02-28.png, id=530, 562.2606pt x 421.575pt>
 File: Figures/../Figures/2018-02-28.png Graphic file (type png)
 
 <use Figures/../Figures/2018-02-28.png>
 Package pdftex.def Info: Figures/../Figures/2018-02-28.png used on input line 3
-43.
+45.
 (pdftex.def)             Requested size: 286.65883pt x 214.93607pt.
 
-<Figures/../Figures/2018-03-07.png, id=526, 562.2606pt x 421.575pt>
+<Figures/../Figures/2018-03-07.png, id=531, 562.2606pt x 421.575pt>
 File: Figures/../Figures/2018-03-07.png Graphic file (type png)
 
 <use Figures/../Figures/2018-03-07.png>
 Package pdftex.def Info: Figures/../Figures/2018-03-07.png used on input line 3
-46.
+48.
 (pdftex.def)             Requested size: 286.65883pt x 214.93607pt.
 
-<Figures/../Figures/2018-04-24.png, id=527, 562.2606pt x 421.575pt>
+<Figures/../Figures/2018-04-24.png, id=532, 562.2606pt x 421.575pt>
 File: Figures/../Figures/2018-04-24.png Graphic file (type png)
 
 <use Figures/../Figures/2018-04-24.png>
 Package pdftex.def Info: Figures/../Figures/2018-04-24.png used on input line 3
-48.
+50.
 (pdftex.def)             Requested size: 286.65883pt x 214.93607pt.
- [14 <./Figures/../Figures/frontBack.png>] [15]
+ [15 <./Figures/../Figures/frontBack.png>] [16]
 Overfull \vbox (44.46454pt too high) has occurred while \output is active []
 
 
-[16 <./Figures/../Figures/2018-02-28.png (PNG copy)> <./Figures/../Figures/2018
+[17 <./Figures/../Figures/2018-02-28.png (PNG copy)> <./Figures/../Figures/2018
 -03-07.png (PNG copy)> <./Figures/../Figures/2018-04-24.png (PNG copy)>]
-<Figures/../Figures/2018-02-28-stats-new.png, id=548, 705.63625pt x 427.5975pt>
+<Figures/../Figures/2018-02-28-stats-new.png, id=553, 705.63625pt x 427.5975pt>
 File: Figures/../Figures/2018-02-28-stats-new.png Graphic file (type png)
 <use Figures/../Figures/2018-02-28-stats-new.png>
 Package pdftex.def Info: Figures/../Figures/2018-02-28-stats-new.png used on in
-put line 369.
+put line 371.
 (pdftex.def)             Requested size: 441.01775pt x 267.24777pt.
 
-<Figures/../Figures/2018-03-07-stats-new.png, id=549, 706.64pt x 500.87125pt>
+<Figures/../Figures/2018-03-07-stats-new.png, id=554, 706.64pt x 500.87125pt>
 File: Figures/../Figures/2018-03-07-stats-new.png Graphic file (type png)
 
 <use Figures/../Figures/2018-03-07-stats-new.png>
 Package pdftex.def Info: Figures/../Figures/2018-03-07-stats-new.png used on in
-put line 371.
+put line 373.
 (pdftex.def)             Requested size: 441.01775pt x 312.60048pt.
 
-<Figures/../Figures/2018-04-24-stats-new.png, id=550, 707.64375pt x 500.87125pt
+<Figures/../Figures/2018-04-24-stats-new.png, id=555, 707.64375pt x 500.87125pt
 >
 File: Figures/../Figures/2018-04-24-stats-new.png Graphic file (type png)
  <use Figures/../Figures/2018-04-24-stats-new.png>
 Package pdftex.def Info: Figures/../Figures/2018-04-24-stats-new.png used on in
-put line 379.
+put line 381.
 (pdftex.def)             Requested size: 441.01775pt x 312.1572pt.
- [17]
+ [18]
 Overfull \vbox (38.5046pt too high) has occurred while \output is active []
 
 
-[18 <./Figures/../Figures/2018-02-28-stats-new.png> <./Figures/../Figures/2018-
-03-07-stats-new.png>]) [19 <./Figures/../Figures/2018-04-24-stats-new.png>]
+[19 <./Figures/../Figures/2018-02-28-stats-new.png> <./Figures/../Figures/2018-
+03-07-stats-new.png>]) [20 <./Figures/../Figures/2018-04-24-stats-new.png>]
 \openout2 = `Chapters/4_discussion.aux'.
 
 
 (./Chapters/4_discussion.tex
 Chapter 4.
 1: section
-[20
+[21
 
 
 
-] <Figures/2018-03-08_1000.jpg, id=582, 2601.72pt x 1951.29pt>
-File: Figures/2018-03-08_1000.jpg Graphic file (type jpg)
-
-<use Figures/2018-03-08_1000.jpg>
-Package pdftex.def Info: Figures/2018-03-08_1000.jpg used on input line 86.
-(pdftex.def)             Requested size: 165.38164pt x 124.00975pt.
-
-<Figures/2018-02-28_2030.jpg, id=583, 3292.3pt x 2473.24pt>
-File: Figures/2018-02-28_2030.jpg Graphic file (type jpg)
-
-<use Figures/2018-02-28_2030.jpg>
-Package pdftex.def Info: Figures/2018-02-28_2030.jpg used on input line 93.
-(pdftex.def)             Requested size: 165.38164pt x 124.23532pt.
-
-<Figures/2018-04-24_1840.jpg, id=584, 2601.72pt x 1951.29pt>
-File: Figures/2018-04-24_1840.jpg Graphic file (type jpg)
-
-<use Figures/2018-04-24_1840.jpg>
-Package pdftex.def Info: Figures/2018-04-24_1840.jpg used on input line 100.
-(pdftex.def)             Requested size: 165.38164pt x 124.00975pt.
-
-<Figures/2018-03-06_2000.jpg, id=585, 3292.3pt x 2473.24pt>
-File: Figures/2018-03-06_2000.jpg Graphic file (type jpg)
-
-<use Figures/2018-03-06_2000.jpg>
-Package pdftex.def Info: Figures/2018-03-06_2000.jpg used on input line 106.
-(pdftex.def)             Requested size: 165.38164pt x 124.23532pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--110
-[][][]
- []
-
-[21] [22 <./Figures/2018-03-08_1000.jpg> <./Figures/2018-02-28_2030.jpg> <./Fig
-ures/2018-04-24_1840.jpg> <./Figures/2018-03-06_2000.jpg>] [23]) [24]
+] [22] [23]) [24]
 \openout2 = `Chapters/5_conclusion.aux'.
 
-
-(./Chapters/5_conclusion.tex
+ (./Chapters/5_conclusion.tex
 Chapter 5.
 )
 1: section
@@ -2242,7 +2208,7 @@ Chapter 5.
 [26
 
 
-] [27]
+] [27] [28]
 Overfull \hbox (2.14322pt too wide) in paragraph at lines 441--441
 []\T1/ppl/m/n/10.95 French, A. P. et al. ^^P  A Prob-a-bilis-tic Track-ing Ap-p
 roach to Root Mea-sure-ment in Images-
@@ -2254,7 +2220,7 @@ Overfull \hbox (4.60721pt too wide) in paragraph at lines 441--441
 rob-a-bilis-tic Graph.^^Q In: \T1/ppl/m/it/10.95 BIOSIG-
  []
 
-[28] [29]
+[29] [30]
 \openout2 = `Appendices/AppendixA.aux'.
 
  (./Appendices/AppendixA.tex
@@ -2262,10 +2228,10 @@ Appendix A.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/it' tried instead on input line 7.
 1: section
-[30
+[31
 
 
-] <Figures/../Figures/components2.pdf, id=661, 884.30376pt x 1366.10374pt>
+] <Figures/../Figures/components2.pdf, id=694, 884.30376pt x 1366.10374pt>
 File: Figures/../Figures/components2.pdf Graphic file (type pdf)
 
 <use Figures/../Figures/components2.pdf>
@@ -2276,12 +2242,12 @@ Package pdftex.def Info: Figures/../Figures/components2.pdf used on input line
 Overfull \vbox (54.95557pt too high) has occurred while \output is active []
 
 
-[31 <./Figures/../Figures/components2.pdf>]
+[32 <./Figures/../Figures/components2.pdf>]
 Appendix B.
 1: section
-[32
+[33
 
-] <Figures/../Figures/manual/intro1.jpg, id=711, 1156.32pt x 617.9085pt>
+] <Figures/../Figures/manual/intro1.jpg, id=742, 1156.32pt x 617.9085pt>
 File: Figures/../Figures/manual/intro1.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/intro1.jpg>
@@ -2289,15 +2255,15 @@ Package pdftex.def Info: Figures/../Figures/manual/intro1.jpg used on input lin
 e 77.
 (pdftex.def)             Requested size: 441.01775pt x 235.66566pt.
 
-<Figures/../Figures/manual/intro2.jpg, id=713, 1156.32pt x 619.71526pt>
+<Figures/../Figures/manual/intro2.jpg, id=744, 1156.32pt x 619.71526pt>
 File: Figures/../Figures/manual/intro2.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/intro2.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/intro2.jpg used on input lin
 e 85.
 (pdftex.def)             Requested size: 441.01775pt x 236.35474pt.
- [33 <./Figures/../Figures/manual/intro1.jpg>]
-<Figures/../Figures/manual/intro3.jpg, id=721, 1156.32pt x 616.10175pt>
+ [34 <./Figures/../Figures/manual/intro1.jpg>]
+<Figures/../Figures/manual/intro3.jpg, id=752, 1156.32pt x 616.10175pt>
 File: Figures/../Figures/manual/intro3.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/intro3.jpg>
@@ -2305,16 +2271,16 @@ Package pdftex.def Info: Figures/../Figures/manual/intro3.jpg used on input lin
 e 93.
 (pdftex.def)             Requested size: 441.01775pt x 234.97658pt.
 
-<Figures/../Figures/manual/step1.jpg, id=722, 1356.56813pt x 686.565pt>
+<Figures/../Figures/manual/step1.jpg, id=753, 1356.56813pt x 686.565pt>
 File: Figures/../Figures/manual/step1.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step1.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/step1.jpg used on input line
  107.
 (pdftex.def)             Requested size: 441.01775pt x 223.19383pt.
- [34 <./Figures/../Figures/manual/intro2.jpg> <./Figures/../Figures/manual/intr
+ [35 <./Figures/../Figures/manual/intro2.jpg> <./Figures/../Figures/manual/intr
 o3.jpg>]
-<Figures/../Figures/manual/step2.jpg, id=728, 1088.26575pt x 549.252pt>
+<Figures/../Figures/manual/step2.jpg, id=759, 1088.26575pt x 549.252pt>
 File: Figures/../Figures/manual/step2.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step2.jpg>
@@ -2322,16 +2288,16 @@ Package pdftex.def Info: Figures/../Figures/manual/step2.jpg used on input line
  115.
 (pdftex.def)             Requested size: 441.01775pt x 222.57993pt.
 
-<Figures/../Figures/manual/step3.jpg, id=729, 1358.07375pt x 690.32906pt>
+<Figures/../Figures/manual/step3.jpg, id=760, 1358.07375pt x 690.32906pt>
 File: Figures/../Figures/manual/step3.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step3.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/step3.jpg used on input line
  124.
 (pdftex.def)             Requested size: 441.01775pt x 224.17522pt.
- [35 <./Figures/../Figures/manual/step1.jpg> <./Figures/../Figures/manual/step2
+ [36 <./Figures/../Figures/manual/step1.jpg> <./Figures/../Figures/manual/step2
 .jpg>]
-<Figures/../Figures/manual/step4.jpg, id=739, 1085.2545pt x 555.87675pt>
+<Figures/../Figures/manual/step4.jpg, id=770, 1085.2545pt x 555.87675pt>
 File: Figures/../Figures/manual/step4.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step4.jpg>
@@ -2339,16 +2305,16 @@ Package pdftex.def Info: Figures/../Figures/manual/step4.jpg used on input line
  134.
 (pdftex.def)             Requested size: 441.01775pt x 225.89223pt.
 
-<Figures/../Figures/manual/step5.jpg, id=740, 1082.8455pt x 551.661pt>
+<Figures/../Figures/manual/step5.jpg, id=771, 1082.8455pt x 551.661pt>
 File: Figures/../Figures/manual/step5.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step5.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/step5.jpg used on input line
  141.
 (pdftex.def)             Requested size: 441.01775pt x 224.68413pt.
- [36 <./Figures/../Figures/manual/step3.jpg> <./Figures/../Figures/manual/step4
+ [37 <./Figures/../Figures/manual/step3.jpg> <./Figures/../Figures/manual/step4
 .jpg>]
-<Figures/../Figures/manual/step6.jpg, id=750, 1359.57938pt x 692.5875pt>
+<Figures/../Figures/manual/step6.jpg, id=782, 1359.57938pt x 692.5875pt>
 File: Figures/../Figures/manual/step6.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step6.jpg>
@@ -2356,16 +2322,16 @@ Package pdftex.def Info: Figures/../Figures/manual/step6.jpg used on input line
  151.
 (pdftex.def)             Requested size: 441.01775pt x 224.65497pt.
 
-<Figures/../Figures/manual/step7.jpg, id=751, 1084.65225pt x 551.05875pt>
+<Figures/../Figures/manual/step7.jpg, id=783, 1084.65225pt x 551.05875pt>
 File: Figures/../Figures/manual/step7.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step7.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/step7.jpg used on input line
  158.
 (pdftex.def)             Requested size: 441.01775pt x 224.06046pt.
- [37 <./Figures/../Figures/manual/step5.jpg> <./Figures/../Figures/manual/step6
+ [38 <./Figures/../Figures/manual/step5.jpg> <./Figures/../Figures/manual/step6
 .jpg>]
-<Figures/../Figures/manual/step8.jpg, id=758, 1087.6635pt x 551.05875pt>
+<Figures/../Figures/manual/step8.jpg, id=789, 1087.6635pt x 551.05875pt>
 File: Figures/../Figures/manual/step8.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step8.jpg>
@@ -2373,16 +2339,16 @@ Package pdftex.def Info: Figures/../Figures/manual/step8.jpg used on input line
  165.
 (pdftex.def)             Requested size: 441.01775pt x 223.43822pt.
 
-<Figures/../Figures/manual/step9.jpg, id=759, 1087.06125pt x 552.26324pt>
+<Figures/../Figures/manual/step9.jpg, id=790, 1087.06125pt x 552.26324pt>
 File: Figures/../Figures/manual/step9.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step9.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/step9.jpg used on input line
  172.
 (pdftex.def)             Requested size: 441.01775pt x 224.05302pt.
- [38 <./Figures/../Figures/manual/step7.jpg> <./Figures/../Figures/manual/step8
+ [39 <./Figures/../Figures/manual/step7.jpg> <./Figures/../Figures/manual/step8
 .jpg>]
-<Figures/../Figures/manual/step10.jpg, id=766, 1081.641pt x 551.661pt>
+<Figures/../Figures/manual/step10.jpg, id=797, 1081.641pt x 551.661pt>
 File: Figures/../Figures/manual/step10.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step10.jpg>
@@ -2390,16 +2356,16 @@ Package pdftex.def Info: Figures/../Figures/manual/step10.jpg used on input lin
 e 179.
 (pdftex.def)             Requested size: 441.01775pt x 224.92824pt.
 
-<Figures/../Figures/manual/step11.jpg, id=767, 1088.26575pt x 552.8655pt>
+<Figures/../Figures/manual/step11.jpg, id=798, 1088.26575pt x 552.8655pt>
 File: Figures/../Figures/manual/step11.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step11.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/step11.jpg used on input lin
 e 186.
 (pdftex.def)             Requested size: 441.01775pt x 224.04427pt.
- [39 <./Figures/../Figures/manual/step9.jpg> <./Figures/../Figures/manual/step1
+ [40 <./Figures/../Figures/manual/step9.jpg> <./Figures/../Figures/manual/step1
 0.jpg>]
-<Figures/../Figures/manual/step12.jpg, id=774, 1088.26575pt x 551.05875pt>
+<Figures/../Figures/manual/step12.jpg, id=805, 1088.26575pt x 551.05875pt>
 File: Figures/../Figures/manual/step12.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step12.jpg>
@@ -2407,16 +2373,16 @@ Package pdftex.def Info: Figures/../Figures/manual/step12.jpg used on input lin
 e 193.
 (pdftex.def)             Requested size: 441.01775pt x 223.3121pt.
 
-<Figures/../Figures/manual/step13.jpg, id=776, 1361.085pt x 689.57625pt>
+<Figures/../Figures/manual/step13.jpg, id=807, 1361.085pt x 689.57625pt>
 File: Figures/../Figures/manual/step13.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step13.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/step13.jpg used on input lin
 e 202.
 (pdftex.def)             Requested size: 441.01775pt x 223.4362pt.
- [40 <./Figures/../Figures/manual/step11.jpg> <./Figures/../Figures/manual/step
+ [41 <./Figures/../Figures/manual/step11.jpg> <./Figures/../Figures/manual/step
 12.jpg>]
-<Figures/../Figures/manual/step14.jpg, id=784, 1089.47025pt x 551.661pt>
+<Figures/../Figures/manual/step14.jpg, id=816, 1089.47025pt x 551.661pt>
 File: Figures/../Figures/manual/step14.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step14.jpg>
@@ -2424,16 +2390,16 @@ Package pdftex.def Info: Figures/../Figures/manual/step14.jpg used on input lin
 e 210.
 (pdftex.def)             Requested size: 441.01775pt x 223.31204pt.
 
-<Figures/../Figures/manual/step15.jpg, id=787, 1357.32094pt x 688.82344pt>
+<Figures/../Figures/manual/step15.jpg, id=819, 1357.32094pt x 688.82344pt>
 File: Figures/../Figures/manual/step15.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step15.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/step15.jpg used on input lin
 e 219.
 (pdftex.def)             Requested size: 441.01775pt x 223.8019pt.
- [41 <./Figures/../Figures/manual/step13.jpg> <./Figures/../Figures/manual/step
+ [42 <./Figures/../Figures/manual/step13.jpg> <./Figures/../Figures/manual/step
 14.jpg>]
-<Figures/../Figures/manual/step16.jpg, id=795, 1351.29843pt x 688.07062pt>
+<Figures/../Figures/manual/step16.jpg, id=827, 1351.29843pt x 688.07062pt>
 File: Figures/../Figures/manual/step16.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step16.jpg>
@@ -2441,16 +2407,16 @@ Package pdftex.def Info: Figures/../Figures/manual/step16.jpg used on input lin
 e 226.
 (pdftex.def)             Requested size: 441.01775pt x 224.55472pt.
 
-<Figures/../Figures/manual/step17.jpg, id=798, 1086.459pt x 553.46774pt>
+<Figures/../Figures/manual/step17.jpg, id=830, 1086.459pt x 553.46774pt>
 File: Figures/../Figures/manual/step17.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step17.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/step17.jpg used on input lin
 e 236.
 (pdftex.def)             Requested size: 441.01775pt x 224.66837pt.
- [42 <./Figures/../Figures/manual/step15.jpg> <./Figures/../Figures/manual/step
+ [43 <./Figures/../Figures/manual/step15.jpg> <./Figures/../Figures/manual/step
 16.jpg>]
-<Figures/../Figures/manual/step18.jpg, id=807, 1356.56813pt x 691.83469pt>
+<Figures/../Figures/manual/step18.jpg, id=840, 1356.56813pt x 691.83469pt>
 File: Figures/../Figures/manual/step18.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step18.jpg>
@@ -2458,16 +2424,16 @@ Package pdftex.def Info: Figures/../Figures/manual/step18.jpg used on input lin
 e 249.
 (pdftex.def)             Requested size: 441.01775pt x 224.90694pt.
 
-<Figures/../Figures/manual/step19.jpg, id=808, 1352.05125pt x 688.07062pt>
+<Figures/../Figures/manual/step19.jpg, id=841, 1352.05125pt x 688.07062pt>
 File: Figures/../Figures/manual/step19.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step19.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/step19.jpg used on input lin
 e 256.
 (pdftex.def)             Requested size: 441.01775pt x 224.43922pt.
- [43 <./Figures/../Figures/manual/step17.jpg> <./Figures/../Figures/manual/step
+ [44 <./Figures/../Figures/manual/step17.jpg> <./Figures/../Figures/manual/step
 18.jpg>]
-<Figures/../Figures/manual/step20.jpg, id=817, 1349.79282pt x 688.82344pt>
+<Figures/../Figures/manual/step20.jpg, id=849, 1349.79282pt x 688.82344pt>
 File: Figures/../Figures/manual/step20.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/step20.jpg>
@@ -2475,16 +2441,16 @@ Package pdftex.def Info: Figures/../Figures/manual/step20.jpg used on input lin
 e 263.
 (pdftex.def)             Requested size: 441.01775pt x 225.05266pt.
 
-<Figures/../Figures/manual/save1.jpg, id=819, 145.29282pt x 690.32906pt>
+<Figures/../Figures/manual/save1.jpg, id=851, 145.29282pt x 690.32906pt>
 File: Figures/../Figures/manual/save1.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/save1.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/save1.jpg used on input line
  279.
 (pdftex.def)             Requested size: 132.30666pt x 628.67444pt.
- [44 <./Figures/../Figures/manual/step19.jpg> <./Figures/../Figures/manual/step
-20.jpg>] [45 <./Figures/../Figures/manual/save1.jpg>]
-<Figures/../Figures/manual/save2.jpg, id=831, 1082.8455pt x 551.661pt>
+ [45 <./Figures/../Figures/manual/step19.jpg> <./Figures/../Figures/manual/step
+20.jpg>] [46 <./Figures/../Figures/manual/save1.jpg>]
+<Figures/../Figures/manual/save2.jpg, id=862, 1082.8455pt x 551.661pt>
 File: Figures/../Figures/manual/save2.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/save2.jpg>
@@ -2492,47 +2458,47 @@ Package pdftex.def Info: Figures/../Figures/manual/save2.jpg used on input line
  289.
 (pdftex.def)             Requested size: 441.01775pt x 224.68413pt.
 
-<Figures/../Figures/manual/save3.jpg, id=833, 282.30469pt x 447.92343pt>
+<Figures/../Figures/manual/save3.jpg, id=864, 282.30469pt x 447.92343pt>
 File: Figures/../Figures/manual/save3.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/save3.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/save3.jpg used on input line
  299.
 (pdftex.def)             Requested size: 220.50887pt x 349.8778pt.
- [46 <./Figures/../Figures/manual/save2.jpg>]
-<Figures/../Figures/manual/save4.jpg, id=845, 140.77594pt x 691.08188pt>
+ [47 <./Figures/../Figures/manual/save2.jpg>]
+<Figures/../Figures/manual/save4.jpg, id=876, 140.77594pt x 691.08188pt>
 File: Figures/../Figures/manual/save4.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/save4.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/save4.jpg used on input line
  311.
 (pdftex.def)             Requested size: 132.30666pt x 649.54324pt.
- [47 <./Figures/../Figures/manual/save3.jpg>]
-<Figures/../Figures/manual/save5.jpg, id=852, 141.52875pt x 688.82344pt>
+ [48 <./Figures/../Figures/manual/save3.jpg>]
+<Figures/../Figures/manual/save5.jpg, id=883, 141.52875pt x 688.82344pt>
 File: Figures/../Figures/manual/save5.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/save5.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/save5.jpg used on input line
  320.
 (pdftex.def)             Requested size: 132.30666pt x 643.99411pt.
- [48 <./Figures/../Figures/manual/save4.jpg>]
-<Figures/../Figures/manual/save6.jpg, id=858, 311.66437pt x 450.18187pt>
+ [49 <./Figures/../Figures/manual/save4.jpg>]
+<Figures/../Figures/manual/save6.jpg, id=890, 311.66437pt x 450.18187pt>
 File: Figures/../Figures/manual/save6.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/save6.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/save6.jpg used on input line
  329.
 (pdftex.def)             Requested size: 264.61333pt x 382.22363pt.
- [49 <./Figures/../Figures/manual/save5.jpg>]
-<Figures/../Figures/manual/optionalA1.jpg, id=866, 1350.54562pt x 690.32906pt>
+ [50 <./Figures/../Figures/manual/save5.jpg>]
+<Figures/../Figures/manual/optionalA1.jpg, id=897, 1350.54562pt x 690.32906pt>
 File: Figures/../Figures/manual/optionalA1.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalA1.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalA1.jpg used on input
  line 348.
 (pdftex.def)             Requested size: 441.01775pt x 225.41817pt.
- [50 <./Figures/../Figures/manual/save6.jpg>]
-<Figures/../Figures/manual/optionalA2.jpg, id=875, 1085.85675pt x 550.4565pt>
+ [51 <./Figures/../Figures/manual/save6.jpg>]
+<Figures/../Figures/manual/optionalA2.jpg, id=906, 1085.85675pt x 550.4565pt>
 File: Figures/../Figures/manual/optionalA2.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalA2.jpg>
@@ -2540,16 +2506,16 @@ Package pdftex.def Info: Figures/../Figures/manual/optionalA2.jpg used on input
  line 358.
 (pdftex.def)             Requested size: 441.01775pt x 223.5636pt.
 
-<Figures/../Figures/manual/optionalA3.jpg, id=876, 1082.24326pt x 551.661pt>
+<Figures/../Figures/manual/optionalA3.jpg, id=907, 1082.24326pt x 551.661pt>
 File: Figures/../Figures/manual/optionalA3.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalA3.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalA3.jpg used on input
  line 365.
 (pdftex.def)             Requested size: 441.01775pt x 224.80197pt.
- [51 <./Figures/../Figures/manual/optionalA1.jpg> <./Figures/../Figures/manual/
+ [52 <./Figures/../Figures/manual/optionalA1.jpg> <./Figures/../Figures/manual/
 optionalA2.jpg>]
-<Figures/../Figures/manual/optionalA4.jpg, id=886, 1357.32094pt x 691.08188pt>
+<Figures/../Figures/manual/optionalA4.jpg, id=917, 1357.32094pt x 691.08188pt>
 File: Figures/../Figures/manual/optionalA4.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalA4.jpg>
@@ -2557,16 +2523,16 @@ Package pdftex.def Info: Figures/../Figures/manual/optionalA4.jpg used on input
  line 376.
 (pdftex.def)             Requested size: 441.01775pt x 224.53568pt.
 
-<Figures/../Figures/manual/optionalA5.jpg, id=887, 1357.32094pt x 691.08188pt>
+<Figures/../Figures/manual/optionalA5.jpg, id=918, 1357.32094pt x 691.08188pt>
 File: Figures/../Figures/manual/optionalA5.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalA5.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalA5.jpg used on input
  line 383.
 (pdftex.def)             Requested size: 441.01775pt x 224.53568pt.
- [52 <./Figures/../Figures/manual/optionalA3.jpg> <./Figures/../Figures/manual/
+ [53 <./Figures/../Figures/manual/optionalA3.jpg> <./Figures/../Figures/manual/
 optionalA4.jpg>]
-<Figures/../Figures/manual/optionalA6.jpg, id=895, 1355.0625pt x 688.07062pt>
+<Figures/../Figures/manual/optionalA6.jpg, id=926, 1355.0625pt x 688.07062pt>
 File: Figures/../Figures/manual/optionalA6.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalA6.jpg>
@@ -2574,31 +2540,31 @@ Package pdftex.def Info: Figures/../Figures/manual/optionalA6.jpg used on input
  line 390.
 (pdftex.def)             Requested size: 441.01775pt x 223.93527pt.
 
-<Figures/../Figures/manual/optionalA7.jpg, id=897, 1352.05125pt x 690.32906pt>
+<Figures/../Figures/manual/optionalA7.jpg, id=928, 1352.05125pt x 690.32906pt>
 File: Figures/../Figures/manual/optionalA7.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalA7.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalA7.jpg used on input
  line 399.
 (pdftex.def)             Requested size: 441.01775pt x 225.1759pt.
- [53 <./Figures/../Figures/manual/optionalA5.jpg> <./Figures/../Figures/manual/
+ [54 <./Figures/../Figures/manual/optionalA5.jpg> <./Figures/../Figures/manual/
 optionalA6.jpg>]
 
 Package caption Warning: \label without proper reference on input line 438.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:img39' on page 54 undefined on input line 413.
+LaTeX Warning: Reference `fig:img39' on page 55 undefined on input line 413.
 
-<Figures/../Figures/manual/optionalB1.jpg, id=912, 1349.04pt x 689.57625pt>
+<Figures/../Figures/manual/optionalB1.jpg, id=943, 1349.04pt x 689.57625pt>
 File: Figures/../Figures/manual/optionalB1.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalB1.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalB1.jpg used on input
  line 421.
 (pdftex.def)             Requested size: 441.01775pt x 225.42488pt.
- [54 <./Figures/../Figures/manual/optionalA7.jpg>]
-<Figures/../Figures/manual/optionalB2.jpg, id=926, 1088.26575pt x 551.661pt>
+ [55 <./Figures/../Figures/manual/optionalA7.jpg>]
+<Figures/../Figures/manual/optionalB2.jpg, id=959, 1088.26575pt x 551.661pt>
 File: Figures/../Figures/manual/optionalB2.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalB2.jpg>
@@ -2606,16 +2572,16 @@ Package pdftex.def Info: Figures/../Figures/manual/optionalB2.jpg used on input
  line 428.
 (pdftex.def)             Requested size: 441.01775pt x 223.55617pt.
 
-<Figures/../Figures/manual/optionalB3.jpg, id=927, 1085.2545pt x 551.05875pt>
+<Figures/../Figures/manual/optionalB3.jpg, id=960, 1085.2545pt x 551.05875pt>
 File: Figures/../Figures/manual/optionalB3.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalB3.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalB3.jpg used on input
  line 435.
 (pdftex.def)             Requested size: 441.01775pt x 223.93433pt.
- [55 <./Figures/../Figures/manual/optionalB1.jpg> <./Figures/../Figures/manual/
+ [56 <./Figures/../Figures/manual/optionalB1.jpg> <./Figures/../Figures/manual/
 optionalB2.jpg>]
-<Figures/../Figures/manual/optionalB4.jpg, id=933, 1351.29843pt x 690.32906pt>
+<Figures/../Figures/manual/optionalB4.jpg, id=965, 1351.29843pt x 690.32906pt>
 File: Figures/../Figures/manual/optionalB4.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalB4.jpg>
@@ -2623,16 +2589,16 @@ Package pdftex.def Info: Figures/../Figures/manual/optionalB4.jpg used on input
  line 443.
 (pdftex.def)             Requested size: 441.01775pt x 225.29176pt.
 
-<Figures/../Figures/manual/optionalB5.jpg, id=934, 1085.85675pt x 549.252pt>
+<Figures/../Figures/manual/optionalB5.jpg, id=966, 1085.85675pt x 549.252pt>
 File: Figures/../Figures/manual/optionalB5.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalB5.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalB5.jpg used on input
  line 450.
 (pdftex.def)             Requested size: 441.01775pt x 223.0744pt.
- [56 <./Figures/../Figures/manual/optionalB3.jpg> <./Figures/../Figures/manual/
+ [57 <./Figures/../Figures/manual/optionalB3.jpg> <./Figures/../Figures/manual/
 optionalB4.jpg>]
-<Figures/../Figures/manual/optionalB6.jpg, id=939, 1084.05pt x 553.46774pt>
+<Figures/../Figures/manual/optionalB6.jpg, id=971, 1084.05pt x 553.46774pt>
 File: Figures/../Figures/manual/optionalB6.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalB6.jpg>
@@ -2640,16 +2606,16 @@ Package pdftex.def Info: Figures/../Figures/manual/optionalB6.jpg used on input
  line 457.
 (pdftex.def)             Requested size: 441.01775pt x 225.16663pt.
 
-<Figures/../Figures/manual/optionalB7.jpg, id=940, 1082.24326pt x 550.4565pt>
+<Figures/../Figures/manual/optionalB7.jpg, id=972, 1082.24326pt x 550.4565pt>
 File: Figures/../Figures/manual/optionalB7.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalB7.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalB7.jpg used on input
  line 464.
 (pdftex.def)             Requested size: 441.01775pt x 224.31114pt.
- [57 <./Figures/../Figures/manual/optionalB5.jpg> <./Figures/../Figures/manual/
+ [58 <./Figures/../Figures/manual/optionalB5.jpg> <./Figures/../Figures/manual/
 optionalB6.jpg>]
-<Figures/../Figures/manual/optionalB8.jpg, id=945, 1084.05pt x 551.05875pt>
+<Figures/../Figures/manual/optionalB8.jpg, id=977, 1084.05pt x 551.05875pt>
 File: Figures/../Figures/manual/optionalB8.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalB8.jpg>
@@ -2657,16 +2623,16 @@ Package pdftex.def Info: Figures/../Figures/manual/optionalB8.jpg used on input
  line 472.
 (pdftex.def)             Requested size: 441.01775pt x 224.18658pt.
 
-<Figures/../Figures/manual/optionalB9.jpg, id=946, 1085.85675pt x 551.661pt>
+<Figures/../Figures/manual/optionalB9.jpg, id=978, 1085.85675pt x 551.661pt>
 File: Figures/../Figures/manual/optionalB9.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalB9.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalB9.jpg used on input
  line 479.
 (pdftex.def)             Requested size: 441.01775pt x 224.0528pt.
- [58 <./Figures/../Figures/manual/optionalB7.jpg> <./Figures/../Figures/manual/
+ [59 <./Figures/../Figures/manual/optionalB7.jpg> <./Figures/../Figures/manual/
 optionalB8.jpg>]
-<Figures/../Figures/manual/optionalC1.jpg, id=952, 1358.07375pt x 691.83469pt>
+<Figures/../Figures/manual/optionalC1.jpg, id=984, 1358.07375pt x 691.83469pt>
 File: Figures/../Figures/manual/optionalC1.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalC1.jpg>
@@ -2674,16 +2640,16 @@ Package pdftex.def Info: Figures/../Figures/manual/optionalC1.jpg used on input
  line 492.
 (pdftex.def)             Requested size: 441.01775pt x 224.66414pt.
 
-<Figures/../Figures/manual/optionalC2.jpg, id=953, 1358.07375pt x 691.83469pt>
+<Figures/../Figures/manual/optionalC2.jpg, id=985, 1358.07375pt x 691.83469pt>
 File: Figures/../Figures/manual/optionalC2.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalC2.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalC2.jpg used on input
  line 499.
 (pdftex.def)             Requested size: 441.01775pt x 224.66414pt.
- [59 <./Figures/../Figures/manual/optionalB9.jpg> <./Figures/../Figures/manual/
+ [60 <./Figures/../Figures/manual/optionalB9.jpg> <./Figures/../Figures/manual/
 optionalC1.jpg>]
-<Figures/../Figures/manual/optionalC3.jpg, id=959, 1086.459pt x 551.661pt>
+<Figures/../Figures/manual/optionalC3.jpg, id=991, 1086.459pt x 551.661pt>
 File: Figures/../Figures/manual/optionalC3.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalC3.jpg>
@@ -2691,16 +2657,16 @@ Package pdftex.def Info: Figures/../Figures/manual/optionalC3.jpg used on input
  line 506.
 (pdftex.def)             Requested size: 441.01775pt x 223.93495pt.
 
-<Figures/../Figures/manual/optionalC4.jpg, id=960, 1359.57938pt x 688.07062pt>
+<Figures/../Figures/manual/optionalC4.jpg, id=992, 1359.57938pt x 688.07062pt>
 File: Figures/../Figures/manual/optionalC4.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalC4.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalC4.jpg used on input
  line 513.
 (pdftex.def)             Requested size: 441.01775pt x 223.18983pt.
- [60 <./Figures/../Figures/manual/optionalC2.jpg> <./Figures/../Figures/manual/
+ [61 <./Figures/../Figures/manual/optionalC2.jpg> <./Figures/../Figures/manual/
 optionalC3.jpg>]
-<Figures/../Figures/manual/optionalC5.jpg, id=968, 1086.459pt x 552.26324pt>
+<Figures/../Figures/manual/optionalC5.jpg, id=1000, 1086.459pt x 552.26324pt>
 File: Figures/../Figures/manual/optionalC5.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalC5.jpg>
@@ -2708,50 +2674,47 @@ Package pdftex.def Info: Figures/../Figures/manual/optionalC5.jpg used on input
  line 520.
 (pdftex.def)             Requested size: 441.01775pt x 224.17941pt.
 
-<Figures/../Figures/manual/optionalC6.jpg, id=969, 1353.55687pt x 688.82344pt>
+<Figures/../Figures/manual/optionalC6.jpg, id=1001, 1353.55687pt x 688.82344pt>
 File: Figures/../Figures/manual/optionalC6.jpg Graphic file (type jpg)
-
 <use Figures/../Figures/manual/optionalC6.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalC6.jpg used on input
  line 527.
 (pdftex.def)             Requested size: 441.01775pt x 224.43254pt.
- [61 <./Figures/../Figures/manual/optionalC4.jpg> <./Figures/../Figures/manual/
+ [62 <./Figures/../Figures/manual/optionalC4.jpg> <./Figures/../Figures/manual/
 optionalC5.jpg>]
-<Figures/../Figures/manual/optionalC7.jpg, id=977, 1358.07375pt x 691.08188pt>
+<Figures/../Figures/manual/optionalC7.jpg, id=1008, 1358.07375pt x 691.08188pt>
 File: Figures/../Figures/manual/optionalC7.jpg Graphic file (type jpg)
-
 <use Figures/../Figures/manual/optionalC7.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalC7.jpg used on input
  line 534.
 (pdftex.def)             Requested size: 441.01775pt x 224.41968pt.
 
-<Figures/../Figures/manual/optionalC8.jpg, id=978, 1084.05pt x 551.661pt>
+<Figures/../Figures/manual/optionalC8.jpg, id=1009, 1084.05pt x 551.661pt>
 File: Figures/../Figures/manual/optionalC8.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalC8.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalC8.jpg used on input
  line 541.
 (pdftex.def)             Requested size: 441.01775pt x 224.4316pt.
- [62 <./Figures/../Figures/manual/optionalC6.jpg> <./Figures/../Figures/manual/
+ [63 <./Figures/../Figures/manual/optionalC6.jpg> <./Figures/../Figures/manual/
 optionalC7.jpg>]
-<Figures/../Figures/manual/optionalC9.jpg, id=985, 1087.6635pt x 553.46774pt>
+<Figures/../Figures/manual/optionalC9.jpg, id=1016, 1087.6635pt x 553.46774pt>
 File: Figures/../Figures/manual/optionalC9.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalC9.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalC9.jpg used on input
  line 548.
 (pdftex.def)             Requested size: 441.01775pt x 224.41501pt.
- [63 <./Figures/../Figures/manual/optionalC8.jpg> <./Figures/../Figures/manual/
+ [64 <./Figures/../Figures/manual/optionalC8.jpg> <./Figures/../Figures/manual/
 optionalC9.jpg>]
-<Figures/../Figures/manual/optionalD1.jpg, id=999, 1359.57938pt x 691.83469pt>
+<Figures/../Figures/manual/optionalD1.jpg, id=1030, 1359.57938pt x 691.83469pt>
 File: Figures/../Figures/manual/optionalD1.jpg Graphic file (type jpg)
-
 <use Figures/../Figures/manual/optionalD1.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalD1.jpg used on input
  line 567.
 (pdftex.def)             Requested size: 441.01775pt x 224.41078pt.
 
-<Figures/../Figures/manual/optionalD2.jpg, id=1000, 1084.05pt x 552.8655pt>
+<Figures/../Figures/manual/optionalD2.jpg, id=1031, 1084.05pt x 552.8655pt>
 File: Figures/../Figures/manual/optionalD2.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalD2.jpg>
@@ -2759,16 +2722,16 @@ Package pdftex.def Info: Figures/../Figures/manual/optionalD2.jpg used on input
  line 574.
 (pdftex.def)             Requested size: 441.01775pt x 224.92162pt.
 
-<Figures/../Figures/manual/optionalD3.jpg, id=1001, 1081.641pt x 552.26324pt>
+<Figures/../Figures/manual/optionalD3.jpg, id=1032, 1081.641pt x 552.26324pt>
 File: Figures/../Figures/manual/optionalD3.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalD3.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalD3.jpg used on input
  line 581.
 (pdftex.def)             Requested size: 441.01775pt x 225.17378pt.
- [64 <./Figures/../Figures/manual/optionalD1.jpg> <./Figures/../Figures/manual/
+ [65 <./Figures/../Figures/manual/optionalD1.jpg> <./Figures/../Figures/manual/
 optionalD2.jpg>]
-<Figures/../Figures/manual/optionalD4.jpg, id=1013, 1084.05pt x 552.26324pt>
+<Figures/../Figures/manual/optionalD4.jpg, id=1044, 1084.05pt x 552.26324pt>
 File: Figures/../Figures/manual/optionalD4.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalD4.jpg>
@@ -2776,38 +2739,38 @@ Package pdftex.def Info: Figures/../Figures/manual/optionalD4.jpg used on input
  line 588.
 (pdftex.def)             Requested size: 441.01775pt x 224.6766pt.
 
-<Figures/../Figures/manual/optionalD5.jpg, id=1014, 1079.83424pt x 552.26324pt>
+<Figures/../Figures/manual/optionalD5.jpg, id=1045, 1079.83424pt x 552.26324pt>
 File: Figures/../Figures/manual/optionalD5.jpg Graphic file (type jpg)
 <use Figures/../Figures/manual/optionalD5.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalD5.jpg used on input
  line 595.
 (pdftex.def)             Requested size: 441.01775pt x 225.553pt.
- [65 <./Figures/../Figures/manual/optionalD3.jpg> <./Figures/../Figures/manual/
+ [66 <./Figures/../Figures/manual/optionalD3.jpg> <./Figures/../Figures/manual/
 optionalD4.jpg>]
-<Figures/../Figures/manual/optionalD6.jpg, id=1019, 1358.82657pt x 688.82344pt>
+<Figures/../Figures/manual/optionalD6.jpg, id=1050, 1358.82657pt x 688.82344pt>
 File: Figures/../Figures/manual/optionalD6.jpg Graphic file (type jpg)
 <use Figures/../Figures/manual/optionalD6.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalD6.jpg used on input
  line 602.
 (pdftex.def)             Requested size: 441.01775pt x 223.56015pt.
 
-<Figures/../Figures/manual/optionalD7.jpg, id=1020, 1086.459pt x 552.26324pt>
+<Figures/../Figures/manual/optionalD7.jpg, id=1051, 1086.459pt x 552.26324pt>
 File: Figures/../Figures/manual/optionalD7.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalD7.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalD7.jpg used on input
  line 609.
 (pdftex.def)             Requested size: 441.01775pt x 224.17941pt.
- [66 <./Figures/../Figures/manual/optionalD5.jpg> <./Figures/../Figures/manual/
+ [67 <./Figures/../Figures/manual/optionalD5.jpg> <./Figures/../Figures/manual/
 optionalD6.jpg>]
-<Figures/../Figures/manual/optionalE1.jpg, id=1032, 1352.05125pt x 690.32906pt>
+<Figures/../Figures/manual/optionalE1.jpg, id=1064, 1352.05125pt x 690.32906pt>
 File: Figures/../Figures/manual/optionalE1.jpg Graphic file (type jpg)
 <use Figures/../Figures/manual/optionalE1.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalE1.jpg used on input
  line 627.
 (pdftex.def)             Requested size: 441.01775pt x 225.1759pt.
- [67 <./Figures/../Figures/manual/optionalD7.jpg>]
-<Figures/../Figures/manual/optionalE2.jpg, id=1045, 1355.8153pt x 691.83469pt>
+ [68 <./Figures/../Figures/manual/optionalD7.jpg>]
+<Figures/../Figures/manual/optionalE2.jpg, id=1076, 1355.8153pt x 691.83469pt>
 File: Figures/../Figures/manual/optionalE2.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalE2.jpg>
@@ -2815,56 +2778,89 @@ Package pdftex.def Info: Figures/../Figures/manual/optionalE2.jpg used on input
  line 634.
 (pdftex.def)             Requested size: 441.01775pt x 225.03362pt.
 
-<Figures/../Figures/manual/optionalE3.jpg, id=1046, 1082.24326pt x 551.661pt>
+<Figures/../Figures/manual/optionalE3.jpg, id=1077, 1082.24326pt x 551.661pt>
 File: Figures/../Figures/manual/optionalE3.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalE3.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalE3.jpg used on input
  line 641.
 (pdftex.def)             Requested size: 441.01775pt x 224.80197pt.
- [68 <./Figures/../Figures/manual/optionalE1.jpg> <./Figures/../Figures/manual/
+ [69 <./Figures/../Figures/manual/optionalE1.jpg> <./Figures/../Figures/manual/
 optionalE2.jpg>]
-<Figures/../Figures/manual/optionalE4.jpg, id=1051, 1085.85675pt x 552.26324pt>
+<Figures/../Figures/manual/optionalE4.jpg, id=1082, 1085.85675pt x 552.26324pt>
 File: Figures/../Figures/manual/optionalE4.jpg Graphic file (type jpg)
 <use Figures/../Figures/manual/optionalE4.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalE4.jpg used on input
  line 648.
 (pdftex.def)             Requested size: 441.01775pt x 224.2974pt.
 
-<Figures/../Figures/manual/optionalE5.jpg, id=1052, 1355.8153pt x 691.08188pt>
+<Figures/../Figures/manual/optionalE5.jpg, id=1083, 1355.8153pt x 691.08188pt>
 File: Figures/../Figures/manual/optionalE5.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalE5.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalE5.jpg used on input
  line 655.
 (pdftex.def)             Requested size: 441.01775pt x 224.78876pt.
- [69 <./Figures/../Figures/manual/optionalE3.jpg> <./Figures/../Figures/manual/
+ [70 <./Figures/../Figures/manual/optionalE3.jpg> <./Figures/../Figures/manual/
 optionalE4.jpg>]
-<Figures/../Figures/manual/optionalE6.jpg, id=1057, 1079.83424pt x 552.26324pt>
+<Figures/../Figures/manual/optionalE6.jpg, id=1088, 1079.83424pt x 552.26324pt>
 File: Figures/../Figures/manual/optionalE6.jpg Graphic file (type jpg)
 <use Figures/../Figures/manual/optionalE6.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalE6.jpg used on input
  line 662.
 (pdftex.def)             Requested size: 441.01775pt x 225.553pt.
 
-<Figures/../Figures/manual/optionalE7.jpg, id=1058, 258.21469pt x 444.15938pt>
+<Figures/../Figures/manual/optionalE7.jpg, id=1089, 258.21469pt x 444.15938pt>
 File: Figures/../Figures/manual/optionalE7.jpg Graphic file (type jpg)
 
 <use Figures/../Figures/manual/optionalE7.jpg>
 Package pdftex.def Info: Figures/../Figures/manual/optionalE7.jpg used on input
  line 669.
 (pdftex.def)             Requested size: 264.61333pt x 455.21208pt.
- [70 <./Figures/../Figures/manual/optionalE5.jpg> <./Figures/../Figures/manual/
-optionalE6.jpg>] [71 <./Figures/../Figures/manual/optionalE7.jpg>]
+ [71 <./Figures/../Figures/manual/optionalE5.jpg> <./Figures/../Figures/manual/
+optionalE6.jpg>] [72 <./Figures/../Figures/manual/optionalE7.jpg>]
 Appendix C.
-1: section
-[72
+<Figures/2018-03-08_1000.jpg, id=1106, 2601.72pt x 1951.29pt>
+File: Figures/2018-03-08_1000.jpg Graphic file (type jpg)
 
-] [73]
+<use Figures/2018-03-08_1000.jpg>
+Package pdftex.def Info: Figures/2018-03-08_1000.jpg used on input line 701.
+(pdftex.def)             Requested size: 165.38164pt x 124.00975pt.
+
+<Figures/2018-02-28_2030.jpg, id=1107, 3292.3pt x 2473.24pt>
+File: Figures/2018-02-28_2030.jpg Graphic file (type jpg)
+
+<use Figures/2018-02-28_2030.jpg>
+Package pdftex.def Info: Figures/2018-02-28_2030.jpg used on input line 708.
+(pdftex.def)             Requested size: 165.38164pt x 124.23532pt.
+
+<Figures/2018-04-24_1840.jpg, id=1108, 2601.72pt x 1951.29pt>
+File: Figures/2018-04-24_1840.jpg Graphic file (type jpg)
+
+<use Figures/2018-04-24_1840.jpg>
+Package pdftex.def Info: Figures/2018-04-24_1840.jpg used on input line 715.
+(pdftex.def)             Requested size: 165.38164pt x 124.00975pt.
+
+<Figures/2018-03-06_2000.jpg, id=1109, 3292.3pt x 2473.24pt>
+File: Figures/2018-03-06_2000.jpg Graphic file (type jpg)
+
+<use Figures/2018-03-06_2000.jpg>
+Package pdftex.def Info: Figures/2018-03-06_2000.jpg used on input line 721.
+(pdftex.def)             Requested size: 165.38164pt x 124.23532pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--725
+[][][]
+ []
+
+1: section
+[73
+
+] [74 <./Figures/2018-03-08_1000.jpg> <./Figures/2018-02-28_2030.jpg> <./Figure
+s/2018-04-24_1840.jpg> <./Figures/2018-03-06_2000.jpg>] [75] [76]
 Appendix D.
 )
 1: section
-[74
+[77
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 460.
@@ -2875,7 +2871,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 460.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 460.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 460.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 045D4E81B3A7FC6B4DBA77F2CB556C21;10087.
+(rerunfilecheck)             Checksum: 63D88D46BF166DCE9E27E1ECA9BAB897;9904.
 
 
 LaTeX Warning: There were undefined references.
@@ -2885,10 +2881,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33360 strings out of 493014
- 679658 string characters out of 6133351
- 880386 words of memory out of 5000000
- 36162 multiletter control sequences out of 15000+600000
+ 33420 strings out of 493014
+ 681724 string characters out of 6133351
+ 897090 words of memory out of 5000000
+ 36201 multiletter control sequences out of 15000+600000
  71917 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,21n,82p,10377b,2586s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2906,10 +2902,10 @@ ts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
 palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatin
 o/uplri8a.pfb>
-Output written on main.pdf (86 pages, 24289464 bytes).
+Output written on main.pdf (89 pages, 24298445 bytes).
 PDF statistics:
- 1195 PDF objects out of 1200 (max. 8388607)
- 972 compressed objects within 10 object streams
- 270 named destinations out of 1000 (max. 500000)
- 892 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1253 PDF objects out of 1440 (max. 8388607)
+ 1026 compressed objects within 11 object streams
+ 291 named destinations out of 1000 (max. 500000)
+ 884 words of extra memory for PDF output out of 10000 (max. 10000000)
 

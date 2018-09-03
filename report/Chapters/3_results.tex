@@ -22,7 +22,7 @@
 %%----------------------------------------------------------------------------------------
 %%----------------------------------------------------------------------------------------
 
-The following section of this report will briefly explain the tool from a technical perspective, but more importantly  %and show how to use it in practice. %Additionally, we present an example of the tool in use.
+Here, we will briefly explain the tool from a technical perspective, but more importantly  %and show how to use it in practice. %Additionally, we present an example of the tool in use.
 we will present some highlights of the tool that sets it apart from other tools. In the appendix \ref{chp:manual} we guide the user through one example to illustrate how the tool is used in practice. This serves as a manual for users even though the steps are self-explanatory by just using the Graphical User Interface (GUI). 
 
 Additionally, we will show some validation of the tool by comparing the angle computed by our tool to the one computed manually on 3 time-series image data sets of Arabidopsis roots.
@@ -82,7 +82,9 @@ The code is open-source and publicly available on \url{https://github.com/Giovan
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
-\section{Workflow of root skeletonisation}
+\section{Workflow of root skeletonisation}\label{sec:workflow}
+
+For the skeletonisation part we chose a \textit{bottom-up} approach applying a sequence of filters to successively remove pixels considered unlikely to correspond to root material \cite{pound2013rootnav}. To achieve this we use common techniques like \textit{noise reduction}, \textit{thresholding}, i.e. selecting pixels above a given brightness or "threshold", and \textit{skeletonisation}, i.e. thinning selected groups of pixels down to lines of one pixel in diameter \cite{pound2013rootnav}. 
 
 The pipeline that has been developed for the preprocessing step of extracting the skeleton of the root is displayed in figure \ref{fig:workflow} and can be viewed at the bottom of the GUI (explained in the next section), see chapter \ref{chp:manual}.
 %In the appendix [INSERT REFERENCE HERE] we present the tool on one example image guides the reader through the pipeline and can serve as a manual for future users.
