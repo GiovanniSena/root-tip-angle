@@ -770,6 +770,55 @@
     \field{year}{2013}
   \endentry
 
+  \entry{pound2017autoroot}{article}{}
+    \name{author}{5}{}{%
+      {{hash=PMP}{%
+         family={Pound},
+         family_i={P\bibinitperiod},
+         given={Michael\bibnamedelima P},
+         given_i={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Fozard},
+         family_i={F\bibinitperiod},
+         given={Susan},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=TMT}{%
+         family={Torres},
+         family_i={T\bibinitperiod},
+         given={Mercedes\bibnamedelima Torres},
+         given_i={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=FBG}{%
+         family={Forde},
+         family_i={F\bibinitperiod},
+         given={Brian\bibnamedelima G},
+         given_i={B\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=FAP}{%
+         family={French},
+         family_i={F\bibinitperiod},
+         given={Andrew\bibnamedelima P},
+         given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {BioMed Central}%
+    }
+    \strng{namehash}{PMP+1}
+    \strng{fullhash}{PMPFSTMTFBGFAP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{12}
+    \field{title}{AutoRoot: open-source software employing a novel image
+  analysis approach to support fully-automated plant phenotyping}
+    \field{volume}{13}
+    \field{journaltitle}{Plant methods}
+    \field{year}{2017}
+  \endentry
+
   \entry{dee2015image}{article}{}
     \name{author}{2}{}{%
       {{hash=DH}{%
@@ -966,6 +1015,35 @@
   networks of plant cells from confocal images}
     \field{journaltitle}{The Plant Cell}
     \field{year}{2012}
+  \endentry
+
+  \entry{taub1996root}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TD}{%
+         family={Taub},
+         family_i={T\bibinitperiod},
+         given={DR},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Goldberg},
+         family_i={G\bibinitperiod},
+         given={D},
+         given_i={D},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JSTOR}%
+    }
+    \strng{namehash}{TDGD1}
+    \strng{fullhash}{TDGD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{258\bibrangedash 264}
+    \field{title}{Root system topology of plants from habitats differing in
+  soil resource availability}
+    \field{journaltitle}{Functional Ecology}
+    \field{year}{1996}
   \endentry
 
   \entry{mooney2012developing}{article}{}
@@ -2434,55 +2512,6 @@
     \field{pages}{10}
     \field{title}{The Microphenotron: a robotic miniaturized plant phenotyping
   platform with diverse applications in chemical biology}
-    \field{volume}{13}
-    \field{journaltitle}{Plant methods}
-    \field{year}{2017}
-  \endentry
-
-  \entry{pound2017autoroot}{article}{}
-    \name{author}{5}{}{%
-      {{hash=PMP}{%
-         family={Pound},
-         family_i={P\bibinitperiod},
-         given={Michael\bibnamedelima P},
-         given_i={M\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-      {{hash=FS}{%
-         family={Fozard},
-         family_i={F\bibinitperiod},
-         given={Susan},
-         given_i={S\bibinitperiod},
-      }}%
-      {{hash=TMT}{%
-         family={Torres},
-         family_i={T\bibinitperiod},
-         given={Mercedes\bibnamedelima Torres},
-         given_i={M\bibinitperiod\bibinitdelim T\bibinitperiod},
-      }}%
-      {{hash=FBG}{%
-         family={Forde},
-         family_i={F\bibinitperiod},
-         given={Brian\bibnamedelima G},
-         given_i={B\bibinitperiod\bibinitdelim G\bibinitperiod},
-      }}%
-      {{hash=FAP}{%
-         family={French},
-         family_i={F\bibinitperiod},
-         given={Andrew\bibnamedelima P},
-         given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {BioMed Central}%
-    }
-    \strng{namehash}{PMP+1}
-    \strng{fullhash}{PMPFSTMTFBGFAP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{1}
-    \field{pages}{12}
-    \field{title}{AutoRoot: open-source software employing a novel image
-  analysis approach to support fully-automated plant phenotyping}
     \field{volume}{13}
     \field{journaltitle}{Plant methods}
     \field{year}{2017}

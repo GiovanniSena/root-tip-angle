@@ -313,7 +313,7 @@ Table \ref{table:modules} gives an overview of the different components and modu
 %----------------------------------------------------------------------------------------
 \section{Validation: Comparing the automated calculated angles with the manually calculated angles}
 
-As a preview of validation we performed our software tool on 3 randomly chosen roots from 3 different experiments over a time of 330 minutes (or 100 minutes respectively). We compared both the automatically computed angles with the previously computed manual angle. As a second validation layer we also compared the latter to the computed angles with the turning point as user input.
+As a preliminary validation we performed our software tool on 3 randomly chosen roots from 3 different experiments over a time of 330 minutes (or 100 minutes respectively). We compared both the automatically computed angles with the previously computed manual angle. As a second validation layer we also compared the latter to the computed angles with the turning point as user input.
 
 Figure \ref{fig:resultPlots} shows the comparison of the angle of interest \( \Theta \), both of the manual as well as the automatically computed angle at about 11 times steps over a period of 330 minutes.
 
@@ -349,7 +349,9 @@ Figure \ref{fig:resultPlots} shows the comparison of the angle of interest \( \T
 
 \includegraphics[width=.65\textwidth]{../Figures/2018-04-24.png}
 
-	\caption{Comparing the manually computed angle and the angle(s) computed by \textit{RootSkel}; in blue: computed by \textit{RootSkel}, in red: computed by \textit{RootSkel} with the turning point as user input, in yellow: manually computed angle. Each plot is labelled by the data set it was taken from (named after date) and the root number (starting from the left hand side in an image). Computations of all three approaches exhibit similar patterns; the angle \( \Theta \) continuously decreases. %Differences between the three approaches are in the magnitude of 5 degrees, single points vary up to 12 degrees, see also figure [INSERT REFERENCE HERE].
+	\caption{
+	Comparing the manually computed angle and the angle(s) computed by \textit{RootSkel}; in blue: computed by \textit{RootSkel}, in red: computed by \textit{RootSkel} with the turning point as user input, in yellow: manually computed angle. Each plot is labelled by the data set it was taken from (named after date) and the root number (starting from the left hand side in an image). Computations of all three approaches exhibit similar patterns; the angle \( \Theta \) continuously decreases. %Differences between the three approaches are in the magnitude of 5 degrees, single points vary up to 12 degrees, see also figure [INSERT REFERENCE HERE]. 
+	Only the bottom plot was produced with the most recent, more robust and precise version of \textit{RootSkel} than previous ones.
 		}
 \label{fig:resultPlots}
 \end{figure}
@@ -378,14 +380,14 @@ When studying our data sets (manually computed and automatically computed angles
 \end{table}
 \begin{table}[H]
 %	\newpage
-	\includegraphics[width=\textwidth]{../Figures/2018-04-24-stats-new.png}
+	\includegraphics[width=\textwidth]{../Figures/2018-04-24-stats-new-stdv.png}
 	\caption{See table \ref*{table:resultTable}.}
 	\label{table:resultTable2}
 \end{table}
 
-
 As a validation that the computed values of \textit{RootSkel} are similar enough to the manually computed values, we perform a t-test between the two sets of angles.
 In all three cases we fail to reject the null hypothesis (at a 95\% confidence interval), implying that the difference between each of the two samples is not statistically significant. The p-values of the two sample t-tests can be found in tables \ref{table:resultTable} and \ref{table:resultTable2}.
+Additionally, we perform precision testing on one of the 3 randomly selected roots: Comparing the standard deviations (based on 3 iterations each) shows that the \textit{RootSkel} method is on average more than 25\% more precise than the manual method (see table \ref{table:resultTable2}).
 
 %we fail to reject the null hypothesis. So we are not "rejecting the null", implying that we don't have enough evidence to assume that the difference in means is different from zero.
 

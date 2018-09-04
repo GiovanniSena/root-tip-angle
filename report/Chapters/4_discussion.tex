@@ -28,11 +28,16 @@
 
 %[INSERT ERROR MEASUREMENTS NEED TO BE OBTAINED, CURRENTLY NOT EXISITING IN MANUALLY COMPUTED ANGLES AND ALSO NOT IN ROOTSKEL, IN ORDER TO MAKE VALID ASSUMPTIONS ON ROBUSTNESS AND REPITABILITY]
 
+
 Certainly, validation needs to be done on a bigger data set in order for our claims to be valid.
 %not only be a well grounded belief.
 As this could not happen in this project due to time constraints we suggest a thorough (statistical) analysis of the collected data and, subsequently, quantification of population heterogeneity in electrotropic responses as future work.
 
-Obtaining standard deviations in the measurements, both in the manual and the computational method, are necessary to make claims on their precision and therefore robustness of \textit{RootSkel}. Quantifying accuracy is almost impossible without having some underlying model or valid assumptions as we do not know the true theoretical values, and any measurements will inevitably contain errors, a problem also identified in \cite{dee2015image}.
+Obtaining standard deviations in the measurements, both in the manual and the computational method, are necessary to make claims on their precision and therefore robustness of \textit{RootSkel}. Despite the error, people often consider computational measures as 'ground truth', i.e. they represent a direct error-free measure of the object under study \cite{pound2017autoroot}. However, quantifying accuracy is almost impossible without having some underlying model or valid assumptions as we do not know the true theoretical values, and any measurements will inevitably contain errors %, a problem also identified in
+\cite{dee2015image}.
+
+Despite the error, we often consider such measures as a ‘ground truth’ or gold standard; that is, they represent a direct measure of the trait which we often consider to be error-free. 
+
 % This makes comparing it to the manual angles difficult
 % Of course, we are now left with the problem of defining reasonable accuracy versus people: if someone is measuring plants manually, are they sure they are measuring the right thing?. 
 
@@ -54,6 +59,8 @@ During the development process of \textit{RootSkel} various challenges were enco
 \subsection{Non-planar roots}
 
 Another challenge of studying electrotropism compared to gravitropism in an agar gel is that it is much harder to keep the roots in a plane, i.e. keep them from growing in a third direction, due to the experimental set up to capture electrotropic responses. Since we only take 2D images, there will inevitably be an error in the angle calculation by the simple fact that the plants do not bend in a perfect plane.
+
+To see how much error is produced by this, one could add a second camera for the third direction.
 %compared to gravitropism, it is much harder to keep the roots in a plane. we only capture the angle based on 2D images.
 
 
@@ -133,13 +140,14 @@ However, the error in the angles we observed is tiny and within reasonable bound
 %INSERT ERROR COMPUTATION NECESSARY, SHOW THAT OUR METHOD IS MORE ROBUST, LESS MEASUREMENT ERROR/ CLOSER TO THE TRUE THEORETICAL VALUE THATN NECESSARY
 
 
-
 A major disadvantage of the bottom-up approach (see \ref{sec:workflow}) is that errors can accumulate: one wrong result made by one process commonly introduces further errors later in the pipeline and in the worst case can seriously affect the final results \cite{pound2013rootnav}.
 % In the worst cases, this can initiate a cascading effect that can seriously affect final results. Poor noise reduction can lead to thresholding errors, for example. Imperfect thresholding in turn disrupts skeletonization, adding spurious segments and introducing breaks into true roots. 
 
 Possible solutions are more interactive tools that allows the user to clean up and correct these results \cite{armengaud2009ez,clark20113} like the optional steps in \textit{RootSkel}. Manual corrections to refine the results can be frustrating but should in general be preferred to inaccurate or unprecise manual. calculations.
 
-For \textit{top-down} approaches a model of the object of interest is needed; this could be of topological or geometrical nature \cite{pound2012cellset} or a number of assumptions \cite{mooney2012developing}. In our case we could focus the attention to the tubular structure of the root, the unique proerty of the roots. Top-down approaches tend to be more easily adapted to a wider range of data but require a suitable model a priori  \cite{pound2013rootnav}.
+For \textit{top-down} approaches a model of the object of interest is needed; this could be of topological or geometrical nature \cite{pound2012cellset,taub1996root} or a number of assumptions \cite{mooney2012developing}. In our case we could focus the attention to the tubular structure of the root, the unique proerty of the roots. Top-down approaches tend to be more easily adapted to a wider range of data but require a suitable model a priori  \cite{pound2013rootnav}.
+
+Top-down approaches estimates the probability of each pixel being part of the root \cite{pound2013rootnav}, which is a less erroneous approach than the often used threshold-based methods, be they local or global \cite{pound2013rootnav}. 
 
 
 %\cite{pound2013rootnav}:
@@ -205,7 +213,8 @@ In the following we will outline suggestions for future work including things th
 %\subsection{Less user input up to automatisation}
 \subsection{High-throughput and robustness}
 
-Here in the first version of \textit{RootSkel}, the main goal was to standardise the angle computation. If in the future  a method for handling the different noise patterns in the images was efficiently handled which required less user input; it would be desireable to automate the whole angle computation. Indeed, robust high-throughput techniques for plant image processing problems have been desired for very long \cite{hartmann2011htpheno,diener2013automated,lee2018automated,plantCV} but have proven to be very difficult due to the challenges outlined above.
+Here in the first version of \textit{RootSkel}, the main goal was to standardise the angle computation. If in the future  a method for handling the different noise patterns in the images was efficiently handled which required less user input; it would be desireable to automate the whole angle computation. Indeed, robust high-throughput techniques for plant image processing problems have been the goal for very long \cite{hartmann2011htpheno,diener2013automated,lee2018automated,plantCV}; fully automatic methods have proven to be very difficult due to the challenges outlined above leaving user interaction still a necessity \cite{pound2013rootnav}.
+%While fully automatic methods remain the goal, in many cases, the complexity of root architectures and the poor quality of their images make user interaction a necessity.
 
 %In order to tackle the problem of noise reduction, it might be advisable to consult an expert not only on image processing but especially in the field of noise reduction to effectively implement filters that get rid of the noise our images contain. 
 
