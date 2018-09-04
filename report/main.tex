@@ -285,7 +285,8 @@ One phenomenon that, despite being first identified more than 100 years ago, has
 Electrotropism describes the response of a plant to an electric field; one common response is the curving of a plant’s root tip. Unlike gravitropism, there exist to our knowledge no tools specifically designed to assist biologists in studying this effect, most importantly the angle resulting from the curving of the root tip. This is especially relevant as the experimental setup for electrotropism is more complex and the images tend to be more error-prone; this is often the reason why standard gravitropism study tools fail and biologists compute the angles resulting from the curved root tip manually.
 
 Here we present \textit{RootSkel}, a novel intuitive and flexible stand-alone software for image processing developed in \textit{MATLAB}, whose pipeline was optimised for noise-intensive electrotropism images. % built from the ground up. 
-Unlike when doing the angle computation to measure the curvature of a root tip manually, our tool ensures a standardised version of the angle computation. To make the tool more user-friendly, we developed a graphical user interface (GUI) that will help the user to process the images and compute the angles in a standardised and controlled fashion.
+%Unlike when doing the angle computation to measure the curvature of a root tip manually, 
+Unlike the manual method, our tool ensures a standardised version of the angle computation. To make the tool more user-friendly, we developed a graphical user interface (GUI) that will help the user to process the images and compute the angles in a standardised and controlled fashion.
 
 %Our data set consisted of high-throughput time-lapse images of Arabidopsis roots taken by a standard Raspberry Pi V2 camera from 5 experiments with 5-6 roots each containing between 32 and 36 images over a period of approximately 5 hours. 
 
@@ -300,7 +301,7 @@ Additionally, we computed the angle of 3 \textit{Arabidopsis thaliana} root tips
 Statistics on our data sets suggest that our tool could improve the precision of the manually computed angles by up to 12.4\%. 
 %removes human error in the angle calculation process %which accounts in average [INSERT VARIANCE HERE, STATE HOW MUCH HUMAN VARIANCE WE COULD ELIMINATE BY STANDARDISING IT] 
 %of up to 12.5\% of the actual angle. 
-However, further validation on more images needs to be done; measurement errors of both the manually as well as computationally computed angles need to be obtained in order to show robustness of our method. Unlike the manually computed angles, with using a standard definition of the angle, our software delivers angles with less human bias which makes the results comparable and reproducible. 
+However, further validation on more images needs to be done; measurement errors of both the manually and computationally computed angles need to be obtained in order to show robustness of our method. Unlike the manually computed angles, with using a standard definition of the angle, our software delivers angles with less human bias which makes the results comparable and reproducible. 
 % Indeed, we show that on this example we can eliminate in average [INSERT VARIANCE HERE, STATE HOW MUCH HUMAN VARIANCE WE COULD ELIMINATE BY STANDARDISING IT] of human bias; further validation on more images is to be done.
 %can be done on already existing data as well as data gathered in the future. 
 Previously computed angles can be checked by using our software, and more angles of curved roots can be computed in the future and will hopefully %help 

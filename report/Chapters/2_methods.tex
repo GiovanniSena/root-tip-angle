@@ -14,8 +14,11 @@
 %\newcommand{\option}[1]{\texttt{\itshape#1}}
 
 %----------------------------------------------------------------------------------------
-The purpose of this methods section is to give an overview on, first, the data used to develop the software tool and how the data were collected, second, image processing basics, and third, %which programming languages, 
-which definitions and methods were chosen when developing the tool. This will help the reader to replicate, understand and modify the methods and source code of the tool. 
+The purpose of this methods section is to give an overview on
+%, first, the data used to develop the software tool and how the data were collected, second, image processing basics, and third, %which programming languages, 
+image acquisition, image processing basics and the definitions and methods chosen to develop the tool. 
+%which definitions and methods were chosen when developing the tool. 
+This will help the reader to replicate, understand and modify the methods and source code of the tool. 
 
 %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
@@ -296,7 +299,7 @@ For the interested reader we refer to Do Carmo's book on differential geometry \
 % Curvature is usually a scalar quantity, but one may define a curvature vector that takes into account the direction of the bend in addition to its magnitude.
 % The curvature of more complex objects (such as surfaces or even curved n-dimensional spaces) is described by more complex objects from linear algebra, such as the general Riemann curvature tensor. 
 
-Geometrically, the curvature measures how fast the unit tangent vector, i.e. the vector tangent to the curve and of length 1,  to the curve rotates. 
+Geometrically, the curvature measures how fast the unit tangent vector to the curve, i.e. the vector tangent to the curve and of length 1, rotates. 
 %TThe curvature of C at a point is a measure of how sensitive its tangent line is to moving the point to other nearby points. There are a number of equivalent definitions.
 
 \begin{figure}[H]
@@ -310,7 +313,8 @@ Geometrically, the curvature measures how fast the unit tangent vector, i.e. the
 
 If the curve is close to a straight line, and thus the unit tangent vector changes very little, the curvature is small; if the curve contains a sharp turn, the curvature is large.
 %In the implementations we used the difference between edge direction vectors to compute this velocity.
-In implementations we use the rate of change between neighbouring normals to compute this "velocity" which assigns the specific curvature to each point.
+%In implementations 
+In practice, we use the rate of change between neighbouring normals to compute this "velocity" which assigns the specific curvature to each point.
 
 %INSERT PRECISE DEFINITION HERE AND INSERT HERE "CURVATURE OF SPACE CURVES" FROM WIKIPEDIA
 
@@ -323,7 +327,10 @@ In implementations we use the rate of change between neighbouring normals to com
 % what I have until now is a simple calculation of the tangent vector (1st derivate) and then the curvature (2nd derivate):
 
 We  take a section of the curve (of window size \(n\)) and fit a polynomial to it; this will be our curve model. From this model we can compute the derivative and with the coefficients of the fitted polynomial we can compute the curvature at each point. 
-A large radius of the osculating circle, i.e. a high curvature, means a rather straight part of the curve, while we get a small radius or curvature in parts where the curve is "pointy", i.e. bends more. The sign of the curvature indicates whether it is right (positive) or left (negative) bending. However, the here used function \textit{polyfit} should not be used on very noisy data or so-called \textit{ill-posed} problems, e.g. when the data is not equally spaced; otherwise it will amplify any noise in the data and will give inaccurate results.
+A large radius of the osculating circle, i.e. a low curvature, means a rather straight part of the curve, while a small radius or high curvature in parts where the curve is curvy, i.e. bends comparably more. The sign of the curvature indicates whether it is right (positive) or left (negative) bending. However, the 
+%here used function \textit{polyfit} should not be used 
+functions in the previous implementation did not work well on very noisy data or so-called \textit{ill-posed} problems, e.g. when the data is not equally spaced; %otherwise it will 
+it amplifies any noise in the data and will give inaccurate results.
 For this reason, the current implementation uses a more discrete approach: It fits polygons to the points, i.e. the coordinates from the root skeleton, and then calculates the analytical curvature from these fitted polygons. 
 
 

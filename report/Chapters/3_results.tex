@@ -84,7 +84,7 @@ The code is open-source and publicly available on \url{https://github.com/Giovan
 %----------------------------------------------------------------------------------------
 \section{Workflow of root skeletonisation}\label{sec:workflow}
 
-For the skeletonisation part we chose a \textit{bottom-up} approach applying a sequence of filters to successively remove pixels considered unlikely to correspond to root material \cite{pound2013rootnav}. To achieve this we use common techniques like \textit{noise reduction}, \textit{thresholding}, i.e. selecting pixels above a given brightness or "threshold", and \textit{skeletonisation}, i.e. thinning selected groups of pixels down to lines of one pixel in diameter \cite{pound2013rootnav}. 
+For the skeletonisation part we chose a \textit{bottom-up} approach applying a sequence of filters to successively remove pixels considered unlikely to correspond to root material \cite{pound2013rootnav}. To achieve this we use common techniques like \textit{noise reduction}, \textit{thresholding}, i.e. selecting pixels above or below a given brightness or "threshold", and \textit{skeletonisation}, i.e. thinning selected groups of pixels down to lines of one pixel in diameter \cite{pound2013rootnav}. 
 
 The pipeline that has been developed for the preprocessing step of extracting the skeleton of the root is displayed in figure \ref{fig:workflow} and can be viewed at the bottom of the GUI (explained in the next section), see chapter \ref{chp:manual}.
 %In the appendix [INSERT REFERENCE HERE] we present the tool on one example image guides the reader through the pipeline and can serve as a manual for future users.
@@ -224,8 +224,10 @@ There are various benefits of the GUI such as
 	\item Error messages if user does not enter allowed values.
 \end{itemize}
 
-
-With the development of the GUI, we split our source code of the tool based on functionality, i.e. we create separate functions or modules that we then connect to several objects in the GUI. This process, also known as \textit{modularity} in software engineering, has various benefits for developing and maintaining the application: The code is less cluttered but more structured and readable and just by reading the main functions which calls all other subfunctions you get a general overview and understanding of what the code does. Also, it reduces redundancy in the main code if the code gets split up into smaller subfunctions and helps debugging. A clear naming convention also adds to a better understanding of the code.
+With the development of the GUI, we split our source code of the tool based on functionality, i.e. we create separate functions or modules that we then connect to several objects in the GUI. This process, also known as \textit{modularity} in software engineering, has various benefits for developing and maintaining the application: The code is %less cluttered and 
+more structured %and readable. J
+and just by reading the main functions which call all other subfunctions you get a general overview and understanding of what the code does; it reduces redundancy %in the main code if the code gets split up into smaller subfunctions 
+and helps debugging. Also, a clear naming convention adds to a better understanding of the code.
 
 %MODULARITY — main code is not as cluttered, things that are called again and again, migrate it. several functions use same code. 
 %REDUCE REDUNDANCY
@@ -235,7 +237,7 @@ With the development of the GUI, we split our source code of the tool based on f
 
 %Beyond that, provided the interface, i.e. input and output of each modules, is well defined modularity allows a team of developers to work on the functionality of one single module without involving other modules. They are not distracted by functionalities that are not relevant, known as information hiding in software engineering. Also, it helps to keep the code short and simple and focused one core functionality. It is also useful to identify bugs early on in the development process.
 
-Here, it allowed us to not only handle front-end and back-end but also the different steps in the pipeline separately: 
+Here, this concept allowed us to not only handle front-end and back-end but also the different steps in the pipeline separately: 
 
 Every function representing one specific step in the pipeline or objects accessed by various functions is encoded in the back-end which is not visible and relevant for the future user. These modules are connected via callbacks to different objects in the GUI which represent the front-end, see figure \ref{fig:fronendBackend}.
 
@@ -362,7 +364,8 @@ Table \ref{table:resultTable} compares the automatically computed angle by \text
 \[
  \text{score}_{\textbf{imp}} := | \frac{ \alpha_{\text{RootSkel}} - \alpha_{\text{manual}} }{\alpha_{\text{manual}}} |
 \]
-where $\alpha_{\text{RootSkel}}$ denotes the angle computed by \textit{RootSkel} and $\alpha_{\text{manual}}$ denotes the manually computed angle; this way we compare to the manually computed angles. How much our method is really an improvement (in accuracy) to the manual method, i.e. how much closer it is to the theoretical true value, cannot be computed as any measurement will be subject to errors (see also section \ref{sec:validation}). The improvement score on our 3 example data sets average between 5\% and 23\% with an ensemble average of 12.4\%, which can be concluded from table \ref{table:resultTable}.
+where $\alpha_{\text{RootSkel}}$ denotes the angle computed by \textit{RootSkel} and $\alpha_{\text{manual}}$ denotes the manually computed angle; this way we compare to the manually computed angles. How much our method is really an improvement (in accuracy) to the manual method %, i.e. how much closer it is to the theoretical true value, cannot be computed as any measurement will be subject to errors
+as we do not have access to the theoretical values (see also section \ref{sec:validation}). The improvement score on our 3 example data sets average between 5\% and 23\% with an ensemble average of 12.4\%, which can be concluded from table \ref{table:resultTable}.
 
 When studying our data sets (manually computed and automatically computed angles), we could observe that as the angle approaches zero, the values get more volatile, i.e. the variance increases; this matches up with our observations presented in figure \ref{fig:resultPlots}. However, it should be noted that our improvement score is based on relative values and, therefore, can easily increase for small values. %(of manually computed angles and increasing or constant difference/ variance to the automatically computed angle).
 

@@ -44,7 +44,7 @@ Despite the error, we often consider such measures as a ‘ground truth’ or go
 %Of course, we are now left with the problem of defining reasonable accuracy versus people: if someone is measuring plants manually, are they sure they are measuring the right thing?
 %WE NEED TO FIT AGAINST STH TO SHOW THAT ACCURATE
 
-%FROM ROOTTRACE: IT IS NOT NECESSARY FOR THOSE WISHING TO USE ROOTTRACE TO UNDERSTAND THE UNDERLYING METHODS IN GREAT DEPTH; HOWEVER, THE INFORMATION IN THIS SECTION MAY HELP THOSE INTERESTED TO UDNESTAND THE SITUATIONS IN WHICH IT CAN BE APPLID AND WHAT CAN CAUSE THE SOFTWARE TO FAIL.
+%FROM ROOTTRACE: IT IS NOT NECESSARY FOR THOSE WISHING TO USE ROOTTRACE TO UNDERSTAND THE UNDERLYING METHODS IN GREAT DEPTH; HOWEVER, THE INFORMATION IN THIS SECTION MAY HELP THOSE INTERESTED TO UNDERSTAND THE SITUATIONS IN WHICH IT CAN BE APPLID AND WHAT CAN CAUSE THE SOFTWARE TO FAIL.
 %FURTHER TECHNICAL DETAILS ABOUT ROOT TRACE'S EARLY DEVELOPMENT CAN BE FOUND IN PREVIOUS WORK. LOG FILES CAN BE FOUND IN....
 
 %----------------------------------------------------------------------------------------
@@ -58,7 +58,9 @@ During the development process of \textit{RootSkel} various challenges were enco
 %----------------------------------------------------------------------------------------
 \subsection{Non-planar roots}
 
-Another challenge of studying electrotropism compared to gravitropism in an agar gel is that it is much harder to keep the roots in a plane, i.e. keep them from growing in a third direction, due to the experimental set up to capture electrotropic responses. Since we only take 2D images, there will inevitably be an error in the angle calculation by the simple fact that the plants do not bend in a perfect plane.
+Another challenge of studying electrotropism compared to gravitropism %in an agar gel is that
+% it is much harder to keep the roots in a plane
+is keeping the roots in a plane, i.e. to prevent them from growing in a third direction, due to the experimental set up to capture electrotropic responses. Since we only take 2D images, there will inevitably be an error in the angle calculation by the simple fact that the plants do not bend in a perfect plane.
 
 To see how much error is produced by this, one could add a second camera for the third direction.
 %compared to gravitropism, it is much harder to keep the roots in a plane. we only capture the angle based on 2D images.
@@ -143,9 +145,9 @@ However, the error in the angles we observed is tiny and within reasonable bound
 A major disadvantage of the bottom-up approach (see \ref{sec:workflow}) is that errors can accumulate: one wrong result made by one process commonly introduces further errors later in the pipeline and in the worst case can seriously affect the final results \cite{pound2013rootnav}.
 % In the worst cases, this can initiate a cascading effect that can seriously affect final results. Poor noise reduction can lead to thresholding errors, for example. Imperfect thresholding in turn disrupts skeletonization, adding spurious segments and introducing breaks into true roots. 
 
-Possible solutions are more interactive tools that allows the user to clean up and correct these results \cite{armengaud2009ez,clark20113} like the optional steps in \textit{RootSkel}. Manual corrections to refine the results can be frustrating but should in general be preferred to inaccurate or unprecise manual. calculations.
+Possible solutions are more interactive tools that allow the user to clean up and correct these results \cite{armengaud2009ez,clark20113} like the optional steps in \textit{RootSkel}. Manual corrections to refine the results can be frustrating but should in general be preferred to inaccurate or unprecise manual calculations.
 
-For \textit{top-down} approaches a model of the object of interest is needed; this could be of topological or geometrical nature \cite{pound2012cellset,taub1996root} or a number of assumptions \cite{mooney2012developing}. In our case we could focus the attention to the tubular structure of the root, the unique proerty of the roots. Top-down approaches tend to be more easily adapted to a wider range of data but require a suitable model a priori  \cite{pound2013rootnav}.
+For \textit{top-down} approaches a model of the object of interest is needed; this could be of topological or geometrical nature \cite{pound2012cellset,taub1996root} or a number of assumptions \cite{mooney2012developing}. In our case we could focus the attention to the tubular structure of the root, the unique property of the roots. Top-down approaches tend to be more easily adapted to a wider range of data but require a suitable model a priori  \cite{pound2013rootnav}.
 
 Top-down approaches estimates the probability of each pixel being part of the root \cite{pound2013rootnav}, which is a less erroneous approach than the often used threshold-based methods, be they local or global \cite{pound2013rootnav}. 
 
@@ -233,7 +235,7 @@ Here in the first version of \textit{RootSkel}, the main goal was to standardise
 
 
 
-It would be desirable to make the tool more robust so it will work on unknown and other type of data (which was not the goal of this work) and to make the tool available to a wider public. For that, one might want to first and foremost collect higher quality images in the future (for suggestions on data collection (see \ref{futuredataAquis}) and second, investigate automated approaches. % such as adaptive thresholding. 
+It would be desirable to make the tool more robust so it will work on unknown and other type of data (which was not the goal of this work) and to make the tool available to a wider public. For that, one might want to first and foremost collect higher quality images in the future (for suggestions on data collection see \ref{futuredataAquis} and second, investigate automated approaches. % such as adaptive thresholding. 
 Our specific problem was not found to benefit immediately from having machine learning applied to it; however, in slightly different contexts deep learning could be a rich avenue to explore in order to discover patterns in the data \cite{pound2017deep,lee2018automated}.
 
 %High-throughput software tools that can produce objective, quantitative analyses od the resulting images are now required.
@@ -304,7 +306,7 @@ Another additional step towards validation or an integral part of taking measure
 %to ensure repeatability of our results 
 %would be to include 
 is to quantify the error in the angle computation, e.g. the maximum or average error in the final result due to the changes in the pre-processing step. %This could be computed 
-One can try to do achieve this empirically by trying our tool on a large amount of data to estimate the statistical error; there are ways to also try to quantify the instrumental error. 
+One can try to achieve this empirically by trying our tool on a large amount of data to estimate the statistical error; there are ways to also try to quantify the instrumental error. 
 %THIS WORK HAS STARTED ALREADY.
 
 

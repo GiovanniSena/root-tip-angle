@@ -69,7 +69,7 @@ The GUI lets the user visualise the angle that is computed. This not only helps 
 Hello and welcome! 
 So this is is your first time operating \textit{RootGUI}, the GUI of \textit{RootSkel}. Excited?
 For the next 5 minutes or so I'll be your friendly instruction manual on how to use \textit{RootGUI}. 
-You have donloaded the current version of \textit{RootSkel} from \url{https://github.com/GiovanniSena/Auto-angle} and you have MATLAB installed on your computer? Then let's get right down to business.
+You have downloaded the current version of \textit{RootSkel} from \url{https://github.com/GiovanniSena/Auto-angle} and you have MATLAB installed on your computer? Then let's get right down to business.
 
 First of all, open your \textit{MATLAB}. You should view something similar to this::
 \begin{figure}[H]
@@ -79,7 +79,7 @@ First of all, open your \textit{MATLAB}. You should view something similar to th
 	\label{fig:img1}
 \end{figure}
 
-And now, in order to bring \textit{RootGUI} up, navigate to the folder where \textit{RootSkel} is lovated on the LHS, and type \textit{Root\_image\_GUI} in the MATLAB console as shown in figure \ref{fig:img2}.
+And now, in order to bring \textit{RootGUI} up, navigate to the folder where \textit{RootSkel} is located on the LHS, and type \textit{Root\_image\_GUI} in the MATLAB console as shown in figure \ref{fig:img2}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{../Figures/manual/intro2.jpg}
@@ -126,8 +126,8 @@ First, we want to open an image with the roots.
  	\label{fig:img6}
  \end{figure}
  
- After you clicked the button, you will be prompted to zoom in on the desired root (see figure \ref{fig:img7}
- and you will go on to drag a rectangle around the desired root (see figure \ref{fig:img8} -- \ref{fig:img15}).
+ After you clicked the button, you will be prompted to zoom in on the desired root (see figure \ref{fig:img7})
+ and you will go on to drag a rectangle around the desired root (see figure \ref{fig:img8}).
  	
 \begin{figure}[H]
  	\centering
@@ -144,7 +144,7 @@ First, we want to open an image with the roots.
 \end{figure}
   
 Now that that's done, we want to choose points to give our program some data so that it will be able to pre-process the image.
-Click the \textit{Choose points} button and follow the instructions that will appear on the screen: Choose as many roots as the instruction tells you, and on the last step only the tip of the root (see figures \ref{fig:img9})
+Click the \textit{Choose points} button and follow the instructions that will appear on the screen: Choose as many points as the instruction tells you, and on the last step only the tip of the root (see figures \ref{fig:img9})
 
 \begin{figure}[H]
 	\centering
@@ -292,7 +292,7 @@ Otherwise you will see the following on your screen:
 \end{figure}
 
 As you can see, the default name consists of the name of the original image file and the number of the root. 
-So now you can save your root data in a .mat file whenever you want. You will see the .mat folder in the specified location on the LHS on the screen (see figure \ref{fig:img26}).
+So now you can save your root data in a .mat file whenever you want. You will see the .mat file in the specified location on the LHS on the screen (see figure \ref{fig:img26}).
 
 \begin{figure}[H]
 	\centering
@@ -301,7 +301,7 @@ So now you can save your root data in a .mat file whenever you want. You will se
 	\label{fig:img26}
 \end{figure}
 
-Now that we saved the variables, let's talk about saving figures. As you can see in figure \ref{fig:img27} two figures can be saved: One focused on the root, called \textit{Cropped image} (the figure on the RHS in figures \ref{fig:img15} -- \ref{fig:img18}), and the other one is the skeleton overlayed on the root, called \textit{Skeleton} (the figure on the RHS in figures \ref{fig:img19} -- \ref{fig:img23}).
+Now that we saved the variables, let's talk about saving figures. As you can see in figure \ref{fig:img27} two figures can be saved: One focused on the root, called \textit{Cropped image} (the figure on the LHS in figures \ref{fig:img15} -- \ref{fig:img18}), and the other one is the skeleton overlayed on the root, called \textit{Skeleton} (the figure on the RHS in figures \ref{fig:img19} -- \ref{fig:img23}).
 You can choose to save either one of them or both.
 
 Assume we clicked both.
@@ -405,15 +405,15 @@ As you can see in figure \ref{fig:img36}, the skeleton "came back".
 %----------------------------------------------------------------------------------------
 \subsubsection{Force tip}
 
-There a still various problems that can crop up but they can be solved.
+There are still various problems that can crop up but they can be solved.
 For example, what if the skeleton you got doesnt't get all the way to the tip of the root? 
 Well, that's a task for \textit{Force tip}, that enforces the tip of the root to be contained in the skeleton. 
-So first you click the button \textit{Force tip} (see figure \ref{fig:img37}, then a message pops up asking you to drag a iine from the end of the skeleton to the tip (see figure \ref{fig:img38}).
+So first you click the button \textit{Force tip} (see figure \ref{fig:img37}), then a message pops up asking you to drag a line from the end of the skeleton to the tip (see figure \ref{fig:img38}).
 But we can actually do it in more than one step. For example, in the example given here it seems like a straight line from the skeleton to the tip won't follow the root. 
 So let's first do the short line on figure \ref{fig:img39}, then to see how it looks, we can click on \textit{Show skeleton} (see figures \ref{fig:img40} -- \ref{fig:img41}),
 and we'll see the skeleton alone on the left and overlaid on the root on the right. 
 And then, we'll draw the final line (see figure \ref{fig:img42}).
-We'll click on \textit{Show skeleton} again to see if we are pleased (see figure \ref{fig:img43}), then on \textit{Final preparation} and we'll see that we go a reasonable angle (see figures \ref{fig:img44} -- \ref{fig:img45}).
+We'll click on \textit{Show skeleton} again to see if we are pleased (see figure \ref{fig:img43}), then on \textit{Final preparation} and we'll see that we get a reasonable angle (see figures \ref{fig:img44} -- \ref{fig:img45}).
 
 
 \begin{figure}[H]
@@ -434,7 +434,7 @@ We'll click on \textit{Show skeleton} again to see if we are pleased (see figure
 	\centering
 	\includegraphics[width=\textwidth]{../Figures/manual/optionalB3.jpg}
 %	\caption{Applying \textit{force tip}: Elongating the tip of the root skeleton}
-%	\caption{Applying \textit{force tip}: Trying to elongate the tip of the root with a line}
+	\caption{Applying \textit{force tip}: Trying to elongate the tip of the root with a line}
 	\label{fig:img39}
 \end{figure}
 
@@ -555,10 +555,10 @@ We still have these weird branches. But since they are not any close to the root
 %----------------------------------------------------------------------------------------
 \subsubsection{Crop skeleton}
 
-So now, the main problem we have is only the existence of these branches, and less the effect on the shape of the skeleton near the tip. For such problems, the \textit{Get skeleton} step was developed. 
+So now, the main problem we have is only the existence of these branches, and less the effect on the shape of the skeleton near the tip. For such problems, the \textit{Crop skeleton} step was developed. 
 
-Let's trim some branches! Click on the \textit{Get skeleton} button and you will see our trusty instruction pop up (see figures \ref{fig:img55} -- \ref{fig:img56}).
-Now, there is no rush, we can trim the branches one by one. So first, we'll trim the left branch (see figure \ref{fig:img57}), and then we will click 'No' followes by another click on \textit{Get skeleton}, after which we trim the second branch which leaves us with a nice and clean skeleton (see figures \ref{fig:img58} -- \ref{fig:img59}).
+Let's trim some branches! Click on the \textit{Crop skeleton} button and you will see our trusty instruction pop up (see figures \ref{fig:img55} -- \ref{fig:img56}).
+Now, there is no rush, we can trim the branches one by one. So first, we'll trim the left branch (see figure \ref{fig:img57}), and then we will click 'No' followed by another click on \textit{Crop skeleton}, after which we trim the second branch which leaves us with a nice and clean skeleton (see figures \ref{fig:img58} -- \ref{fig:img59}).
 To see the result, we will click \textit{Final preparation} followed by \textit{Using curvature} and we see that we are getting a reasonable result (see figures \ref{fig:img60} -- \ref{fig:img61}). Success!
 
 
@@ -667,7 +667,7 @@ And that's it! We are done here! Hope you've enjoyed this friendly manual, and s
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{../Figures/manual/optionalE7.jpg}
-	\caption{The created .csv files with the computed angles showing up on the RHS of the MATLAB GUI}
+	\caption{The created .csv files with the computed angles showing up on the LHS of the MATLAB GUI}
 	\label{fig:img68}
 \end{figure}
 
@@ -749,7 +749,7 @@ Keeping the medium clean of dirt and bubbles as far as possible is likely to mak
 %----------------------------------------------------------------------------------------
 \subsection{Increase of the contrast}
 
-In the current image data set there is not enough contrast between the target object (the root) and the background. This makes it difficult to distinguish the two of them, even by eye. It is advisable work towards achieving a good level of contrast between the roots and the background, e.g. by adding black background behind the roots or materials like blue material \cite{plantCV}. 
+In the current image data set there is not enough contrast between the target object (the root) and the background. This makes it difficult to distinguish the two of them, even by eye. It is advisable to work towards achieving a good level of contrast between the roots and the background, e.g. by adding black background behind the roots or materials like blue material \cite{plantCV}. 
 %It is advisable to work towards achieving a higher contrast in the images, so roots can be clearly distinguished from the background, also by eye.
 
 
