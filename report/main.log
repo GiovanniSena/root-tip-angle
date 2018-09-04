@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  4 SEP 2018 12:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  4 SEP 2018 12:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1956,7 +1956,7 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=21.896pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 2
-68.
+70.
 
 
 Overfull \vbox (3.04236pt too high) has occurred while \output is active []
@@ -1967,9 +1967,9 @@ Overfull \vbox (3.04236pt too high) has occurred while \output is active []
  Abstract
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 268.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 270.
 LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/it' tried instead on input line 268.
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 270.
 1: section
 [3
 
@@ -1982,7 +1982,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 340.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 342.
  (./main.toc
 1: section
 [6
@@ -2210,13 +2210,13 @@ Chapter 5.
 
 
 ] [28] [29]
-Overfull \hbox (2.14322pt too wide) in paragraph at lines 442--442
+Overfull \hbox (2.14322pt too wide) in paragraph at lines 444--444
 []\T1/ppl/m/n/10.95 French, A. P. et al. ^^P  A Prob-a-bilis-tic Track-ing Ap-p
 roach to Root Mea-sure-ment in Images-
  []
 
 
-Overfull \hbox (4.60721pt too wide) in paragraph at lines 442--442
+Overfull \hbox (4.60721pt too wide) in paragraph at lines 444--444
 \T1/ppl/m/n/10.95 Particle Fil-ter Track-ing is used to Mea-sure Roots, via a P
 rob-a-bilis-tic Graph.^^Q In: \T1/ppl/m/it/10.95 BIOSIG-
  []
@@ -2856,13 +2856,13 @@ Appendix D.
 [79
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 461.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 461.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 463.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 463.
  (./main.aux (./Chapters/1_introduction.aux) (./Chapters/2_methods.aux)
 (./Chapters/3_results.aux) (./Chapters/4_discussion.aux)
 (./Chapters/5_conclusion.aux) (./Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 461.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 461.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 463.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 463.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 63D88D46BF166DCE9E27E1ECA9BAB897;9904.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -2891,7 +2891,7 @@ ts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
 palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatin
 o/uplri8a.pfb>
-Output written on main.pdf (90 pages, 24300115 bytes).
+Output written on main.pdf (90 pages, 24300132 bytes).
 PDF statistics:
  1263 PDF objects out of 1440 (max. 8388607)
  1035 compressed objects within 11 object streams

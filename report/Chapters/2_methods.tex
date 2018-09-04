@@ -80,7 +80,7 @@ Figure \ref{fig:imageprocessingWorkflow} shows fundamental steps in image proces
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{../Figures/imageprocessing.png}
-	\caption{Image processing steps: (1) Digital image acquisition; (2) Preprocessing: To improve the image in ways that increase the chances for success of the other processes; (3) Segmentation: To partition an input image into its constituent parts or objects; (4) Representation and description: To convert the input data to a form suitable for computer compressing; %, to extract features that result in some quantitative information of interest or features that are basic for differentiating one class of objects from another; 
+	\caption{Image processing steps: (1) Digital image acquisition; (2) Preprocessing: To improve the image in ways that increase the chances for success of the other processes; (3) Segmentation: To partition an input image into its constituent parts or objects; (4) Representation and decription: To convert the input data to a form suitable for computer compressing; %, to extract features that result in some quantitative information of interest or features that are basic for differentiating one class of objects from another; 
 	(5) Recognition and interpretation (Understanding): To assign a label to an object based on the information provided by its descriptors or to assign meaning to an ensemble of recognised objects. All steps interact with the knowledge about the problem domain. 
 		Adapted from \cite{imagProcFundamentals}.}
 	\label{fig:imageprocessingWorkflow}
@@ -154,7 +154,7 @@ From an image processing point of view, we performed point as well as local oper
 A point operation is a function that is performed on each single pixel of an image, independent of all the other pixels in that image \cite{maini2010comprehensive}. These include operations like inverting, changing the brightness or contrast of an image, changing the gamma of an image, binarising an image and logical operations. 
 
 Local operations, on the other hand, compute the new value of each single pixel with a neighbourhood around it \cite{pointOperation2018}. %They can be divided in two groups, linear and nonlinear filters.
-They include filters which are operations that convert a source image to a result image by applying some kind of tranformation, be it of linear or nonlinear nature \cite{pointOperation2018}. There are more than 36 different filter functions in the MATLAB Image Processing toolbox \cite{matlab} that can be applied with different arguments and sensitivity thresholds. Filters used in our work include the 2D median filtering \textit{medfilt2} or the 2D adaptive noise-removal filtering \textit{wiener2} \cite{matlab}.
+They include filters which are operations that convert a source image to a result image by applying some kind of transformation, be it of linear or nonlinear nature \cite{pointOperation2018}. There are more than 36 different filter functions in the MATLAB Image Processing toolbox \cite{matlab} that can be applied with different arguments and sensitivity thresholds. Filters used in our work include the 2D median filtering \textit{medfilt2} or the 2D adaptive noise-removal filtering \textit{wiener2} \cite{matlab}.
 
 %A a filter is an operation, which converts a source image via some kind of transformation to a result image [INSERT REFERENCE HERE]. 
 
