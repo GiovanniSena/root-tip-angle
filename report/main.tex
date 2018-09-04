@@ -134,9 +134,9 @@ giveninits=true % <===================================================
 	outer=2.5cm, % Outer margin
 	bindingoffset=.5cm, % Binding offset
 %	top=1.5cm, % Top margin
-	top=1.5cm, % Top margin
+	top=1.3cm, % Top margin
 %	bottom=1.5cm, % Bottom margin
-	bottom=1.4cm, % Bottom margin
+	bottom=1.2cm, % Bottom margin
 	%showframe, % Uncomment to show how the type block is set on the page
 }
 
@@ -147,7 +147,8 @@ giveninits=true % <===================================================
 %\thesistitle{Computing angles of plant root tips} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
 %\thesistitle{Software tool to compute angles of plant root tips}
 %\thesistitle{\textit{RootSkel} -- A software tool to measure curved plant root tips}
-\thesistitle{\textit{RootSkel} -- A software tool to measure the angle of curved plant root tips}
+%\thesistitle{\textit{RootSkel} -- A software tool to measure the angle of curved plant root tips}
+\thesistitle{\textit{RootSkel} -- A software tool to measure the angle of a plant's curved root tip}
 \supervisor{Dr Giovanni \textsc{Sena}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
 \examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
 \degree{MSc Bioinformatics and Theoretical Systems Biology} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
@@ -217,7 +218,7 @@ giveninits=true % <===================================================
 {\large \today}\\[1cm] % Date
 %\includegraphics{Logo} % University/department logo - uncomment to place it
  
- {Word count: 4,915\\ (without acknowledgements, table of contents, list of abbreviations and appendices)}\\[2cm] % Date
+ {Word count: 4,917\\ (without acknowledgements, table of contents, list of abbreviations and appendices)}\\[2cm] % Date
  
 \vfill
 \end{center}
@@ -289,7 +290,7 @@ Electrotropism describes the response of a plant to an electric field; one commo
 
 Here we present \textit{RootSkel}, a novel intuitive and flexible stand-alone software for image processing developed in \textit{MATLAB}, whose pipeline was optimised for noise-intensive electrotropism images. % built from the ground up. 
 %Unlike when doing the angle computation to measure the curvature of a root tip manually, 
-Unlike the manual method, our tool ensures a standardised version of the angle computation. To make the tool more user-friendly, we developed a graphical user interface (GUI) that will help the user to process the images and compute the angles in a standardised and controlled fashion.
+Unlike the manual method, our tool ensures a standardised version of the angle computation. To make the tool more user-friendly, we developed a graphical user interface (GUI) that helps the user to process the images and compute the angles in a standardised and controlled fashion.
 
 %Our data set consisted of high-throughput time-lapse images of Arabidopsis roots taken by a standard Raspberry Pi V2 camera from 5 experiments with 5-6 roots each containing between 32 and 36 images over a period of approximately 5 hours. 
 
@@ -298,10 +299,10 @@ Unlike the manual method, our tool ensures a standardised version of the angle c
 
 %Additionally, we evaluated our results by comparing it to previously manually computed angles. [INCLUDE RESULTS A LA 70\% of the images could be found to be reproduced]
 
-Additionally, we computed the angle of 3 \textit{Arabidopsis thaliana} root tips at 11 time points over one experiment each (approximately 5 hours) and evaluated the results by comparing it to previously manually computed angles of the same roots. The results show similar patterns in the computed angles and two sample t-tests on the data show they are not significantly different (\(P > 0.05\)).
-%(significance level \(\alpha = 0.05 \)).
+Additionally, we computed the angle of 3 \textit{Arabidopsis thaliana} root tips at 11 time points over one experiment each (approximately 5 hours) and evaluated the results by comparing it to previously manually computed angles of the same roots. The results exhibit similar patterns in the computed angles and two sample t-tests on the data show no significant difference (\(P > 0.05\)) between the manually and automatically computed angles.
+%(significance level \(\alpha = 0.05 \))
 % overall correspondence with manual angles; 
-Statistics on our data sets suggest that our tool could improve the precision of the manually computed angles by up to 12.4\%. 
+Statistics on our data sets suggest that our tool could improve the precision of the manually computed angles by up to around 10\%. 
 %removes human error in the angle calculation process %which accounts in average [INSERT VARIANCE HERE, STATE HOW MUCH HUMAN VARIANCE WE COULD ELIMINATE BY STANDARDISING IT] 
 %of up to 12.5\% of the actual angle. 
 However, further validation on more images needs to be done; measurement errors of both the manually and computationally computed angles need to be obtained in order to show robustness of our method. Unlike the manually computed angles, with using a standard definition of the angle, our software delivers angles with less human bias which makes the results comparable and reproducible. 
@@ -330,7 +331,8 @@ Moreover, our tool is not limited to roots but could theoretically be used on an
 \begin{acknowledgements}
 \addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
 
-This project was conducted under the supervision of Dr Giovanni Sena, whom I thank for his advice and guidance. Thanks also to Nick Oliver for his help and expertise from the biological side and other members from the Plant Morphogenesis Laboratory at Imperial College London, as well as Suhail A Islam for fixing technical issues and his incredible patience. Finally, thanks to Prof Michael PH Stumpf, Prof Michael Sternberg and others involved in conducting and overseeing the MSc in Bioinformatics and Theoretical Systems Biology at Imperial College London.
+This project was conducted under the supervision of Dr Giovanni Sena, whom I thank for his advice and guidance. Thanks also to Nick Oliver for his help and expertise from the biological side, %and other members from the Plant Morphogenesis Laboratory at Imperial College London, 
+as well as Suhail A Islam for fixing technical issues and his incredible patience. Finally, thanks to Prof Michael PH Stumpf, Prof Michael Sternberg and others involved in conducting and overseeing the MSc in Bioinformatics and Theoretical Systems Biology at Imperial College London.
 
 %\ldots
 \end{acknowledgements}

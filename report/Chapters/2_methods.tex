@@ -63,7 +63,8 @@ Having these images as a basis, the nature of this work was mainly an image proc
 Image processing pools together a lot of different domains including physics (optics), signal processing and pattern recognition/ Machine Learning (ML); %to ultimately feed computers to understand how to interpret images and make decisions based on them. 
 the idea behind it is to extract information from an image in a form that is suitable for computer processing \cite{pydata2018}. 
 
-Figure \ref{fig:imageprocessingWorkflow} shows fundamental steps in image processing, that served as a guideline for the presented work. However, every single image processing case is different and there will always be slight variations to this generic image processing workflow.
+Figure \ref{fig:imageprocessingWorkflow} shows fundamental steps in image processing, that served as a guideline for the presented work. However, every single image processing case is different and there will always be slight variations to this generic %image processing 
+workflow.
 
 
 %combines optics and signal processing and is often used in computer vision.
@@ -290,7 +291,9 @@ In order to detect the point of highest local curvature, we need to compute the 
 
 In the following, we will sketch the mathematical framework which describes the curvature of a curve embedded in a plane.
 %For that, we want to introduce the reader to the concepts of a mathematical curvature in order 
-This will help the user to understand the rather formula intense implementation computing the analytical curvature using fitted polygons to the points, i.e. the coordinates from the root skeleton.
+This will help the user to understand the geometrical concepts of curvature rather than less intuitive formulae found in the implementations to compute the curvature. % of the root skeleton. 
+% formula intense implementation of the curvature of our root skeleton. 
+%computing the analytical curvature using fitted polygons to the points, i.e. the coordinates from the root skeleton.
 
 There exist various different concepts and definitions of curvature in different branches of geometry.
 Intuitively, curvature in the 2D case captures the amount by which a curve deviates from being a (straight) line.
@@ -306,7 +309,7 @@ Geometrically, the curvature measures how fast the unit tangent vector to the cu
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{../Figures/curveCircle.png}
-	\caption{The curvature and the osculating circle: Let \( C \) be a curve and \( P \) a point on it. Then there is a unique circle or line which best approximates the curve near \( C \) which we call the \textit{osculating circle} at \( P \). We define the curvature of \( C \) at \( P \) to be the curvature of that circle or line. The vector orthogonal to the tangent vector to the curve at point \( P \) and pointing inwards is called the \textit{normal} \(r\). Adapted from \cite{osculatingCircle}.
+	\caption{The curvature and the osculating circle: Let \( C \) be a curve and \( P \) a point on it. Then there is a unique circle or line which best approximates the curve near \( C \): the \textit{osculating circle} at \( P \). We define the curvature of \( C \) at \( P \) to be the curvature of that circle or line. The vector orthogonal to the tangent vector to the curve at point \( P \) and pointing inwards is called the \textit{normal} \(r\). Adapted from \cite{osculatingCircle}.
 		%The radius of curvature is defined as the reciprocal of the curvature.
 		}
 	\label{fig:curveCircle}
@@ -315,7 +318,7 @@ Geometrically, the curvature measures how fast the unit tangent vector to the cu
 If the curve is close to a straight line, and thus the unit tangent vector changes very little, the curvature is small; if the curve contains a sharp turn, the curvature is large.
 %In the implementations we used the difference between edge direction vectors to compute this velocity.
 %In implementations 
-In practice, we use the rate of change between neighbouring normals to compute this "velocity" which assigns the specific curvature to each point.
+In practice, we use the rate of change between neighbouring normals (to edges between neighbouring points) to compute this "velocity" which assigns the specific curvature to each point.
 
 %INSERT PRECISE DEFINITION HERE AND INSERT HERE "CURVATURE OF SPACE CURVES" FROM WIKIPEDIA
 

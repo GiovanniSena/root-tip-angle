@@ -94,7 +94,7 @@ The pipeline that has been developed for the preprocessing step of extracting th
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.78\textwidth]{../Figures/workflow_big.png}
-	\caption{The workflow of \textit{RootSkel} and different components of the GUI: Pre-processing steps to extract the skeleton are highlighted in orange, the actual angle computation is shaded in blue. Steps that have a front-end, i.e. are visible on the GUI, are framed in red, only back-end components are without a frame. }
+	\caption{The workflow of \textit{RootSkel} and different components of the GUI: Pre-processing steps to extract the skeleton are highlighted in orange, the actual angle computation is shaded in blue. Steps that have a front-end, i.e. are visible on the GUI, are framed in red, back-end only components are without a frame. }
 	\label{fig:workflow}
 \end{figure}
 
@@ -214,19 +214,19 @@ The pipeline that has been developed for the preprocessing step of extracting th
 
 %----------------------------------------------------------------------------------------
 \section{Graphical User Interface}
-To make the program more user-friendly, we developed a graphical user interface (GUI). Pop-up windows, message boxes as well as error boxes, will guide the user through the process (see chapter \ref{chp:manual}); a separate manual is not necessary as the steps are very intuitive and straight-forward.
-There are various benefits of the GUI such as
+To make the program more user-friendly, we developed a graphical user interface (GUI). Pop-up windows, message boxes as well as error boxes, guide the user through the process (see chapter \ref{chp:manual}); a separate manual is not necessary as the steps are very intuitive and straight-forward.
+There are various benefits of the GUI such as:
 \begin{itemize}
 	\item Visualising the process including the pipeline and the angle that is computed
 	\item Easy user interaction with mouse clicking
 	\item Flexibility, e.g. the user can go back at each step without running the whole script from the beginning
 	\item Pop-up windows and mouseover functions on buttons that guide the user through the process and explain the steps
-	\item Error messages if user does not enter allowed values.
+	\item Error messages if the user does not enter allowed values.
 \end{itemize}
 
-With the development of the GUI, we split our source code of the tool based on functionality, i.e. we create separate functions or modules that we then connect to several objects in the GUI. This process, also known as \textit{modularity} in software engineering, has various benefits for developing and maintaining the application: The code is %less cluttered and 
+With the development of the GUI, we split our source code of the tool based on functionality, i.e. we created separate functions or modules that we then connected to several objects in the GUI. This process, also known as \textit{modularity} in software engineering, has various benefits for developing and maintaining the application: The code is %less cluttered and 
 more structured %and readable. J
-and just by reading the main functions which call all other subfunctions you get a general overview and understanding of what the code does; it reduces redundancy %in the main code if the code gets split up into smaller subfunctions 
+and just by reading the main functions which call all other subfunctions one gets an overview and general understanding of what the code does; it reduces redundancy %in the main code if the code gets split up into smaller subfunctions 
 and helps debugging. Also, a clear naming convention adds to a better understanding of the code.
 
 %MODULARITY — main code is not as cluttered, things that are called again and again, migrate it. several functions use same code. 
@@ -238,14 +238,13 @@ and helps debugging. Also, a clear naming convention adds to a better understand
 %Beyond that, provided the interface, i.e. input and output of each modules, is well defined modularity allows a team of developers to work on the functionality of one single module without involving other modules. They are not distracted by functionalities that are not relevant, known as information hiding in software engineering. Also, it helps to keep the code short and simple and focused one core functionality. It is also useful to identify bugs early on in the development process.
 
 Here, this concept allowed us to not only handle front-end and back-end but also the different steps in the pipeline separately: 
-
-Every function representing one specific step in the pipeline or objects accessed by various functions is encoded in the back-end which is not visible and relevant for the future user. These modules are connected via callbacks to different objects in the GUI which represent the front-end, see figure \ref{fig:fronendBackend}.
+Every function representing one specific step in the pipeline or objects accessed by various functions is encoded in the back-end which is not visible or relevant for the future user. These modules are connected via callbacks to different objects in the GUI which represent the front-end, see figure \ref{fig:fronendBackend}.
 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.\textwidth]{../Figures/frontBack.png}
-	\caption{A schematic figure visualising how back-end and front-end communicate via a well-defined user interface: The back-end containing all the programs acts behind the scenes and controls the GUI; it sends content to the interface that get than transferred to the front-end. The front-end being the point of contact with the user contains the GUI and the design sends the user input data via the interface to the back-end.}
+	\includegraphics[width=.9\textwidth]{../Figures/frontBack.png}
+	\caption{A schematic figure visualising how back-end and front-end communicate via a well-defined user interface: The back-end containing all the programs acts behind the scenes and controls the GUI; it sends content to the interface that then get transferred to the front-end. The front-end being the point of contact with the user contains the GUI and the design sends the user input data via the interface to the back-end.}
 	\label{fig:fronendBackend}
 \end{figure}
 
@@ -315,9 +314,10 @@ Table \ref{table:modules} gives an overview of the different components and modu
 %----------------------------------------------------------------------------------------
 \section{Validation: Comparing the automated calculated angles with the manually calculated angles}
 
-As a preliminary validation we performed our software tool on 3 randomly chosen roots from 3 different experiments over a time of 330 minutes (or 100 minutes respectively). We compared both the automatically computed angles with the previously computed manual angle. As a second validation layer we also compared the latter to the computed angles with the turning point as user input.
-
+As a preliminary validation we performed our software tool on 3 randomly chosen roots from 3 different experiments over a time of 330 minutes (or 100 minutes respectively). We compared the automatically computed angles with the previously computed manual angles. As a second validation layer we also compared the latter to the computed angles with the turning point as user input.
+%\nopagebreak[4]
 Figure \ref{fig:resultPlots} shows the comparison of the angle of interest \( \Theta \), both of the manual as well as the automatically computed angle at about 11 times steps over a period of 330 minutes.
+
 
 %\begin{figure}[H]
 %\centering
@@ -352,45 +352,49 @@ Figure \ref{fig:resultPlots} shows the comparison of the angle of interest \( \T
 \includegraphics[width=.65\textwidth]{../Figures/2018-04-24.png}
 
 	\caption{
-	Comparing the manually computed angle and the angle(s) computed by \textit{RootSkel}; in blue: computed by \textit{RootSkel}, in red: computed by \textit{RootSkel} with the turning point as user input, in yellow: manually computed angle. Each plot is labelled by the data set it was taken from (named after date) and the root number (starting from the left hand side in an image). Computations of all three approaches exhibit similar patterns; the angle \( \Theta \) continuously decreases. %Differences between the three approaches are in the magnitude of 5 degrees, single points vary up to 12 degrees, see also figure [INSERT REFERENCE HERE]. 
-	Only the bottom plot was produced with the most recent, more robust and precise version of \textit{RootSkel} than previous ones.
+	Comparing the manually computed angle and the angle(s) computed by \textit{RootSkel}; in blue: computed by \textit{RootSkel}, in red: computed by \textit{RootSkel} with the turning point as user input, in yellow: manually computed angle. Each plot is labelled by the data set it was taken from (named after date) and the root number (starting from the left in an image). Computations of all three approaches exhibit similar patterns; the angle \( \Theta \) continuously decreases. %Differences between the three approaches are in the magnitude of 5 degrees, single points vary up to 12 degrees, see also figure [INSERT REFERENCE HERE]. 
+	%Only the bottom plot was produced with the most recent, more robust and precise version of \textit{RootSkel} than previous ones.
 		}
 \label{fig:resultPlots}
 \end{figure}
 
 
-Differences between the three approaches are in the magnitude of 5 degrees, single points vary up to 12 degrees, see also table \ref{table:resultTable}.
-Table \ref{table:resultTable} compares the automatically computed angle by \textit{RootSkel} with the manually computed angles of the 3 roots. We compute the absolute difference in the angles and introduce an \textit{improvement score} defined as 
+Differences between the 3 approaches are in the magnitude of 3 degrees, single points vary up to 7 degrees, see also table \ref{table:resultTable}.
+Table \ref{table:resultTable} compares the automatically computed angles by \textit{RootSkel} (without the turning point as user input) with the manually computed angles of the 3 roots. We compute the absolute difference in the angles and introduce an \textit{improvement score} \( \text{score}_{\text{imp}} \) defined as 
 \[
- \text{score}_{\textbf{imp}} := | \frac{ \alpha_{\text{RootSkel}} - \alpha_{\text{manual}} }{\alpha_{\text{manual}}} |
+ \text{score}_{\text{imp}} := | \frac{ \alpha_{\text{RootSkel}} - \alpha_{\text{manual}} }{\alpha_{\text{manual}}} |
 \]
-where $\alpha_{\text{RootSkel}}$ denotes the angle computed by \textit{RootSkel} and $\alpha_{\text{manual}}$ denotes the manually computed angle; this way we compare to the manually computed angles. How much our method is really an improvement (in accuracy) to the manual method %, i.e. how much closer it is to the theoretical true value, cannot be computed as any measurement will be subject to errors
-as we do not have access to the theoretical values (see also section \ref{sec:validation}). The improvement score on our 3 example data sets average between 5\% and 23\% with an ensemble average of 12.4\%, which can be concluded from table \ref{table:resultTable}.
+where $\alpha_{\text{RootSkel}}$ denotes the angle computed by \textit{RootSkel} and $\alpha_{\text{manual}}$ denotes the manually computed angle; this way we compare our \textit{RootSkel} angles to the manually computed angles. How much our method is really an improvement (in accuracy) to the manual method %, i.e. how much closer it is to the theoretical true value, cannot be computed as any measurement will be subject to errors
+as we do not have access to the theoretical values (see also section \ref{sec:validation}). The improvement score on our 3 example data sets average between 4.6\% and 9.75\% with an ensemble average of 8.0\%, which can be concluded from table \ref{table:resultTable}.
 
-When studying our data sets (manually computed and automatically computed angles), we could observe that as the angle approaches zero, the values get more volatile, i.e. the variance increases; this matches up with our observations presented in figure \ref{fig:resultPlots}. However, it should be noted that our improvement score is based on relative values and, therefore, can easily increase for small values. %(of manually computed angles and increasing or constant difference/ variance to the automatically computed angle).
+When studying our data sets (manually computed and automatically computed angles), we could observe that as the angle approaches zero, the values get more volatile, i.e. the variance increases; this matches up with our observations in figure \ref{fig:resultPlots}. However, it should be noted that our improvement score is based on relative values and, therefore, can easily increase for small values. %(of manually computed angles and increasing or constant difference/ variance to the automatically computed angle).
 
 
 \begin{table}[H]
 	\centering
 	%\includegraphics[width=.7\textwidth]{../Figures/2018-02-28-stats-new.png}
-	\includegraphics[width=\textwidth]{../Figures/2018-02-28-stats-new.png}
+%	\includegraphics[width=\textwidth]{../Figures/2018-02-28-stats-new.png}
+	\includegraphics[width=0.9\textwidth]{../Figures/2018-02-28_stats.png}
 	%\includegraphics[width=150mm,scale=15]{../Figures/2018-02-28.png}
-	\includegraphics[width=\textwidth]{../Figures/2018-03-07-stats-new.png}
-	\caption{Comparing the automatically computed angle by \textit{RootSkel} with the manually computed angles on the 3 roots. Average values of the difference in the angles and the improvement score are highlighted by a red margin; values that highly skew the results and are advised to be left out when doing the average calculations are highlighted in yellow.
+%	\includegraphics[width=\textwidth]{../Figures/2018-03-07-stats-new.png}
+	\includegraphics[width=0.9\textwidth]{../Figures/2018-03-07_stats.png}
+	\caption{Comparing the automatically computed angles by \textit{RootSkel} with the manually computed angles on the 3 roots. Average values of the difference in the angles and the improvement score are highlighted by a red margin; poor values that highly skew the results (on this small sample) and are advised to be left out when doing the average calculations are highlighted in yellow.
 	The p-values of a two sample t-test are highlighted in green.\\ 
-	It should be noted that we made an educated estimation of the measurement error, i.e. the total error, to be about about 5\% of our computed \textit{RootSkel} value. We round this error to two significant digits according to convention and computed the absolute difference in the angles and the improvement score with this precision; we only round once we present the values to avoid rounding errors. }
+	It should be noted that we made an educated estimation of the instrumental error to be about about 2\% of our computed \textit{RootSkel} value. We rounded this error to two significant digits according to convention and computed the absolute difference in the angles and the improvement score with this precision; we only round once we present the values to avoid rounding errors.}
 	\label{table:resultTable}
 \end{table}
 \begin{table}[H]
 %	\newpage
-	\includegraphics[width=\textwidth]{../Figures/2018-04-24-stats-new-stdv.png}
+%	\includegraphics[width=\textwidth]{../Figures/2018-04-24-stats-new-stdv.png}
+	\includegraphics[width=\textwidth]{../Figures/2018-04-24_stats.png}
 	\caption{See table \ref*{table:resultTable}.}
 	\label{table:resultTable2}
 \end{table}
 
-As a validation that the computed values of \textit{RootSkel} are similar enough to the manually computed values, we perform a t-test between the two sets of angles.
+%As a validation 
+To show that the computed values of \textit{RootSkel} are similar enough to the manually computed values, we perform a t-test between the two sets of angles.
 In all three cases we fail to reject the null hypothesis (at a 95\% confidence interval), implying that the difference between each of the two samples is not statistically significant. The p-values of the two sample t-tests can be found in tables \ref{table:resultTable} and \ref{table:resultTable2}.
-Additionally, we perform precision testing on one of the 3 randomly selected roots: Comparing the standard deviations (based on 3 iterations each) shows that the \textit{RootSkel} method is on average more than 25\% more precise than the manual method (see table \ref{table:resultTable2}).
+Additionally, we perform precision testing on one of the three randomly selected roots: Comparing the standard deviations (based on three iterations each) shows that the \textit{RootSkel} method is on average more than 25\% more precise than the manual method (see table \ref{table:resultTable2}).
 
 %we fail to reject the null hypothesis. So we are not "rejecting the null", implying that we don't have enough evidence to assume that the difference in means is different from zero.
 
