@@ -10,7 +10,7 @@
 \begin{table}[H]
 	\centering
 	\includegraphics[width=1.\textwidth]{../Figures/components2.pdf}
-	\caption{The different components and modules of \textit{RootSkel} with a description of each of them; the most important ones containing the core functionality of \textit{RootSkel} are framed in red, the high-level components are shaded in yellow. A version of an increased font size can be found on \url{https://github.com/burfel/root-tip-angle/blob/master/report/Figures/components.pdf}.}
+	\caption{The different components and modules of \textit{RootSkel} with a description of each of them; the most important ones containing the core functionality of \textit{RootSkel} are framed in red, the high-level components are shaded in yellow. A version of increased font size can be found on \url{https://github.com/burfel/root-tip-angle/blob/master/report/Figures/components.pdf}.}
 	\label{table:modules}
 \end{table}
 
@@ -61,7 +61,7 @@ The GUI lets the user visualise the angle that is computed. This not only helps 
 %----------------------------------------------------------------------------------------
 \section{\textit{RootGUI} for Dummies}
 
-%REMARK: \textit{For environmental reasons, we do not show \textit{RootGUI}, the manual of \textit{RootSkel} in the printed version. We refer to the electronic version to view the easy to read and fun \textit{RootGUI} for Dummies manual. To leave the rest identical to the electronic version, we keep the page numbers from the full (electronic) version of the report.}
+%REMARK: \textit{For environmental reasons, we do not show \textit{RootGUI}, the manual of \textit{RootSkel} in the printed version. We refer to the electronic version on \url{https://github.com/burfel/root-tip-angle/blob/master/report/main.pdf} to view the easy to read and fun \textit{RootGUI} for Dummies manual. To leave the rest identical to the electronic version, we keep the page numbers from the full (electronic) version of the report.}
 
 %----------------------------------------------------------------------------------------
 \subsection{Intro}
@@ -788,10 +788,23 @@ As a last suggestion, different cameras could be compared to see if it does have
 %----------------------------------------------------------------------------------------
 \chapter{Literature review}\label{litreview}
 
+The following 6 pages gives an overview of different software image processing tools for plants from the last 10 years. All have their strengths and weaknesses; popular ones are highlighted by a read margin. An overview of tools developed before the tool \textit{RootTrace} can be found in \cite{french2009high}.
 
 %\begin{figure}[H]
 %	\centering
-%	\includegraphics[width=\textwidth]{../Figures/manual/literature.pdf}
-%	\caption{Software tools that can take measurements of roots: All have their strengths and weaknesses; popular ones are highlighted in yellow. Adapted from \cite{french2009high}.}
+%	\includegraphics[width=\textwidth]{../Figures/literature_final.pdf}
+%	\caption{Software image processing tools for plants in the last 10 years: All have their strengths and weaknesses; popular ones are highlighted by a read margin. An overview of tools developed before \textit{RootTrace} can be found in \cite{french2009high}.}
 %	\label{fig:lit}
 %\end{figure}
+
+\includepdf[pages=-, angle=90]{../Figures/literature_final.pdf}
+
+
+There are a number of web-based software tools to visualise and analyse root system architecture available; the ones that are still being supported include:
+\begin{itemize}
+	\item \textit{ObjectJ} [\url{http://www.plant-image-analysis.org/software/objectj}]
+	\item \textit{Rhizo-II Root Biometrics Suite} \url{[https://www.psrg.org.uk/plant-biometrics.html]}
+	\item \textit{Rootfly} [\url{http://www.plant-image-analysis.org/software/rootfly}].
+\end{itemize}
+
+In recent years, a number of Machine Learning and Deep Learning plant tools have been developed \cite{pound2017deep,lee2018automated,navarro2016machine}; however, they often require substantial hardware systems including a GPU (Grahics Processing Unit) to train the complex networks in a feasible time.

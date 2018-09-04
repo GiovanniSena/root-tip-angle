@@ -502,6 +502,7 @@
     \strng{fullhash}{CCYH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{addendum}{[Accessed 29 August 2018]}
     \field{title}{Image and Audio Processing}
     \verb{url}
     \verb http://www.eie.polyu.edu.hk/~enyhchan/a_iap18.htm
@@ -592,6 +593,7 @@
     \strng{fullhash}{ER1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{addendum}{[Accessed 29 August 2018]}
     \field{title}{Basic Principles of Imaging Science II}
     \verb{url}
     \verb https://www.cis.rit.edu/class/simg712-90/
@@ -1377,6 +1379,177 @@
   in image-based plant phenotyping}
     \field{journaltitle}{GigaScience}
     \field{year}{2017}
+  \endentry
+
+  \entry{lobet2011novel}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LG}{%
+         family={Lobet},
+         family_i={L\bibinitperiod},
+         given={Guillaume},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Pag{\`e}s},
+         family_i={P\bibinitperiod},
+         given={Lo{\"\i}c},
+         given_i={L\bibinitperiod},
+      }}%
+      {{hash=DX}{%
+         family={Draye},
+         family_i={D\bibinitperiod},
+         given={Xavier},
+         given_i={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Am Soc Plant Biol}%
+    }
+    \strng{namehash}{LGPLDX1}
+    \strng{fullhash}{LGPLDX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{pp\bibrangedash 111}
+    \field{title}{A novel image analysis toolbox enabling quantitative analysis
+  of root system architecture}
+    \field{journaltitle}{Plant physiology}
+    \field{year}{2011}
+  \endentry
+
+  \entry{lobet2013novel}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LG}{%
+         family={Lobet},
+         family_i={L\bibinitperiod},
+         given={Guillaume},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=DX}{%
+         family={Draye},
+         family_i={D\bibinitperiod},
+         given={Xavier},
+         given_i={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {BioMed Central}%
+    }
+    \strng{namehash}{LGDX1}
+    \strng{fullhash}{LGDX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{1}
+    \field{title}{Novel scanning procedure enabling the vectorization of entire
+  rhizotron-grown root systems}
+    \field{volume}{9}
+    \field{journaltitle}{Plant Methods}
+    \field{year}{2013}
+  \endentry
+
+  \entry{babe2007smartroot}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BA}{%
+         family={Bab{\'e}},
+         family_i={B\bibinitperiod},
+         given={Aur{\'e}lie},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=DX}{%
+         family={Draye},
+         family_i={D\bibinitperiod},
+         given={Xavier},
+         given_i={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BADX1}
+    \strng{fullhash}{BADX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Workshop on Growth Phenotyping and Imaging in Plants}
+    \field{title}{Smartroot: interactive analysis and annotation of root
+  morphology in time series of difficult root system images}
+    \field{year}{2007}
+  \endentry
+
+  \entry{galkovskyi2012gia}{article}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=GT}{%
+         family={Galkovskyi},
+         family_i={G\bibinitperiod},
+         given={Taras},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Mileyko},
+         family_i={M\bibinitperiod},
+         given={Yuriy},
+         given_i={Y\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bucksch},
+         family_i={B\bibinitperiod},
+         given={Alexander},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={Moore},
+         family_i={M\bibinitperiod},
+         given={Brad},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=SO}{%
+         family={Symonova},
+         family_i={S\bibinitperiod},
+         given={Olga},
+         given_i={O\bibinitperiod},
+      }}%
+      {{hash=PCA}{%
+         family={Price},
+         family_i={P\bibinitperiod},
+         given={Charles\bibnamedelima A},
+         given_i={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=TCN}{%
+         family={Topp},
+         family_i={T\bibinitperiod},
+         given={Christopher\bibnamedelima N},
+         given_i={C\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=IPAS}{%
+         family={Iyer-Pascuzzi},
+         family_i={I\bibinitperiod-P\bibinitperiod},
+         given={Anjali\bibnamedelima S},
+         given_i={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=ZPR}{%
+         family={Zurek},
+         family_i={Z\bibinitperiod},
+         given={Paul\bibnamedelima R},
+         given_i={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Fang},
+         family_i={F\bibinitperiod},
+         given={Suqin},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {BioMed Central}%
+    }
+    \strng{namehash}{GT+1}
+    \strng{fullhash}{GTMYBAMBSOPCATCNIPASZPRFS+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{116}
+    \field{title}{GiA Roots: software for the high throughput analysis of plant
+  root system architecture}
+    \field{volume}{12}
+    \field{journaltitle}{BMC plant biology}
+    \field{year}{2012}
   \endentry
 
   \entry{abas2006Intra}{article}{}
@@ -2515,6 +2688,49 @@
     \field{volume}{13}
     \field{journaltitle}{Plant methods}
     \field{year}{2017}
+  \endentry
+
+  \entry{navarro2016machine}{article}{}
+    \name{author}{4}{}{%
+      {{hash=NPJ}{%
+         family={Navarro},
+         family_i={N\bibinitperiod},
+         given={Pedro\bibnamedelima J},
+         given_i={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PF}{%
+         family={P{\'e}rez},
+         family_i={P\bibinitperiod},
+         given={Fernando},
+         given_i={F\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Weiss},
+         family_i={W\bibinitperiod},
+         given={Julia},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=ECM}{%
+         family={Egea-Cortines},
+         family_i={E\bibinitperiod-C\bibinitperiod},
+         given={Marcos},
+         given_i={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Multidisciplinary Digital Publishing Institute}%
+    }
+    \strng{namehash}{NPJ+1}
+    \strng{fullhash}{NPJPFWJECM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{641}
+    \field{title}{Machine learning and computer vision system for phenotype
+  data acquisition and analysis in plants}
+    \field{volume}{16}
+    \field{journaltitle}{Sensors}
+    \field{year}{2016}
   \endentry
 \endsortlist
 \endinput
