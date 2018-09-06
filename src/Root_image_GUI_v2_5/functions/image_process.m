@@ -12,8 +12,6 @@ rooty = evalin('base', 'rooty');
 
 
 
-
-
 originalsize = size(original_roots_img);
 triple_root_points = [0:2]*originalsize(1)*originalsize(2)+(rootx-1)*originalsize(1)+rooty;
 

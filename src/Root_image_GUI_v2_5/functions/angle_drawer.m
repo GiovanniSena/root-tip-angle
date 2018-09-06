@@ -43,13 +43,13 @@ skelmat = cat(2,skecolx,skerowx);
 % size(skelmat)
 % UPDATE (29.8.18, 14:08) - Just going directly for skelmat(:,2)- coeff(1) *
 % skelmat(:,1) - coeff (2).
-% The next line I took from Lychee's getAngle code and altered.
+% The next line I took from getAngle code and altered.
 % 29.8.18, 14:19 - Thanls to some low key debugging I realized I should change ==0
 % with <0.5. I shall try it now
 % 29.8.18, 19:51 - added round and chnged to polyval
 [turningP_indy,~] = find(abs(skelmat(:,2) - round(polyval(coeff,skelmat(:,1)))) == 0);
 
-% The next line I took from Lychee's getAngle code
+% The next line I took from getAngle code
 % UPDATE (29.8.18 12:18) tweaked it into a for loop
 % for (i=1:length(points_from_line(:,1)))
 % [turningP_indy,turningP_indx] = find(skelmat(:,1)==points_from_line(i,1) & skelmat(:,2)==points_from_line(i,2));
