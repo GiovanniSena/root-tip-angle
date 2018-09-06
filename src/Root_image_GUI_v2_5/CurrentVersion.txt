@@ -1,0 +1,65 @@
+The current version is (4.9.18 03:49)
+v2.5
+
+Changes from v 2.2:
+* Implemented putting a slider beneath 'Foreign object removal' instead
+of the user clicking yes repeatedly.
+* Implemented the choice to save the angle or not. 
+* Now the entire process when clicking one of the angle getting buttons is 
+handled by a new function named angle_handler.
+* Implemented a toggle button under choose points which controls whether to 
+choose tip specifically
+
+Changes from v 2.0:
+* Tweaked and changed the image_process, and added small things.
+* Added a slider set it so it will be between 0.5 and 3 and start at 1.75.
+Now I'll tweak the colour ranges so that c_i = proc_str*(min(1,0.4+colormeans(i))),
+where proc_str = 3 - process_str.Value
+
+Future plans:
+* Implementing giving the user the choice whether or not to save 
+the angle they got.
+
+Changes from v 1.5.4:
+* A complete revamp of the image_process function that uses a more flexible filtering
+technique and is more efficient and scaleable.
+* Will now show the filtered grayscales after Process image
+* Small tweaks to root_skel to accomodate the new image_process
+* Both of the old image_process and root_skel still exist with an ending of '_old'.
+
+
+Changes from v1.5.3:
+* Change the starting point of the drawn line from the user's choice of tip
+to the end of the skeleton.
+
+
+Changes from v1.5:
+* Decided to add clearing of variables to image_choose so you won't have to 
+close the GUI.
+* Implemented drawing lines to show the angle.
+
+Bug fixes:
+* Now you can get the curvature based angle even if you didn't choose a max_curv_point.
+
+Changes from v1.4:
+Write changes from 22.8.18 - NOT DONE YET - 24.8 14:59
+* Making the default save name of the .mat file as image + root number.
+I did a similar thing for the figures.
+* The angle in a file with a header consisting of image and root number.
+* Updated the var_loader to clear the variables
+* Added an option to crop the skeleton directly instead of cropping the image
+and getting a new skeleton
+
+Bug fixes:
+* Getting the angle buttons enabled when loading variables.
+
+Changes from v1.3:
+Applying 'addpath' to include the functions folder.
+Creating a pop up message when image process is through
+implement a button for that getAngle.m and a (defunct for now) button for curvature.
+Created loading buttons for variables and a loading for figures.
+
+
+Bug fixes:
+skel_clean DIDN'T ASSIGN THE RESULT TO BASE WORK SPACE BEFORE. FIXed.
+In the clear image command: Both buttons told the program to clear the left axes. fixed

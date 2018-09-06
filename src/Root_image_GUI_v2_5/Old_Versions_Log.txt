@@ -1,0 +1,178 @@
+%% % LOG - Started updating at 17.7.18 10:53
+
+% Had a problem that the colour filter kind of destroyed the root. So I
+% opened a live script and started tweaking. Turns out the grayness
+% checker was too restrictive. So I'm trying out an approach based on the
+% original colour ranges' size.
+
+% 11:10
+% Decided to adjust the previous idea by applying a multiplication to
+% adjust to the multiplication of the data itself. Noticed another
+% problem: now the root is cut. Will first try to reduce spur.
+% It was fixed at the cost of a thorn.
+% Will now apply to original code.
+
+% 11:26
+% Decided to check to loop I previously used in the brightness filter.
+% The original one is too much. Will try tweaking.
+% Found that if I tweak the mult. factor to 1.1 And add a scaled filter
+% for a bottom constraint I get better results. Will try some more
+% tweaking. Changed the number of runs to 7.
+% Will now apply to original code.
+
+% 12:26
+% We will now try inverting the image at the beginning as per
+% request.
+% Also, will now try median filtering before the user chooses points, both for
+% his sake and the script's.
+% The median filtering was a complete failure. Will try to somehow
+% deconvolve/deblur. The good functions require something called PSF but
+% there is a blind function that uses a guess for PSF and returns a better
+% estimate. So it is possible to then immediately use a better function.
+% I shall test in the live script.
+
+
+
+% %18.7.18% %
+
+%10:41
+% Had an idea: checking the surroundings of the points and if they are
+% bright then choose a smaller crop window. Will try to implement now.
+
+% 13:16
+% There are some updates written all over, but that's not why I'm here.
+% It would seem the filters are being too restrictive on one of the
+% roots. first of all, removed 2 excess medfilts and decided to add a
+% condition that if the colour ranges are too small so we'll enlarge them.
+
+% 13:36
+% Still didn't do the condition but I did tweak the colour difference,
+% which didn't work well, which made me decide to do the
+% *1.1*1.1*(1.1+_^2) even earlier and activate it on the colour filters as
+% well. and ergo the brightness filter will also be affected.
+
+% 18:13
+% Had a genius idea on how to remove thorns EFFECTIVELY
+% Doing skel-bwmorph(branchpoints) and then bwareaopen and then fill in
+% the gaps. Will try
+
+% 18:28
+% maybe removing the end points before performing the cleaning will hell.
+
+% 19.7.18
+
+% 1:23
+% Will try to use 'adaptthresh' function on the lychcrop2 at the beginning
+
+% 1:47
+% After finding that you can change the neighbourhood size achieved good
+% results. Will try to implement at the beginning.
+
+% 12:39
+% Accidentally came across gamma adjustment, and it might just solve all of
+% our problems. will try to implement at the beginning.
+
+% 12:59
+% Tweaked some more - sensitivity in imbinarize to 0.95 and spur to 15
+% Then tweaked to 1.
+
+% 13:05
+% Tweaked so all 3 final bwareaopen (skeletor 1+2 and uniskel) will have
+% the number 400. Seems to drastically improve.
+% Also removed spur from unskel.
+% Tweaked back for skeletor2 to 100.
+% And was forced to tweak in uniskel to 70.
+
+% 13:23
+% In 4th image, multiplying by 3 from the beginning was problematic. I'll
+% try moving it to after the gamma and check.
+% Now I'll try to move to after the local thresh.
+% Forced to cancel. Let's go over the other images and hope for the best.
+% Changed the multiplication in front of the gamma correction to 18 as a
+% result. But now I think that I should change it to 10 and then multiply
+% the local thresh by 2. will try.
+
+% 13:33
+% Decided instead that I will try to implement a condition that if the
+% image is too dark multiply by 3.
+% After looking at the mean of the 4 pictures, decided on:
+% if(mean(mean(mean(lych_tst2)))<0.4)
+
+%14:33
+% Changed the statistic of the adpaative thresholding to median.
+% I think it improved it.
+
+%15:17
+% I have decided to try and have the user choose the file.
+% I have successfully found a function for that
+% uigetfile
+% Will implement.
+
+% 15:24
+% Needed to change to include path. Also added the '*.jpg'.
+
+% 15:33
+% UPDATE - Replaced the content of imread to accomodate the user
+% choosing the file.
+
+% 17:40
+% Time to implement the feedback of taking an average of the colours of the
+% neighbourhoods for the points.
+
+% 18:52
+% After dawdling, I will move the implementation to main code.
+
+% 19:01
+% will try to implement a question for the user whether to clean the photo
+% further. Then will try to implement cleaning
+
+% 19:36
+% Decided to add a new variable if the user wants cleaning so that he could
+% revert one step back if he chooses to. Will also present the choice to
+% revert of course.
+
+% 23:26
+% I have now found a way to do a "freehand" crop of sorts.
+% Will add an optional section that allows the user to freehand crop.
+
+% 20.7.18
+
+% 11:42
+% wanted to try to implement a cropping out of offshoots, using the imfreehand
+% like yesterday night. But just before I started I had a better idea.
+% I will use the freehand crop the user chose for graywarden for BOTH
+% graywarden AND brighttst.
+
+
+
+% 10.8.18, 09:35
+
+% Started lychtst3.
+
+% 09:50 
+% I'm exploring things. For example, uisave for saving the workspace
+
+% 13:04
+% Time to implement the 3 step program:
+% 1: The user chooses only the tip, which HAS to be included in the final
+% skeleton.
+% 2: The user chooses 5 points close to the tip which will get heavier
+% weight.
+% 3: The user chooses points on the rest of the root.
+
+% 13:29
+% Decided to add checks to point choice. Will create a while loop that will
+% alert the user if he chooses too much or too little. And then decided to
+% export to function.
+
+% 14:47 
+% Had a long break. Let's continue:
+% Now we now - rootx(1) is the tip, 2-6 are the close to the tip and the
+% rest are.. the rest.
+
+% 15:46
+% Decided to ask for the tip AFTER the cropping.
+% Now we can force the tip to be white just before binarization.
+
+% 16:08
+% Will try to extend the white to neighbours.

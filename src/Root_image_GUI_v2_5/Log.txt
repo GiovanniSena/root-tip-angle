@@ -1,0 +1,763 @@
+*************************************************
+*----Update log-----Created: 10.8.2018,21:18----*
+*************************************************
+
+I have decided to create the beta version.
+Now that I started creating the GUI, I have decided to split the process into functions and
+use several buttons in the GUI.
+I will now start to implement.
+For the progress so far see Old_Versions_Log.
+I will start by migrating a copy of GUItest and changing it to a beta.
+
+I then went on to separate the image choosing and image zooming into functions 
+and make the appropriate changes to the GUI code.
+
+-21:53
+I realised the flag for the zoom is no longer necessary, at least not in the 
+same manner, since I shall soon add a zoom button.
+
+-22:02
+Migrated the point choosing functionality to an external function and will
+now update to the one from lychtest3.
+
+-22:19
+I have started migrating the rest of the script.
+Started by migrating all of it to a function called root_skel.
+Now will delegate all the stuff before the imfreehand to image_process,
+the crop to an image_freecrop and the skeleton will stay where it is.
+Will create necessary buttons and callbacks.
+
+-23:04
+I thought I needed to change something I didn't need to. 
+Now I will move the image(cropped_roots_img) to the end of point_choose.
+
+-23:38
+Small change - change the prompt of the cleaning.
+Big change that will be implemented - migration of cleaning
+
+-- 11.8.18
+
+-01:32
+Discovered impoly, which might be easier to handle than imfreehand.
+But! I realised that I don't have to choose between them, I can let the user do so.
+
+-01:39
+Will try to implement the forcing of the tip now.
+Just had an idea - maybe instead of the user clumsily creating a line, we will ask him to 
+use impoly to encircle the area between the end of the skeleton and the tip
+and whiten it.
+
+-18:17
+Several minutes ago started working on implementing a save figure button.
+Had to search online for a solution for saving a specific axes.
+Will use check boxes to allow the user to save either or both of the axes.
+
+-- 12.8.18
+
+-18:45
+Decided to change a little the force tip function.
+Instead of 1 we'll try to use root_points_color.
+
+-- 13.8.18
+
+-08:53
+Am in the process of implementing the clear image (+left and right checkboxes) and show image.
+Show image becomes available after Process image.
+
+-09:25
+Decided to scrap force_tip and instead to an open polygon that forces unified skeleton.
+
+-09:30
+Moved as a result the enabling of the shower to get skel.
+
+-09:34
+Will show skeleton with picture on the right image at shoe skeleton.
+
+-10:10
+Decided to change forcetip to imline.
+
+-13:26
+Starting to implement the getting the point of most curvature in final_prep.
+Will take the point in skelmatR closest to where the user pressed.
+
+-13:35
+Decided to migrate "point_get" to a separate file so that final_prep can also use it.
+Hopefully it doesn't do problems. And removing the srcx and srcy which are redundant.
+and so IMPORTANT: POINT_CHOOSE AND POINT_GET ARE SEPARATE NOW. THE NEW FINAL_PREP 
+WILL NOT WORK PROPERLY WITH THE OLD POINT_CHOOSE AND WITHOUT A SEPARATE POINT_GET!
+
+-13:52
+I realised the save variables doesn't do what it's supposed to. Will try to fix quickly
+
+-13:59
+Will migrate the saving function to a new function.
+WARNING: Root_image_GUI_1.3 and further NEED THE NEW FUNCTION!
+
+-14:25
+Realised I had to ask the user for a point in final_skeleton for the whole curvature point
+to work. So implementation ensued
+
+-14:42
+A new decision has been made. We move the cropping in final_prep to after the user's
+point selection and we create a new skelmatR_simp which includes the whole root 
+and goes with the user's selection if he chooses to choose a point.
+
+-14:59
+Had to make more changes to var_saver but now it works! Root_image_GUI_v1.3 
+is almost ready! Or if I don't realise why it takes the wrong part of the 
+root then it's ready!
+
+-15:16 
+I understood the problem!!!
+Find uses linear indices, where it goes over the columns instead of the rows. 
+So I need to rotate unified skeleton first and then not rotate final skeleton later!
+Hooray!
+
+-15:29
+I fixed it! now it is ready! HOORAY!
+
+To do list:
+Applying 'addpath' to include the functions folder.
+Creating a pop message when image process is through
+Searching for a way to stop the running of a function if another button is pressed.
+
+-- 15.8.18
+
+-01:15
+Implemented first item in the to do list
+
+-01:25
+Implemented the second item.
+
+-01:30
+In skel_clean IT DIDN'T ASSIGN THE RESULT TO BASE WORK SPACE BEFORE. WILL FIX.
+
+-01:34
+Discovered another bug in the clear image command:
+Both buttons told the program to clear the left axes. fixed
+
+-17:51
+Got new getAngle.m. will implement a button for that and for curvature.
+
+-18:09
+Decided to create loading buttons for variables and a loading for figures with 
+a radio button for deciding which axes to show in.
+Will also implement in the var_loader the enabling of the angle calculating button/s.
+But first decided to migrate the figure saving to fig_saver.
+
+-18:50
+Only partially implemented and will continue later.
+
+-20:41
+After struggling with the implementation of displaying the loaded figure in 
+the correct axes, I have discovered that a panel can be a parent to an axes.
+And so, I am kinda forced to introduce two panels and put the orig_img and alt_img 
+axes there in order to implement the loading properly.
+
+-21:01
+After a long time, I decided it is time to give up on the clear image.
+Technically it does load the figure into the appropriate axes.
+But:
+0 It shows a small version
+0 Clear doesn't work on it
+0 And when you try to open another file it will show beneath it.
+The third bug I might easily find out how to solve and maybe the first one too.
+But I've had it.
+I'll add a warning or something and be done with it.
+Or not even that.
+Now I'll add to the load variables that it will enable the appropriate angle button/s.
+And maybe migrate to a new function.
+
+-21:17
+Finished implementing a variable loading function that also enables appropriate 
+buttons.
+
+-21:23
+Applied the following small fix to getAngle:
+changed the output argument's name to match the actual name of variable in code,
+meaning a -> aoi.
+Also a minute later suppressed output in her function because I already handled it and about to change it 
+anyways to a popup message.
+
+-- 16.8.2018
+
+-17:54
+Downloaded a newer version of her code and applied the same changes.
+
+-- 22.8.2018 
+
+-12:04
+To DO LIST:
+0 Telling the user to save the .mat file as image + root number.
+0 The angle in a file with a header consisting of image and root number 
+(can use the previous thing).
+0 (Lower priority) super imposing the lines and the angle on the root.
+
+-12:18
+Let's start with the first item.
+First, in image_choose, I'll add an assignin that saves the file_name to 
+the base workspace. Then, in var_saver I will ask the user for the number of the 
+root starting from the left. Then, I will concatenate them and add .mat and
+make it the filename that the uisave starts with.
+
+-12:39
+It was successfully implemented and then I had an idea:
+I will use a similar name for the figures!
+The Idea is using assignin to save most of the savename (without extension)
+and then if it exists already in the base workspace, then there is no need
+to ask for the root number again and again.
+And then I realised I should migrate the part where the user enters the root number and the savename is created
+to a separate function since the first time can happen with a save figure and
+then I realised I will remove the file extension and only complete the relevant thing
+for each option. Let's go!
+
+-12:53
+Implemented successfully!
+
+-13:24
+I can now use the savename in the implementation of the second item.
+I will implement it in a function that will be called when the user presses the button to calculate
+the angle (either button).
+
+-14:11
+Implemented but I also found a bug:
+the following if:
+if ((exist('savename','var')) ~=1)
+is not doing what I intended it to do: 
+It does not check the base workspace for that variable.
+And therefore, even if it is there the user is forced to give th3e root number again and again.
+Luckily, I also came up with the solution fairly quickly:
+if (evalin('base',"(exist('savename','var'))") ~=1).
+Will implement.
+
+-14:14
+Implemented successfully and also added
+fclose(fileID)
+to the end of angle_file.
+
+-15:12
+Decided to add the savename to the list of saved variables to allow the 
+named saving of things after loading a .mat file.
+
+-16:39
+Downloaded getAngle2.m that just finished.
+changed to getAngle.m
+
+-16:48
+Told to change the angle_file to a general file for all angles.
+So changed it to append instead of write and the formatSpec:
+formatSpec = '%s  %8.4f';
+And changed the naming to 'root_angles.csv'
+
+-16:52
+Will now update the var_loader to clear the variables and also to
+load the savename variable to the base workspace.
+
+-16:57
+Decided to add another input to angle_file to discern between user assisted
+angles and ones from curvature calculation. And of course will make sure it 
+writes to a regular file and a'user_assisted' file.
+
+-17:16
+I need to make a change to getAngle:
+change the first if blocks from asking if the max_curv_point exists
+to if it's empty or not. 
+
+-17:35
+I need to move the enabling of the angle button/s from var_loader to the
+script of the GUI for it to work, including an if which resembles the one from the 
+update 14:11
+
+-17:40
+Forgot to add the \n to the angle_file 's formatSpec. 
+Will do it now.
+
+-18:46
+Developed new getAngle with a new feature:
+uniqueness.
+I need to output a message if it is not unique (uniquness == 0)
+
+--23.8.18
+
+-20:44
+Decided to try something.
+I realised that in the image_crop I could just remove straight from unified_skeleton
+instead of cropping the grayscales. And so, I was about to change the image_crop
+but instead I'll just use it to create an additional function for cropping the skeleton directly!
+I should have thought about it before! If it will work it will also make the cleaning
+process redundant.
+
+-20:55
+I implemented it without removing the other options, so we now have it as a 
+fallback.
+
+-21:26
+Another thing that might help is cropping before processing the image.
+
+-- 24.8.2018
+
+-02:04
+I think I should change the initial cropping to include less of the original image.
+To maybe have less noise.
+
+-- 26.8.18 
+
+-14:19
+I changed something in final_prep, since we ended up not using skelmatR,
+so skelmatR_simp must be created anyways. So I moved the creation outside of the 
+ifs.
+
+-14:49
+Will change angle_file to save it to a file named date_root#_angles.csv.
+Implemented by 14:59.
+
+-15:41
+Decided to add clearing of variables to image_choose so you won't have to 
+close the GUI. Implemented correctly by 15:45.
+
+--28.8.18
+
+-19:12
+As commanded by the supreme leader, we shall now implement drawing lines that
+will show what the angle in question is. And if I'll figure out how to do it I'll
+do the little angle arc as well. We shall call this new function that will 
+handle this - angle_drawer.
+We shall call it from the angle getting buttons. The user assisted one is 
+easy because we have both the tip and the max_curv_point so we just need to 
+use the line function to draw a line between them and also some random 
+horizontal line from max_curv_point. The non user assisted one is a little tougher.
+I thought I'll just take a very long test line and then see where it intersects 
+with the skeleton, so basically xtst = x - 50 * cos(root_angle) etc. 
+From there it's the same.
+
+-20:52
+Only now starting to implement.
+
+-22:08
+While I successfully implemented for the user assisted, I did find out something
+disturbing - there is a chance the max_curv_point wasn't on the skeleton all this time.
+
+-22:15
+I realised max_curv_point is not very useful since it is for a lying down
+skeleton. So I can only use the approach for no second point given.
+
+--29.8.18
+
+-14:06
+I think I know how to solve it. I need to calculate the equivalent of y-f(x).
+
+-20:01
+FINALLY!!! SUCCESSSSSS!!!!!!!!!!!!! It just boring bug fixing so I will not 
+bore you with the details.
+
+-20:04
+Addef it to the curvature script angle getting.
+
+-- 30.8.18
+
+-10:57
+I realised that I can make angle_drawer even better by using the last element of the skeleton
+instead of the user's tip. I am trying to think of the best way to do so.
+After a short thought I have decided to override the tipx and tipy just before the call to
+angle_drawer with the result of the find function that finds the last 1 in the unified_skeleton.
+
+-11:12
+I have again bumped into the problem that find treats the 'last' index going column to column 
+when I need the lowest row. I thought of a (little clunky) solution.
+Finding all 1's, and taking the maximal row and then finding the index and using it to 
+extract the tipx as well. Will now implement.
+
+-11:24
+In order for that to work properly though, I have to choose a specific row from turn point.
+I'll try taking the maximal x value.
+After about 3 minutes I have implemented it correctly.
+
+-11:43
+Realised I need to refine the approach. For small positive and any negative
+results, and for angles higher then a certain threshold, I need to choose a 
+point which is not necessarily the lowest. You know what? I'll simply work
+under the (dubious) assumption that the root is never bent too far right and
+in addition I'll work taking into account that the output for the negative
+angles will be actually around 160. Success (maybe?) at 11:49. Let's hope
+for the best. Will only update that if failure ensues.
+
+-11:56
+Actually had to make small fixes for it to work. But whatever.
+
+-12:28
+Fixed a bug by moving the assignin of root_angle up.
+
+--31.8.18
+
+-20:20
+My angle_drawer is vulnerable to errors so I will include a try catch block
+that changes the cos and sin to angle-1.
+
+-20:28 
+Will try to move the try catch to the main
+
+
+
+--01.09.2018
+
+-00:35
+I've had an idea to revamp the preprocessing phase. So I'll run it down.
+We get the user input and the range. Everything above the range gets 
+inverted. Then, everything below the range gets divided and what's in the range gets multiplied,
+possibly using an arctan or similar/ Then we do a round two using the neighbourhood
+of each point, with the goal of locating the pixels on the edge of the root
+(one side dark and one side light), and darken the outside even more. It
+might create a 'halo' around the root. Hopefully after that some filter 
+function will be able to discern the root. Let's start testing with a live script.
+
+-00:43
+A little change in the above - instead of blind inversion, an inversion +
+a map to the range between 0 and the min bound.
+
+-00:58
+Alright, so for 0<x1<x2<1,
+f(x) = (x-x2)*(x1/(1-x2))
+Then, we will take the values in x1<x<x2, and apply: f(x) = [(1-x0)/(x2-x1)]*x + [(x2*x0-x1)/(x2-x1)] 
+Where x0 I need to determine.
+
+- 01:14
+Alright. For x1<0.25 x0 = x1 + 0.5. Else, we'll take max(x2, min(3 * x1,1)).
+
+-01:41
+A new problem presented itself. The current root has very low values. And so,
+I believe I need to make changes to the way I choose the colour ranges. 
+Make it tighter the smaller x2 is. From the assumption that if it is low that means there aren't
+values much larger than x2, and that there is low contrast anyway so hopefully
+the tighter range will help. We will make it [mean-c*std,mean+c*std] where
+c = 3*(min(1,3*mean))
+
+-02:00
+While working on the colour approach, I realised that for that approach there is
+an additional thing to take into account. How are we handling the 2 other channels
+of the pixel? While writing that I had a rough idea. Let's try developing it:
+colortempG(filmaskR): f(x_ci;fil_cj,x1,2_xi). As in, I will use the range of the
+colour channel and not the one related to the mask's relevant channel.
+Also, I will create small functions to create these transformations. Or maybe one function with several
+inputs so as to have some flexibility. Let's start.
+
+-02:18
+Im order to make the function more compact will try to generalise the f(x) of
+the two cases into f(x;x0,xa,xb,xf).
+f(x;x0=0,xa=x2,xb=1,xf=x1) = (x-x2)*(x1/(1-x2)) = [x1/(1-x2)] * x + [-x1*x2/(1-x2)]
+f(x;x0=?,xa=x1,xb=x2,xf=1) = [(1-x0)/(x2-x1)]*x + [(x2*x0-x1)/(x2-x1)] 
+f(x;x0,xa,xb,xf) = [(xf-x0)/(xb-xa)] * x + [(xb*x0-xa*xf)/(xb-xa)]
+
+-03:02
+It's buggy right now. Not doing what it is supposed to. I'll keep on trying.
+And I forgot that I wanted to "invert" it to, so I'll do that.
+
+-03:28
+I finally understand. With applying 9 times the transformations -
+for every channel 3 times according to each of the masks, there are pixels
+who can get treated more than once. Instead, we need to create a "supermask",
+that contains all the 1's inside the others. It will also shorten the time as well.
+Will now apply.
+
+-03:36
+It looks horrid, and I think I know why. I should use the brighfilt for the enhancement
+to preserve the grayness.
+
+-03:44
+Tweaking the colour ranges so that c = 3*(min(1,0.3+mean)).
+
+-03:46
+Tweaked in determinex0 to min(..,0.85)
+A minute later add the following if:
+if(x0 == 0)
+result(matmask) = xf - result(matmask);
+end
+instead of 
+result(matmask) = xf - result(matmask);
+to the function colortransform in order to avoid the unpleasant effect of the darkening of
+the root.
+
+-03:50
+Tweaking the colour ranges so that c = 2*(min(1,0.3+mean)).
+
+-03:52
+Alright, now for the second level. I have also decided that I will reduce the 
+root a little on the second level.
+So here is how I am going to do it. It is now easy to discern between the yes
+root and no root. So all I need is to go pixel pixel and ask:
+(((right dark)&(left not)) | ((left dark)&(right not))) | (similar for up and down)
+WAIT NO. I will ask separately cause I need to change the relevant pixel. 
+So one if block for left right and one for up down. And maybe a behaviour
+for a dark pixel near the edge. So, should I recursive it starting with the root
+and cascading? Maybe I should do it row after row and only left right and then 
+column after column and up down.
+Alright, I might want to try and cascade it from the edges of the root to
+the edges of the image. The closest to the root get cut by 2 or 3, and the rest
+steadily reach 1. And maybe use the same function for up down and left right
+and handle the input in such a way that it will succeed to apply the desired effect
+to rows and columns.
+WAIT. If I had implemented it that way, I would have gotten a bug for cases
+of roots with holes. Need to think of a solution and already thought of one
+during the writing of this. Instead of only the "walls" as a stop condition,
+we will also include the root itself as a stop condition. Or better yet, if it is the
+stop condition, then we will have a flag that does an inversion to the affected
+pixels.
+All that is well and good, but we need to realise the first step.
+Alright, let's think what is the input of this function?
+So, the index of the current pixel in the row/column.
+Accepting rows/columns as only standing/lying vectors. Easily doable with the
+' operator.
+Obviously I need brighfilt or more precisely the end of brighfilt. NO!
+x0. I need x0 from before. Good thing I have it as a variable now.
+I need another combined mask.
+Maybe I'll do a sweep and then record who wasn't changed in another mask
+and after that will reduce them all a little. down to a reasonable OR EVEN
+BETTER A CONSTANT RANGE!!
+ANOTHER THING! 
+Right now there will be a terrible bug if there are bright things near a root.
+So cancel the inversion. 
+WAIT! WE'LL MIDDLE OUT! And then we will stop accepting "new recruits" once we hit
+the edge for real. Wait, still susceptible to same bug. What about the edge function?
+The first trial was not a big success, but after reading on edge I might have a direction.
+I'll try using the 'log' (Laplacian of gaussian) method with a threshold.
+After messing around and reading and messing around I found it.
+edgy = edge(colortempR,'log',0.001,4);
+The 3rd is the threshold and the last is the sigma (std for the 'log' method),
+and it creats a logical array.
+And then it hit me! the bwareaopen to clean the muck and have ONLY the edge.
+It will make my work that much easier.
+IT WORKS!!! This will make life easier. Now I know where to start.
+I will use
+edgy = edge(colortempR,'log',0.001,4);
+edgy = bwareaopen(edgy,200);
+And with the edge I will make it so that maybe between them it will take it to 
+a nice range and outside it will ripple darkness.
+After searching found the inpolygon function. In short
+[edgerow,edgecol] = find(edgy)
+[xq,yq] = meshgrid(1:88,1:147)
+in = inpolygon(xq,yq,edgecol,edgerow)
+imshow(in)
+
+-04:47
+I have changed to
+[in,on] = inpolygon(xq,yq,edgecol,edgerow)
+And for some reason the on includes the points I want (bug in the function? 
+weird coincidence in this specific image? We'll see).
+So really, a simpler solution is just:
+colortemp$(~on) = 0.6 * colortemp$(~on); (decided on 0.6 to accomodate for no 
+flexibility).
+And for those inside I'll move those who are legal(will use masks I guess and the 
+and operator) to the range [0.6,0.9].
+Well what do you know! As a side effect of the chosen method this root has a halo
+anyways lol.
+
+-04:56
+Tried with another root, fixed to
+[xq,yq] = meshgrid(1:size(colortemp,2),1:size(colortemp,2));
+and then so it doesn't work as well.
+That's because I need
+[xq,yq] = meshgrid(1:size(colortemp,2),1:size(colortemp,1));
+Will continue.
+
+-10:52
+After playing around with the values a little it seems that inpolygon might not
+be good enough.. I'll see about playing with it or finding an alternative solution.
+
+-12:03
+Let's try out DelaunayTriangulation(x,y). NO GOOD.
+
+-12:19
+(2*on+in)./3 seems to maybe help. I might try to map it to [0.7,1].
+So [0,1]->[0.7,1]
+
+-12:46
+Two things I realised. First, why bother with ./3 if I'm going to change the 
+range next thing. Second, why bother with colour transform if there are only 4 
+possible values and I can assign directly.
+
+-12:52
+I've achieved a desirable technique. Use the on and in from on polygon. Use
+2*on+in. Map [0,1,2,3] to either [0.7,0.8,0.9,1] or possibly something more 
+conservative because it looks weird. I'll try [0.7,0.9,0.95,1] instead. Still
+looks weird. Instead I'll do something else! Map [0,1,2,3] to [3,2,1,1] and 
+do mat.^polycast
+
+-13:02
+Didn't work. Will try to Map [0,1,2,3] to either [0.5,0.85,0.85,1] and go back to .*
+
+-13:04
+We can do one last thing. Take everything smaller than 0.85 * x0 but aboveWAIT!!
+I had an idea!!!!!! Now we can tweak the previous step! Use edgy, and then
+the farther you are from the edge in a certain row, the more weakened you become.
+Then maybe we won't need another step! How exactly should we do it? let's play around.
+I will use edgecol and row, a for loop,
+
+-13:24
+I decided I will scrap the polycast and use a method that goes row by row and takes the
+average distance to the edges in this row, and then the bigger that distance,
+the more you will be reduced.
+
+-13:31
+I will use the number of columns as the denominator for the reduction.
+In addition, in the new image_process I will shoe a result on the right axes.
+
+-13:37
+There IS a non-elegant solution that uses another for loop. In order to save
+time I will use it for now and maybe later improve upon it.
+
+-13:51
+Final fix. I got it to work but it behaves weirdly  with more than 2 edges. 
+So I'll take min mean for every two edges and apply it instead if just mean
+
+-14:24
+I've written something but it's too slow. Will try to improve efficiency if I find out it works properly
+
+-14:26
+Realized the if block is not required. Will remove it and hopefully it will help.
+Will add a try catch block for the whole meanmat thing. That way if there are no edges it will do nothing
+
+-14:43
+with unique(sort(edgerow)) I know which rows contain edges. But it is still too slow!
+But then I realised something! All the rows that have only one/two edges can be done 
+quickly. So if I can find the count then it should solve it because they are the majority
+
+-15:22
+I applied to the brightness filtered and reached the conclusion that the first step
+might be actually bad. Will try without.
+
+-15:38
+I DID IT!!! But it does make some lines in root_skel obsolete. So I will disable some lines
+
+-16:22
+Ended up only tweaking it. Then migrated my new work to image_process.
+Both of the old image_process and root_skel still exist with an ending of '_old'.
+Also now shows the filtered grayscales after Process image
+
+-2.9.18
+
+-18:34
+I decided that rows without any edges will be reduced. will experiment with how.
+Before that, I will try restoring the step of getting the bright stuff unbright 
+but this time using imfill fight after. Let's see how that goes.
+
+-19:00
+Ok, didn't change much, so the plan is to do a while loop that will continue
+as long as the change before and after is above a threshold.
+
+-19:15
+Success for the colour approach, so I will add back the initial step to the colour
+approach in image_process and include the imfill while loop.
+
+-19:20
+Found out that
+color_skeleton = imfill(evalin('base', 'color_filt_img'),'holes');
+in the beginning of root_skel was doing damage now with new approach.
+Will replace with
+color_skeleton = evalin('base', 'color_filt_img');
+
+-19:22
+Now to attempt to implement the thing from 18:34.
+
+-19:39 
+success using
+edgenorow = find(~ismember(1:size(edgy,1) ,edgerow));
+
+-19:44
+Since the skeletonisation process thinks the edge of the bottom region is a skeleton,
+will do a reducing that gets worse the further down you are.
+
+-20:15
+Did the implementation in the brightness section of the image_process.
+Now I need to disable the imfill at beginning of section in root_skel.
+
+-20:33
+I finally figured out why it was not working properly:
+I didn't copy the change I made to the choice of the color range.
+
+-21:32
+It seems it is still not tight enough. So in image_process I'll change
+combmask from
+combmask = logical(filmaskR + filmaskG + filmaskB);
+to
+combmask = filmaskR + filmaskG + filmaskB-1;
+combmask(combmask<0) = 0;
+combmask = logical(combmask);
+
+-21:56
+Will add a try catch to the reducer parts.
+
+-22:32 
+Decided to add a "tightness" choice in the beginning of image_process.
+I'LL ADD A SLIDER UNDER THE IMAGE_PROCESS button.
+
+-22:42
+I added the slider and set it so it will be between 0.5 and 3 and start at 1.75.
+Now I'll tweak the colour ranges so that c_i = proc_str*(min(1,0.4+colormeans(i))),
+where proc_str = 3 - process_str.Value
+
+-- 3.9.18
+
+-23:32
+Had an idea: implementing giving the user the choice whether or not to save 
+the angle they got. Will implement later.
+
+-- 4.9.18
+
+-00:36
+I saw in one paper that in other tools the users needs to provide points of the background. What if I take points far away from the user's input and think of them as background?
+
+-00:55
+Will implement later: putting a slider beneath 'Foreign object removal' instead
+of the user clicking yes repeatedly.
+
+-01:38
+Time to implement the choice to save the angle or not! I will switch the pop up with a question
+dialog box and proceed to the saving steps only if received the order.
+I think that in order to make it more modular I'll push a lot of the callback
+of the angle buttons, or all of it to a new function. I will first create it
+of course.
+
+-01:56
+Implemented!
+
+-02:49
+Let's quickly implement the new cleaning slider.
+So the plan is to have a slider which is disabled until the point_choose.
+Then we set the max of the slider to 10% of the size of cropped_roots_img 
+and we enable the slider. Then pressing the button will run a new cleaning script without the
+loop (since you can use the slider to set the cleaning power). Let's begin.
+
+-03:15
+Important notice - small changes concerning the new cleaning slider were added
+to point_choose and image_choose. 
+
+-03:29
+Implemented successfully.
+
+-03:30
+Remembered another thing I wanted to implement: a toggle button under choose points
+which controls whether to choose tip specifically after choosing the 10 - 15 points.
+
+-03:49 
+Implemented successfully. will now prompt for tip only if button is toggled on.
+Also as a bonus I implemented a change in colour when toggled on.
+Changes made in point_choose (only prompts for tip choice if button is toggled)
+and root_skel (where it uses the tip)
+
+Name changes so far:
+lych_tst2  -> original_roots_img
+lychcrop2  -> cropped_roots_img
+graywarden -> color_filt_img
+brighttst  -> bright_filt_img
+lychsize (in image_process) -> originalsize
+lychsize (in root_skel) -> croppedsize
+lychpoi (in image_process) -> triple_root_points
+lychpoi (in root_skel) -> tip_root_point
+lychpcolor -> root_points_color
+Imtst -> colortemp
+Imtstbri -> brighttemp
+skeletor -> color_skeleton
+skeletor2 -> brightness_skeleton
+uniskel -> unified_skeleton
+superskel -> temp_skeleton
+workskel -> work_skeleton
+workskel2 -> work_skeleton2
