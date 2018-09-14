@@ -1,55 +1,59 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {english}
-\contentsline {chapter}{Abstract}{iii}{section*.1}
-\contentsline {chapter}{Acknowledgements}{iv}{section*.2}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.8}
-\contentsline {section}{\numberline {1.1}Biological background}{1}{section.9}
+\contentsline {chapter}{Abstract}{iv}{section*.1}
+\contentsline {chapter}{Acknowledgements}{v}{section*.2}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.7}
+\contentsline {section}{\numberline {1.1}Biological background}{1}{section.8}
 \contentsline {section}{\numberline {1.2}Literature review}{2}{section.10}
 \contentsline {section}{\numberline {1.3}Motivation}{3}{section.11}
-\contentsline {subsection}{\numberline {1.3.1}RootTrace}{3}{subsection.12}
-\contentsline {subsection}{\numberline {1.3.2}PlantCV}{3}{subsection.13}
-\contentsline {chapter}{\numberline {2}Methods}{4}{chapter.14}
-\contentsline {section}{\numberline {2.1}Image processing}{4}{section.15}
-\contentsline {subsection}{\numberline {2.1.1}What is a digital image?}{4}{subsection.22}
-\contentsline {subsection}{\numberline {2.1.2}Image processing operation}{5}{subsection.23}
-\contentsline {subsection}{\numberline {2.1.3}Key stages in digital image processing}{5}{subsection.24}
-\contentsline {section}{\numberline {2.2}Matlab}{6}{section.25}
-\contentsline {section}{\numberline {2.3}Workflow}{6}{section.26}
-\contentsline {section}{\numberline {2.4}Pre-processing -- getting the skeleton}{6}{section.27}
-\contentsline {section}{\numberline {2.5}Computing the angle}{6}{section.28}
-\contentsline {subsection}{\numberline {2.5.1}Using the position of the tip of the root -- more in detail}{7}{subsection.29}
-\contentsline {subsection}{\numberline {2.5.2}Using the angle of the tangents to the points that are x points/pixels away from the point of highest local curvature}{8}{subsection.34}
-\contentsline {subsection}{\numberline {2.5.3}INSERT VARIOUS OTHER IDEAS OF ANGLE COMPUTATION -- even if not implemented}{8}{subsection.35}
-\contentsline {chapter}{\numberline {3}Results}{9}{chapter.36}
-\contentsline {section}{\numberline {3.1}Key components}{9}{section.37}
-\contentsline {section}{\numberline {3.2}Elaborate pre-processing tool for skeletonisation}{9}{section.38}
-\contentsline {section}{\numberline {3.3}Optimisation: Graphical User Interface (GUI)}{9}{section.39}
-\contentsline {section}{\numberline {3.4}Different ways of curvature and angle measuring}{10}{section.40}
-\contentsline {section}{\numberline {3.5}Standardised and automated version of angle computation}{10}{section.41}
-\contentsline {section}{\numberline {3.6}Comparing the automated calculated angles with the manually calculated angles}{10}{section.42}
-\contentsline {section}{\numberline {3.7}Learning \LaTeX {}}{10}{section.43}
-\contentsline {subsection}{\numberline {3.7.1}A (not so short) Introduction to \LaTeX {}}{10}{subsection.44}
-\contentsline {subsection}{\numberline {3.7.2}A Short Math Guide for \LaTeX {}}{10}{subsection.45}
-\contentsline {subsection}{\numberline {3.7.3}Common \LaTeX {} Math Symbols}{10}{subsection.46}
-\contentsline {subsection}{\numberline {3.7.4}\LaTeX {} on a Mac}{10}{subsection.47}
-\contentsline {section}{\numberline {3.8}Getting Started with this Template}{10}{section.48}
-\contentsline {subsection}{\numberline {3.8.1}About this Template}{10}{subsection.49}
-\contentsline {chapter}{\numberline {4}Discussion}{11}{chapter.50}
-\contentsline {section}{\numberline {4.1}Challenges}{11}{section.51}
-\contentsline {subsection}{\numberline {4.1.1}Low contrast}{11}{subsection.52}
-\contentsline {subsection}{\numberline {4.1.2}Objects interferring with objet of interest}{11}{subsection.53}
-\contentsline {subsection}{\numberline {4.1.3}Skeletonisation}{11}{subsection.54}
-\contentsline {subsection}{\numberline {4.1.4}Scalability}{12}{subsection.55}
-\contentsline {subsection}{\numberline {4.1.5}Reproducability}{12}{subsection.56}
-\contentsline {subsection}{\numberline {4.1.6}Problems}{12}{subsection.57}
-\contentsline {subsection}{\numberline {4.1.7}High user-interaction}{12}{subsection.58}
-\contentsline {section}{\numberline {4.2}Suggestions for future data acquisition}{12}{section.59}
-\contentsline {subsection}{\numberline {4.2.1}More focus on images}{12}{subsection.60}
-\contentsline {subsection}{\numberline {4.2.2}Resolution}{12}{subsection.61}
-\contentsline {section}{\numberline {4.3}Broader application of this tool}{12}{section.62}
-\contentsline {section}{\numberline {4.4}Further work}{12}{section.63}
-\contentsline {chapter}{\numberline {5}Conclusion}{13}{chapter.64}
-\contentsline {chapter}{\numberline {A}Data}{14}{appendix.65}
-\contentsline {chapter}{\numberline {B}Frequently Asked Questions}{15}{appendix.66}
-\contentsline {section}{\numberline {B.1}How do I change the colors of links?}{15}{section.67}
+\contentsline {chapter}{\numberline {2}Methods}{4}{chapter.12}
+\contentsline {section}{\numberline {2.1}Data set}{4}{section.13}
+\contentsline {section}{\numberline {2.2}Experimental setup}{4}{section.14}
+\contentsline {section}{\numberline {2.3}Image processing}{5}{section.16}
+\contentsline {subsection}{\numberline {2.3.1}Digital images}{6}{subsection.18}
+\contentsline {subsection}{\numberline {2.3.2}On spatial resolution, grey levels and coloured images}{6}{subsection.19}
+\contentsline {subsection}{\numberline {2.3.3}Image processing operations}{7}{subsection.21}
+\contentsline {section}{\numberline {2.4}\textit {MATLAB} as a programming language}{8}{section.22}
+\contentsline {section}{\numberline {2.5}Computing the angle}{8}{section.23}
+\contentsline {section}{\numberline {2.6}Computing the curvature of the root tip}{9}{section.26}
+\contentsline {chapter}{\numberline {3}Results}{11}{chapter.28}
+\contentsline {section}{\numberline {3.1}Workflow of root skeletonisation}{11}{section.29}
+\contentsline {section}{\numberline {3.2}Graphical User Interface}{13}{section.31}
+\contentsline {section}{\numberline {3.3}Validation: Comparing the automated calculated angles with the manually calculated angles}{14}{section.33}
+\contentsline {chapter}{\numberline {4}Discussion}{19}{chapter.37}
+\contentsline {section}{\numberline {4.1}Validation on more images}{19}{section.38}
+\contentsline {section}{\numberline {4.2}Challenges and limitations of \textit {RootSkel}}{19}{section.39}
+\contentsline {subsection}{\numberline {4.2.1}Non-planar roots}{19}{subsection.40}
+\contentsline {subsection}{\numberline {4.2.2}Skeletonisation of the root}{20}{subsection.41}
+\contentsline {subsection}{\numberline {4.2.3}Scalability and reproducibility}{20}{subsection.42}
+\contentsline {subsection}{\numberline {4.2.4}Other tools and languages}{21}{subsection.43}
+\contentsline {section}{\numberline {4.3}Further work}{22}{section.44}
+\contentsline {subsection}{\numberline {4.3.1}High-throughput and robustness}{22}{subsection.45}
+\contentsline {subsection}{\numberline {4.3.2}Error quantification in the angle computation}{22}{subsection.46}
+\contentsline {section}{\numberline {4.4}Broader application of \textit {RootSkel}}{22}{section.47}
+\contentsline {chapter}{\numberline {5}Conclusion}{23}{chapter.48}
+\contentsline {chapter}{\numberline {A}Detailed high-level description of the components of \textit {RootSkel}}{30}{appendix.50}
+\contentsline {chapter}{\numberline {B}Manual for \textit {RootSkel}}{32}{appendix.51}
+\contentsline {section}{\numberline {B.1}Key features}{32}{section.52}
+\contentsline {subsection}{\numberline {B.1.1}Handling user's mistakes}{32}{subsection.53}
+\contentsline {subsection}{\numberline {B.1.2}User interaction and optional steps}{32}{subsection.54}
+\contentsline {subsection}{\numberline {B.1.3}Drawing the angle}{32}{subsection.55}
+\contentsline {section}{\numberline {B.2}\textit {RootGUI} for Dummies}{33}{section.56}
+\contentsline {subsection}{\numberline {B.2.1}Intro}{33}{subsection.57}
+\contentsline {subsection}{\numberline {B.2.2}Getting the angles -- main route}{34}{subsection.61}
+\contentsline {subsection}{\numberline {B.2.3}Saving}{44}{subsection.82}
+\contentsline {subsection}{\numberline {B.2.4}Optional}{50}{subsection.89}
+\contentsline {subsubsection}{Foreign objects removal}{50}{section*.90}
+\contentsline {subsubsection}{Force tip}{54}{section*.98}
+\contentsline {subsubsection}{Crop image}{59}{section*.108}
+\contentsline {subsubsection}{Crop skeleton}{63}{section*.118}
+\contentsline {subsubsection}{Giving the problem a turning point}{67}{section*.126}
+\contentsline {chapter}{\numberline {C}On the data set}{72}{appendix.134}
+\contentsline {section}{\numberline {C.1}Challenging images}{72}{section.135}
+\contentsline {section}{\numberline {C.2}Suggestions for future data acquisition}{73}{section.137}
+\contentsline {subsection}{\numberline {C.2.1}Consistent images}{73}{subsection.138}
+\contentsline {subsection}{\numberline {C.2.2}Increase of the contrast}{74}{subsection.139}
+\contentsline {subsection}{\numberline {C.2.3}No objects interfering with the object of interest}{74}{subsection.140}
+\contentsline {subsection}{\numberline {C.2.4}Higher resolution}{74}{subsection.141}
+\contentsline {chapter}{\numberline {D}Literature review}{76}{appendix.142}

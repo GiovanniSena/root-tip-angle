@@ -16,5 +16,2721 @@
   {}
 \endgroup
 
-\sortlist[entry]{nyt/global/}\endsortlist
+\sortlist[entry]{none/global/}
+  \entry{vandenbrink2014light}{article}{}
+    \name{author}{4}{}{%
+      {{hash=VJP}{%
+         family={Vandenbrink},
+         family_i={V\bibinitperiod},
+         given={Joshua\bibnamedelima P},
+         given_i={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=KJZ}{%
+         family={Kiss},
+         family_i={K\bibinitperiod},
+         given={John\bibnamedelima Z},
+         given_i={J\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Herranz},
+         family_i={H\bibinitperiod},
+         given={Raul},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=MFJ}{%
+         family={Medina},
+         family_i={M\bibinitperiod},
+         given={F\bibnamedelima Javier},
+         given_i={F\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Frontiers}%
+    }
+    \strng{namehash}{VJP+1}
+    \strng{fullhash}{VJPKJZHRMFJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{563}
+    \field{title}{Light and gravity signals synergize in modulating plant
+  development}
+    \field{volume}{5}
+    \field{journaltitle}{Frontiers in plant science}
+    \field{year}{2014}
+  \endentry
+
+  \entry{gilroy2008plant}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GS}{%
+         family={Gilroy},
+         family_i={G\bibinitperiod},
+         given={Simon},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{GS1}
+    \strng{fullhash}{GS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{7}
+    \field{pages}{R275\bibrangedash R277}
+    \field{title}{Plant tropisms}
+    \field{volume}{18}
+    \field{journaltitle}{Current Biology}
+    \field{year}{2008}
+  \endentry
+
+  \entry{nick2017}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=ON}{%
+         family={Oliver},
+         family_i={O\bibinitperiod},
+         given={Nick},
+         given_i={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ON1}
+    \strng{fullhash}{ON1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{An Investigation into the Genetic Mechanisms Involved in Root
+  Electrotropism in Arabidopsis thaliana}
+    \list{institution}{1}{%
+      {Imperial College London}%
+    }
+    \field{type}{MRes Molecular and Cellular Biosciences Spring Research
+  Project (2017)}
+  \endentry
+
+  \entry{parry2001novel}{article}{}
+    \name{author}{7}{}{%
+      {{hash=PG}{%
+         family={Parry},
+         family_i={P\bibinitperiod},
+         given={Geraint},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Delbarre},
+         family_i={D\bibinitperiod},
+         given={Alain},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Marchant},
+         family_i={M\bibinitperiod},
+         given={Alan},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Swarup},
+         family_i={S\bibinitperiod},
+         given={Ranjan},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=NR}{%
+         family={Napier},
+         family_i={N\bibinitperiod},
+         given={Richard},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=PRC}{%
+         family={Perrot-Rechenmann},
+         family_i={P\bibinitperiod-R\bibinitperiod},
+         given={Catherine},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=BMJ}{%
+         family={Bennett},
+         family_i={B\bibinitperiod},
+         given={Malcolm\bibnamedelima J},
+         given_i={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{PG+1}
+    \strng{fullhash}{PGDAMASRNRPRCBMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{399\bibrangedash 406}
+    \field{title}{Novel auxin transport inhibitors phenocopy the auxin influx
+  carrier mutation aux1}
+    \field{volume}{25}
+    \field{journaltitle}{The Plant Journal}
+    \field{year}{2001}
+  \endentry
+
+  \entry{french2009high}{article}{}
+    \name{author}{5}{}{%
+      {{hash=FA}{%
+         family={French},
+         family_i={F\bibinitperiod},
+         given={Andrew},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=UTS}{%
+         family={Ubeda-Tom{\'a}s},
+         family_i={U\bibinitperiod-T\bibinitperiod},
+         given={Susana},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=HTJ}{%
+         family={Holman},
+         family_i={H\bibinitperiod},
+         given={Tara\bibnamedelima J},
+         given_i={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BMJ}{%
+         family={Bennett},
+         family_i={B\bibinitperiod},
+         given={Malcolm\bibnamedelima J},
+         given_i={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Pridmore},
+         family_i={P\bibinitperiod},
+         given={Tony},
+         given_i={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Am Soc Plant Biol}%
+    }
+    \strng{namehash}{FA+1}
+    \strng{fullhash}{FAUTSHTJBMJPT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{1784\bibrangedash 1795}
+    \field{title}{High-throughput quantification of root growth using a novel
+  image-analysis tool}
+    \field{volume}{150}
+    \field{journaltitle}{Plant physiology}
+    \field{year}{2009}
+  \endentry
+
+  \entry{ishikawa1997novel}{article}{}
+    \name{author}{2}{}{%
+      {{hash=IH}{%
+         family={Ishikawa},
+         family_i={I\bibinitperiod},
+         given={H},
+         given_i={H},
+      }}%
+      {{hash=EM}{%
+         family={Evans},
+         family_i={E\bibinitperiod},
+         given={ML},
+         given_i={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{IHEM1}
+    \strng{fullhash}{IHEM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{7}
+    \field{pages}{919\bibrangedash 928}
+    \field{title}{Novel software for analysis of root gravitropism: comparative
+  response patterns of Arabidopsis wild-type and axr1 seedlings}
+    \field{volume}{20}
+    \field{journaltitle}{Plant, Cell \& Environment}
+    \field{year}{1997}
+  \endentry
+
+  \entry{van2003new}{article}{}
+    \name{author}{6}{}{%
+      {{hash=vdWCM}{%
+         prefix={van\bibnamedelima der},
+         prefix_i={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Weele},
+         family_i={W\bibinitperiod},
+         given={Corine\bibnamedelima M},
+         given_i={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=JHS}{%
+         family={Jiang},
+         family_i={J\bibinitperiod},
+         given={Hai\bibnamedelima S},
+         given_i={H\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=PKK}{%
+         family={Palaniappan},
+         family_i={P\bibinitperiod},
+         given={Krishnan\bibnamedelima K},
+         given_i={K\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=IVB}{%
+         family={Ivanov},
+         family_i={I\bibinitperiod},
+         given={Viktor\bibnamedelima B},
+         given_i={V\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={Palaniappan},
+         family_i={P\bibinitperiod},
+         given={Kannappan},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=BTI}{%
+         family={Baskin},
+         family_i={B\bibinitperiod},
+         given={Tobias\bibnamedelima I},
+         given_i={T\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Am Soc Plant Biol}%
+    }
+    \strng{namehash}{WCMvd+1}
+    \strng{fullhash}{WCMvdJHSPKKIVBPKBTI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{1138\bibrangedash 1148}
+    \field{title}{A new algorithm for computational image analysis of
+  deformable motion at high spatial and temporal resolution applied to root
+  growth. Roughly uniform elongation in the meristem and also, after an abrupt
+  acceleration, in the elongation zone}
+    \field{volume}{132}
+    \field{journaltitle}{Plant physiology}
+    \field{year}{2003}
+  \endentry
+
+  \entry{chavarria2008spatio}{article}{}
+    \name{author}{6}{}{%
+      {{hash=CKA}{%
+         family={Chavarr{\'\i}a-Krauser},
+         family_i={C\bibinitperiod-K\bibinitperiod},
+         given={Andr{\'e}s},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=NKA}{%
+         family={Nagel},
+         family_i={N\bibinitperiod},
+         given={Kerstin\bibnamedelima A},
+         given_i={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={Palme},
+         family_i={P\bibinitperiod},
+         given={Klaus},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=SU}{%
+         family={Schurr},
+         family_i={S\bibinitperiod},
+         given={Ulrich},
+         given_i={U\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={Walter},
+         family_i={W\bibinitperiod},
+         given={Achim},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Scharr},
+         family_i={S\bibinitperiod},
+         given={Hanno},
+         given_i={H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{CKA+1}
+    \strng{fullhash}{CKANKAPKSUWASH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{811\bibrangedash 821}
+    \field{title}{Spatio-temporal quantification of differential growth
+  processes in root growth zones based on a novel combination of image sequence
+  processing and refined concepts describing curvature production}
+    \field{volume}{177}
+    \field{journaltitle}{New Phytologist}
+    \field{year}{2008}
+  \endentry
+
+  \entry{miller2007computer}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MND}{%
+         family={Miller},
+         family_i={M\bibinitperiod},
+         given={Nathan\bibnamedelima D},
+         given_i={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=PBM}{%
+         family={Parks},
+         family_i={P\bibinitperiod},
+         given={Brian\bibnamedelima M},
+         given_i={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SEP}{%
+         family={Spalding},
+         family_i={S\bibinitperiod},
+         given={Edgar\bibnamedelima P},
+         given_i={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{MNDPBMSEP1}
+    \strng{fullhash}{MNDPBMSEP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{374\bibrangedash 381}
+    \field{title}{Computer-vision analysis of seedling responses to light and
+  gravity}
+    \field{volume}{52}
+    \field{journaltitle}{The Plant Journal}
+    \field{year}{2007}
+  \endentry
+
+  \entry{van1934einfluss}{article}{}
+    \name{author}{1}{}{%
+      {{hash=VDLPA}{%
+         family={Van Der\bibnamedelima Laan},
+         family_i={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  L\bibinitperiod},
+         given={Pieter\bibnamedelima Adrianus},
+         given_i={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Koninklijke Nederlandse Botanische Vereniging}%
+    }
+    \strng{namehash}{VDLPA1}
+    \strng{fullhash}{VDLPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3/4}
+    \field{pages}{691\bibrangedash 742}
+    \field{title}{Der Einfluss von Aethylen auf die Wuchsstoffbildung bei Avena
+  und Vicia}
+    \field{volume}{31}
+    \field{journaltitle}{Recueil des travaux botaniques n{\'e}erlandais}
+    \field{year}{1934}
+  \endentry
+
+  \entry{michener1938action}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MHD}{%
+         family={Michener},
+         family_i={M\bibinitperiod},
+         given={H\bibnamedelima David},
+         given_i={H\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{MHD1}
+    \strng{fullhash}{MHD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{9}
+    \field{pages}{711\bibrangedash 720}
+    \field{title}{The action of ethylene on plant growth}
+    \field{volume}{25}
+    \field{journaltitle}{American Journal of Botany}
+    \field{year}{1938}
+  \endentry
+
+  \entry{GExpCircuit}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=SG}{%
+         family={Sena},
+         family_i={S\bibinitperiod},
+         given={Giovanni},
+         given_i={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SG1}
+    \strng{fullhash}{SG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Measuring effects of electrotropism in Arabidopsis roots}
+    \list{institution}{1}{%
+      {Imperial College London}%
+    }
+    \field{type}{Presentation (19 June 2018)}
+  \endentry
+
+  \entry{pydata2018}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=BJ}{%
+         family={Byrne},
+         family_i={B\bibinitperiod},
+         given={Jason},
+         given_i={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJ1}
+    \strng{fullhash}{BJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Digital Image Processing: Introduction and Applications}
+    \list{institution}{1}{%
+      {PyData London}%
+    }
+    \field{type}{Presentation at 46th Meetup (3 July 2018)}
+  \endentry
+
+  \entry{imagProcFundamentals}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=CCYH}{%
+         family={Chan},
+         family_i={C\bibinitperiod},
+         given={Chris Y.\bibnamedelima H.},
+         given_i={C\bibinitperiod\bibinitdelim Y\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CCYH1}
+    \strng{fullhash}{CCYH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{addendum}{[Accessed 29 August 2018]}
+    \field{title}{Image and Audio Processing}
+    \verb{url}
+    \verb http://www.eie.polyu.edu.hk/~enyhchan/a_iap18.htm
+    \endverb
+    \list{institution}{1}{%
+      {The Hong Kong Polytechnic University}%
+    }
+    \field{type}{Lecture and slides (15 July 2018)}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{ibraheem2012understanding}{article}{}
+    \name{author}{4}{}{%
+      {{hash=INA}{%
+         family={Ibraheem},
+         family_i={I\bibinitperiod},
+         given={Noor\bibnamedelima A},
+         given_i={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=HMM}{%
+         family={Hasan},
+         family_i={H\bibinitperiod},
+         given={Mokhtar\bibnamedelima M},
+         given_i={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=KRZ}{%
+         family={Khan},
+         family_i={K\bibinitperiod},
+         given={Rafiqul\bibnamedelima Z},
+         given_i={R\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=MPK}{%
+         family={Mishra},
+         family_i={M\bibinitperiod},
+         given={Pramod\bibnamedelima K},
+         given_i={P\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Citeseer}%
+    }
+    \strng{namehash}{INA+1}
+    \strng{fullhash}{INAHMMKRZMPK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{265\bibrangedash 275}
+    \field{title}{Understanding color models: a review}
+    \field{volume}{2}
+    \field{journaltitle}{ARPN Journal of science and technology}
+    \field{year}{2012}
+  \endentry
+
+  \entry{maini2010comprehensive}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MR}{%
+         family={Maini},
+         family_i={M\bibinitperiod},
+         given={Raman},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=AH}{%
+         family={Aggarwal},
+         family_i={A\bibinitperiod},
+         given={Himanshu},
+         given_i={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MRAH1}
+    \strng{fullhash}{MRAH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{A comprehensive review of image enhancement techniques}
+    \field{journaltitle}{arXiv preprint arXiv:1003.4053}
+    \field{year}{2010}
+  \endentry
+
+  \entry{pointOperation2018}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=ER}{%
+         family={Easton},
+         family_i={E\bibinitperiod},
+         given={Roger},
+         given_i={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ER1}
+    \strng{fullhash}{ER1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{addendum}{[Accessed 29 August 2018]}
+    \field{title}{Basic Principles of Imaging Science II}
+    \verb{url}
+    \verb https://www.cis.rit.edu/class/simg712-90/
+    \endverb
+    \list{institution}{1}{%
+      {Rochester Institute of Technology}%
+    }
+    \field{type}{Lecture and slides (Winter 2004-2005)}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{matlab}{online}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={MathWorks},
+         family_i={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{addendum}{[Accessed 30 August 2018]}
+    \field{title}{Image Processing Toolbox R2018a}
+    \verb{url}
+    \verb https://uk.mathworks.com/help/images/
+    \endverb
+  \endentry
+
+  \entry{de2012validity}{misc}{}
+    \name{author}{7}{}{%
+      {{hash=DOT}{%
+         family={De\bibnamedelima Oliveira},
+         family_i={D\bibinitperiod\bibinitdelim O\bibinitperiod},
+         given={TS},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Candotti},
+         family_i={C\bibinitperiod},
+         given={CT},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=LTM}{%
+         family={La\bibnamedelima Torre},
+         family_i={L\bibinitperiod\bibinitdelim T\bibinitperiod},
+         given={M},
+         given_i={M},
+      }}%
+      {{hash=PP}{%
+         family={Pelinson},
+         family_i={P\bibinitperiod},
+         given={PPT},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=FT}{%
+         family={Furlanetto},
+         family_i={F\bibinitperiod},
+         given={TS},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=KF}{%
+         family={Kutchak},
+         family_i={K\bibinitperiod},
+         given={FM},
+         given_i={F\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Loss},
+         family_i={L\bibinitperiod},
+         given={JF},
+         given_i={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DOT+1}
+    \strng{fullhash}{DOTCCLTMPPFTKFLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Validity and reproducibility of the measurements obtained
+  using the flexicurve instrument to evaluate the angles of thoracic and lumbar
+  curvatures of the spine in the sagittal plane. Rehabilitation Research and
+  Practice. 2012; 2012: 1-9}
+    \field{year}{2012}
+  \endentry
+
+  \entry{do2016differential}{book}{}
+    \name{author}{1}{}{%
+      {{hash=DCMP}{%
+         family={Do\bibnamedelima Carmo},
+         family_i={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={Manfredo\bibnamedelima P},
+         given_i={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Courier Dover Publications}%
+    }
+    \strng{namehash}{DCMP1}
+    \strng{fullhash}{DCMP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Differential Geometry of Curves and Surfaces: Revised and
+  Updated Second Edition}
+    \field{year}{2016}
+  \endentry
+
+  \entry{osculatingCircle}{online}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={Cepheus},
+         family_i={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{C1}
+    \strng{fullhash}{C1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{addendum}{[Accessed 31 August 2018]}
+    \field{title}{Osculating circle for curvature}
+    \verb{url}
+    \verb https://pl.wikipedia.org/wiki/Plik:OsculatingCircle.png
+    \endverb
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
+  \entry{pound2013rootnav}{article}{}
+    \name{author}{6}{}{%
+      {{hash=PMP}{%
+         family={Pound},
+         family_i={P\bibinitperiod},
+         given={Michael\bibnamedelima P},
+         given_i={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=FAP}{%
+         family={French},
+         family_i={F\bibinitperiod},
+         given={Andrew\bibnamedelima P},
+         given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=AJ}{%
+         family={Atkinson},
+         family_i={A\bibinitperiod},
+         given={Jonathan},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=WDM}{%
+         family={Wells},
+         family_i={W\bibinitperiod},
+         given={Darren\bibnamedelima M},
+         given_i={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=BMJ}{%
+         family={Bennett},
+         family_i={B\bibinitperiod},
+         given={Malcolm\bibnamedelima J},
+         given_i={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PTP}{%
+         family={Pridmore},
+         family_i={P\bibinitperiod},
+         given={Tony\bibnamedelima P},
+         given_i={T\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Am Soc Plant Biol}%
+    }
+    \strng{namehash}{PMP+1}
+    \strng{fullhash}{PMPFAPAJWDMBMJPTP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{pp\bibrangedash 113}
+    \field{title}{RootNav: navigating images of complex root architectures}
+    \field{journaltitle}{Plant Physiology}
+    \field{year}{2013}
+  \endentry
+
+  \entry{pound2017autoroot}{article}{}
+    \name{author}{5}{}{%
+      {{hash=PMP}{%
+         family={Pound},
+         family_i={P\bibinitperiod},
+         given={Michael\bibnamedelima P},
+         given_i={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Fozard},
+         family_i={F\bibinitperiod},
+         given={Susan},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=TMT}{%
+         family={Torres},
+         family_i={T\bibinitperiod},
+         given={Mercedes\bibnamedelima Torres},
+         given_i={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=FBG}{%
+         family={Forde},
+         family_i={F\bibinitperiod},
+         given={Brian\bibnamedelima G},
+         given_i={B\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=FAP}{%
+         family={French},
+         family_i={F\bibinitperiod},
+         given={Andrew\bibnamedelima P},
+         given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {BioMed Central}%
+    }
+    \strng{namehash}{PMP+1}
+    \strng{fullhash}{PMPFSTMTFBGFAP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{12}
+    \field{title}{AutoRoot: open-source software employing a novel image
+  analysis approach to support fully-automated plant phenotyping}
+    \field{volume}{13}
+    \field{journaltitle}{Plant methods}
+    \field{year}{2017}
+  \endentry
+
+  \entry{dee2015image}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DH}{%
+         family={Dee},
+         family_i={D\bibinitperiod},
+         given={Hannah},
+         given_i={H\bibinitperiod},
+      }}%
+      {{hash=FA}{%
+         family={French},
+         family_i={F\bibinitperiod},
+         given={Andrew},
+         given_i={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {CSIRO}%
+    }
+    \strng{namehash}{DHFA1}
+    \strng{fullhash}{DHFA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{iii\bibrangedash v}
+    \field{title}{From image processing to computer vision: plant imaging grows
+  up}
+    \field{volume}{42}
+    \field{journaltitle}{Functional Plant Biology}
+    \field{year}{2015}
+  \endentry
+
+  \entry{armengaud2009ez}{article}{}
+    \name{author}{7}{}{%
+      {{hash=AP}{%
+         family={Armengaud},
+         family_i={A\bibinitperiod},
+         given={Patrick},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=ZK}{%
+         family={Zambaux},
+         family_i={Z\bibinitperiod},
+         given={Kevin},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Hills},
+         family_i={H\bibinitperiod},
+         given={Adrian},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Sulpice},
+         family_i={S\bibinitperiod},
+         given={Ronan},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=PRJ}{%
+         family={Pattison},
+         family_i={P\bibinitperiod},
+         given={Richard\bibnamedelima J},
+         given_i={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=BMR}{%
+         family={Blatt},
+         family_i={B\bibinitperiod},
+         given={Michael\bibnamedelima R},
+         given_i={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Amtmann},
+         family_i={A\bibinitperiod},
+         given={Anna},
+         given_i={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{AP+1}
+    \strng{fullhash}{APZKHASRPRJBMRAA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{945\bibrangedash 956}
+    \field{title}{EZ-Rhizo: integrated software for the fast and accurate
+  measurement of root system architecture}
+    \field{volume}{57}
+    \field{journaltitle}{The Plant Journal}
+    \field{year}{2009}
+  \endentry
+
+  \entry{clark20113}{article}{}
+    \name{author}{7}{}{%
+      {{hash=CR}{%
+         family={Clark},
+         family_i={C\bibinitperiod},
+         given={Randy},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={MacCurdy},
+         family_i={M\bibinitperiod},
+         given={Robert},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Jung},
+         family_i={J\bibinitperiod},
+         given={Janelle},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Shaff},
+         family_i={S\bibinitperiod},
+         given={Jon},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=MSR}{%
+         family={McCouch},
+         family_i={M\bibinitperiod},
+         given={Susan\bibnamedelima Rutherford},
+         given_i={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=AD}{%
+         family={Aneshansley},
+         family_i={A\bibinitperiod},
+         given={Dan},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=KL}{%
+         family={Kochian},
+         family_i={K\bibinitperiod},
+         given={Leon},
+         given_i={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Am Soc Plant Biol}%
+    }
+    \strng{namehash}{CR+1}
+    \strng{fullhash}{CRMRJJSJMSRADKL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{pp\bibrangedash 110}
+    \field{title}{3-Dimensional root phenotyping with a novel imaging and
+  software platform}
+    \field{journaltitle}{Plant physiology}
+    \field{year}{2011}
+  \endentry
+
+  \entry{pound2012cellset}{article}{}
+    \name{author}{5}{}{%
+      {{hash=PMP}{%
+         family={Pound},
+         family_i={P\bibinitperiod},
+         given={Michael\bibnamedelima P},
+         given_i={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=FAP}{%
+         family={French},
+         family_i={F\bibinitperiod},
+         given={Andrew\bibnamedelima P},
+         given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=WDM}{%
+         family={Wells},
+         family_i={W\bibinitperiod},
+         given={Darren\bibnamedelima M},
+         given_i={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=BMJ}{%
+         family={Bennett},
+         family_i={B\bibinitperiod},
+         given={Malcolm\bibnamedelima J},
+         given_i={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PTP}{%
+         family={Pridmore},
+         family_i={P\bibinitperiod},
+         given={Tony\bibnamedelima P},
+         given_i={T\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Am Soc Plant Biol}%
+    }
+    \strng{namehash}{PMP+1}
+    \strng{fullhash}{PMPFAPWDMBMJPTP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{tpc\bibrangedash 112}
+    \field{title}{CellSeT: novel software to extract and analyze structured
+  networks of plant cells from confocal images}
+    \field{journaltitle}{The Plant Cell}
+    \field{year}{2012}
+  \endentry
+
+  \entry{taub1996root}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TD}{%
+         family={Taub},
+         family_i={T\bibinitperiod},
+         given={DR},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Goldberg},
+         family_i={G\bibinitperiod},
+         given={D},
+         given_i={D},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {JSTOR}%
+    }
+    \strng{namehash}{TDGD1}
+    \strng{fullhash}{TDGD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{258\bibrangedash 264}
+    \field{title}{Root system topology of plants from habitats differing in
+  soil resource availability}
+    \field{journaltitle}{Functional Ecology}
+    \field{year}{1996}
+  \endentry
+
+  \entry{mooney2012developing}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MSJ}{%
+         family={Mooney},
+         family_i={M\bibinitperiod},
+         given={Sacha\bibnamedelima J},
+         given_i={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PTP}{%
+         family={Pridmore},
+         family_i={P\bibinitperiod},
+         given={Tony\bibnamedelima P},
+         given_i={T\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Helliwell},
+         family_i={H\bibinitperiod},
+         given={Jonathan},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=BMJ}{%
+         family={Bennett},
+         family_i={B\bibinitperiod},
+         given={Malcolm\bibnamedelima J},
+         given_i={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{MSJ+1}
+    \strng{fullhash}{MSJPTPHJBMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1-2}
+    \field{pages}{1\bibrangedash 22}
+    \field{title}{Developing X-ray computed tomography to non-invasively image
+  3-D root systems architecture in soil}
+    \field{volume}{352}
+    \field{journaltitle}{Plant and soil}
+    \field{year}{2012}
+  \endentry
+
+  \entry{plantCV}{online}{}
+    \name{author}{4}{}{%
+      {{hash=FN}{%
+         family={Fahlgren},
+         family_i={F\bibinitperiod},
+         given={Noah},
+         given_i={N\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gehan},
+         family_i={G\bibinitperiod},
+         given={Malia},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Feldman},
+         family_i={F\bibinitperiod},
+         given={Max},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Hoyer},
+         family_i={H\bibinitperiod},
+         given={Steen},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Donald Danforth Plant Science Center}%
+    }
+    \strng{namehash}{FN+1}
+    \strng{fullhash}{FNGMFMHS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{addendum}{[Accessed 31 August 2018]}
+    \field{title}{PlantCV: Plant phenotyping using computer vision}
+    \verb{url}
+    \verb https://github.com/danforthcenter/plantcv
+    \endverb
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
+  \entry{hartmann2011htpheno}{article}{}
+    \name{author}{5}{}{%
+      {{hash=HA}{%
+         family={Hartmann},
+         family_i={H\bibinitperiod},
+         given={Anja},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Czauderna},
+         family_i={C\bibinitperiod},
+         given={Tobias},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Hoffmann},
+         family_i={H\bibinitperiod},
+         given={Roberto},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Stein},
+         family_i={S\bibinitperiod},
+         given={Nils},
+         given_i={N\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Schreiber},
+         family_i={S\bibinitperiod},
+         given={Falk},
+         given_i={F\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {BioMed Central}%
+    }
+    \strng{namehash}{HA+1}
+    \strng{fullhash}{HACTHRSNSF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{148}
+    \field{title}{HTPheno: an image analysis pipeline for high-throughput plant
+  phenotyping}
+    \field{volume}{12}
+    \field{journaltitle}{BMC bioinformatics}
+    \field{year}{2011}
+  \endentry
+
+  \entry{diener2013automated}{inproceedings}{}
+    \name{author}{10}{}{%
+      {{hash=DJ}{%
+         family={Diener},
+         family_i={D\bibinitperiod},
+         given={Julien},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Nacry},
+         family_i={N\bibinitperiod},
+         given={Philippe},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=PC}{%
+         family={P{\'e}rin},
+         family_i={P\bibinitperiod},
+         given={Christophe},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Di{\'e}vart},
+         family_i={D\bibinitperiod},
+         given={Anne},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=DX}{%
+         family={Draye},
+         family_i={D\bibinitperiod},
+         given={Xavier},
+         given_i={X\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Boudon},
+         family_i={B\bibinitperiod},
+         given={Fr{\'e}d{\'e}ric},
+         given_i={F\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gojon},
+         family_i={G\bibinitperiod},
+         given={Alain},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={Muller},
+         family_i={M\bibinitperiod},
+         given={Bertrand},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=PC}{%
+         family={Pradal},
+         family_i={P\bibinitperiod},
+         given={Christophe},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={Godin},
+         family_i={G\bibinitperiod},
+         given={Christophe},
+         given_i={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DJ+1}
+    \strng{fullhash}{DJNPPCDADXBFGAMBPCGC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{7th International Conference on Functional-Structural
+  Plant Models (FSPM’13)}
+    \field{pages}{np}
+    \field{title}{An automated image-processing pipeline for high-throughput
+  analysis of root architecture in OpenAlea}
+    \field{year}{2013}
+  \endentry
+
+  \entry{lee2018automated}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LU}{%
+         family={Lee},
+         family_i={L\bibinitperiod},
+         given={Unseok},
+         given_i={U\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Chang},
+         family_i={C\bibinitperiod},
+         given={Sungyul},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=PGA}{%
+         family={Putra},
+         family_i={P\bibinitperiod},
+         given={Gian\bibnamedelima Anantrio},
+         given_i={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=KH}{%
+         family={Kim},
+         family_i={K\bibinitperiod},
+         given={Hyoungseok},
+         given_i={H\bibinitperiod},
+      }}%
+      {{hash=KDH}{%
+         family={Kim},
+         family_i={K\bibinitperiod},
+         given={Dong\bibnamedelima Hwan},
+         given_i={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Public Library of Science}%
+    }
+    \strng{namehash}{LU+1}
+    \strng{fullhash}{LUCSPGAKHKDH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{e0196615}
+    \field{title}{An automated, high-throughput plant phenotyping system using
+  machine learning-based plant segmentation and image analysis}
+    \field{volume}{13}
+    \field{journaltitle}{PloS one}
+    \field{year}{2018}
+  \endentry
+
+  \entry{pound2017deep}{article}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=PMP}{%
+         family={Pound},
+         family_i={P\bibinitperiod},
+         given={Michael\bibnamedelima P},
+         given_i={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=AJA}{%
+         family={Atkinson},
+         family_i={A\bibinitperiod},
+         given={Jonathan\bibnamedelima A},
+         given_i={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=TAJ}{%
+         family={Townsend},
+         family_i={T\bibinitperiod},
+         given={Alexandra\bibnamedelima J},
+         given_i={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=WMH}{%
+         family={Wilson},
+         family_i={W\bibinitperiod},
+         given={Michael\bibnamedelima H},
+         given_i={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Griffiths},
+         family_i={G\bibinitperiod},
+         given={Marcus},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=JAS}{%
+         family={Jackson},
+         family_i={J\bibinitperiod},
+         given={Aaron\bibnamedelima S},
+         given_i={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bulat},
+         family_i={B\bibinitperiod},
+         given={Adrian},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={Tzimiropoulos},
+         family_i={T\bibinitperiod},
+         given={Georgios},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=WDM}{%
+         family={Wells},
+         family_i={W\bibinitperiod},
+         given={Darren\bibnamedelima M},
+         given_i={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MEH}{%
+         family={Murchie},
+         family_i={M\bibinitperiod},
+         given={Erik\bibnamedelima H},
+         given_i={E\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PMP+1}
+    \strng{fullhash}{PMPAJATAJWMHGMJASBATGWDMMEH+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Deep machine learning provides state-of-the-art performance
+  in image-based plant phenotyping}
+    \field{journaltitle}{GigaScience}
+    \field{year}{2017}
+  \endentry
+
+  \entry{lobet2011novel}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LG}{%
+         family={Lobet},
+         family_i={L\bibinitperiod},
+         given={Guillaume},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Pag{\`e}s},
+         family_i={P\bibinitperiod},
+         given={Lo{\"\i}c},
+         given_i={L\bibinitperiod},
+      }}%
+      {{hash=DX}{%
+         family={Draye},
+         family_i={D\bibinitperiod},
+         given={Xavier},
+         given_i={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Am Soc Plant Biol}%
+    }
+    \strng{namehash}{LGPLDX1}
+    \strng{fullhash}{LGPLDX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{pp\bibrangedash 111}
+    \field{title}{A novel image analysis toolbox enabling quantitative analysis
+  of root system architecture}
+    \field{journaltitle}{Plant physiology}
+    \field{year}{2011}
+  \endentry
+
+  \entry{lobet2013novel}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LG}{%
+         family={Lobet},
+         family_i={L\bibinitperiod},
+         given={Guillaume},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=DX}{%
+         family={Draye},
+         family_i={D\bibinitperiod},
+         given={Xavier},
+         given_i={X\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {BioMed Central}%
+    }
+    \strng{namehash}{LGDX1}
+    \strng{fullhash}{LGDX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{1}
+    \field{title}{Novel scanning procedure enabling the vectorization of entire
+  rhizotron-grown root systems}
+    \field{volume}{9}
+    \field{journaltitle}{Plant Methods}
+    \field{year}{2013}
+  \endentry
+
+  \entry{babe2007smartroot}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=BA}{%
+         family={Bab{\'e}},
+         family_i={B\bibinitperiod},
+         given={Aur{\'e}lie},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=DX}{%
+         family={Draye},
+         family_i={D\bibinitperiod},
+         given={Xavier},
+         given_i={X\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BADX1}
+    \strng{fullhash}{BADX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Workshop on Growth Phenotyping and Imaging in Plants}
+    \field{title}{Smartroot: interactive analysis and annotation of root
+  morphology in time series of difficult root system images}
+    \field{year}{2007}
+  \endentry
+
+  \entry{galkovskyi2012gia}{article}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=GT}{%
+         family={Galkovskyi},
+         family_i={G\bibinitperiod},
+         given={Taras},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=MY}{%
+         family={Mileyko},
+         family_i={M\bibinitperiod},
+         given={Yuriy},
+         given_i={Y\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Bucksch},
+         family_i={B\bibinitperiod},
+         given={Alexander},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={Moore},
+         family_i={M\bibinitperiod},
+         given={Brad},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=SO}{%
+         family={Symonova},
+         family_i={S\bibinitperiod},
+         given={Olga},
+         given_i={O\bibinitperiod},
+      }}%
+      {{hash=PCA}{%
+         family={Price},
+         family_i={P\bibinitperiod},
+         given={Charles\bibnamedelima A},
+         given_i={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=TCN}{%
+         family={Topp},
+         family_i={T\bibinitperiod},
+         given={Christopher\bibnamedelima N},
+         given_i={C\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=IPAS}{%
+         family={Iyer-Pascuzzi},
+         family_i={I\bibinitperiod-P\bibinitperiod},
+         given={Anjali\bibnamedelima S},
+         given_i={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=ZPR}{%
+         family={Zurek},
+         family_i={Z\bibinitperiod},
+         given={Paul\bibnamedelima R},
+         given_i={P\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Fang},
+         family_i={F\bibinitperiod},
+         given={Suqin},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {BioMed Central}%
+    }
+    \strng{namehash}{GT+1}
+    \strng{fullhash}{GTMYBAMBSOPCATCNIPASZPRFS+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{116}
+    \field{title}{GiA Roots: software for the high throughput analysis of plant
+  root system architecture}
+    \field{volume}{12}
+    \field{journaltitle}{BMC plant biology}
+    \field{year}{2012}
+  \endentry
+
+  \entry{abas2006Intra}{article}{}
+    \name{author}{9}{}{%
+      {{hash=AL}{%
+         family={Abas},
+         family_i={A\bibinitperiod},
+         given={Lindy},
+         given_i={L\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Benjamins},
+         family_i={B\bibinitperiod},
+         given={Ren{\'e}},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=MN}{%
+         family={Malenica},
+         family_i={M\bibinitperiod},
+         given={Nenad},
+         given_i={N\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Paciorek},
+         family_i={P\bibinitperiod},
+         given={Tomasz},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wi{\v{s}}niewska},
+         family_i={W\bibinitperiod},
+         given={Justyna},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=MAJC}{%
+         family={Moulinier-Anzola},
+         family_i={M\bibinitperiod-A\bibinitperiod},
+         given={Jeanette\bibnamedelima C},
+         given_i={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Sieberer},
+         family_i={S\bibinitperiod},
+         given={Tobias},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Friml},
+         family_i={F\bibinitperiod},
+         given={Ji{\v{r}}{\'\i}},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Luschnig},
+         family_i={L\bibinitperiod},
+         given={Christian},
+         given_i={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{AL+1}
+    \strng{fullhash}{ALBRMNPTWJMAJCSTFJLC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{249}
+    \field{title}{Intracellular trafficking and proteolysis of the Arabidopsis
+  auxin-efflux facilitator PIN2 are involved in root gravitropism}
+    \field{volume}{8}
+    \field{journaltitle}{Nature cell biology}
+    \field{year}{2006}
+  \endentry
+
+  \entry{basu2007novel}{article}{}
+    \name{author}{4}{}{%
+      {{hash=BP}{%
+         family={Basu},
+         family_i={B\bibinitperiod},
+         given={Paramita},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Pal},
+         family_i={P\bibinitperiod},
+         given={Anupam},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=LJP}{%
+         family={Lynch},
+         family_i={L\bibinitperiod},
+         given={Jonathan\bibnamedelima P},
+         given_i={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=BKM}{%
+         family={Brown},
+         family_i={B\bibinitperiod},
+         given={Kathleen\bibnamedelima M},
+         given_i={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Am Soc Plant Biol}%
+    }
+    \strng{namehash}{BP+1}
+    \strng{fullhash}{BPPALJPBKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{305\bibrangedash 316}
+    \field{title}{A novel image-analysis technique for kinematic study of
+  growth and curvature}
+    \field{volume}{145}
+    \field{journaltitle}{Plant physiology}
+    \field{year}{2007}
+  \endentry
+
+  \entry{beemster1998analysis}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BGT}{%
+         family={Beemster},
+         family_i={B\bibinitperiod},
+         given={Gerrit\bibnamedelima TS},
+         given_i={G\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=BTI}{%
+         family={Baskin},
+         family_i={B\bibinitperiod},
+         given={Tobias\bibnamedelima I},
+         given_i={T\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Am Soc Plant Biol}%
+    }
+    \strng{namehash}{BGTBTI1}
+    \strng{fullhash}{BGTBTI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{1515\bibrangedash 1526}
+    \field{title}{Analysis of cell division and elongation underlying the
+  developmental acceleration of root growth in Arabidopsis thaliana}
+    \field{volume}{116}
+    \field{journaltitle}{Plant physiology}
+    \field{year}{1998}
+  \endentry
+
+  \entry{canny1986computational}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CJ}{%
+         family={Canny},
+         family_i={C\bibinitperiod},
+         given={John},
+         given_i={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Ieee}%
+    }
+    \strng{namehash}{CJ1}
+    \strng{fullhash}{CJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{679\bibrangedash 698}
+    \field{title}{A computational approach to edge detection}
+    \field{journaltitle}{IEEE Transactions on pattern analysis and machine
+  intelligence}
+    \field{year}{1986}
+  \endentry
+
+  \entry{comaniciu2000real}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=CD}{%
+         family={Comaniciu},
+         family_i={C\bibinitperiod},
+         given={Dorin},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=RV}{%
+         family={Ramesh},
+         family_i={R\bibinitperiod},
+         given={Visvanathan},
+         given_i={V\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Meer},
+         family_i={M\bibinitperiod},
+         given={Peter},
+         given_i={P\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{CDRVMP1}
+    \strng{fullhash}{CDRVMP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Computer Vision and Pattern Recognition, 2000.
+  Proceedings. IEEE Conference on}
+    \field{pages}{142\bibrangedash 149}
+    \field{title}{Real-time tracking of non-rigid objects using mean shift}
+    \field{volume}{2}
+    \field{year}{2000}
+  \endentry
+
+  \entry{french2008probabilistic}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=FAP}{%
+         family={French},
+         family_i={F\bibinitperiod},
+         given={Andrew\bibnamedelima P},
+         given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bennett},
+         family_i={B\bibinitperiod},
+         given={Malcolm},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=HC}{%
+         family={Howells},
+         family_i={H\bibinitperiod},
+         given={Caroline},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Patel},
+         family_i={P\bibinitperiod},
+         given={Dhaval},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=PTP}{%
+         family={Pridmore},
+         family_i={P\bibinitperiod},
+         given={Tony\bibnamedelima P},
+         given_i={T\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FAP+1}
+    \strng{fullhash}{FAPBMHCPDPTP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{BIOSIGNALS (1)}
+    \field{pages}{108\bibrangedash 115}
+    \field{title}{A Probabilistic Tracking Approach to Root Measurement in
+  Images-Particle Filter Tracking is used to Measure Roots, via a Probabilistic
+  Graph.}
+    \field{year}{2008}
+  \endentry
+
+  \entry{ge2000importance}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GZ}{%
+         family={Ge},
+         family_i={G\bibinitperiod},
+         given={Zhenyang},
+         given_i={Z\bibinitperiod},
+      }}%
+      {{hash=RG}{%
+         family={Rubio},
+         family_i={R\bibinitperiod},
+         given={Gerardo},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=LJP}{%
+         family={Lynch},
+         family_i={L\bibinitperiod},
+         given={Jonathan\bibnamedelima P},
+         given_i={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{GZRGLJP1}
+    \strng{fullhash}{GZRGLJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1-2}
+    \field{pages}{159\bibrangedash 171}
+    \field{title}{The importance of root gravitropism for inter-root
+  competition and phosphorus acquisition efficiency: results from a geometric
+  simulation model}
+    \field{volume}{218}
+    \field{journaltitle}{Plant and Soil}
+    \field{year}{2000}
+  \endentry
+
+  \entry{geometry2016}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=HC}{%
+         family={Hodgson},
+         family_i={H\bibinitperiod},
+         given={Craig},
+         given_i={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HC1}
+    \strng{fullhash}{HC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Geometry}
+    \list{institution}{1}{%
+      {University of Melbourne}%
+    }
+    \field{type}{Lecture and lecture notes (Winter 2016)}
+    \warn{\item Invalid format of field 'urldate'}
+  \endentry
+
+  \entry{ishikawa1990electrotropism}{article}{}
+    \name{author}{2}{}{%
+      {{hash=IH}{%
+         family={Ishikawa},
+         family_i={I\bibinitperiod},
+         given={Hideo},
+         given_i={H\bibinitperiod},
+      }}%
+      {{hash=EML}{%
+         family={Evans},
+         family_i={E\bibinitperiod},
+         given={Michael\bibnamedelima L},
+         given_i={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Am Soc Plant Biol}%
+    }
+    \strng{namehash}{IHEML1}
+    \strng{fullhash}{IHEML1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{913\bibrangedash 918}
+    \field{title}{Electrotropism of maize roots: role of the root cap and
+  relationship to gravitropism}
+    \field{volume}{94}
+    \field{journaltitle}{Plant physiology}
+    \field{year}{1990}
+  \endentry
+
+  \entry{kimura1999accurate}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KK}{%
+         family={Kimura},
+         family_i={K\bibinitperiod},
+         given={Kazuhiko},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kikuchi},
+         family_i={K\bibinitperiod},
+         given={Seiji},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=YSi}{%
+         family={Yamasaki},
+         family_i={Y\bibinitperiod},
+         given={Shin-ichi},
+         given_i={S\bibinitperiod-i\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{KKKSYSi1}
+    \strng{fullhash}{KKKSYSi1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1-2}
+    \field{pages}{117\bibrangedash 127}
+    \field{title}{Accurate root length measurement by image analysis}
+    \field{volume}{216}
+    \field{journaltitle}{Plant and Soil}
+    \field{year}{1999}
+  \endentry
+
+  \entry{kiss1996gravitropism}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KJZ}{%
+         family={Kiss},
+         family_i={K\bibinitperiod},
+         given={John\bibnamedelima Z},
+         given_i={J\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=WJB}{%
+         family={Wright},
+         family_i={W\bibinitperiod},
+         given={Jonathan\bibnamedelima B},
+         given_i={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Caspar},
+         family_i={C\bibinitperiod},
+         given={Timothy},
+         given_i={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{KJZWJBCT1}
+    \strng{fullhash}{KJZWJBCT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{pages}{237\bibrangedash 244}
+    \field{title}{Gravitropism in roots of intermediate-starch mutants of
+  Arabidopsis}
+    \field{volume}{97}
+    \field{journaltitle}{Physiologia Plantarum}
+    \field{year}{1996}
+  \endentry
+
+  \entry{mullen1998analysis}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MJL}{%
+         family={Mullen},
+         family_i={M\bibinitperiod},
+         given={Jack\bibnamedelima L},
+         given_i={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=IH}{%
+         family={Ishikawa},
+         family_i={I\bibinitperiod},
+         given={Hideo},
+         given_i={H\bibinitperiod},
+      }}%
+      {{hash=EML}{%
+         family={Evans},
+         family_i={E\bibinitperiod},
+         given={Michael\bibnamedelima L},
+         given_i={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{MJLIHEML1}
+    \strng{fullhash}{MJLIHEML1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{598\bibrangedash 603}
+    \field{title}{Analysis of changes in relative elemental growth rate
+  patterns in the elongation zone of Arabidopsis roots upon gravistimulation}
+    \field{volume}{206}
+    \field{journaltitle}{Planta}
+    \field{year}{1998}
+  \endentry
+
+  \entry{naeem2011high}{article}{}
+    \name{author}{4}{}{%
+      {{hash=NA}{%
+         family={Naeem},
+         family_i={N\bibinitperiod},
+         given={Asad},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=FAP}{%
+         family={French},
+         family_i={F\bibinitperiod},
+         given={Andrew\bibnamedelima P},
+         given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=WDM}{%
+         family={Wells},
+         family_i={W\bibinitperiod},
+         given={Darren\bibnamedelima M},
+         given_i={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=PTP}{%
+         family={Pridmore},
+         family_i={P\bibinitperiod},
+         given={Tony\bibnamedelima P},
+         given_i={T\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{NA+1}
+    \strng{fullhash}{NAFAPWDMPTP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{9}
+    \field{pages}{1337\bibrangedash 1338}
+    \field{title}{High-throughput feature counting and measurement of roots}
+    \field{volume}{27}
+    \field{journaltitle}{Bioinformatics}
+    \field{year}{2011}
+  \endentry
+
+  \entry{qi2007rootlm}{article}{}
+    \name{author}{3}{}{%
+      {{hash=QX}{%
+         family={Qi},
+         family_i={Q\bibinitperiod},
+         given={Xiaojun},
+         given_i={X\bibinitperiod},
+      }}%
+      {{hash=QJ}{%
+         family={Qi},
+         family_i={Q\bibinitperiod},
+         given={Ji},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Wu},
+         family_i={W\bibinitperiod},
+         given={Yajun},
+         given_i={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Japanese Society for Root Research}%
+    }
+    \strng{namehash}{QXQJWY1}
+    \strng{fullhash}{QXQJWY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{10\bibrangedash 16}
+    \field{title}{RootLM: a simple color image analysis program for length
+  measurement of primary roots in Arabidopsis}
+    \field{volume}{1}
+    \field{journaltitle}{Plant Root}
+    \field{year}{2007}
+  \endentry
+
+  \entry{swarup2005root}{article}{}
+    \name{author}{9}{}{%
+      {{hash=SR}{%
+         family={Swarup},
+         family_i={S\bibinitperiod},
+         given={Ranjan},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=KEM}{%
+         family={Kramer},
+         family_i={K\bibinitperiod},
+         given={Eric\bibnamedelima M},
+         given_i={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=PP}{%
+         family={Perry},
+         family_i={P\bibinitperiod},
+         given={Paula},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=KK}{%
+         family={Knox},
+         family_i={K\bibinitperiod},
+         given={Kirsten},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=LHO}{%
+         family={Leyser},
+         family_i={L\bibinitperiod},
+         given={HM\bibnamedelima Ottoline},
+         given_i={H\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Haseloff},
+         family_i={H\bibinitperiod},
+         given={Jim},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=BGT}{%
+         family={Beemster},
+         family_i={B\bibinitperiod},
+         given={Gerrit\bibnamedelima TS},
+         given_i={G\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={Bhalerao},
+         family_i={B\bibinitperiod},
+         given={Rishikesh},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=BMJ}{%
+         family={Bennett},
+         family_i={B\bibinitperiod},
+         given={Malcolm\bibnamedelima J},
+         given_i={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{SR+1}
+    \strng{fullhash}{SRKEMPPKKLHOHJBGTBRBMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{11}
+    \field{pages}{1057}
+    \field{title}{Root gravitropism requires lateral root cap and epidermal
+  cells for transport and response to a mobile auxin signal}
+    \field{volume}{7}
+    \field{journaltitle}{Nature cell biology}
+    \field{year}{2005}
+  \endentry
+
+  \entry{walter2002spatio}{article}{}
+    \name{author}{6}{}{%
+      {{hash=WA}{%
+         family={Walter},
+         family_i={W\bibinitperiod},
+         given={A},
+         given_i={A},
+      }}%
+      {{hash=SH}{%
+         family={Spies},
+         family_i={S\bibinitperiod},
+         given={H},
+         given_i={H},
+      }}%
+      {{hash=TS}{%
+         family={Terjung},
+         family_i={T\bibinitperiod},
+         given={S},
+         given_i={S},
+      }}%
+      {{hash=KR}{%
+         family={K{\"u}sters},
+         family_i={K\bibinitperiod},
+         given={R},
+         given_i={R},
+      }}%
+      {{hash=KN}{%
+         family={Kirchge{\ss}ner},
+         family_i={K\bibinitperiod},
+         given={N},
+         given_i={N},
+      }}%
+      {{hash=SU}{%
+         family={Schurr},
+         family_i={S\bibinitperiod},
+         given={U},
+         given_i={U},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Oxford University Press}%
+    }
+    \strng{namehash}{WA+1}
+    \strng{fullhash}{WASHTSKRKNSU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{369}
+    \field{pages}{689\bibrangedash 698}
+    \field{title}{Spatio-temporal dynamics of expansion growth in roots:
+  automatic quantification of diurnal course and temperature response by
+  digital image sequence processing}
+    \field{volume}{53}
+    \field{journaltitle}{Journal of experimental botany}
+    \field{year}{2002}
+  \endentry
+
+  \entry{wang2009hypotrace}{article}{}
+    \name{author}{5}{}{%
+      {{hash=WL}{%
+         family={Wang},
+         family_i={W\bibinitperiod},
+         given={Liya},
+         given_i={L\bibinitperiod},
+      }}%
+      {{hash=UIV}{%
+         family={Uilecan},
+         family_i={U\bibinitperiod},
+         given={Ioan\bibnamedelima Vlad},
+         given_i={I\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=AAH}{%
+         family={Assadi},
+         family_i={A\bibinitperiod},
+         given={Amir\bibnamedelima H},
+         given_i={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=KCA}{%
+         family={Kozmik},
+         family_i={K\bibinitperiod},
+         given={Christine\bibnamedelima A},
+         given_i={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SEP}{%
+         family={Spalding},
+         family_i={S\bibinitperiod},
+         given={Edgar\bibnamedelima P},
+         given_i={E\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Am Soc Plant Biol}%
+    }
+    \strng{namehash}{WL+1}
+    \strng{fullhash}{WLUIVAAHKCASEP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{4}
+    \field{pages}{1632\bibrangedash 1637}
+    \field{title}{HYPOTrace: image analysis software for measuring hypocotyl
+  growth and shape demonstrated on Arabidopsis seedlings undergoing
+  photomorphogenesis}
+    \field{volume}{149}
+    \field{journaltitle}{Plant physiology}
+    \field{year}{2009}
+  \endentry
+
+  \entry{wolverton2000two}{article}{}
+    \name{author}{4}{}{%
+      {{hash=WC}{%
+         family={Wolverton},
+         family_i={W\bibinitperiod},
+         given={C},
+         given_i={C},
+      }}%
+      {{hash=MJ}{%
+         family={Mullen},
+         family_i={M\bibinitperiod},
+         given={JL},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=IH}{%
+         family={Ishikawam},
+         family_i={I\bibinitperiod},
+         given={H},
+         given_i={H},
+      }}%
+      {{hash=EM}{%
+         family={Evans},
+         family_i={E\bibinitperiod},
+         given={ML},
+         given_i={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{WC+1}
+    \strng{fullhash}{WCMJIHEM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{11}
+    \field{pages}{1275\bibrangedash 1280}
+    \field{title}{Two distinct regions of response drive differential growth in
+  Vigna root electrotropism}
+    \field{volume}{23}
+    \field{journaltitle}{Plant, cell \& environment}
+    \field{year}{2000}
+  \endentry
+
+  \entry{tovar2018raspberry}{article}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=TJC}{%
+         family={Tovar},
+         family_i={T\bibinitperiod},
+         given={Jose\bibnamedelima C},
+         given_i={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=HJS}{%
+         family={Hoyer},
+         family_i={H\bibinitperiod},
+         given={J\bibnamedelima Steen},
+         given_i={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Lin},
+         family_i={L\bibinitperiod},
+         given={Andy},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tielking},
+         family_i={T\bibinitperiod},
+         given={Allison},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=CST}{%
+         family={Callen},
+         family_i={C\bibinitperiod},
+         given={Steven\bibnamedelima T},
+         given_i={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=ECS}{%
+         family={Elizabeth\bibnamedelima Castillo},
+         family_i={E\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={S},
+         given_i={S},
+      }}%
+      {{hash=MM}{%
+         family={Miller},
+         family_i={M\bibinitperiod},
+         given={Michael},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Tessman},
+         family_i={T\bibinitperiod},
+         given={Monica},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=FN}{%
+         family={Fahlgren},
+         family_i={F\bibinitperiod},
+         given={Noah},
+         given_i={N\bibinitperiod},
+      }}%
+      {{hash=CJC}{%
+         family={Carrington},
+         family_i={C\bibinitperiod},
+         given={James\bibnamedelima C},
+         given_i={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wiley Online Library}%
+    }
+    \strng{namehash}{TJC+1}
+    \strng{fullhash}{TJCHJSLATACSTECSMMTMFNCJC+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{3}
+    \field{pages}{e1031}
+    \field{title}{Raspberry Pi--powered imaging for plant phenotyping}
+    \field{volume}{6}
+    \field{journaltitle}{Applications in plant sciences}
+    \field{year}{2018}
+  \endentry
+
+  \entry{kolukisaoglu2010future}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KU}{%
+         family={Kolukisaoglu},
+         family_i={K\bibinitperiod},
+         given={{\"U}ner},
+         given_i={{\"U}\bibinitperiod},
+      }}%
+      {{hash=TK}{%
+         family={Thurow},
+         family_i={T\bibinitperiod},
+         given={Kerstin},
+         given_i={K\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{KUTK1}
+    \strng{fullhash}{KUTK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{6}
+    \field{pages}{476\bibrangedash 484}
+    \field{title}{Future and frontiers of automated screening in plant
+  sciences}
+    \field{volume}{178}
+    \field{journaltitle}{Plant Science}
+    \field{year}{2010}
+  \endentry
+
+  \entry{le2010dart}{article}{}
+    \name{author}{6}{}{%
+      {{hash=LBJ}{%
+         family={Le\bibnamedelima Bot},
+         family_i={L\bibinitperiod\bibinitdelim B\bibinitperiod},
+         given={Jacques},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Serra},
+         family_i={S\bibinitperiod},
+         given={Val{\'e}rie},
+         given_i={V\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Fabre},
+         family_i={F\bibinitperiod},
+         given={Jos{\'e}},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=DX}{%
+         family={Draye},
+         family_i={D\bibinitperiod},
+         given={Xavier},
+         given_i={X\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Adamowicz},
+         family_i={A\bibinitperiod},
+         given={St{\'e}phane},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Pag{\`e}s},
+         family_i={P\bibinitperiod},
+         given={Lo{\"\i}c},
+         given_i={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{LBJ+1}
+    \strng{fullhash}{LBJSVFJDXASPL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1-2}
+    \field{pages}{261\bibrangedash 273}
+    \field{title}{DART: a software to analyse root system architecture and
+  development from captured images}
+    \field{volume}{326}
+    \field{journaltitle}{Plant and Soil}
+    \field{year}{2010}
+  \endentry
+
+  \entry{nagel2009temperature}{article}{}
+    \true{moreauthor}
+    \name{author}{10}{}{%
+      {{hash=NKA}{%
+         family={Nagel},
+         family_i={N\bibinitperiod},
+         given={Kerstin\bibnamedelima A},
+         given_i={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kastenholz},
+         family_i={K\bibinitperiod},
+         given={Bernd},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=JS}{%
+         family={Jahnke},
+         family_i={J\bibinitperiod},
+         given={Siegfried},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=VDD}{%
+         family={Van\bibnamedelima Dusschoten},
+         family_i={V\bibinitperiod\bibinitdelim D\bibinitperiod},
+         given={Dagmar},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=AT}{%
+         family={Aach},
+         family_i={A\bibinitperiod},
+         given={Til},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={M{\"u}hlich},
+         family_i={M\bibinitperiod},
+         given={Matthias},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=TD}{%
+         family={Truhn},
+         family_i={T\bibinitperiod},
+         given={Daniel},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=SH}{%
+         family={Scharr},
+         family_i={S\bibinitperiod},
+         given={Hanno},
+         given_i={H\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Terjung},
+         family_i={T\bibinitperiod},
+         given={Stefan},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={Walter},
+         family_i={W\bibinitperiod},
+         given={Achim},
+         given_i={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {CSIRO}%
+    }
+    \strng{namehash}{NKA+1}
+    \strng{fullhash}{NKAKBJSVDDATMMTDSHTSWA+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{11}
+    \field{pages}{947\bibrangedash 959}
+    \field{title}{Temperature responses of roots: impact on growth, root system
+  architecture and implications for phenotyping}
+    \field{volume}{36}
+    \field{journaltitle}{Functional Plant Biology}
+    \field{year}{2009}
+  \endentry
+
+  \entry{gupta2014plant}{book}{}
+    \name{author}{2}{}{%
+      {{hash=GSD}{%
+         family={Gupta},
+         family_i={G\bibinitperiod},
+         given={S\bibnamedelima Dutta},
+         given_i={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=IY}{%
+         family={Ibaraki},
+         family_i={I\bibinitperiod},
+         given={Yasuomi},
+         given_i={Y\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {CRC Press}%
+    }
+    \strng{namehash}{GSDIY1}
+    \strng{fullhash}{GSDIY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Plant Image Analysis: Fundamentals and Applications}
+    \field{year}{2014}
+  \endentry
+
+  \entry{pound2016patch}{article}{}
+    \name{author}{5}{}{%
+      {{hash=PMP}{%
+         family={Pound},
+         family_i={P\bibinitperiod},
+         given={Michael\bibnamedelima P},
+         given_i={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=FAP}{%
+         family={French},
+         family_i={F\bibinitperiod},
+         given={Andrew\bibnamedelima P},
+         given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=FJA}{%
+         family={Fozard},
+         family_i={F\bibinitperiod},
+         given={John\bibnamedelima A},
+         given_i={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MEH}{%
+         family={Murchie},
+         family_i={M\bibinitperiod},
+         given={Erik\bibnamedelima H},
+         given_i={E\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=PTP}{%
+         family={Pridmore},
+         family_i={P\bibinitperiod},
+         given={Tony\bibnamedelima P},
+         given_i={T\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{PMP+1}
+    \strng{fullhash}{PMPFAPFJAMEHPTP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{767\bibrangedash 779}
+    \field{title}{A patch-based approach to 3D plant shoot phenotyping}
+    \field{volume}{27}
+    \field{journaltitle}{Machine Vision and Applications}
+    \field{year}{2016}
+  \endentry
+
+  \entry{burrell2017microphenotron}{article}{}
+    \name{author}{8}{}{%
+      {{hash=BT}{%
+         family={Burrell},
+         family_i={B\bibinitperiod},
+         given={Thomas},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=FS}{%
+         family={Fozard},
+         family_i={F\bibinitperiod},
+         given={Susan},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=HGH}{%
+         family={Holroyd},
+         family_i={H\bibinitperiod},
+         given={Geoff\bibnamedelima H},
+         given_i={G\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=FAP}{%
+         family={French},
+         family_i={F\bibinitperiod},
+         given={Andrew\bibnamedelima P},
+         given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=PMP}{%
+         family={Pound},
+         family_i={P\bibinitperiod},
+         given={Michael\bibnamedelima P},
+         given_i={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=BCJ}{%
+         family={Bigley},
+         family_i={B\bibinitperiod},
+         given={Christopher\bibnamedelima J},
+         given_i={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=TCJ}{%
+         family={Taylor},
+         family_i={T\bibinitperiod},
+         given={C\bibnamedelima James},
+         given_i={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=FBG}{%
+         family={Forde},
+         family_i={F\bibinitperiod},
+         given={Brian\bibnamedelima G},
+         given_i={B\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {BioMed Central}%
+    }
+    \strng{namehash}{BT+1}
+    \strng{fullhash}{BTFSHGHFAPPMPBCJTCJFBG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{10}
+    \field{title}{The Microphenotron: a robotic miniaturized plant phenotyping
+  platform with diverse applications in chemical biology}
+    \field{volume}{13}
+    \field{journaltitle}{Plant methods}
+    \field{year}{2017}
+  \endentry
+
+  \entry{navarro2016machine}{article}{}
+    \name{author}{4}{}{%
+      {{hash=NPJ}{%
+         family={Navarro},
+         family_i={N\bibinitperiod},
+         given={Pedro\bibnamedelima J},
+         given_i={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=PF}{%
+         family={P{\'e}rez},
+         family_i={P\bibinitperiod},
+         given={Fernando},
+         given_i={F\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Weiss},
+         family_i={W\bibinitperiod},
+         given={Julia},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=ECM}{%
+         family={Egea-Cortines},
+         family_i={E\bibinitperiod-C\bibinitperiod},
+         given={Marcos},
+         given_i={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Multidisciplinary Digital Publishing Institute}%
+    }
+    \strng{namehash}{NPJ+1}
+    \strng{fullhash}{NPJPFWJECM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{5}
+    \field{pages}{641}
+    \field{title}{Machine learning and computer vision system for phenotype
+  data acquisition and analysis in plants}
+    \field{volume}{16}
+    \field{journaltitle}{Sensors}
+    \field{year}{2016}
+  \endentry
+\endsortlist
 \endinput

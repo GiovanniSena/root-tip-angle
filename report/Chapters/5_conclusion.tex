@@ -11,23 +11,29 @@
 %\newcommand{\tabhead}[1]{\textbf{#1}}
 %\newcommand{\code}[1]{\texttt{#1}}
 %\newcommand{\file}[1]{\texttt{\bfseries#1}}
-%\newcommand{\option}[1]{\texttt{\itshape#1}}
+%\newcommand{\option}[1]{\texttt{itshape#1}}
 
 %%----------------------------------------------------------------------------------------
 
-WHAT, WHY, WHY ADVANTAGE, WHAT WAS CHALLENGE?
+%WHAT, WHY, WHY ADVANTAGE, WHAT WAS CHALLENGE?
+
 
 %%----------------------------------------------------------------------------------------
 
 
-Here we present a novel and stand-alone image-analysis-based software tool developed in MATLAB optimised for noise-intensive electrotropism images that is able to compute the curvature and angle at the root tip in a standardised fashion with a user-friendly and very flexible pre-processing step to extract the skeleton of the root from possibly very noise image data sets. 
-It offers the possibility to extend the analysis by including different angle definitions to capture the curvature of the plant root and compare them. Also, the software tool is not limited to compute the angle of root tips but due to the flexibility of the pre-processing step can be used for any other curved or polynomial-like structure. 
+%Here we presented \textit{RootSkel} -- a novel and stand-alone image-analysis-based software tool developed in MATLAB optimised for noise-intensive electrotropism images that can compute the curvature and angle at the root tip in a standardised fashion with a user-friendly and very flexible pre-processing step to extract the skeleton of the root from possibly very noise image data sets.
 
-The software has been designed using an extensive amount of different filtering techniques optimised on the image data set described in this work [INCLUDE REFERENCE TO SECTION] and can therefore be used to work with standard images fro costumer digital cameras. 
+Here we presented \textit{RootSkel} -- a novel stand-alone and intuitive image-analysis-based software tool developed in MATLAB to compute the curvature and angle at plant root tips in a standardised fashion. It was designed to work with noise-intensive electrotropism images and comes with a user-friendly and flexible pre-processing step to extract the skeleton of the root. % from possibly very noise image data sets.
 
-Automated image capturing as well as the design of the software presented here both aim to reduce the time-consuming process of the biologist quantifying the root tip curvature manually but more importantly, it standardises the computations and makes the results reproducible and comparable over a large amount of data. 
+The software has been designed using an extensive amount of different filtering techniques optimised on the image data set described in this work and can therefore be used to work with standard images from consumer digital cameras. 
 
-This will contribute to understand highly complex and poorly-understood phenomenons like eletrotropism in plants and possibly other tropisms, as well as plant growth in general.
+Automated image capturing as well as the design of the software presented here both aim to reduce the time-consuming process of the biologist quantifying the root tip curvature manually but more importantly, it standardises the computations and makes the results reproducible and comparable over a large amount of data. It offers the possibility to extend the analysis by including different angle definitions to capture the curvature of the plant root and compare them. Also, the software tool is not limited to computing the angle of root tips but due to the flexibility of the pre-processing step can be used for any other curved or polynomial-like structure. 
+
+Angles computed by \textit{RootSkel} seem to correlate well with equivalent manual measures; based on angles of 3 Arabidopsis roots we showed that the angles computed by \textit{RootSkel} do not differ significantly (\(P >0.05\)) from the manually computed ones. % and, therefore, represent a good emulation thereof. 
+
+However, the robustness and reproducibility of \textit{RootSkel} need to be further validated; suggestions for future work can be implemented. 
+
+We hope \textit{RootSkel} will contribute to the understanding of highly complex and poorly-understood phenomenons like eletrotropism in plants and possibly other tropisms. %, as well as plant growth in general.
 
 %.FROM ABSTRACT
 %Unlike when doing the angle computation to measure the curvature of a root tip manually, our tool ensures a standardised version of the angle computation. On top of it, we  developed a user-friendly graphical user interface (GUI) that will help the user in processing the images and compute the angles in a standardised and controlled fashion.
@@ -35,37 +41,5 @@ This will contribute to understand highly complex and poorly-understood phenomen
 %We use a data set of high-throughput time-lapse images of Arabidopsis roots from 5 experiments with 4-5 roots each containing between 32 and 36 images over a period of approximately 5 hours produced by the Plant Morphology lab at Imperial College London, we evaluate our results by comparing it to previously manually computed angles. [INCLUDE RESULTS A LA 70\% of the images could be found to be reproduced]
 
 
-Hope to be able to standardise it in the future.
-
-%%----------------------------------------------------------------------------------------
-%%----------------------------------------------------------------------------------------
-%%----------------------------------------------------------------------------------------
-%\texttt{%----------------------------------------------------------------------------------------
-%
-%\section{Welcome and Thank You}
-%
-%
-%%----------------------------------------------------------------------------------------
-%
-%\section{Learning \LaTeX{}}
-%
-%
-%\subsection{A (not so short) Introduction to \LaTeX{}}
-%
-%
-%\subsection{A Short Math Guide for \LaTeX{}}
-%
-%
-%\subsection{Common \LaTeX{} Math Symbols}
-%
-%
-%\subsection{\LaTeX{} on a Mac}
-% 
-%%----------------------------------------------------------------------------------------
-%
-%\section{Getting Started with this Template}
-%
-%
-%\subsection{About this Template}}
-
+%HHope to be able to standardise it in the future.
 

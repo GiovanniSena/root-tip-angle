@@ -1,0 +1,373 @@
+*************************************************
+*----Update log-----Created: 10.8.2018,21:18----*
+*************************************************
+
+I have decided to create the beta version.
+Now that I started creating the GUI, I have decided to split the process into functions and
+use several buttons in the GUI.
+I will now start to implement.
+For the progress so far see Old_Versions_Log.
+I will start by migrating a copy of GUItest and changing it to a beta.
+
+I then went on to separarte the image choosing and image zooming into functions 
+and make the appropriate changes to the GUI code.
+
+-21:53
+I realized the flag for the zoom is no longer necessary, at least not in the 
+same manner, since I shall soon add a zoom button.
+
+-22:02
+Migrated the point choosing functionality to an external function and will
+now update to the one from lychtst3.
+
+-22:19
+I have started migrating the rest of the script.
+Started by migrating all of it to a function called root_skel.
+Now will delegate all the stuff before the imfreehand to image_process,
+the crop to an image_freecrop and the skeleton will stay where it is.
+Will create necessary buttons and callbacks.
+
+-23:04
+I thought I needed to change something I didn't need to. 
+Now I will move the image(cropped_roots_img) to the end of point_choose.
+
+-23:38
+Small change - change the prompt of the cleaning.
+Big change that will be implemented - migration of cleaning
+
+-- 11.8.18
+
+-01:32
+Discovered impoly, which might be easier to handle than imfreehand.
+But! I realized that I don't have to choose between them, I can let the user do so.
+
+-01:39
+Will try to implement the forcing of the tip now.
+Just had an idea - maybe instead of the user clumsily creating a line, we will ask him to 
+use impoly to encircle the area between the end of the skeleton and the tip
+and whiten it.
+
+-18:17
+Several minutes ago started working on implementing a save figure button.
+Had to search online for a solution for saving a specific axes.
+Will use check boxes to allow the user to save either or both of the axes.
+
+-- 12.8.18
+
+-18:45
+Decided to change a little the force tip function.
+Instead of 1 we'll try to use root_points_color.
+
+-- 13.8.18
+
+-08:53
+Am in the process of implementing the clear image (+left and right checkboxes) and show image.
+Show image becomes available after Process image.
+
+-09:25
+Decided to scrap force_tip and instead to an open polygon that forces unified skeleton.
+
+-09:30
+Moved as a result the enabling of the shower to get skel.
+
+-09:34
+Will show skeleton with picture on the right image at shoe skeleton.
+
+-10:10
+Decided to change forcetip to imline.
+
+-13:26
+Starting to implement the getting the point of most curvature in final_prep.
+Will take the point in skelmatR closest to where the user pressed.
+
+-13:35
+Decided to migrate "point_get" to a separate file so that final_prep can also use it.
+Hopefully it doesn't do problems. And removing the srcx and srcy which are redundant.
+and so IMPORTANT: POINT_CHOOSE AND POINT_GET ARE SEPARATE NOW. THE NEW FINAL_PREP 
+WILL NOT WORK PROPERLY WITH THE OLD POINT_CHOOSE AND WITHOUT A SEPARATE POINT_GET!
+
+-13:52
+I realized the save variables doesn't do what it's suposed to. Will try to fix quickly
+
+-13:59
+Will migrate the saving function to a new function.
+WARNING: Root_image_GUI_1.3 and further NEED THE NEW FUNCTION!
+
+-14:25
+Realized I had to ask the user for a point in final_skeleton for the whole curvature point
+to work. So implementation ensued
+
+-14:42
+A new decision has been made. We move the cropping in final_prep to after the user's
+point selection and we create a new skelmatR_simp which includes the whole root 
+and goes with the user's selection if he chooses to choose a point.
+
+-14:59
+Had to make more changes to var_saver but now it works! Root_image_GUI_v1.3 
+is almost ready! Or if I don't realize why it takes the wrong part of the 
+root then it's ready!
+
+-15:16 
+I understood the problem!!!
+Find uses linear indices, where it goes over the columns instead of the rows. 
+So I need to rotate unified skeleton first and then not rotate finalskeleton later!
+Hooray!
+
+-15:29
+I fixed it! now it is ready! HOORAY!
+
+To do list:
+Applying 'addpath' to include the functions folder.
+Creating a pop message when image process is through
+Searching for a way to stop the running of a function if another button is pressed.
+
+-- 15.8.18
+
+-01:15
+Implemented first item in the to do list
+
+-01:25
+Implemented the secod item.
+
+-01:30
+In skel_clean IT DIDN'T ASSIGN THE RESULT TO BASE WORK SPACE BEFORE. WILL FIX.
+
+-01:34
+Discovered another bug in the clear image command:
+Both buttons told the program to clear the left axes. fixed
+
+-17:51
+Received getAngle.m from Lychee. will implement a button for that and for curvature.
+
+-18:09
+Decided to create loading buttons for variables and a loading for figures with 
+a radio button for deciding which axes to show in.
+Will also implement in the var_loader the enabling of the angle calculating button/s.
+But first decided to migrate the figure saving to fig_saver.
+
+-18:50
+Only partially implemented and will continue later.
+
+-20:41
+After struggling with the implementation of displaying the loaded figure in 
+the correct axes, I have discovered that a panel can be a parent to an axes.
+And so, I am kinda forced to introduce two panels and put the orig_img and alt_img 
+axes there in order to implement the loading properly.
+
+-21:01
+After a long time, I decided it is time to give up on the clear image.
+Technically it does load the figure into the appropriate axes.
+But:
+0 It shows a small version
+0 Clear doesn't work on it
+0 And when you try to open another file it will show beneath it.
+The third bug I might easily find out how to solve and  aybe the first one too.
+But I've had it.
+I'll add a warning or something and be done with it.
+Or not even that.
+Now I'll add to the load variables that it will enable the appropriate angle button/s.
+And maybe migrate to a new function.
+
+-21:17
+Finished implememting a variable loading function that also enables appropriate 
+buttons.
+
+-21:23
+Applied the following small fix to Lychee's getAngle:
+changed the output argument's name to match the actual name of variable in code,
+meaning a -> aoi.
+Also a minute later suppressed output in her function because I already handled it and about to change it 
+anyways to a popup message.
+
+-- 16.8.2018
+
+-17:54
+Downloaded a newer version of her code and applied the same changes.
+
+-- 22.8.2018 
+
+-12:04
+To DO LIST:
+0 Telling the user to save the .mat file as image + root number.
+0 The angle in a file with a header consisiting of image and root number 
+(can use the previous thing).
+0 (Lower priority) super imposing the lines and the angle on the root.
+
+-12:18
+Let's start with the first item.
+First, in image_choose, I'll add an assignin that saves the file_name to 
+the base workspace. Then, in var_saver I will ask the user for the number of the 
+root starting from the left. Then, I will concatenate them and add .mat and
+make it the filename that the uisave starts with.
+
+-12:39
+It was successfully implemented and then I had an idea:
+I will use a similar name for the figures!
+The Idea is using assignin to save most of the savename (without extension)
+and then if it exists already in the base workspace, then there is no need
+to ask for the root number again and again.
+And then I realized I shoulde migrate the part where the user enters the root number and the savename is created
+to a separate function since the first time can happen with a save figure and
+then I realized I will remove the file extension and only complete the relevant thing
+for each option. Let's go!
+
+-12:53
+Implemented successfully!
+
+-13:24
+I can now use the savename in the implementation of the second item.
+I will implement it in a function that will be called when the usesr presses the button to calculate
+the angle (either button).
+
+-14:11
+Implemented but I also found a bug:
+the following if:
+if ((exist('savename','var')) ~=1)
+is not doing what I intended it to do: 
+It does not check the base workspace for that variable.
+And therefore, even if it is there the user is forced to give th3e root number again and again.
+Luckily, I also came up with the solution fairly quickly:
+if (evalin('base',"(exist('savename','var'))") ~=1).
+Will implement.
+
+-14:14
+Implemented successfully and also added
+fclose(fileID)
+to the end of angle_file.
+
+-15:12
+Decided to add the savename to the list of saved variables to allow the 
+named saving of things after loading a .mat file.
+
+-16:39
+Downloaded getAngle2.m that I got from Lychee.
+changed to getAngle.m
+
+-16:48
+Told to change the angle_file to a general file for all angles.
+So changed it to append instead of write and the formatSpec:
+formatSpec = '%s  %8.4f';
+And changed the naming to 'root_angles.csv'
+
+-16:52
+Will now update the var_loader to clear the variables and also to
+load the savename variable to the base workspace.
+
+-16:57
+Decided to add another input to angle_file to discern between user assisted
+angles and ones from curvature calculation. And of course will make sure it 
+writes to a regular file and a'user_assisted' file.
+
+-17:16
+I need to make a change to getAngle:
+change the first if blocks from asking if the max_curv_point exists
+to if it's empty or not. 
+
+-17:35
+I need to move the enabling of the angle button/s from var_loader to the
+script of the GUI for it to work, including an if which resembles the one from the 
+update 14:11
+
+-17:40
+Forgot to add the \n to the angle_file 's formatSpec. 
+Will do it now.
+
+-18:46
+Lychee sent a new getAngle with a new feature:
+uniqueness.
+I need to output a message if it is not unique (uniquness == 0)
+
+--23.8.18
+
+-20:44
+Decided to try something.
+I realised that in the image_crop I could just remove straight from unified_skeleton
+instead of cropping the grayscales. And so, I was about to change the image_crop
+but instead I'll just use it to create an additional function for cropping the skeleton directly!
+I should have thought about it before! If it will work it will also make the cleaning
+process redundant.
+
+-20:55
+I implemented it without removing the other options, so we now have it as a 
+fallback.
+
+-21:26
+Another thing that might help is cropping before processing the image.
+
+-- 24.8.2018
+
+-02:04
+I think I should change the initial cropping to include less of the original image.
+To maybe have less noise.
+
+-- 26.8.18 
+
+-14:19
+I changed something in final_prep, since we ended up not using skelmatR,
+so skelmatR_simp must be created anyways. So I moved the creation outside of the 
+ifs.
+
+-14:49
+Will change angle_file to save it to a file named date_root#_angles.csv.
+Implemented by 14:59.
+
+-15:41
+Decided to add clearing of variables to image_choose so you won't have to 
+close the GUI. Implemented correctly by 15:45.
+
+--28.8.18
+
+-19:12
+As commanded by the supreme leader, we shall now implement drawing lines that
+will show what the angle in question is. And if I'll figure out how to do it I'll
+do the little angle arc as well. We shall call this new function that will 
+handle this - angle_drawer.
+We shall call it from the angle getting buttons. The user assisted one is 
+easy because we have both the tip and the max_curv_point so we just need to 
+use the line function to draw a line between them and also some random 
+horizontal line from max_curv_point. The non user assisted one is a little tougher.
+I thought I'll just take a very long test line and then see where it intersects 
+with the skeleton, so basically xtst = x - 50 * cos(root_angle) etc. 
+From there it's the same.
+
+-20:52
+Only now starting to implement.
+
+-22:08
+While I successfuly implemented for the user assisted, I did find out something
+disturbing - there is a chance the max_curv_point wasn't on the skeleton all this time.
+
+-22:15
+I realized max_curv_point is not very useful since it is for a lying down
+skeleton. So I can only use the approach for no second point given.
+
+--29.8.18
+
+-14:06
+I think I know how to solve it. I need to calculate the equivalent of y-f(x).
+
+-20:01
+FINALLY!!! SUCCESSSSSS!!!!!!!!!!!!! It just boring bug fixing so I will not 
+bore you with the details.
+
+-20:04
+Addef it to the curvature script angle getting.
+
+Name changes so far:
+lych_tst2  -> original_roots_img
+lychcrop2  -> cropped_roots_img
+graywarden -> color_filt_img
+brighttst  -> bright_filt_img
+lychsize (in image_process) -> originalsize
+lychsize (in root_skel) -> croppedsize
+lychpoi (in image_process) -> triple_root_points
+lychpoi (in root_skel) -> tip_root_point
+lychpcolor -> root_points_color
+Imtst -> colortemp
+Imtstbri -> brighttemp
+skeletor -> color_skeleton
+skeletor2 -> brightness_skeleton
+uniskel -> unified_skeleton
+superskel -> temp_skeleton
+workskel -> work_skeleton
+workskel2 -> work_skeleton2

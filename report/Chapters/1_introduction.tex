@@ -1,5 +1,6 @@
 % Chapter 1: INTRODUCTION
 
+
 \chapter{Introduction} % Main chapter title
 
 \label{introduction} % For referencing the chapter elsewhere, use \ref{Chapter1} 
@@ -15,167 +16,67 @@
 
 %----------------------------------------------------------------------------------------
 
-RELEVANCE AND TOPICALITY OF THE AIMS AND OBJECTIVES AND MY CONTRIBUTION TO THE RESEARCH.
-HOW HAS THE PROJECT ADVANCED THE FIELD?
+
+In the following chapter we will briefly familiarise the reader with the biological background of this work, summarise recent literature regarding the problem at hand to put our work into context and show in which way it contributed to the field.
+%RELEVANCE AND TOPICALITY OF THE AIMS AND OBJECTIVES AND MY CONTRIBUTION TO THE RESEARCH.
+%HOW HAS THE PROJECT ADVANCED THE FIELD?
 
 %----------------------------------------------------------------------------------------
-
+%----------------------------------------------------------------------------------------
 \section{Biological background}
 
-An important biological phenomenon studied by plant morphologists is \textit{tropism} [ADD TO GLOSSARY], which is used to indicate the turning movement of a biological organism, here of a plant, when exposed to different environmental simuli [INSERT REFERENCE]. Usually the stimulus involved is added to the name, eg \textit{phototropism} as a reaction to sunlight; it can be either \textit{positive}, ie towards the stimulus, or \textit{negative}, ie away from the stimulus.
-The most frequently observed and best studied tropism in \textit{gravitropism}, which describes the process of how plants grow as a response to gravity. It was firstly scientifically documented by Charles Darwin [INSERT REFERENCE] and can be observed in higher and many lower plants as well as other organisms [INSERT REFERENCE]: Roots show \textit{positive gravitropism}, ie they grow in the direction of the gravitational pull whereas stems grow in the opposite direction. An easy experiment to do is to lay a potted plant onto its side; over time the stem will begin to turn upwards and thus show negative gravitropism. \\
-A far less studied process is \textit{electrotropism} which describes the growth or movement of a plant when exposed to an electric field and which was the tropism under study in this project. 
+An important biological phenomenon studied by plant morphologists is \textit{tropism}, which is used to indicate the directional movement of a biological organism, here of a plant, when exposed to different environmental stimuli \cite{vandenbrink2014light}. Usually the stimulus involved is added to the name, e.g. \textit{phototropism} as a reaction to sunlight; it can be either \textit{positive}, i.e. towards the stimulus, or \textit{negative}, i.e. away from the stimulus. 
+Various types of tropism are shown in figure \ref{fig:tropism}.
 
-A high-overview explanation of the experiment setup and data collection can be found in section [INSERT REFERENCE TO SECTION METHOD].
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{../Figures/tropism.png}
+	\caption{Different forms of tropism: Phototropism, thigmotropism, hydrotropism, and different effects of gravitropism. Taken from \cite{gilroy2008plant}.}
+	\label{fig:tropism}
+\end{figure}
+
+The most frequently observed and best studied tropism is \textit{gravitropism}, which describes the process of how plants grow as a response to gravity. It was firstly scientifically documented by Charles Darwin \cite{nick2017} and can be observed in many plants as well as other organisms: Roots show \textit{positive gravitropism}, i.e. they grow in the direction of the gravitational pull whereas stems grow in the opposite direction, see figure \ref{fig:tropism}. 
+%An easy experiment to do is to lay a potted plant onto its side; over time the stem will begin to turn upwards and thus show negative gravitropism. 
+\\
+A far less studied process is \textit{electrotropism} which describes the growth or movement of a plant when exposed to an electric field (EF) and which is the tropism under study in this project. 
+
+A high-overview explanation of the experimental setup and data collection to study electrotropism can be found in sections \ref{sec:data} and \ref{sec:experiment}.
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\section{Literature review}
+
+Most of the traditional root development assays only consider a small number of points \cite{parry2001novel,french2009high}. They are informative in terms of long-term effects on root growth; however, small and temporary changes cannot be captured \cite{parry2001novel}.
+Recently developed tools have considered a higher number of time points which allows a better study of how the growth process develops and the plant's responses \cite{french2009high,ishikawa1997novel,van2003new,chavarria2008spatio,miller2007computer}.
+
+Image sequences can contain a representative "snapshot" description of a plant's developmental stage; also they can be generated at high speed (see section \ref{sec:experiment}). From manual time-lapse photography \cite{van1934einfluss,michener1938action} to measure lengths of seedlings after applying different external stimuli, digital camera  technology has improved and low digital storage cost has become available which has made it comparatively easy to collect large, time-stamped digital image data sets monitoring root growth \cite{french2009high}.
+Once the root growth changes have been extracted from the image data, one can correlate their timing with the impact of different external signals \cite{french2009high}. % including hormonal and environmental on processes such as cell division and cell expansion \cite{french2009high}. 
+This will help us to understand root development in general. 
+
+Analysing image data manually, however, is time-consuming, very subjective and thus error-prone \cite{french2009high}. When the analysis is done "by eye", it becomes difficult to reproduce measurements as they are not standardised by any automatised approach; the computations lack objectivity, and are subject to a significant human bias. Also, subtle phenotypes, such as a delay in the response, might be missed \cite{french2009high}. 
+%Therefore, high-throughput software tools that can produce objective, quantitative analyses od the resulting images are now required.
+
+Different groups have developed tools for gravitropism and have shown the power of automatised image-analysis techniques compared to manual methods. An overview was created in the appendix \ref{litreview}.
+
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+\section{Motivation}
+The work described here is motivated by mainly three factors: definition and standardisation or objectification of the so far manually computed angle, flexibility and user-friendliness in the pre-processing step, and adaptability to standard consumer cameras and electrotropism images. The software tool was designed to be used by a user, typically a biologist, with no need of specific knowledge in image processing nor plant morphology.
 
 %----------------------------------------------------------------------------------------
 
-\section{Literature review}
-
-The majority of traditional root development bioassays only consider a small number of points [REFEREENCE PERRY ET AL, 2001 AND MAIN ROOTTRACE PAPER]. They are informative in terms of long-term effects on root growth; however, small and temporary changes can not be captured [REFERENCE MAIN ROOTTRACE].
-Recently developed tools have considered a higher number of time points which allows a better study of how the growth process develps and the plant's responses [REFERENCE MAIN ROOTTRACE; ISHIKAWA AND EVANS, 1997; VAN DER WEELE ER AL, 2003; CHAVARRIA-KRAUSER ET AL, 2007; MILLER ET AL, 2007].  
-
-Image sequences can contain a representative "snapshot" description of a plant's developmental stage; also they can be generated at high speed [REFERENCE TO EXPERIMENT SETUP IN CHAPTER ....]. From manual time-lapse photography [REFERENCE VAN DER LAAN, 1934; MICHENER, 1938] to measure lengths of seedlings after applying different external stimuli, digital camera  technology has improved and low digital storage cost has become available which has made it comparatively easy to collect large, time-stamped digital image data sets monitoring root growth [REFERENCE MAIN ROOTTRACE].  
-Once the root growth changes have been extracted from the imge data, one can correlate their timing with the impact of different external signals including hormonal and environmental on processes such as cell division and cell expansion [REFERENCE MAIN ROOTTRACE]. This will help to understand root development in general. 
-
-Analysing image data manually, however, is time-consuming, very subjective and thus error-prone [REFERENCE MAIN ROOTTRACE]. When the analysis is done "by eye", it becomes difficult to reproduce measurements as they are not standardised by any automatised approach and subject to human bias. Also, subtle phenotypes, ssuch as a delay in the response, might be missed [REFERENCE ROOTTRACE]. 
-%Therefore, high-throughput software tools that can produce objective, quantitative analyses od the resulting images are now required.
-
-Different groups have developed tools for gravitropism and have shown the power of automatised image-analysis techniques compared to manual methods. An overview was created in figure [INSERT REFERENCE HERE].
+%THIS NEEDS TO GO IN LITERATURE OVERVIEW
+%\subsection{RootTrace}
+%
+%RootTrace [INSERT REFERENCE] has been developed to measure root lengths across time serie image data; biologists have also used it to measuer highly curved roots. A graphical user interface (GUI) implemented within the RootTrace framework makes it easy for the user to handle. However, this tool has failed on our image data set [INSERT REFERENCE HERE], probably due to the high noise level found in electrotropism images compared to gravitropism images.
 
 
+%\subsection{PlantCV}
+%
+%COULD HAVE USED ONE OF THESE APPRAOCHES, BUT STARTED FROM SCRATCH. BASED ON THIS DATA SET.
+%
+%
+%However, 
+%Electopism much much harder since photos noisier.
 
-\section{Motivation}
-The work described here is motivated by mainly three factors: definition and standardisation  of the so far manually computed angle, flexibility and user-friendliness in the pre-processing step, and adaptability to standard consumer cameras. 
-
-
-\subsection{RootTrace}
-
-RootTrace [INSERT REFERENCE] has been developed to measure root lengths across time serie image data; biologists have also used it to measuer highly curved roots. A graphical user interface (GUI) implemented within the RootTrace framework makes it easy for the user to handle. However, this tool has failed on our image data set [INSERT REFERENCE HERE], probably due to the high noise level found in electrotropism images compared to gravitropism images.
-
-
-
-
-
-
-\subsection{PlantCV}
-
-
-COULD HAVE USED ONE OF THESE APPRAOCHES, BUT STARTED FROM SCRATCH. BASED ON THIS DATA SET.
-
-
-However, 
-
-
-Electopism much much harder since photos noisier.
-
-
-
-%%----------------------------------------------------------------------------------------
-%%----------------------------------------------------------------------------------------
-%%----------------------------------------------------------------------------------------
-%
-%\section{What this Template Includes}
-%
-%\subsection{Folders}
-%
-%\subsection{Files}
-%
-%\keyword{main.out} -- this is an auxiliary file generated by \LaTeX{}, if it is deleted \LaTeX{} simply regenerates it when you run the main \file{.tex} file.
-%
-%
-%%----------------------------------------------------------------------------------------
-%
-%\section{Filling in Your Information in the \file{main.tex} File}\label{FillingFile}
-%
-%
-%
-%%----------------------------------------------------------------------------------------
-%
-%\section{The \code{main.tex} File Explained}
-%
-%
-%
-%%----------------------------------------------------------------------------------------
-%
-%\section{Thesis Features and Conventions}\label{ThesisConventions}
-%
-%
-%\subsection{Printing Format}
-%
-%This thesis template is designed for double sided printing (i.e. content on the front and back of pages) as most theses are printed and bound this way. Switching to one sided printing is as simple as uncommenting the \option{oneside} option of the \code{documentclass} command at the top of the \file{main.tex} file. You may then wish to adjust the margins to suit specifications from your institution.
-%
-%The headers for the pages contain the page number on the outer side (so it is easy to flick through to the page you want) and the chapter name on the inner side.
-%
-%The text is set to 11 point by default with single line spacing, again, you can tune the text size and spacing should you want or need to using the options at the very start of \file{main.tex}. The spacing can be changed similarly by replacing the \option{singlespacing} with \option{onehalfspacing} or \option{doublespacing}.
-%
-%
-%\subsection{References}
-%
-%The \code{biblatex} package is used to format the bibliography and inserts references such as this one \parencite{Reference1}. The options used in the \file{main.tex} file mean that the in-text citations of references are formatted with the author(s) listed with the date of the publication. Multiple references are separated by semicolons (e.g. \parencite{Reference2, Reference1}) and references with more than three authors only show the first author with \emph{et al.} indicating there are more authors (e.g. \parencite{Reference3}). This is done automatically for you. To see how you use references, have a look at the \file{Chapter1.tex} source file. Many reference managers allow you to simply drag the reference into the document as you type.
-%
-%Scientific references should come \emph{before} the punctuation mark if there is one (such as a comma or period). The same goes for footnotes\footnote{Such as this footnote, here down at the bottom of the page.}. You can change this but the most important thing is to keep the convention consistent throughout the thesis. Footnotes themselves should be full, descriptive sentences (beginning with a capital letter and ending with a full stop). The APA6 states: \enquote{Footnote numbers should be superscripted, [...], following any punctuation mark except a dash.} The Chicago manual of style states: \enquote{A note number should be placed at the end of a sentence or clause. The number follows any punctuation mark except the dash, which it precedes. It follows a closing parenthesis.}
-%
-%The bibliography is typeset with references listed in alphabetical order by the first author's last name. This is similar to the APA referencing style. To see how \LaTeX{} typesets the bibliography, have a look at the very end of this document (or just click on the reference number links in in-text citations).
-%
-%\subsubsection{A Note on bibtex}
-%
-%The bibtex backend used in the template by default does not correctly handle unicode character encoding (i.e. "international" characters). You may see a warning about this in the compilation log and, if your references contain unicode characters, they may not show up correctly or at all. The solution to this is to use the biber backend instead of the outdated bibtex backend. This is done by finding this in \file{main.tex}: \option{backend=bibtex} and changing it to \option{backend=biber}. You will then need to delete all auxiliary BibTeX files and navigate to the template directory in your terminal (command prompt). Once there, simply type \code{biber main} and biber will compile your bibliography. You can then compile \file{main.tex} as normal and your bibliography will be updated. An alternative is to set up your LaTeX editor to compile with biber instead of bibtex, see \href{http://tex.stackexchange.com/questions/154751/biblatex-with-biber-configuring-my-editor-to-avoid-undefined-citations/}{here} for how to do this for various editors.
-%
-%
-%\begin{table}
-%\caption{The effects of treatments X and Y on the four groups studied.}
-%\label{tab:treatments}
-%\centering
-%\begin{tabular}{l l l}
-%\toprule
-%\tabhead{Groups} & \tabhead{Treatment X} & \tabhead{Treatment Y} \\
-%\midrule
-%1 & 0.2 & 0.8\\
-%2 & 0.17 & 0.7\\
-%3 & 0.24 & 0.75\\
-%4 & 0.68 & 0.3\\
-%\bottomrule\\
-%\end{tabular}
-%\end{table}
-%
-%You can reference tables with \verb|\ref{<label>}| where the label is defined within the table environment. See \file{Chapter1.tex} for an example of the label and citation (e.g. Table~\ref{tab:treatments}).
-%
-%\subsection{Figures}
-%
-%There will hopefully be many figures in your thesis (that should be placed in the \emph{Figures} folder). The way to insert figures into your thesis is to use a code template like this:
-%\begin{verbatim}
-%\begin{figure}
-%\centering
-%\includegraphics{Figures/Electron}
-%\decoRule
-%\caption[An Electron]{An electron (artist's impression).}
-%\label{fig:Electron}
-%\end{figure}
-%\end{verbatim}
-%Also look in the source file. Putting this code into the source file produces the picture of the electron that you can see in the figure below.
-%
-%\begin{figure}[th]
-%\centering
-%\includegraphics{Figures/Electron}
-%\decoRule
-%\caption[An Electron]{An electron (artist's impression).}
-%\label{fig:Electron}
-%\end{figure}
-%
-%Sometimes figures don't always appear where you write them in the source. The placement depends on how much space there is on the page for the figure. Sometimes there is not enough room to fit a figure directly where it should go (in relation to the text) and so \LaTeX{} puts it at the top of the next page. Positioning figures is the job of \LaTeX{} and so you should only worry about making them look good!
-%
-%Figures usually should have captions just in case you need to refer to them (such as in Figure~\ref{fig:Electron}). The \verb|\caption| command contains two parts, the first part, inside the square brackets is the title that will appear in the \emph{List of Figures}, and so should be short. The second part in the curly brackets should contain the longer and more descriptive caption text.
-%
-%The \verb|\decoRule| command is optional and simply puts an aesthetic horizontal line below the image. If you do this for one image, do it for all of them.
-%
-%\LaTeX{} is capable of using images in pdf, jpg and png format.
-%
-%
-%%----------------------------------------------------------------------------------------
-%
-%\begin{flushright}
-%Guide written by ---\\
-%Sunil Patel: \href{http://www.sunilpatel.co.uk}{www.sunilpatel.co.uk}\\
-%Vel: \href{http://www.LaTeXTemplates.com}{LaTeXTemplates.com}
-%\end{flushright}

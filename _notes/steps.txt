@@ -38,11 +38,10 @@ RETURNS: matrix of x- and y-values of skeleton
 
 
 #===============================================================================
-#                               Computing the curvature/ skeleton              #
+#                               Computing the curvature/ angle                 #
 #===============================================================================
 
 Ideas:
 Only to perform on the tip of the root
 * For each root we then get the list of point belonging to the tip (upper x- and y-values) and we compute the curvature (eg on a 3-point polygonal chain)
-* Computing the local curvature, from that take the maximum, and compute the angle using the curvature and arclength
-
+* Computing the local curvature, from that take the maximum (closest to tip of root), and compute the angle, eg via the difference in normals, projected along the edge (between two adjacent vertices) as a fraction of the length of the edge (or some formula).

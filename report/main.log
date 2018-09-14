@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  15 AUG 2018 13:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.6.28)  6 SEP 2018 10:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1246,6 +1246,201 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen181
+\Hy@linkcounter=\count149
+\Hy@pagecounter=\count150
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count151
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4446.
+Package hyperref Info: Link nesting OFF on input line 4451.
+Package hyperref Info: Hyper index ON on input line 4454.
+Package hyperref Info: Plain pages OFF on input line 4461.
+Package hyperref Info: Backreferencing OFF on input line 4466.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4691.
+\c@Hy@tempcnt=\count152
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5044.
+\XeTeXLinkMargin=\dimen182
+\Fld@menulength=\count153
+\Field@Width=\dimen183
+\Fld@charsize=\dimen184
+Package hyperref Info: Hyper figures OFF on input line 6298.
+Package hyperref Info: Link nesting OFF on input line 6303.
+Package hyperref Info: Hyper index ON on input line 6306.
+Package hyperref Info: backreferencing OFF on input line 6313.
+Package hyperref Info: Link coloring OFF on input line 6318.
+Package hyperref Info: Link coloring with OCG OFF on input line 6323.
+Package hyperref Info: PDF/A mode OFF on input line 6328.
+LaTeX Info: Redefining \ref on input line 6368.
+LaTeX Info: Redefining \pageref on input line 6372.
+\Hy@abspage=\count154
+\c@Item=\count155
+\c@Hfootnote=\count156
+)
+Package scrhack Info: hyperref hack deactivated because of
+(scrhack)             detection of hyperref version, that doesn't
+(scrhack)             need that hack, on input line 51.
+
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
+\Fld@listcount=\count157
+\c@bookmark@seq@number=\count158
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip60
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
+\c@subfigure=\count159
+\c@subtable=\count160
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count161
+\float@exts=\toks21
+\float@box=\box53
+\@float@everytoks=\toks22
+\@floatcapt=\box54
+)
+Package scrhack Info: loading float hack on input line 57.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/float.hak
+File: float.hak 2016/05/10 v3.20 KOMA-Script package (hacking package float)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2016/05/10 v3.20 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip61
+\scr@dte@tocline@numbox=\box55
+)
+Package scrhack Info: redefining \newfloat on input line 161.
+Package scrhack Info: redefining \listof on input line 161.
+Package scrhack Info: undefining \float@addtolists on input line 161.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2016/04/19 v0.5f Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count162
+\calc@Bcount=\count163
+\calc@Adimen=\dimen185
+\calc@Bdimen=\dimen186
+\calc@Askip=\skip62
+\calc@Bskip=\skip63
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count164
+\calc@Cskip=\skip64
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+)
+\AM@pagewidth=\dimen187
+\AM@pageheight=\dimen188
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2016/04/19 v0.5f Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box56
+\AM@global@opts=\toks23
+\AM@toc@title=\toks24
+\c@AM@survey=\count165
+\AM@templatesizebox=\box57
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2016/01/31 v5.1g context-sensitive quotations (JAW)
+\csq@reset=\count166
+\csq@gtype=\count167
+\csq@glevel=\count168
+\csq@qlevel=\count169
+\csq@maxlvl=\count170
+\csq@tshold=\count171
+\csq@ltx@everypar=\toks25
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2016/01/31 v5.1g csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2016/05/14 v3.4 programmable bibliographies (PK/JW/AB)
 
@@ -1253,185 +1448,152 @@ Package: biblatex 2016/05/14 v3.4 programmable bibliographies (PK/JW/AB)
 Package: iftex 2013/04/04 v0.2 Provides if(tex) conditional for PDFTeX, XeTeX, 
 and LuaTeX
 )
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count149
+\lrq@indent=\count172
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip16
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2016/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write3
-\integerpart=\count150
-\decimalpart=\count151
+\integerpart=\count173
+\decimalpart=\count174
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count152
-\c@listtotal=\count153
-\c@listcount=\count154
-\c@liststart=\count155
-\c@liststop=\count156
-\c@citecount=\count157
-\c@citetotal=\count158
-\c@multicitecount=\count159
-\c@multicitetotal=\count160
-\c@instcount=\count161
-\c@maxnames=\count162
-\c@minnames=\count163
-\c@maxitems=\count164
-\c@minitems=\count165
-\c@citecounter=\count166
-\c@savedcitecounter=\count167
-\c@uniquelist=\count168
-\c@uniquename=\count169
-\c@refsection=\count170
-\c@refsegment=\count171
-\c@maxextratitle=\count172
-\c@maxextratitleyear=\count173
-\c@maxextrayear=\count174
-\c@maxextraalpha=\count175
-\c@abbrvpenalty=\count176
-\c@highnamepenalty=\count177
-\c@lownamepenalty=\count178
-\c@maxparens=\count179
-\c@parenlevel=\count180
-\blx@tempcnta=\count181
-\blx@tempcntb=\count182
-\blx@tempcntc=\count183
-\blx@maxsection=\count184
-\blx@maxsegment@0=\count185
-\blx@notetype=\count186
-\blx@parenlevel@text=\count187
-\blx@parenlevel@foot=\count188
-\blx@sectionciteorder@0=\count189
-\labelnumberwidth=\skip60
-\labelalphawidth=\skip61
-\biblabelsep=\skip62
-\bibitemsep=\skip63
-\bibnamesep=\skip64
-\bibinitsep=\skip65
-\bibparsep=\skip66
-\bibhang=\skip67
+\c@tabx@nest=\count175
+\c@listtotal=\count176
+\c@listcount=\count177
+\c@liststart=\count178
+\c@liststop=\count179
+\c@citecount=\count180
+\c@citetotal=\count181
+\c@multicitecount=\count182
+\c@multicitetotal=\count183
+\c@instcount=\count184
+\c@maxnames=\count185
+\c@minnames=\count186
+\c@maxitems=\count187
+\c@minitems=\count188
+\c@citecounter=\count189
+\c@savedcitecounter=\count190
+\c@uniquelist=\count191
+\c@uniquename=\count192
+\c@refsection=\count193
+\c@refsegment=\count194
+\c@maxextratitle=\count195
+\c@maxextratitleyear=\count196
+\c@maxextrayear=\count197
+\c@maxextraalpha=\count198
+\c@abbrvpenalty=\count199
+\c@highnamepenalty=\count266
+\c@lownamepenalty=\count267
+\c@maxparens=\count268
+\c@parenlevel=\count269
+\blx@tempcnta=\count270
+\blx@tempcntb=\count271
+\blx@tempcntc=\count272
+\blx@maxsection=\count273
+\blx@maxsegment@0=\count274
+\blx@notetype=\count275
+\blx@parenlevel@text=\count276
+\blx@parenlevel@foot=\count277
+\blx@sectionciteorder@0=\count278
+\labelnumberwidth=\skip65
+\labelalphawidth=\skip66
+\biblabelsep=\skip67
+\bibitemsep=\skip68
+\bibnamesep=\skip69
+\bibinitsep=\skip70
+\bibparsep=\skip71
+\bibhang=\skip72
 \blx@bcfin=\read2
 \blx@bcfout=\write4
-\c@mincomprange=\count190
-\c@maxcomprange=\count191
-\c@mincompwidth=\count192
+\c@mincomprange=\count279
+\c@maxcomprange=\count280
+\c@mincompwidth=\count281
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-dm.def)
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count193
-\c@savedafterword=\count194
-\c@annotator=\count195
-\c@savedannotator=\count196
-\c@author=\count197
-\c@savedauthor=\count198
-\c@bookauthor=\count199
-\c@savedbookauthor=\count266
-\c@commentator=\count267
-\c@savedcommentator=\count268
-\c@editor=\count269
-\c@savededitor=\count270
-\c@editora=\count271
-\c@savededitora=\count272
-\c@editorb=\count273
-\c@savededitorb=\count274
-\c@editorc=\count275
-\c@savededitorc=\count276
-\c@foreword=\count277
-\c@savedforeword=\count278
-\c@holder=\count279
-\c@savedholder=\count280
-\c@introduction=\count281
-\c@savedintroduction=\count282
-\c@namea=\count283
-\c@savednamea=\count284
-\c@nameb=\count285
-\c@savednameb=\count286
-\c@namec=\count287
-\c@savednamec=\count288
-\c@translator=\count289
-\c@savedtranslator=\count290
-\c@shortauthor=\count291
-\c@savedshortauthor=\count292
-\c@shorteditor=\count293
-\c@savedshorteditor=\count294
-\c@labelname=\count295
-\c@savedlabelname=\count296
-\c@institution=\count297
-\c@savedinstitution=\count298
-\c@lista=\count299
-\c@savedlista=\count300
-\c@listb=\count301
-\c@savedlistb=\count302
-\c@listc=\count303
-\c@savedlistc=\count304
-\c@listd=\count305
-\c@savedlistd=\count306
-\c@liste=\count307
-\c@savedliste=\count308
-\c@listf=\count309
-\c@savedlistf=\count310
-\c@location=\count311
-\c@savedlocation=\count312
-\c@organization=\count313
-\c@savedorganization=\count314
-\c@origlocation=\count315
-\c@savedoriglocation=\count316
-\c@origpublisher=\count317
-\c@savedorigpublisher=\count318
-\c@publisher=\count319
-\c@savedpublisher=\count320
-\c@language=\count321
-\c@savedlanguage=\count322
-\c@pageref=\count323
-\c@savedpageref=\count324
-\shorthandwidth=\skip68
-\shortjournalwidth=\skip69
-\shortserieswidth=\skip70
-\shorttitlewidth=\skip71
-\shortauthorwidth=\skip72
-\shorteditorwidth=\skip73
+\c@afterword=\count282
+\c@savedafterword=\count283
+\c@annotator=\count284
+\c@savedannotator=\count285
+\c@author=\count286
+\c@savedauthor=\count287
+\c@bookauthor=\count288
+\c@savedbookauthor=\count289
+\c@commentator=\count290
+\c@savedcommentator=\count291
+\c@editor=\count292
+\c@savededitor=\count293
+\c@editora=\count294
+\c@savededitora=\count295
+\c@editorb=\count296
+\c@savededitorb=\count297
+\c@editorc=\count298
+\c@savededitorc=\count299
+\c@foreword=\count300
+\c@savedforeword=\count301
+\c@holder=\count302
+\c@savedholder=\count303
+\c@introduction=\count304
+\c@savedintroduction=\count305
+\c@namea=\count306
+\c@savednamea=\count307
+\c@nameb=\count308
+\c@savednameb=\count309
+\c@namec=\count310
+\c@savednamec=\count311
+\c@translator=\count312
+\c@savedtranslator=\count313
+\c@shortauthor=\count314
+\c@savedshortauthor=\count315
+\c@shorteditor=\count316
+\c@savedshorteditor=\count317
+\c@labelname=\count318
+\c@savedlabelname=\count319
+\c@institution=\count320
+\c@savedinstitution=\count321
+\c@lista=\count322
+\c@savedlista=\count323
+\c@listb=\count324
+\c@savedlistb=\count325
+\c@listc=\count326
+\c@savedlistc=\count327
+\c@listd=\count328
+\c@savedlistd=\count329
+\c@liste=\count330
+\c@savedliste=\count331
+\c@listf=\count332
+\c@savedlistf=\count333
+\c@location=\count334
+\c@savedlocation=\count335
+\c@organization=\count336
+\c@savedorganization=\count337
+\c@origlocation=\count338
+\c@savedoriglocation=\count339
+\c@origpublisher=\count340
+\c@savedorigpublisher=\count341
+\c@publisher=\count342
+\c@savedpublisher=\count343
+\c@language=\count344
+\c@savedlanguage=\count345
+\c@pageref=\count346
+\c@savedpageref=\count347
+\shorthandwidth=\skip73
+\shortjournalwidth=\skip74
+\shortserieswidth=\skip75
+\shorttitlewidth=\skip76
+\shortauthorwidth=\skip77
+\shorteditorwidth=\skip78
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1453,45 +1615,43 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
-\c@textcitecount=\count325
-\c@textcitetotal=\count326
-\c@textcitemaxnames=\count327
-\c@biburlnumpenalty=\count328
-\c@biburlucpenalty=\count329
-\c@biburllcpenalty=\count330
-\c@smartand=\count331
+\c@textcitecount=\count348
+\c@textcitetotal=\count349
+\c@textcitemaxnames=\count350
+\c@biburlnumpenalty=\count351
+\c@biburlucpenalty=\count352
+\c@biburllcpenalty=\count353
+\c@smartand=\count354
 )
-Package biblatex Info: Trying to load natbib compatibility...
-Package biblatex Info: ... file 'blx-natbib.def' found.
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-natbib.def
-File: blx-natbib.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
-)
-Package biblatex Info: Trying to load bibliography style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.bbx' found.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
-File: authoryear.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count332
-\c@bbx:relatedtotal=\count333
+\c@bbx:relatedcount=\count355
+\c@bbx:relatedtotal=\count356
 ))
-Package biblatex Info: Trying to load citation style 'authoryear'...
-Package biblatex Info: ... file 'authoryear.cbx' found.
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
-File: authoryear.cbx 2016/05/14 v3.4 biblatex citation style (PK/JW/AB)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2016/05/14 v3.4 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -1499,166 +1659,49 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2016/01/31 v5.1g context-sensitive quotations (JAW)
-\csq@reset=\count334
-\csq@gtype=\count335
-\csq@glevel=\count336
-\csq@qlevel=\count337
-\csq@maxlvl=\count338
-\csq@tshold=\count339
-\csq@ltx@everypar=\toks21
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2016/01/31 v5.1g csquotes generic definitions (JAW)
-)
-Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
-Package csquotes Info: ... configuration file loaded successfully.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/csquotes/csquotes.cfg
-File: csquotes.cfg 
-)
-Package csquotes Info: Enabling multilingual quotes.
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
-Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
-
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
-Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package hobsub Info: Skipping package `infwarerr' (already loaded).
-Package hobsub Info: Skipping package `ltxcmds' (already loaded).
-Package hobsub Info: Skipping package `ifluatex' (already loaded).
-Package hobsub Info: Skipping package `ifvtex' (already loaded).
-Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
-Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package hobsub Info: Skipping package `etexcmds' (already loaded).
-Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
-Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
-)
-Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
-Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
-)
-Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
-Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
-Package: xcolor-patch 2016/05/16 xcolor patch
-Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
-Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
-Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
-)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/auxhook.sty
-Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-)
-\@linkdim=\dimen181
-\Hy@linkcounter=\count340
-\Hy@pagecounter=\count341
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
-)
-\Hy@SavedSpaceFactor=\count342
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
-File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
-)
-Package hyperref Info: Hyper figures OFF on input line 4446.
-Package hyperref Info: Link nesting OFF on input line 4451.
-Package hyperref Info: Hyper index ON on input line 4454.
-Package hyperref Info: Plain pages OFF on input line 4461.
-Package hyperref Info: Backreferencing OFF on input line 4466.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4691.
-\c@Hy@tempcnt=\count343
-LaTeX Info: Redefining \url on input line 5044.
-\XeTeXLinkMargin=\dimen182
-\Fld@menulength=\count344
-\Field@Width=\dimen183
-\Fld@charsize=\dimen184
-Package hyperref Info: Hyper figures OFF on input line 6298.
-Package hyperref Info: Link nesting OFF on input line 6303.
-Package hyperref Info: Hyper index ON on input line 6306.
-Package hyperref Info: backreferencing OFF on input line 6313.
-Package hyperref Info: Link coloring OFF on input line 6318.
-Package hyperref Info: Link coloring with OCG OFF on input line 6323.
-Package hyperref Info: PDF/A mode OFF on input line 6328.
-LaTeX Info: Redefining \ref on input line 6368.
-LaTeX Info: Redefining \pageref on input line 6372.
-\Hy@abspage=\count345
-\c@Item=\count346
-\c@Hfootnote=\count347
-)
-Package scrhack Info: hyperref hack deactivated because of
-(scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 94.
-
-
-Package hyperref Message: Driver (autodetected): hpdftex.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
-\Fld@listcount=\count348
-\c@bookmark@seq@number=\count349
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
-Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-82.
-)
-\Hy@SectionHShift=\skip74
-)
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 94.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 94.
-Package hyperref Info: Option `colorlinks' set `true' on input line 94.
-Package hyperref Info: Option `unicode' set `true' on input line 94.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 173.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 173.
+Package hyperref Info: Option `colorlinks' set `true' on input line 173.
+Package hyperref Info: Option `unicode' set `true' on input line 173.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2016/05/05 v6.83n Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 94.
+Package hyperref Info: Option `breaklinks' set `true' on input line 173.
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 )
-Package csquotes Info: Checking for multilingual support...
-Package csquotes Info: ... found 'babel' package.
-
 (./main.aux (./Chapters/1_introduction.aux) (./Chapters/2_methods.aux)
 (./Chapters/3_results.aux) (./Chapters/4_discussion.aux)
 (./Chapters/5_conclusion.aux) (./Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 94.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 173.
+LaTeX Font Info:    ... okay on input line 173.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 173.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -1746,17 +1789,17 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 ) (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count350
-\scratchdimen=\dimen185
-\scratchbox=\box53
-\nofMPsegments=\count351
-\nofMParguments=\count352
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count353
-\MPscratchDim=\dimen186
-\MPnumerator=\count354
-\makeMPintoPDFobject=\count355
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count357
+\scratchdimen=\dimen189
+\scratchbox=\box58
+\nofMPsegments=\count358
+\nofMParguments=\count359
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count360
+\MPscratchDim=\dimen190
+\MPnumerator=\count361
+\makeMPintoPDFobject=\count362
+\everyMPtoPDFconversion=\toks27
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1773,6 +1816,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
@@ -1785,15 +1829,15 @@ Package caption Info: End \AtBeginDocument code.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * bindingoffset: 14.22636pt
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(71.13188pt, 404.02908pt, 108.12054pt)
-* v-part:(T,H,B)=(42.67912pt, 759.6886pt, 42.67912pt)
+* h-part:(L,W,R)=(71.13188pt, 441.01775pt, 71.13188pt)
+* v-part:(T,H,B)=(36.98866pt, 773.91496pt, 34.14322pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=404.02908pt
-* \textheight=693.49821pt
+* \textwidth=441.01775pt
+* \textheight=707.72458pt
 * \oddsidemargin=13.08826pt
 * \evensidemargin=-1.1381pt
-* \topmargin=-29.59087pt
+* \topmargin=-35.28133pt
 * \headheight=18.85364pt
 * \headsep=19.8738pt
 * \topskip=11.0pt
@@ -1812,7 +1856,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 94.
+(scrlayer)             \begin{document} on input line 173.
 
 Package scrlayer-scrpage Warning: Very small head height detected!
 (scrlayer-scrpage)                Using scrlayer-scrpage the head height
@@ -1824,14 +1868,49 @@ Package scrlayer-scrpage Warning: Very small head height detected!
 (scrlayer-scrpage)                geometry option `head=21.89601pt'
 (scrlayer-scrpage)                to avoid this warning.
 
-Package scrbase Info: activating english \abbrevname on input line 94.
-Package scrbase Info: activating english \byname on input line 94.
-Package scrbase Info: activating english \acknowledgementname on input line 94.
+Package scrbase Info: activating english \abbrevname on input line 173.
+Package scrbase Info: activating english \byname on input line 173.
+Package scrbase Info: activating english \acknowledgementname on input line 173
+.
+Package scrbase Info: activating english \authorshipname on input line 173.
+Package scrbase Info: activating english \constantsname on input line 173.
+Package scrbase Info: activating english \symbolsname on input line 173.
+\big@size=\dimen191
+\AtBeginShipoutBox=\box59
+Package hyperref Info: Link coloring ON on input line 173.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-Package scrbase Info: activating english \authorshipname on input line 94.
-Package scrbase Info: activating english \constantsname on input line 94.
-Package scrbase Info: activating english \symbolsname on input line 94.
-\big@size=\dimen187
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count363
+)
+LaTeX Info: Redefining \ref on input line 173.
+LaTeX Info: Redefining \pageref on input line 173.
+LaTeX Info: Redefining \nameref on input line 173.
+
+(./main.out) (./main.out)
+\@outlinefile=\write5
+\openout5 = `main.out'.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package scrhack Info: loading lscape hack on input line 76.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/koma-script/lscape.hak
+File: lscape.hak 2016/05/10 v3.20 KOMA-Script package (hacking package lscape)
+Package scrhack Info: \landscape patched to make \textheight change optional on
+ input line 90.
+\scrh@LT@textheight=\skip79
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1842,66 +1921,81 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
-(./main.bbl)
-Package biblatex Info: Reference section=0 on input line 94.
-Package biblatex Info: Reference segment=0 on input line 94.
-\AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring ON on input line 94.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+
+(./main.bbl
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'imagProcFundamentals':
+(biblatex)                - Invalid format of field 'urldate'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'pointOperation2018':
+(biblatex)                - Invalid format of field 'urldate'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'osculatingCircle':
+(biblatex)                - Invalid format of field 'date' 
+(biblatex)                - Invalid format of field 'date'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'plantCV':
+(biblatex)                - Invalid format of field 'date' 
+(biblatex)                - Invalid format of field 'date'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'geometry2016':
+(biblatex)                - Invalid format of field 'urldate'.
+
 )
-\c@section@level=\count356
-)
-LaTeX Info: Redefining \ref on input line 94.
-LaTeX Info: Redefining \pageref on input line 94.
-LaTeX Info: Redefining \nameref on input line 94.
+Package biblatex Info: Reference section=0 on input line 173.
+Package biblatex Info: Reference segment=0 on input line 173.
+\c__siunitx_mathsf_int=\count364
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 173.
 
-(./main.out) (./main.out)
-\@outlinefile=\write5
-\openout5 = `main.out'.
-
-\c__siunitx_mathsf_int=\count357
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 94.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 94.
-
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 173
+.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 94.
-
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 173
+.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 94.
-
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 173
+.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 94.
-
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 173
+.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-\c__siunitx_mathtt_int=\count358
+\c__siunitx_mathtt_int=\count365
 
 1: section
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 112.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 192.
+LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <20.74> not available
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 192.
 [1
 
 
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[1]
 
 Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                At least 21.896pt needed,
@@ -1910,62 +2004,50 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                processing, but you should do this yourself,
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=21.896pt'.
-(scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-89.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 2
+72.
 
 
 Overfull \vbox (3.04236pt too high) has occurred while \output is active []
 
 
-[1]
+[2]
 --------------------
  Abstract
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 189.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 272.
+LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 272.
 1: section
-[2
+[3
 
-] [3]
+] [4]
 --------------------
  Acknowledgements
 --------------------
 1: section
-[4
+[5
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 237.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 345.
  (./main.toc
-Overfull \hbox (22.03072pt too wide) in paragraph at lines 22--22
- [][] [][][]\T1/ppl/m/n/10.95 Using the an-gle of the tan-gents to the points t
-hat are x points/pixels 
- []
-
 1: section
-[5
+[6
 
-] [6])
+] [7])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [7] (./main.lof)
-\tf@lof=\write7
-\openout7 = `main.lof'.
-
-
-1: section
-[8
-
-] (./main.lot)
-\tf@lot=\write8
-\openout8 = `main.lot'.
-
-
+ [8]
 1: section
 [9
 
 ]
+--------------------
+ Dedicatory
+--------------------
 1: section
 [10
 
@@ -1976,33 +2058,25 @@ hat are x points/pixels
 (./Chapters/1_introduction.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
-
-Overfull \hbox (3.75041pt too wide) in paragraph at lines 18--20
-\T1/ppl/m/n/10.95 RELEVANCE AND TOP-I-CAL-ITY OF THE AIMS AND OB-JEC-TIVES AND 
-MY CON-
- []
-
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 4.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 23.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 26.
+<Figures/../Figures/tropism.png, id=351, 464.73625pt x 577.15625pt>
+File: Figures/../Figures/tropism.png Graphic file (type png)
+
+<use Figures/../Figures/tropism.png>
+Package pdftex.def Info: Figures/../Figures/tropism.png used on input line 33.
+(pdftex.def)             Requested size: 264.61333pt x 328.6302pt.
+
 1: section
 [1
 
 
 
-] [2]
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 52.
-
-Overfull \hbox (1.60811pt too wide) in paragraph at lines 54--55
-\T1/ppl/m/n/10.95 RootTrace [IN-SERT REF-ER-ENCE] has been de-vel-oped to mea-s
-ure root lengths across
- []
-
-
-Overfull \hbox (27.65454pt too wide) in paragraph at lines 64--65
-\T1/ppl/m/n/10.95 COULD HAVE USED ONE OF THESE AP-PRAOCHES, BUT STARTED FROM SC
-RATCH.
+] [2 <./Figures/../Figures/tropism.png>]
+Overfull \hbox (6.41585pt too wide) in paragraph at lines 65--66
+\T1/ppl/m/n/10.95 in the pre-processing step, and adapt-abil-ity to stan-dard c
+on-sumer cam-eras and elec-trotropism
  []
 
 ) [3]
@@ -2010,118 +2084,1056 @@ RATCH.
 
  (./Chapters/2_methods.tex
 Chapter 2.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 36.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+<Figures/../Figures/experiment_circuit.png, id=402, 764.8575pt x 392.46625pt>
+File: Figures/../Figures/experiment_circuit.png Graphic file (type png)
+
+<use Figures/../Figures/experiment_circuit.png>
+Package pdftex.def Info: Figures/../Figures/experiment_circuit.png used on inpu
+t line 45.
+(pdftex.def)             Requested size: 441.01775pt x 226.29512pt.
 
 1: section
 [4
 
 
 
-] [5] [6] [7]) [8]
+] <Figures/../Figures/imageprocessing.png, id=412, 1782.66pt x 365.365pt>
+File: Figures/../Figures/imageprocessing.png Graphic file (type png)
+
+<use Figures/../Figures/imageprocessing.png>
+Package pdftex.def Info: Figures/../Figures/imageprocessing.png used on input l
+ine 83.
+(pdftex.def)             Requested size: 441.01775pt x 90.3877pt.
+ [5 <./Figures/../Figures/experiment_circuit.png>]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 94.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 100.
+
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 100.
+<Figures/../Figures/checkerboard.png, id=426, 877.2775pt x 426.59375pt>
+File: Figures/../Figures/checkerboard.png Graphic file (type png)
+
+<use Figures/../Figures/checkerboard.png>
+Package pdftex.def Info: Figures/../Figures/checkerboard.png used on input line
+ 123.
+(pdftex.def)             Requested size: 441.01775pt x 214.455pt.
+ [6 <./Figures/../Figures/imageprocessing.png>] [7 <./Figures/../Figures/checke
+rboard.png>]
+LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 193.
+
+<Figures/../Figures/angle2.png, id=454, 644.4075pt x 292.09125pt>
+File: Figures/../Figures/angle2.png Graphic file (type png)
+
+<use Figures/../Figures/angle2.png>
+Package pdftex.def Info: Figures/../Figures/angle2.png used on input line 237.
+(pdftex.def)             Requested size: 264.61333pt x 119.94536pt.
+ [8] [9 <./Figures/../Figures/angle2.png>]
+<Figures/../Figures/curveCircle.png, id=478, 1105.12875pt x 575.14874pt>
+File: Figures/../Figures/curveCircle.png Graphic file (type png)
+
+<use Figures/../Figures/curveCircle.png>
+Package pdftex.def Info: Figures/../Figures/curveCircle.png used on input line 
+311.
+(pdftex.def)             Requested size: 220.50887pt x 114.75565pt.
+) [10 <./Figures/../Figures/curveCircle.png>]
 \openout2 = `Chapters/3_results.aux'.
 
  (./Chapters/3_results.tex
 Chapter 3.
-1: section
-[9
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 30.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+<Figures/../Figures/workflow_big.png, id=496, 1112.155pt x 2133.9725pt>
+File: Figures/../Figures/workflow_big.png Graphic file (type png)
 
+<use Figures/../Figures/workflow_big.png>
+Package pdftex.def Info: Figures/../Figures/workflow_big.png used on input line
+ 96.
+(pdftex.def)             Requested size: 343.9933pt x 660.05937pt.
 
-
-]
-Overfull \hbox (5.85014pt too wide) in paragraph at lines 61--61
-[]\T1/ppl/b/n/14.4 Comparing the au-to-mated cal-cu-lated an-gles with the man-
-
- []
-
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 72.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 75.
-) [10]
-\openout2 = `Chapters/4_discussion.aux'.
-
- (./Chapters/4_discussion.tex
-Chapter 4.
 1: section
 [11
 
 
 
-]) [12]
+]
+Overfull \vbox (22.3348pt too high) has occurred while \output is active []
+
+
+[12 <./Figures/../Figures/workflow_big.png>]
+<Figures/../Figures/frontBack.png, id=513, 1288.815pt x 971.63pt>
+File: Figures/../Figures/frontBack.png Graphic file (type png)
+
+<use Figures/../Figures/frontBack.png>
+Package pdftex.def Info: Figures/../Figures/frontBack.png used on input line 24
+6.
+(pdftex.def)             Requested size: 396.91327pt x 299.23035pt.
+ [13]
+
+LaTeX Warning: Reference `table:modules' on page 14 undefined on input line 258
+.
+
+<Figures/../Figures/2018-02-28.png, id=520, 421.575pt x 316.0608pt>
+File: Figures/../Figures/2018-02-28.png Graphic file (type png)
+
+<use Figures/../Figures/2018-02-28.png>
+Package pdftex.def Info: Figures/../Figures/2018-02-28.png used on input line 3
+47.
+(pdftex.def)             Requested size: 286.65883pt x 214.91368pt.
+
+<Figures/../Figures/2018-03-07.png, id=521, 421.575pt x 316.0608pt>
+File: Figures/../Figures/2018-03-07.png Graphic file (type png)
+
+<use Figures/../Figures/2018-03-07.png>
+Package pdftex.def Info: Figures/../Figures/2018-03-07.png used on input line 3
+50.
+(pdftex.def)             Requested size: 286.65883pt x 214.91368pt.
+
+<Figures/../Figures/2018-04-24.png, id=522, 421.575pt x 316.0608pt>
+File: Figures/../Figures/2018-04-24.png Graphic file (type png)
+
+<use Figures/../Figures/2018-04-24.png>
+Package pdftex.def Info: Figures/../Figures/2018-04-24.png used on input line 3
+52.
+(pdftex.def)             Requested size: 286.65883pt x 214.91368pt.
+ [14 <./Figures/../Figures/frontBack.png>]
+Overfull \vbox (21.01646pt too high) has occurred while \output is active []
+
+
+[15 <./Figures/../Figures/2018-02-28.png (PNG copy)> <./Figures/../Figures/2018
+-03-07.png (PNG copy)> <./Figures/../Figures/2018-04-24.png (PNG copy)>]
+<Figures/../Figures/2018-02-28_stats.png, id=539, 846.16125pt x 575.14874pt>
+File: Figures/../Figures/2018-02-28_stats.png Graphic file (type png)
+
+<use Figures/../Figures/2018-02-28_stats.png>
+Package pdftex.def Info: Figures/../Figures/2018-02-28_stats.png used on input 
+line 377.
+(pdftex.def)             Requested size: 396.91327pt x 269.7846pt.
+
+<Figures/../Figures/2018-03-07_stats.png, id=540, 879.285pt x 715.67375pt>
+File: Figures/../Figures/2018-03-07_stats.png Graphic file (type png)
+
+<use Figures/../Figures/2018-03-07_stats.png>
+Package pdftex.def Info: Figures/../Figures/2018-03-07_stats.png used on input 
+line 380.
+(pdftex.def)             Requested size: 396.91327pt x 323.05487pt.
+
+<Figures/../Figures/2018-04-24_stats.png, id=541, 820.06375pt x 669.50125pt>
+File: Figures/../Figures/2018-04-24_stats.png Graphic file (type png)
+
+<use Figures/../Figures/2018-04-24_stats.png>
+Package pdftex.def Info: Figures/../Figures/2018-04-24_stats.png used on input 
+line 389.
+(pdftex.def)             Requested size: 441.01775pt x 360.05423pt.
+ [16]
+Overfull \vbox (28.1149pt too high) has occurred while \output is active []
+
+
+[17 <./Figures/../Figures/2018-02-28_stats.png> <./Figures/../Figures/2018-03-0
+7_stats.png>]) [18 <./Figures/../Figures/2018-04-24_stats.png>]
+\openout2 = `Chapters/4_discussion.aux'.
+
+
+(./Chapters/4_discussion.tex
+Chapter 4.
+1: section
+[19
+
+
+
+] [20] [21]) [22]
 \openout2 = `Chapters/5_conclusion.aux'.
 
  (./Chapters/5_conclusion.tex
 Chapter 5.
 )
 1: section
-[13
+[23
 
 
 
 ]
+1: section
+[24
 
-LaTeX Warning: Empty bibliography on input line 312.
 
+] [25] [26]
+Overfull \hbox (2.14322pt too wide) in paragraph at lines 449--449
+[]\T1/ppl/m/n/10.95 French, A. P. et al. ^^P  A Prob-a-bilis-tic Track-ing Ap-p
+roach to Root Mea-sure-ment in Images-
+ []
+
+
+Overfull \hbox (4.60721pt too wide) in paragraph at lines 449--449
+\T1/ppl/m/n/10.95 Particle Fil-ter Track-ing is used to Mea-sure Roots, via a P
+rob-a-bilis-tic Graph.^^Q In: \T1/ppl/m/it/10.95 BIOSIG-
+ []
+
+[27] [28] [29]
 \openout2 = `Appendices/AppendixA.aux'.
 
-(./Appendices/AppendixA.tex
+ (./Appendices/AppendixA.tex
 Appendix A.
-1: section
-[14
+LaTeX Font Info:    Font shape `T1/ppl/bx/it' in size <24.88> not available
+(Font)              Font shape `T1/ppl/b/it' tried instead on input line 7.
+<Figures/../Figures/components4.pdf, id=694, 597.23125pt x 845.1575pt>
+File: Figures/../Figures/components4.pdf Graphic file (type pdf)
 
+<use Figures/../Figures/components4.pdf>
+Package pdftex.def Info: Figures/../Figures/components4.pdf used on input line 
+19.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: Figures/../Figures/components4.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/components4.pdf>
+Package pdftex.def Info: Figures/../Figures/components4.pdf used on input line 
+19.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+<Figures/../Figures/components4.pdf, id=697, page=1, 597.23125pt x 845.1575pt>
+File: Figures/../Figures/components4.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/components4.pdf, page 1>
+Package pdftex.def Info: Figures/../Figures/components4.pdf, page1 used on inpu
+t line 19.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: Figures/../Figures/components4.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/components4.pdf, page 1>
+Package pdftex.def Info: Figures/../Figures/components4.pdf, page1 used on inpu
+t line 19.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+
+1: section
+[30
 
 
 ]
+File: Figures/../Figures/components4.pdf Graphic file (type pdf)
+ <use Figures/../Figures/components4.pdf, page 1>
+Package pdftex.def Info: Figures/../Figures/components4.pdf, page1 used on inpu
+t line 19.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Figures/../Figures/components4.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/components4.pdf, page 1>
+Package pdftex.def Info: Figures/../Figures/components4.pdf, page1 used on inpu
+t line 19.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: Figures/../Figures/components4.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/components4.pdf, page 1>
+Package pdftex.def Info: Figures/../Figures/components4.pdf, page1 used on inpu
+t line 19.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [31 <./Figures/../Figures/components4.pdf>]
 Appendix B.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 17.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-))
 1: section
-[15
+[32
+
+] <Figures/../Figures/manual/intro1.jpg, id=752, 1156.32pt x 617.9085pt>
+File: Figures/../Figures/manual/intro1.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/intro1.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/intro1.jpg used on input lin
+e 81.
+(pdftex.def)             Requested size: 441.01775pt x 235.66566pt.
+
+<Figures/../Figures/manual/intro2.jpg, id=754, 1156.32pt x 619.71526pt>
+File: Figures/../Figures/manual/intro2.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/intro2.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/intro2.jpg used on input lin
+e 89.
+(pdftex.def)             Requested size: 441.01775pt x 236.35474pt.
+ [33 <./Figures/../Figures/manual/intro1.jpg>]
+<Figures/../Figures/manual/intro3.jpg, id=764, 1156.32pt x 616.10175pt>
+File: Figures/../Figures/manual/intro3.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/intro3.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/intro3.jpg used on input lin
+e 97.
+(pdftex.def)             Requested size: 441.01775pt x 234.97658pt.
+
+<Figures/../Figures/manual/step1.jpg, id=765, 1356.56813pt x 686.565pt>
+File: Figures/../Figures/manual/step1.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step1.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step1.jpg used on input line
+ 111.
+(pdftex.def)             Requested size: 441.01775pt x 223.19383pt.
+ [34 <./Figures/../Figures/manual/intro2.jpg> <./Figures/../Figures/manual/intr
+o3.jpg>]
+<Figures/../Figures/manual/step2.jpg, id=771, 1088.26575pt x 549.252pt>
+File: Figures/../Figures/manual/step2.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step2.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step2.jpg used on input line
+ 119.
+(pdftex.def)             Requested size: 441.01775pt x 222.57993pt.
+
+<Figures/../Figures/manual/step3.jpg, id=772, 1358.07375pt x 690.32906pt>
+File: Figures/../Figures/manual/step3.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step3.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step3.jpg used on input line
+ 128.
+(pdftex.def)             Requested size: 441.01775pt x 224.17522pt.
+ [35 <./Figures/../Figures/manual/step1.jpg> <./Figures/../Figures/manual/step2
+.jpg>]
+<Figures/../Figures/manual/step4.jpg, id=781, 1085.2545pt x 555.87675pt>
+File: Figures/../Figures/manual/step4.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step4.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step4.jpg used on input line
+ 138.
+(pdftex.def)             Requested size: 441.01775pt x 225.89223pt.
+
+<Figures/../Figures/manual/step5.jpg, id=782, 1082.8455pt x 551.661pt>
+File: Figures/../Figures/manual/step5.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step5.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step5.jpg used on input line
+ 145.
+(pdftex.def)             Requested size: 441.01775pt x 224.68413pt.
+ [36 <./Figures/../Figures/manual/step3.jpg> <./Figures/../Figures/manual/step4
+.jpg>]
+<Figures/../Figures/manual/step6.jpg, id=791, 1359.57938pt x 692.5875pt>
+File: Figures/../Figures/manual/step6.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step6.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step6.jpg used on input line
+ 155.
+(pdftex.def)             Requested size: 441.01775pt x 224.65497pt.
+
+<Figures/../Figures/manual/step7.jpg, id=792, 1084.65225pt x 551.05875pt>
+File: Figures/../Figures/manual/step7.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step7.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step7.jpg used on input line
+ 162.
+(pdftex.def)             Requested size: 441.01775pt x 224.06046pt.
+ [37 <./Figures/../Figures/manual/step5.jpg> <./Figures/../Figures/manual/step6
+.jpg>]
+<Figures/../Figures/manual/step8.jpg, id=798, 1087.6635pt x 551.05875pt>
+File: Figures/../Figures/manual/step8.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step8.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step8.jpg used on input line
+ 169.
+(pdftex.def)             Requested size: 441.01775pt x 223.43822pt.
+
+<Figures/../Figures/manual/step9.jpg, id=799, 1087.06125pt x 552.26324pt>
+File: Figures/../Figures/manual/step9.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step9.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step9.jpg used on input line
+ 176.
+(pdftex.def)             Requested size: 441.01775pt x 224.05302pt.
+ [38 <./Figures/../Figures/manual/step7.jpg> <./Figures/../Figures/manual/step8
+.jpg>]
+<Figures/../Figures/manual/step10.jpg, id=808, 1081.641pt x 551.661pt>
+File: Figures/../Figures/manual/step10.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step10.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step10.jpg used on input lin
+e 183.
+(pdftex.def)             Requested size: 441.01775pt x 224.92824pt.
+
+<Figures/../Figures/manual/step11.jpg, id=809, 1088.26575pt x 552.8655pt>
+File: Figures/../Figures/manual/step11.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step11.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step11.jpg used on input lin
+e 190.
+(pdftex.def)             Requested size: 441.01775pt x 224.04427pt.
+ [39 <./Figures/../Figures/manual/step9.jpg> <./Figures/../Figures/manual/step1
+0.jpg>]
+<Figures/../Figures/manual/step12.jpg, id=816, 1088.26575pt x 551.05875pt>
+File: Figures/../Figures/manual/step12.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step12.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step12.jpg used on input lin
+e 197.
+(pdftex.def)             Requested size: 441.01775pt x 223.3121pt.
+
+<Figures/../Figures/manual/step13.jpg, id=818, 1361.085pt x 689.57625pt>
+File: Figures/../Figures/manual/step13.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step13.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step13.jpg used on input lin
+e 206.
+(pdftex.def)             Requested size: 441.01775pt x 223.4362pt.
+ [40 <./Figures/../Figures/manual/step11.jpg> <./Figures/../Figures/manual/step
+12.jpg>]
+<Figures/../Figures/manual/step14.jpg, id=827, 1089.47025pt x 551.661pt>
+File: Figures/../Figures/manual/step14.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step14.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step14.jpg used on input lin
+e 214.
+(pdftex.def)             Requested size: 441.01775pt x 223.31204pt.
+
+<Figures/../Figures/manual/step15.jpg, id=830, 1357.32094pt x 688.82344pt>
+File: Figures/../Figures/manual/step15.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step15.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step15.jpg used on input lin
+e 223.
+(pdftex.def)             Requested size: 441.01775pt x 223.8019pt.
+ [41 <./Figures/../Figures/manual/step13.jpg> <./Figures/../Figures/manual/step
+14.jpg>]
+<Figures/../Figures/manual/step16.jpg, id=838, 1351.29843pt x 688.07062pt>
+File: Figures/../Figures/manual/step16.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step16.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step16.jpg used on input lin
+e 230.
+(pdftex.def)             Requested size: 441.01775pt x 224.55472pt.
+
+<Figures/../Figures/manual/step17.jpg, id=841, 1086.459pt x 553.46774pt>
+File: Figures/../Figures/manual/step17.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step17.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step17.jpg used on input lin
+e 240.
+(pdftex.def)             Requested size: 441.01775pt x 224.66837pt.
+ [42 <./Figures/../Figures/manual/step15.jpg> <./Figures/../Figures/manual/step
+16.jpg>]
+<Figures/../Figures/manual/step18.jpg, id=850, 1356.56813pt x 691.83469pt>
+File: Figures/../Figures/manual/step18.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step18.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step18.jpg used on input lin
+e 253.
+(pdftex.def)             Requested size: 441.01775pt x 224.90694pt.
+
+<Figures/../Figures/manual/step19.jpg, id=851, 1352.05125pt x 688.07062pt>
+File: Figures/../Figures/manual/step19.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step19.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step19.jpg used on input lin
+e 260.
+(pdftex.def)             Requested size: 441.01775pt x 224.43922pt.
+ [43 <./Figures/../Figures/manual/step17.jpg> <./Figures/../Figures/manual/step
+18.jpg>]
+<Figures/../Figures/manual/step20.jpg, id=859, 1349.79282pt x 688.82344pt>
+File: Figures/../Figures/manual/step20.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/step20.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/step20.jpg used on input lin
+e 267.
+(pdftex.def)             Requested size: 441.01775pt x 225.05266pt.
+
+<Figures/../Figures/manual/save1.jpg, id=861, 145.29282pt x 690.32906pt>
+File: Figures/../Figures/manual/save1.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/save1.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/save1.jpg used on input line
+ 283.
+(pdftex.def)             Requested size: 132.30666pt x 628.67444pt.
+ [44 <./Figures/../Figures/manual/step19.jpg> <./Figures/../Figures/manual/step
+20.jpg>]
+<Figures/../Figures/manual/save2.jpg, id=869, 1082.8455pt x 551.661pt>
+File: Figures/../Figures/manual/save2.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/save2.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/save2.jpg used on input line
+ 293.
+(pdftex.def)             Requested size: 441.01775pt x 224.68413pt.
+ [45 <./Figures/../Figures/manual/save1.jpg>]
+<Figures/../Figures/manual/save3.jpg, id=875, 282.30469pt x 447.92343pt>
+File: Figures/../Figures/manual/save3.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/save3.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/save3.jpg used on input line
+ 303.
+(pdftex.def)             Requested size: 220.50887pt x 349.8778pt.
+ [46 <./Figures/../Figures/manual/save2.jpg>]
+<Figures/../Figures/manual/save4.jpg, id=887, 140.77594pt x 691.08188pt>
+File: Figures/../Figures/manual/save4.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/save4.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/save4.jpg used on input line
+ 315.
+(pdftex.def)             Requested size: 132.30666pt x 649.54324pt.
+ [47 <./Figures/../Figures/manual/save3.jpg>]
+<Figures/../Figures/manual/save5.jpg, id=894, 141.52875pt x 688.82344pt>
+File: Figures/../Figures/manual/save5.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/save5.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/save5.jpg used on input line
+ 324.
+(pdftex.def)             Requested size: 132.30666pt x 643.99411pt.
+ [48 <./Figures/../Figures/manual/save4.jpg>]
+<Figures/../Figures/manual/save6.jpg, id=901, 311.66437pt x 450.18187pt>
+File: Figures/../Figures/manual/save6.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/save6.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/save6.jpg used on input line
+ 333.
+(pdftex.def)             Requested size: 264.61333pt x 382.22363pt.
+ [49 <./Figures/../Figures/manual/save5.jpg>]
+<Figures/../Figures/manual/optionalA1.jpg, id=907, 1350.54562pt x 690.32906pt>
+File: Figures/../Figures/manual/optionalA1.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalA1.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalA1.jpg used on input
+ line 352.
+(pdftex.def)             Requested size: 441.01775pt x 225.41817pt.
+ [50 <./Figures/../Figures/manual/save6.jpg>]
+<Figures/../Figures/manual/optionalA2.jpg, id=917, 1085.85675pt x 550.4565pt>
+File: Figures/../Figures/manual/optionalA2.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalA2.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalA2.jpg used on input
+ line 362.
+(pdftex.def)             Requested size: 441.01775pt x 223.5636pt.
+
+<Figures/../Figures/manual/optionalA3.jpg, id=918, 1082.24326pt x 551.661pt>
+File: Figures/../Figures/manual/optionalA3.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalA3.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalA3.jpg used on input
+ line 369.
+(pdftex.def)             Requested size: 441.01775pt x 224.80197pt.
+ [51 <./Figures/../Figures/manual/optionalA1.jpg> <./Figures/../Figures/manual/
+optionalA2.jpg>]
+<Figures/../Figures/manual/optionalA4.jpg, id=928, 1357.32094pt x 691.08188pt>
+File: Figures/../Figures/manual/optionalA4.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalA4.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalA4.jpg used on input
+ line 380.
+(pdftex.def)             Requested size: 441.01775pt x 224.53568pt.
+
+<Figures/../Figures/manual/optionalA5.jpg, id=929, 1357.32094pt x 691.08188pt>
+File: Figures/../Figures/manual/optionalA5.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalA5.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalA5.jpg used on input
+ line 387.
+(pdftex.def)             Requested size: 441.01775pt x 224.53568pt.
+ [52 <./Figures/../Figures/manual/optionalA3.jpg> <./Figures/../Figures/manual/
+optionalA4.jpg>]
+<Figures/../Figures/manual/optionalA6.jpg, id=937, 1355.0625pt x 688.07062pt>
+File: Figures/../Figures/manual/optionalA6.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalA6.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalA6.jpg used on input
+ line 394.
+(pdftex.def)             Requested size: 441.01775pt x 223.93527pt.
+
+<Figures/../Figures/manual/optionalA7.jpg, id=939, 1352.05125pt x 690.32906pt>
+File: Figures/../Figures/manual/optionalA7.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalA7.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalA7.jpg used on input
+ line 403.
+(pdftex.def)             Requested size: 441.01775pt x 225.1759pt.
+ [53 <./Figures/../Figures/manual/optionalA5.jpg> <./Figures/../Figures/manual/
+optionalA6.jpg>]
+<Figures/../Figures/manual/optionalB1.jpg, id=955, 1349.04pt x 689.57625pt>
+File: Figures/../Figures/manual/optionalB1.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalB1.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalB1.jpg used on input
+ line 425.
+(pdftex.def)             Requested size: 441.01775pt x 225.42488pt.
+ [54 <./Figures/../Figures/manual/optionalA7.jpg>]
+<Figures/../Figures/manual/optionalB2.jpg, id=969, 1088.26575pt x 551.661pt>
+File: Figures/../Figures/manual/optionalB2.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalB2.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalB2.jpg used on input
+ line 432.
+(pdftex.def)             Requested size: 441.01775pt x 223.55617pt.
+
+<Figures/../Figures/manual/optionalB3.jpg, id=970, 1085.2545pt x 551.05875pt>
+File: Figures/../Figures/manual/optionalB3.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalB3.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalB3.jpg used on input
+ line 439.
+(pdftex.def)             Requested size: 441.01775pt x 223.93433pt.
+ [55 <./Figures/../Figures/manual/optionalB1.jpg> <./Figures/../Figures/manual/
+optionalB2.jpg>]
+<Figures/../Figures/manual/optionalB4.jpg, id=975, 1351.29843pt x 690.32906pt>
+File: Figures/../Figures/manual/optionalB4.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalB4.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalB4.jpg used on input
+ line 447.
+(pdftex.def)             Requested size: 441.01775pt x 225.29176pt.
+
+<Figures/../Figures/manual/optionalB5.jpg, id=976, 1085.85675pt x 549.252pt>
+File: Figures/../Figures/manual/optionalB5.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalB5.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalB5.jpg used on input
+ line 454.
+(pdftex.def)             Requested size: 441.01775pt x 223.0744pt.
+ [56 <./Figures/../Figures/manual/optionalB3.jpg> <./Figures/../Figures/manual/
+optionalB4.jpg>]
+<Figures/../Figures/manual/optionalB6.jpg, id=982, 1084.05pt x 553.46774pt>
+File: Figures/../Figures/manual/optionalB6.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalB6.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalB6.jpg used on input
+ line 461.
+(pdftex.def)             Requested size: 441.01775pt x 225.16663pt.
+
+<Figures/../Figures/manual/optionalB7.jpg, id=983, 1082.24326pt x 550.4565pt>
+File: Figures/../Figures/manual/optionalB7.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalB7.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalB7.jpg used on input
+ line 468.
+(pdftex.def)             Requested size: 441.01775pt x 224.31114pt.
+ [57 <./Figures/../Figures/manual/optionalB5.jpg> <./Figures/../Figures/manual/
+optionalB6.jpg>]
+<Figures/../Figures/manual/optionalB8.jpg, id=988, 1084.05pt x 551.05875pt>
+File: Figures/../Figures/manual/optionalB8.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalB8.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalB8.jpg used on input
+ line 476.
+(pdftex.def)             Requested size: 441.01775pt x 224.18658pt.
+
+<Figures/../Figures/manual/optionalB9.jpg, id=989, 1085.85675pt x 551.661pt>
+File: Figures/../Figures/manual/optionalB9.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalB9.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalB9.jpg used on input
+ line 483.
+(pdftex.def)             Requested size: 441.01775pt x 224.0528pt.
+ [58 <./Figures/../Figures/manual/optionalB7.jpg> <./Figures/../Figures/manual/
+optionalB8.jpg>]
+<Figures/../Figures/manual/optionalC1.jpg, id=995, 1358.07375pt x 691.83469pt>
+File: Figures/../Figures/manual/optionalC1.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalC1.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalC1.jpg used on input
+ line 496.
+(pdftex.def)             Requested size: 441.01775pt x 224.66414pt.
+
+<Figures/../Figures/manual/optionalC2.jpg, id=996, 1358.07375pt x 691.83469pt>
+File: Figures/../Figures/manual/optionalC2.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalC2.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalC2.jpg used on input
+ line 503.
+(pdftex.def)             Requested size: 441.01775pt x 224.66414pt.
+ [59 <./Figures/../Figures/manual/optionalB9.jpg> <./Figures/../Figures/manual/
+optionalC1.jpg>]
+<Figures/../Figures/manual/optionalC3.jpg, id=1002, 1086.459pt x 551.661pt>
+File: Figures/../Figures/manual/optionalC3.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalC3.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalC3.jpg used on input
+ line 510.
+(pdftex.def)             Requested size: 441.01775pt x 223.93495pt.
+
+<Figures/../Figures/manual/optionalC4.jpg, id=1003, 1359.57938pt x 688.07062pt>
+File: Figures/../Figures/manual/optionalC4.jpg Graphic file (type jpg)
+<use Figures/../Figures/manual/optionalC4.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalC4.jpg used on input
+ line 517.
+(pdftex.def)             Requested size: 441.01775pt x 223.18983pt.
+ [60 <./Figures/../Figures/manual/optionalC2.jpg> <./Figures/../Figures/manual/
+optionalC3.jpg>]
+<Figures/../Figures/manual/optionalC5.jpg, id=1010, 1086.459pt x 552.26324pt>
+File: Figures/../Figures/manual/optionalC5.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalC5.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalC5.jpg used on input
+ line 524.
+(pdftex.def)             Requested size: 441.01775pt x 224.17941pt.
+
+<Figures/../Figures/manual/optionalC6.jpg, id=1011, 1353.55687pt x 688.82344pt>
+File: Figures/../Figures/manual/optionalC6.jpg Graphic file (type jpg)
+<use Figures/../Figures/manual/optionalC6.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalC6.jpg used on input
+ line 531.
+(pdftex.def)             Requested size: 441.01775pt x 224.43254pt.
+ [61 <./Figures/../Figures/manual/optionalC4.jpg> <./Figures/../Figures/manual/
+optionalC5.jpg>]
+<Figures/../Figures/manual/optionalC7.jpg, id=1018, 1358.07375pt x 691.08188pt>
+File: Figures/../Figures/manual/optionalC7.jpg Graphic file (type jpg)
+<use Figures/../Figures/manual/optionalC7.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalC7.jpg used on input
+ line 538.
+(pdftex.def)             Requested size: 441.01775pt x 224.41968pt.
+
+<Figures/../Figures/manual/optionalC8.jpg, id=1019, 1084.05pt x 551.661pt>
+File: Figures/../Figures/manual/optionalC8.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalC8.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalC8.jpg used on input
+ line 545.
+(pdftex.def)             Requested size: 441.01775pt x 224.4316pt.
+ [62 <./Figures/../Figures/manual/optionalC6.jpg> <./Figures/../Figures/manual/
+optionalC7.jpg>]
+<Figures/../Figures/manual/optionalC9.jpg, id=1027, 1087.6635pt x 553.46774pt>
+File: Figures/../Figures/manual/optionalC9.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalC9.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalC9.jpg used on input
+ line 552.
+(pdftex.def)             Requested size: 441.01775pt x 224.41501pt.
+ [63 <./Figures/../Figures/manual/optionalC8.jpg> <./Figures/../Figures/manual/
+optionalC9.jpg>]
+<Figures/../Figures/manual/optionalD1.jpg, id=1041, 1359.57938pt x 691.83469pt>
+File: Figures/../Figures/manual/optionalD1.jpg Graphic file (type jpg)
+<use Figures/../Figures/manual/optionalD1.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalD1.jpg used on input
+ line 571.
+(pdftex.def)             Requested size: 441.01775pt x 224.41078pt.
+
+<Figures/../Figures/manual/optionalD2.jpg, id=1042, 1084.05pt x 552.8655pt>
+File: Figures/../Figures/manual/optionalD2.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalD2.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalD2.jpg used on input
+ line 578.
+(pdftex.def)             Requested size: 441.01775pt x 224.92162pt.
+
+<Figures/../Figures/manual/optionalD3.jpg, id=1043, 1081.641pt x 552.26324pt>
+File: Figures/../Figures/manual/optionalD3.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalD3.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalD3.jpg used on input
+ line 585.
+(pdftex.def)             Requested size: 441.01775pt x 225.17378pt.
+ [64 <./Figures/../Figures/manual/optionalD1.jpg> <./Figures/../Figures/manual/
+optionalD2.jpg>]
+<Figures/../Figures/manual/optionalD4.jpg, id=1055, 1084.05pt x 552.26324pt>
+File: Figures/../Figures/manual/optionalD4.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalD4.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalD4.jpg used on input
+ line 592.
+(pdftex.def)             Requested size: 441.01775pt x 224.6766pt.
+
+<Figures/../Figures/manual/optionalD5.jpg, id=1056, 1079.83424pt x 552.26324pt>
+File: Figures/../Figures/manual/optionalD5.jpg Graphic file (type jpg)
+<use Figures/../Figures/manual/optionalD5.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalD5.jpg used on input
+ line 599.
+(pdftex.def)             Requested size: 441.01775pt x 225.553pt.
+ [65 <./Figures/../Figures/manual/optionalD3.jpg> <./Figures/../Figures/manual/
+optionalD4.jpg>]
+<Figures/../Figures/manual/optionalD6.jpg, id=1061, 1358.82657pt x 688.82344pt>
+File: Figures/../Figures/manual/optionalD6.jpg Graphic file (type jpg)
+<use Figures/../Figures/manual/optionalD6.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalD6.jpg used on input
+ line 606.
+(pdftex.def)             Requested size: 441.01775pt x 223.56015pt.
+
+<Figures/../Figures/manual/optionalD7.jpg, id=1062, 1086.459pt x 552.26324pt>
+File: Figures/../Figures/manual/optionalD7.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalD7.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalD7.jpg used on input
+ line 613.
+(pdftex.def)             Requested size: 441.01775pt x 224.17941pt.
+ [66 <./Figures/../Figures/manual/optionalD5.jpg> <./Figures/../Figures/manual/
+optionalD6.jpg>]
+<Figures/../Figures/manual/optionalE1.jpg, id=1074, 1352.05125pt x 690.32906pt>
+File: Figures/../Figures/manual/optionalE1.jpg Graphic file (type jpg)
+<use Figures/../Figures/manual/optionalE1.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalE1.jpg used on input
+ line 631.
+(pdftex.def)             Requested size: 441.01775pt x 225.1759pt.
+ [67 <./Figures/../Figures/manual/optionalD7.jpg>]
+<Figures/../Figures/manual/optionalE2.jpg, id=1086, 1355.8153pt x 691.83469pt>
+File: Figures/../Figures/manual/optionalE2.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalE2.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalE2.jpg used on input
+ line 638.
+(pdftex.def)             Requested size: 441.01775pt x 225.03362pt.
+
+<Figures/../Figures/manual/optionalE3.jpg, id=1087, 1082.24326pt x 551.661pt>
+File: Figures/../Figures/manual/optionalE3.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalE3.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalE3.jpg used on input
+ line 645.
+(pdftex.def)             Requested size: 441.01775pt x 224.80197pt.
+ [68 <./Figures/../Figures/manual/optionalE1.jpg> <./Figures/../Figures/manual/
+optionalE2.jpg>]
+<Figures/../Figures/manual/optionalE4.jpg, id=1094, 1085.85675pt x 552.26324pt>
+File: Figures/../Figures/manual/optionalE4.jpg Graphic file (type jpg)
+<use Figures/../Figures/manual/optionalE4.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalE4.jpg used on input
+ line 652.
+(pdftex.def)             Requested size: 441.01775pt x 224.2974pt.
+
+<Figures/../Figures/manual/optionalE5.jpg, id=1095, 1355.8153pt x 691.08188pt>
+File: Figures/../Figures/manual/optionalE5.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalE5.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalE5.jpg used on input
+ line 659.
+(pdftex.def)             Requested size: 441.01775pt x 224.78876pt.
+ [69 <./Figures/../Figures/manual/optionalE3.jpg> <./Figures/../Figures/manual/
+optionalE4.jpg>]
+<Figures/../Figures/manual/optionalE6.jpg, id=1100, 1079.83424pt x 552.26324pt>
+File: Figures/../Figures/manual/optionalE6.jpg Graphic file (type jpg)
+<use Figures/../Figures/manual/optionalE6.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalE6.jpg used on input
+ line 666.
+(pdftex.def)             Requested size: 441.01775pt x 225.553pt.
+
+<Figures/../Figures/manual/optionalE7.jpg, id=1101, 258.21469pt x 444.15938pt>
+File: Figures/../Figures/manual/optionalE7.jpg Graphic file (type jpg)
+
+<use Figures/../Figures/manual/optionalE7.jpg>
+Package pdftex.def Info: Figures/../Figures/manual/optionalE7.jpg used on input
+ line 673.
+(pdftex.def)             Requested size: 264.61333pt x 455.21208pt.
+ [70 <./Figures/../Figures/manual/optionalE5.jpg> <./Figures/../Figures/manual/
+optionalE6.jpg>] [71 <./Figures/../Figures/manual/optionalE7.jpg>]
+Appendix C.
+<Figures/2018-03-08_1000.jpg, id=1117, 2601.72pt x 1951.29pt>
+File: Figures/2018-03-08_1000.jpg Graphic file (type jpg)
+
+<use Figures/2018-03-08_1000.jpg>
+Package pdftex.def Info: Figures/2018-03-08_1000.jpg used on input line 705.
+(pdftex.def)             Requested size: 165.38164pt x 124.00975pt.
+
+<Figures/2018-02-28_2030.jpg, id=1118, 3292.3pt x 2473.24pt>
+File: Figures/2018-02-28_2030.jpg Graphic file (type jpg)
+
+<use Figures/2018-02-28_2030.jpg>
+Package pdftex.def Info: Figures/2018-02-28_2030.jpg used on input line 712.
+(pdftex.def)             Requested size: 165.38164pt x 124.23532pt.
+
+<Figures/2018-04-24_1840.jpg, id=1119, 2601.72pt x 1951.29pt>
+File: Figures/2018-04-24_1840.jpg Graphic file (type jpg)
+
+<use Figures/2018-04-24_1840.jpg>
+Package pdftex.def Info: Figures/2018-04-24_1840.jpg used on input line 719.
+(pdftex.def)             Requested size: 165.38164pt x 124.00975pt.
+
+<Figures/2018-03-06_2000.jpg, id=1120, 3292.3pt x 2473.24pt>
+File: Figures/2018-03-06_2000.jpg Graphic file (type jpg)
+
+<use Figures/2018-03-06_2000.jpg>
+Package pdftex.def Info: Figures/2018-03-06_2000.jpg used on input line 725.
+(pdftex.def)             Requested size: 165.38164pt x 124.23532pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 703--729
+[][][]
+ []
+
+1: section
+[72
+
+] [73 <./Figures/2018-03-08_1000.jpg> <./Figures/2018-02-28_2030.jpg> <./Figure
+s/2018-04-24_1840.jpg> <./Figures/2018-03-06_2000.jpg>] [74] [75]
+Appendix D.
+<Figures/../Figures/literature_final3.pdf, id=1152, 794.97pt x 614.295pt>
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/literature_final3.pdf>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf used on input
+ line 805.
+(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/literature_final3.pdf>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf used on input
+ line 805.
+(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
+
+<Figures/../Figures/literature_final3.pdf, id=1155, page=1, 794.97pt x 614.295p
+t>
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+ <use Figures/../Figures/literature_final3.pdf, page 1>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page1 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/literature_final3.pdf, page 1>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page1 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+
+1: section
+[76
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 329.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 329.
- (./main.aux (./Chapters/1_introduction.aux) (./Chapters/2_methods.aux)
-(./Chapters/3_results.aux) (./Chapters/4_discussion.aux)
-(./Chapters/5_conclusion.aux) (./Appendices/AppendixA.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 329.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 329.
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+ <use Figures/../Figures/literature_final3.pdf, page 1>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page1 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/literature_final3.pdf, page 1>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page1 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/literature_final3.pdf, page 1>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page1 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+ [77 <./Figures/../Figures/literature_final3.pdf>]
+<Figures/../Figures/literature_final3.pdf, id=1190, page=2, 794.97pt x 614.295p
+t>
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+ <use Figures/../Figures/literature_final3.pdf, page 2>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page2 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/literature_final3.pdf, page 2>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page2 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/literature_final3.pdf, page 2>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page2 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+ [78 <./Figures/../Figures/literature_final3.pdf>]
+<Figures/../Figures/literature_final3.pdf, id=1202, page=3, 794.97pt x 614.295p
+t>
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+ <use Figures/../Figures/literature_final3.pdf, page 3>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page3 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/literature_final3.pdf, page 3>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page3 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/literature_final3.pdf, page 3>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page3 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+ [79 <./Figures/../Figures/literature_final3.pdf>]
+<Figures/../Figures/literature_final3.pdf, id=1211, page=4, 794.97pt x 614.295p
+t>
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+ <use Figures/../Figures/literature_final3.pdf, page 4>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page4 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/literature_final3.pdf, page 4>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page4 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/literature_final3.pdf, page 4>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page4 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+ [80 <./Figures/../Figures/literature_final3.pdf>]
+<Figures/../Figures/literature_final3.pdf, id=1221, page=5, 794.97pt x 614.295p
+t>
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+ <use Figures/../Figures/literature_final3.pdf, page 5>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page5 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/literature_final3.pdf, page 5>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page5 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/literature_final3.pdf, page 5>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page5 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+ [81 <./Figures/../Figures/literature_final3.pdf>]
+<Figures/../Figures/literature_final3.pdf, id=1230, page=6, 794.97pt x 614.295p
+t>
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+ <use Figures/../Figures/literature_final3.pdf, page 6>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page6 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/literature_final3.pdf, page 6>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page6 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+File: Figures/../Figures/literature_final3.pdf Graphic file (type pdf)
+
+<use Figures/../Figures/literature_final3.pdf, page 6>
+Package pdftex.def Info: Figures/../Figures/literature_final3.pdf, page6 used o
+n input line 805.
+(pdftex.def)             Requested size: 780.74174pt x 528.93544pt.
+ [82 <./Figures/../Figures/literature_final3.pdf>]) [83]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 468.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 468.
+ (./main.aux (./Chapters/1_introduction.aux)
+(./Chapters/2_methods.aux) (./Chapters/3_results.aux)
+(./Chapters/4_discussion.aux) (./Chapters/5_conclusion.aux)
+(./Appendices/AppendixA.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 468.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 468.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7F7048EFD1EE08110F8121E99BB12CFC;9921.
+(rerunfilecheck)             Checksum: 725761832C203479C4FF273CD049D352;9904.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32055 strings out of 493014
- 647571 string characters out of 6133351
- 837130 words of memory out of 5000000
- 35126 multiletter control sequences out of 15000+600000
- 65135 words of font info for 129 fonts, out of 8000000 for 9000
+ 34191 strings out of 493014
+ 695446 string characters out of 6133351
+ 914659 words of memory out of 5000000
+ 36936 multiletter control sequences out of 15000+600000
+ 69631 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,21n,77p,10377b,2245s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,21n,82p,10377b,2610s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2016/te
-xmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/
-fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/ur
-w/palatino/uplri8a.pfb>
-Output written on main.pdf (26 pages, 162047 bytes).
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/public/cm-super/sfit1095.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/urw/palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
+palatino/uplr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/palatin
+o/uplri8a.pfb>
+Output written on main.pdf (94 pages, 24384404 bytes).
 PDF statistics:
- 464 PDF objects out of 1000 (max. 8388607)
- 422 compressed objects within 5 object streams
- 94 named destinations out of 1000 (max. 500000)
- 417 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1360 PDF objects out of 1440 (max. 8388607)
+ 1092 compressed objects within 11 object streams
+ 301 named destinations out of 1000 (max. 500000)
+ 1064 words of extra memory for PDF output out of 10000 (max. 10000000)
 

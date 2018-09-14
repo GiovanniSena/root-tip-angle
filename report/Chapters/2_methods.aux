@@ -1,24 +1,35 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Methods}{4}{chapter.14}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Methods}{4}{chapter.12}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{methods}{{2}{4}{Methods}{chapter.14}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Image processing}{4}{section.15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}What is a digital image?}{4}{subsection.22}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Image processing operation}{5}{subsection.23}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Key stages in digital image processing}{5}{subsection.24}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Matlab}{6}{section.25}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.3}Workflow}{6}{section.26}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.4}Pre-processing -- getting the skeleton}{6}{section.27}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.5}Computing the angle}{6}{section.28}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Using the position of the tip of the root -- more in detail}{7}{subsection.29}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}Using the angle of the tangents to the points that are x points/pixels away from the point of highest local curvature}{8}{subsection.34}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}INSERT VARIOUS OTHER IDEAS OF ANGLE COMPUTATION -- even if not implemented}{8}{subsection.35}}
+\newlabel{methods}{{2}{4}{Methods}{chapter.12}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Data set}{4}{section.13}}
+\newlabel{sec:data}{{2.1}{4}{Data set}{section.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Experimental setup}{4}{section.14}}
+\newlabel{sec:experiment}{{2.2}{4}{Experimental setup}{section.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces The experimental setup for root electrotropism: Subfigure A shows a V-box containing plants in a medium, stabilised by PCR tubes with agar and seedlings. To the left a submerged negative electrode (cathode); to the right a submerged positive electrode (anode); inflow and outflow tube controlling the medium. Subfigure B shows the components of an EF experiment: The V-box connected to a power source, a media reservoir connected to the V-box via two pumps controlling the medium inflow and outflow, and a camera controlled via a Raspberry Pi facing the V-box to to take time lapse images of the roots at 10 minute intervals. Taken from \cite {GExpCircuit}.\relax }}{5}{figure.caption.15}}
+\newlabel{fig:experiment}{{2.1}{5}{The experimental setup for root electrotropism: Subfigure A shows a V-box containing plants in a medium, stabilised by PCR tubes with agar and seedlings. To the left a submerged negative electrode (cathode); to the right a submerged positive electrode (anode); inflow and outflow tube controlling the medium. Subfigure B shows the components of an EF experiment: The V-box connected to a power source, a media reservoir connected to the V-box via two pumps controlling the medium inflow and outflow, and a camera controlled via a Raspberry Pi facing the V-box to to take time lapse images of the roots at 10 minute intervals. Taken from \cite {GExpCircuit}.\relax }{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Image processing}{5}{section.16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Image processing steps: (1) Digital image acquisition; (2) Preprocessing: To improve the image in ways that increase the chances for success of the other processes; (3) Segmentation: To partition an input image into its constituent parts or objects; (4) Representation and description: To convert the input data to a form suitable for the computer, and to extract features for some quantitative information or features in order to differentiate one class of objects from another; (5) Recognition and interpretation (Understanding): To assign a label to an object based on the information provided by its descriptors or to assign meaning to an ensemble of recognised objects. All steps interact with the knowledge about the problem domain. Adapted from \cite {imagProcFundamentals}.\relax }}{6}{figure.caption.17}}
+\newlabel{fig:imageprocessingWorkflow}{{2.2}{6}{Image processing steps: (1) Digital image acquisition; (2) Preprocessing: To improve the image in ways that increase the chances for success of the other processes; (3) Segmentation: To partition an input image into its constituent parts or objects; (4) Representation and description: To convert the input data to a form suitable for the computer, and to extract features for some quantitative information or features in order to differentiate one class of objects from another; (5) Recognition and interpretation (Understanding): To assign a label to an object based on the information provided by its descriptors or to assign meaning to an ensemble of recognised objects. All steps interact with the knowledge about the problem domain. Adapted from \cite {imagProcFundamentals}.\relax }{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Digital images}{6}{subsection.18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}On spatial resolution, grey levels and coloured images}{6}{subsection.19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Images of different spatial resolution: Decreasing the spatial resolution by a half in each step, starting from the top left corner to the bottom middle image. Images of very low spatial resolution produce a \IeC {\textquotedblleft }checkerboard effect\IeC {\textquotedblright }. Taken from \cite {imagProcFundamentals}.\relax }}{7}{figure.caption.20}}
+\newlabel{fig:checkerboardEffect}{{2.3}{7}{Images of different spatial resolution: Decreasing the spatial resolution by a half in each step, starting from the top left corner to the bottom middle image. Images of very low spatial resolution produce a “checkerboard effect”. Taken from \cite {imagProcFundamentals}.\relax }{figure.caption.20}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Image processing operations}{7}{subsection.21}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}\textit  {MATLAB} as a programming language}{8}{section.22}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Computing the angle}{8}{section.23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces How the angle in reponse to the EF is measured: The angle \( \Theta \) represents the angle between the line through the tip of the root and the point of highest local curvature (\( v_{1}\)) and a line parallel to the EF (\( v_{2} \)). Adapted from \cite {GExpCircuit}.\relax }}{9}{figure.caption.24}}
+\newlabel{fig:angle}{{2.4}{9}{How the angle in reponse to the EF is measured: The angle \( \Theta \) represents the angle between the line through the tip of the root and the point of highest local curvature (\( v_{1}\)) and a line parallel to the EF (\( v_{2} \)). Adapted from \cite {GExpCircuit}.\relax }{figure.caption.24}{}}
+\newlabel{angle1}{{2.1}{9}{Computing the angle}{equation.25}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}Computing the curvature of the root tip}{9}{section.26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces The curvature and the osculating circle: Let \( C \) be a curve and \( P \) a point on it. Then there is a unique circle or line which best approximates the curve near \( C \): the \textit  {osculating circle} at \( P \). We define the curvature of \( C \) at \( P \) to be the curvature of that circle or line. The vector orthogonal to the tangent vector to the curve at point \( P \) and pointing inwards is called the \textit  {normal} \(r\). Adapted from \cite {osculatingCircle}. \relax }}{10}{figure.caption.27}}
+\newlabel{fig:curveCircle}{{2.5}{10}{The curvature and the osculating circle: Let \( C \) be a curve and \( P \) a point on it. Then there is a unique circle or line which best approximates the curve near \( C \): the \textit {osculating circle} at \( P \). We define the curvature of \( C \) at \( P \) to be the curvature of that circle or line. The vector orthogonal to the tangent vector to the curve at point \( P \) and pointing inwards is called the \textit {normal} \(r\). Adapted from \cite {osculatingCircle}. \relax }{figure.caption.27}{}}
 \@setckpt{Chapters/2_methods}{
-\setcounter{page}{9}
-\setcounter{equation}{0}
-\setcounter{enumi}{4}
+\setcounter{page}{11}
+\setcounter{equation}{1}
+\setcounter{enumi}{0}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
@@ -26,16 +37,23 @@
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{2}
-\setcounter{section}{5}
-\setcounter{subsection}{3}
+\setcounter{section}{6}
+\setcounter{subsection}{0}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{0}
+\setcounter{figure}{5}
 \setcounter{table}{0}
 \setcounter{LT@tables}{1}
 \setcounter{LT@chunks}{1}
 \setcounter{ContinuedFloat}{0}
+\setcounter{Item}{0}
+\setcounter{Hfootnote}{0}
+\setcounter{bookmark@seq@number}{16}
+\setcounter{subfigure}{0}
+\setcounter{subtable}{0}
+\setcounter{float@type}{4}
+\setcounter{AM@survey}{0}
 \setcounter{tabx@nest}{0}
 \setcounter{listtotal}{0}
 \setcounter{listcount}{0}
@@ -45,7 +63,7 @@
 \setcounter{citetotal}{0}
 \setcounter{multicitecount}{0}
 \setcounter{multicitetotal}{0}
-\setcounter{instcount}{0}
+\setcounter{instcount}{41}
 \setcounter{maxnames}{3}
 \setcounter{minnames}{1}
 \setcounter{maxitems}{3}
@@ -143,8 +161,5 @@
 \setcounter{smartand}{1}
 \setcounter{bbx:relatedcount}{0}
 \setcounter{bbx:relatedtotal}{0}
-\setcounter{Item}{10}
-\setcounter{Hfootnote}{0}
-\setcounter{bookmark@seq@number}{20}
-\setcounter{section@level}{2}
+\setcounter{section@level}{1}
 }
